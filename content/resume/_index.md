@@ -35,6 +35,27 @@ template = "resume.html"
 
 <div class="columns-3">
 <div class="text-left">
+<b>Member of Technical Staff</b>
+<br>
+<p>Startup</p>
+</div>
+<div class="text-center">
+<b>Stealth</b>
+<br>
+<p>San Francisco, CA</p>
+</div>
+<div class="text-right">
+<b>Apr 2025 &ndash; Jul 2025</b>
+</div>
+</div>
+
+* Worked with Cursor, Gemini Flash, Go, Cloud Run, Google Cloud Storage, Spanner, Firebase, iOS/Swift
+* Details available upon request
+
+<br>
+
+<div class="columns-3">
+<div class="text-left">
 <b>Software Engineer</b>
 <br>
 <p>Startup</p>
