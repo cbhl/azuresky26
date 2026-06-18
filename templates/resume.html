@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ section.title }}</title>
+  <style type="text/css">
+    :root {
+      color-scheme: light dark;
+      --color: #fff;
+      --background-color: #000;
+      --a-hover: #07e;
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --color: #000;
+        --background-color: fff;
+        --a-hover: #07e;
+      }
+    }
+
+    @media print {
+      :root {
+        --color: #000;
+        --background-color: fff;
+        --a-hover: #07e;
+      }
+    }
+
+    body {
+      color: var(--color);
+      background-color: var(--background-color);
+    }
+
+    a,
+    #resume a {
+      color: var(--color);
+    }
+
+    a:active,
+    a:hover,
+    #resume a:active,
+    #resume a:hover {
+      color: var(--a-hover);
+    }
+
+    @media (min-width: 680px) {
+      #resume {
+        width: 680px;
+        margin: auto;
+        padding: 4em 0;
+      }
+    }
+
+    @media print {
+      #resume {
+        padding: 0 0;
+      }
+    }
+
+    @media (min-width: 480px) {
+      .heading-grid {
+        display: grid;
+        grid-template-columns: 200px 1fr 200px;
+      }
+    }
+
+    .columns-3 {
+      column-count: 3;
+    }
+
+    .col-span-2 {
+      grid-column: span 2;
+    }
+
+    .date-only-grid {
+      display: grid;
+      grid-template-columns: 1fr 100px;
+    }
+
+    .inline-block {
+      display: inline-block;
+    }
+
+    .text-left {
+      text-align: left;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-center h1 {
+      font-size: 1.75em;
+      line-height: 1.0;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    .text-justify {
+      text-align: justify;
+    }
+
+    @media (not (min-width: 480px)) {
+      .heading-grid .text-left {
+        display: none;
+      }
+
+      .heading-grid .text-right {
+        text-align: center;
+      }
+    }
+
+    #resume {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+    }
+
+    #resume table {
+      width: 100%;
+    }
+
+    #resume table td {
+      width: 30%;
+    }
+
+    #resume .left {
+      text-align: left;
+    }
+
+    #resume .center {
+      text-align: center;
+    }
+
+    #resume .right {
+      text-align: right;
+    }
+
+    #resume a {
+      text-decoration: underline;
+    }
+
+    #resume p,
+    #resume ul,
+    #resume h4 {
+      font-size: 1em;
+      margin: 0;
+    }
+
+    #resume h1 {
+      margin: 0;
+      padding: 0;
+    }
+
+    #resume h2 {
+      margin: 0;
+      padding: 0.75em 0 0 0;
+    }
+
+    #resume h3 {
+      font-size: 1em;
+      margin: 0.5em 0 0 0;
+    }
+
+    #resume .address {
+      height: 3em;
+      vertical-align: top;
+    }
+
+    #resume .address-type {
+      font-weight: bold;
+    }
+
+    #resume h4 {
+      font-weight: normal;
+    }
+  </style>
+</head>
+
+<body>
+  {{ section.content | safe }}
+  <script type="text/javascript">
+    var sc_project = 13022974;
+    var sc_invisible = 1;
+    var sc_security = "8b016abf";
+  </script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img
+          class="statcounter" src="https://c.statcounter.com/13022974/0/8b016abf/1/" alt="Web Analytics"
+          referrerPolicy="no-referrer-when-downgrade"></a></div>
+  </noscript>
+</body>
+
+</html>
