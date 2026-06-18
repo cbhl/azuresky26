@@ -1,10 +1,42 @@
 ## michael-chang.ca (2026 edition)
 
+&copy; 2013-2026 Michael Chang
+
 Hi, I'm Michael. I've been coding since I was eight, but in terms of full-time experience I've been doing this for ten years.
 
 This is the source code for my personal website, a static site that can be built with Zola.
 
 If you're looking for my resume, you should be able to find it rendered at https://michael-chang.ca/resume/.
+
+### Install Zola
+
+```
+brew install zola
+```
+
+On other platforms, use https://www.getzola.org/documentation/getting-started/installation/.
+
+### Preview
+
+```
+zola serve
+```
+
+Then open http://127.0.0.1:1111/.
+
+### Build
+
+```
+zola build
+```
+
+### Deploy
+
+After running `zola build`, rsync the contents of `public/` to the static web host of your choice.
+
+```
+./deploy.sh
+```
 
 ### Why Zola?
 
