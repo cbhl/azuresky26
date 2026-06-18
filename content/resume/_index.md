@@ -35,6 +35,26 @@ template = "resume.html"
 
 <div class="columns-3">
 <div class="text-left">
+<b>Backend Lead</b>
+<br>
+<p>Backend team</p>
+</div>
+<div class="text-center">
+<b><a href="https://flybits.com/">Flybits</a></b>
+<br>
+<p>Toronto, ON, Canada</p>
+</div>
+<div class="text-right">
+<b>Sept 2025 &ndash; Present</b>
+</div>
+</div>
+
+* Details available upon request
+
+<br>
+
+<div class="columns-3">
+<div class="text-left">
 <b>Member of Technical Staff</b>
 <br>
 <p>Startup</p>
@@ -50,7 +70,6 @@ template = "resume.html"
 </div>
 
 * Worked with Cursor, Gemini Flash, Go, Cloud Run, Google Cloud Storage, Spanner, Firebase, iOS/Swift
-* Details available upon request
 
 <br>
 
