@@ -49,10 +49,10 @@ template = "resume.html"
 </div>
 </div>
 
-* Managed and led the Backend team at Flybits, maintaining over 60 Golang microservices comprising the Flybits platform while onboarding a new customer with over 500k users
+* Managed and led the backend team at Flybits, maintaining over 60 Golang microservices comprising the Flybits platform while onboarding a new customer with over 500k users
 * Supported the team through its AI transformation, adopting modern tools such as Cursor, Claude Code, CodeRabbit, and Weave, and shared best practices with partner teams in devops and frontend
-* Collaborated with product and design to clarify requirements and consult on technical feasibility for upgrades to Flybits' merchant-funded offers solution
-* Hired and managed 1 developer and 1 co-op student that joined the team
+* Collaborated with product and design to review designs and requirements for upgrades to Flybits' merchant-funded offers solution
+* Interviewed and hired one developer and one co-op student
 
 <br>
 
@@ -164,7 +164,7 @@ template = "resume.html"
 </div>
 
 * Worked on Encircle's Android, iOS, and Web applications
-* Reworked server code to send HTML emails (previously only plain-text) and automatically unsubscribe bouncing email addresses
+* Updated backend to send HTML emails (previously plain-text) and unsubscribe bounces
 * Set up phabricator (code review) and jenkins (continuous integration) servers
 
 <br>
@@ -206,7 +206,7 @@ template = "resume.html"
 </div>
 </div>
 
-* Built custom control in JavaScript and the Google Closure Compiler for basic audio editing
+* Built controls with JavaScript and the Google Closure Compiler for basic audio editing
 * Updated Python logic and MySQL database schema for YouTube audio swap
 
 <br>
@@ -249,7 +249,7 @@ template = "resume.html"
 </div>
 
 * Built internal dashboards using internal tools for product managers within Facebook
-* Ran ad-hoc queries in Hive/Hadoop to answer questions about Facebook users' Android and iOS devices
+* Ran ad-hoc queries (Hive/Hadoop) regarding mobile users and devices
 
 <br>
 
@@ -274,13 +274,22 @@ template = "resume.html"
 
 <div class="date-only-grid">
 <div class="text-left">
+<b>3rd Place, Make Impacts AI Hackathon</b>
+</div>
+<div class="text-right">
+<b>2025</b>
+</div>
+<div class="col-span-2">
+<p>Used the Replicate API, generative image-to-image models, and Cloudflare Workers to build an app where you upload a selfie and it turns you into a witch/wizard. Interactive, working live demo where I asked audience members to upload selfies to try it. Handled dozens of concurrent requests without falling over.</p>
+</div>
+<div class="text-left">
 <b>Judge's Choice Award (FTC Team 3431)</b>
 </div>
 <div class="text-right">
 <b>2009</b>
 </div>
 <div class="col-span-2">
-<p>I was the lead programmer on our high-school robotics team, leading a team of three.</p>
+<p>I was the lead programmer on our high-school robotics team, leading a team of three programmers. Collaborated with teammates iterating on hardware robot designs, and incorporated feedback from our team's drivers into the robot's control software.</p>
 <p>This award qualified our team for the FIRST Tech Challenge World Championships in Atlanta.</p>
 </div>
 <div class="text-left">
