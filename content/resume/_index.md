@@ -49,7 +49,10 @@ template = "resume.html"
 </div>
 </div>
 
-* Details available upon request
+* Managed and led the Backend team at Flybits, maintaining over 60 Golang microservices comprising the Flybits platform while onboarding a new customer with over 500k users
+* Supported the team through its AI transformation, adopting modern tools such as Cursor, Claude Code, CodeRabbit, and Weave, and shared best practices with partner teams in devops and frontend
+* Collaborated with product and design to clarify requirements and consult on technical feasibility for upgrades to Flybits' merchant-funded offers solution
+* Hired and managed 1 developer and 1 co-op student that joined the team
 
 <br>
 
@@ -69,7 +72,10 @@ template = "resume.html"
 </div>
 </div>
 
-* Worked with Cursor, Gemini Flash, Go, Cloud Run, Google Cloud Storage, Spanner, Firebase, iOS/Swift
+* Built video asset management service (Go, Cloud Run, Google Cloud Storage, Spanner) that scaled to handle over 1M video assets and associated metadata
+* Added support for tracking multiple asset formats: a 96% smaller version for multimodal model feature extraction, while ensuring the original is used for final rendering
+* Integrated Firebase password reset email into iOS Swift app
+* Mentored two new hires: pair programming and code/design reviews
 
 <br>
 
