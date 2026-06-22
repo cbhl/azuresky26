@@ -11,7 +11,7 @@ template = "resume.html"
 <div class="inline-block">
 <a href="https://www.linkedin.com/in/m9chang/">linkedin.com/in/m9chang</a>
 <br>
-<a href="https://github.com/cbhl">github.com/cbhl</a>
+<a href="mailto:m9chang@gmail.com">m9chang@gmail.com</a>
 </div>
 </div>
 
@@ -23,9 +23,9 @@ template = "resume.html"
 
 <div class="text-right">
 <div class="inline-block">
-<a href="https://michael-chang.ca/resume/">michael-chang.ca/resume</a>
+Richmond Hill, ON, Canada
 <br>
-<a href="mailto:michael.chang@hey.com">michael.chang@hey.com</a>
++1.365.386.4833
 </div>
 </div>
 
@@ -50,7 +50,7 @@ template = "resume.html"
 </div>
 
 * Managed and led the backend team at Flybits, maintaining over 60 Golang microservices comprising the Flybits platform while onboarding a new customer with over 500k users
-* Supported the team through its AI transformation, adopting modern tools such as Cursor, Claude Code, CodeRabbit, and Weave, and shared best practices with partner teams in devops and frontend
+* Supported the team through its AI transformation, adopting modern tools such as Cursor, Claude Code, CodeRabbit, and Weave, and exchanged best practices with partner teams in frontend and core platform
 * Collaborated with product and design to review designs and requirements for upgrades to Flybits' merchant-funded offers solution
 * Interviewed and hired one developer and one co-op student
 
@@ -95,9 +95,9 @@ template = "resume.html"
 </div>
 </div>
 
-* Evaluated phone AI agent platforms (Bland, Synthflow, Retell) for prospective clients
-* Set up Airbyte connector and ETL pipeline for a Product Lifecycle Management (PLM) system to automate data flow into customers' OpenAI Assistants
-* Created tool that matches PDFs to parts in PLM system and uploads the PDFs
+* Set up Airbyte connector and ETL pipeline for a Product Lifecycle Management (PLM)
+system to automate data flow into customers' OpenAI Assistants
+* Built tool to match PDFs to parts in the PLM system (Python, Django, PostgreSQL)
 * Implemented proof-of-concept FastAPI microservice that uses AI to classify items
 
 <br>
@@ -118,9 +118,12 @@ template = "resume.html"
 </div>
 </div>
 
-* Made certain features in the YouTube Android App perform better on low-end devices, and increased reach of certain features on high-end devices
-* Added dimensions and metrics to the data warehouse to measure impact
-* Wrote hooks for round-tripping device performance classification data between microservices
+* Added device performance instrumentation to the YouTube and YouTube Music apps
+* Built hooks to propagate device performance data across microservices
+* Used device performance data to make certain features in the YouTube app perform
+better on low-end devices, and increase reach on high-end devices
+* Added dimensions and metrics to the data warehouse so feature teams could track
+impact of their features on low-end devices
 
 <br>
 
@@ -140,10 +143,11 @@ template = "resume.html"
 </div>
 </div>
 
+* Migrated Video Editor business logic from Python to C++ during the Python 2.x turndown
 * Integrated [Mediapipe](https://mediapipe.dev/) into server-side Editor service (C++)
     * Co-wrote pairs of operators (Calculators) for phone GPUs and server CPUs
     * Authored initial effects graphs, including selfie segmentation / background blur
-* Various migrations: added column to database table primary key, static workflows to in-house Go / Golang framework, Python middleware to C++, MySQL to Spanner
+* Various migrations: added column to database table primary key, static workflows to in-house Go / Golang framework, MySQL to Spanner
 
 ## Co-ops and Internships
 
@@ -265,10 +269,9 @@ template = "resume.html"
 </div>
 </div>
 
-* Built a gradebook in Silverlight for teachers
-* Assisted with UX testing on mobile (iOS) development project
+* Built a gradebook for teachers in Silverlight and dashboards using Microsoft SQL Server Reporting Services
 * Configured and ran a video live stream for a webinar and discussion panel
-* Built dashboards using Microsoft SQL Server Reporting Services
+<!-- * Assisted with UX testing on mobile (iOS) development project -->
 
 <h2>Awards</h2>
 
