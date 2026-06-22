@@ -11,7 +11,7 @@ template = "resume.html"
 <div class="inline-block">
 <a href="https://www.linkedin.com/in/m9chang/">linkedin.com/in/m9chang</a>
 <br>
-<a href="mailto:m9chang@gmail.com">m9chang@gmail.com</a>
+<a href="https://michael-chang.ca/">michael-chang.ca</a>
 </div>
 </div>
 
@@ -23,9 +23,9 @@ template = "resume.html"
 
 <div class="text-right">
 <div class="inline-block">
-Richmond Hill, ON, Canada
+<a href="mailto:michael.chang@hey.com">michael.chang@hey.com</a>
 <br>
-+1.365.386.4833
++1.650.691.5545
 </div>
 </div>
 
