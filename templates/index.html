@@ -1,5 +1,5 @@
 {% extends "base.html" %}
 
 {% block content %}
-{{ section.content | safe }}
+{% if page %}{{ page.content | safe }}{% else %}{{ section.content | safe }}{% endif %}
 {% endblock content %}
