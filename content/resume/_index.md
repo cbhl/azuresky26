@@ -49,8 +49,9 @@ template = "resume.html"
 </div>
 </div>
 
-* Managed and led the backend team at Flybits, maintaining over 60 Golang microservices comprising the Flybits platform while onboarding a new customer with over 500k users
-* Supported the team through its AI transformation, adopting modern tools such as Cursor, Claude Code, CodeRabbit, and Weave, and exchanged best practices with partner teams in frontend and core platform
+* Co-maintained 60+ Go/PostgreSQL/MongoDB microservices backing the Flybits platform
+* Kept the team on track to ship features for onboarding a customer with 500k+ users
+* Supported the team through its AI transformation, adopting modern tools such as Cursor, Claude Code, CodeRabbit, and Weave
 * Collaborated with product and design to review designs and requirements for upgrades to Flybits' merchant-funded offers solution
 * Interviewed and hired one developer and one co-op student
 
