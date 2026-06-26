@@ -1,6 +1,9 @@
 +++
 title = "Michael Chang"
 template = "resume.html"
+
+[extra]
+hidden = true
 +++
 
 <div id="resume">
