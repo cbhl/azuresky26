@@ -51,7 +51,6 @@ template = "resume.html"
 
 * Co-maintained 60+ Go/PostgreSQL/MongoDB microservices backing the Flybits platform
 * Kept the team on track to ship features for onboarding a customer with 500k+ users
-* Supported the team through its AI transformation, adopting modern tools such as Cursor, Claude Code, CodeRabbit, and Weave
 * Collaborated with product and design to review designs and requirements for upgrades to Flybits' merchant-funded offers solution
 * Interviewed and hired one developer and one co-op student
 
@@ -73,10 +72,7 @@ template = "resume.html"
 </div>
 </div>
 
-* Built video asset management service (Go, Cloud Run, Google Cloud Storage, Spanner) that scaled to handle over 1M video assets and associated metadata
-* Added support for tracking multiple asset formats: a 96% smaller version for multimodal model feature extraction, while ensuring the original is used for final rendering
-* Integrated Firebase password reset email into iOS Swift app
-* Mentored two new hires: pair programming and code/design reviews
+* Worked with Cursor, Gemini Flash, Go, Cloud Run, Google Cloud Storage, Spanner, Firebase, iOS/Swift
 
 <br>
 
@@ -96,6 +92,7 @@ template = "resume.html"
 </div>
 </div>
 
+* Evaluated phone AI agent platforms (Bland, Synthflow, Retell) for prospective clients
 * Set up Airbyte connector and ETL pipeline for a Product Lifecycle Management (PLM)
 system to automate data flow into customers' OpenAI Assistants
 * Built tool to match PDFs to parts in the PLM system (Python, Django, PostgreSQL)
@@ -119,12 +116,9 @@ system to automate data flow into customers' OpenAI Assistants
 </div>
 </div>
 
-* Added device performance instrumentation to the YouTube and YouTube Music apps
-* Built hooks to propagate device performance data across microservices
-* Used device performance data to make certain features in the YouTube app perform
-better on low-end devices, and increase reach on high-end devices
-* Added dimensions and metrics to the data warehouse so feature teams could track
-impact of their features on low-end devices
+* Improved performance (low-end) and reach (high-end) of certain features in the YouTube app using device performance data
+* Added dimensions and metrics to the data warehouse to measure impact
+* Wrote hooks for round-tripping device performance classification data between microservices
 
 <br>
 
@@ -144,11 +138,10 @@ impact of their features on low-end devices
 </div>
 </div>
 
-* Migrated Video Editor business logic from Python to C++ during the Python 2.x turndown
 * Integrated [Mediapipe](https://mediapipe.dev/) into server-side Editor service (C++)
     * Co-wrote pairs of operators (Calculators) for phone GPUs and server CPUs
     * Authored initial effects graphs, including selfie segmentation / background blur
-* Various migrations: added column to database table primary key, static workflows to in-house Go / Golang framework, MySQL to Spanner
+* Various migrations: added column to database table primary key, static workflows to in-house Go / Golang framework, Python middleware to C++, MySQL to Spanner
 
 ## Co-ops and Internships
 
@@ -284,8 +277,11 @@ impact of their features on low-end devices
 <b>2025</b>
 </div>
 <div class="col-span-2">
-<p>Used the Replicate API, generative image-to-image models, and Cloudflare Workers to build an app where you upload a selfie and it turns you into a witch/wizard. Interactive, working live demo where I asked audience members to upload selfies to try it. Handled dozens of concurrent requests without falling over.</p>
+<p>Used the Replicate API, generative image-to-image models, Cloudflare Workers + D1, and TypeScript to build an app where you upload a selfie and it turns you into a witch/wizard. Interactive, working live demo where I asked audience members to upload selfies to try it. Handled dozens of concurrent requests without falling over.</p>
 </div>
+
+<div class="col-span-2"><br /></div>
+
 <div class="text-left">
 <b>Judge's Choice Award (FTC Team 3431)</b>
 </div>
@@ -296,6 +292,9 @@ impact of their features on low-end devices
 <p>I was the lead programmer on our high-school robotics team, leading a team of three programmers. Collaborated with teammates iterating on hardware robot designs, and incorporated feedback from our team's drivers into the robot's control software.</p>
 <p>This award qualified our team for the FIRST Tech Challenge World Championships in Atlanta.</p>
 </div>
+
+<div class="col-span-2"><br /></div>
+
 <div class="text-left">
 <b>Bronze medal, Canadian Computing Competition</b>
 </div>
@@ -309,7 +308,7 @@ impact of their features on low-end devices
 
 ## Hobbies
 
-<p>I ran a book club from 2019 to 2022, and was a makerspace coordinator at Google from 2015 to 2024. I am a casual player of Blood on the Clocktower, and other board and video games.</p>
+<p>I ran a book club from 2019 to 2022, and was a makerspace coordinator at Google from 2015 to 2024.</p>
 
 ## Education
 
