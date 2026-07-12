@@ -1,11 +1,193 @@
 {
   "generated_at": "2026-07-12",
   "stats": {
-    "flights": 0,
-    "airports": 0,
-    "countries": 0,
-    "miles": 0,
-    "top_routes": []
+    "flights": 189,
+    "airports": 44,
+    "countries": 8,
+    "miles": 304106,
+    "top_routes": [
+      {
+        "route": "YYZ-SFO",
+        "count": 27
+      },
+      {
+        "route": "SFO-YYZ",
+        "count": 19
+      },
+      {
+        "route": "SFO-LAX",
+        "count": 9
+      },
+      {
+        "route": "LAX-SFO",
+        "count": 8
+      },
+      {
+        "route": "SFO-JFK",
+        "count": 7
+      }
+    ]
   },
-  "recent": []
+  "recent": [
+    {
+      "date": "2026-04-05",
+      "airline": "UAL",
+      "flight": "1317",
+      "from": "SJC",
+      "to": "ORD",
+      "aircraft": "Airbus A319"
+    },
+    {
+      "date": "2026-04-05",
+      "airline": "UAL",
+      "flight": "2496",
+      "from": "ORD",
+      "to": "YYZ",
+      "aircraft": "Boeing 737-800"
+    },
+    {
+      "date": "2026-04-03",
+      "airline": "UAL",
+      "flight": "568",
+      "from": "YYZ",
+      "to": "DEN",
+      "aircraft": "Airbus A319"
+    },
+    {
+      "date": "2026-04-03",
+      "airline": "UAL",
+      "flight": "2745",
+      "from": "DEN",
+      "to": "SJC",
+      "aircraft": "Airbus A320"
+    },
+    {
+      "date": "2025-11-02",
+      "airline": "UAL",
+      "flight": "608",
+      "from": "SFO",
+      "to": "YYZ",
+      "aircraft": "Boeing 737 MAX 8"
+    },
+    {
+      "date": "2025-11-01",
+      "airline": "UAL",
+      "flight": "565",
+      "from": "YYZ",
+      "to": "SFO",
+      "aircraft": "Boeing 737-800"
+    },
+    {
+      "date": "2025-07-19",
+      "airline": "ACA",
+      "flight": "573",
+      "from": "SFO",
+      "to": "YVR",
+      "aircraft": "Airbus A320"
+    },
+    {
+      "date": "2025-07-19",
+      "airline": "ACA",
+      "flight": "188",
+      "from": "YVR",
+      "to": "YYZ",
+      "aircraft": "Boeing 737 MAX 8"
+    },
+    {
+      "date": "2025-06-08",
+      "airline": "ACA",
+      "flight": "747",
+      "from": "YYZ",
+      "to": "SFO",
+      "aircraft": "Airbus A220-300"
+    },
+    {
+      "date": "2025-06-06",
+      "airline": "ACA",
+      "flight": "746",
+      "from": "SFO",
+      "to": "YYZ",
+      "aircraft": "Airbus A220-300"
+    },
+    {
+      "date": "2025-05-31",
+      "airline": "UAL",
+      "flight": "1697",
+      "from": "SFO",
+      "to": "ONT",
+      "aircraft": "Boeing 737-800"
+    },
+    {
+      "date": "2025-05-31",
+      "airline": "UAL",
+      "flight": "1048",
+      "from": "BUR",
+      "to": "SFO",
+      "aircraft": "Airbus A320"
+    },
+    {
+      "date": "2025-04-25",
+      "airline": "ACA",
+      "flight": "743",
+      "from": "YYZ",
+      "to": "SFO",
+      "aircraft": "Boeing 737 MAX 8"
+    },
+    {
+      "date": "2025-04-17",
+      "airline": "UAL",
+      "flight": "608",
+      "from": "SFO",
+      "to": "YYZ",
+      "aircraft": "Boeing 737 MAX 8"
+    },
+    {
+      "date": "2025-04-15",
+      "airline": "ACA",
+      "flight": "741",
+      "from": "YYZ",
+      "to": "SFO",
+      "aircraft": "Airbus A220-300"
+    },
+    {
+      "date": "2025-03-19",
+      "airline": "ACA",
+      "flight": "739",
+      "from": "YYZ",
+      "to": "SFO",
+      "aircraft": "Boeing 737 MAX 8"
+    },
+    {
+      "date": "2025-03-19",
+      "airline": "ACA",
+      "flight": "746",
+      "from": "SFO",
+      "to": "YYZ",
+      "aircraft": "Boeing 737 MAX 8"
+    },
+    {
+      "date": "2025-01-31",
+      "airline": "POE",
+      "flight": "670",
+      "from": "SFO",
+      "to": "YYZ",
+      "aircraft": "Embraer 195 E2"
+    },
+    {
+      "date": "2024-12-31",
+      "airline": "ACA",
+      "flight": "741",
+      "from": "YYZ",
+      "to": "SFO",
+      "aircraft": "Airbus A220-300"
+    },
+    {
+      "date": "2024-12-20",
+      "airline": "UAL",
+      "flight": "404",
+      "from": "SFO",
+      "to": "PSP",
+      "aircraft": "Airbus A319"
+    }
+  ]
 }
