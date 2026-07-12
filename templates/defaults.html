@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block head_extra %}
+{% if section.extra.visible is not defined or not section.extra.visible %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
+{% endblock head_extra %}
+
+{% block content %}
+{% if section.extra.visible is not defined or not section.extra.visible %}
+<p>Not found.</p>
+{% else %}
+{% if page %}{{ page.content | safe }}{% else %}{{ section.content | safe }}{% endif %}
+{% endif %}
+{% endblock content %}

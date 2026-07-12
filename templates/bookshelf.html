@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block head_extra %}
+{% set bookshelf_section = get_section(path="bookshelf/_index.md") %}
+{% if bookshelf_section.extra.visible is not defined or not bookshelf_section.extra.visible %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
+{% endblock head_extra %}
+
+{% block content %}
+{% set bookshelf_section = get_section(path="bookshelf/_index.md") %}
+{% if bookshelf_section.extra.visible is not defined or not bookshelf_section.extra.visible %}
+<p>Not found.</p>
+{% else %}
+{% set max_w = section.extra.shelf_max_width | default(value=700) | int %}
+{% set gap = section.extra.book_gap | default(value=8) | int %}
+{% set_global shelf_rows = [] %}
+{% set_global shelf_row = [] %}
+{% set_global shelf_row_w = 0 %}
+{% for book in section.pages %}
+{% set w = book.extra.width | default(value=64) | int %}
+{% if shelf_row_w > 0 and shelf_row_w + gap + w > max_w %}
+{% set_global shelf_rows = shelf_rows | concat(with=[shelf_row]) %}
+{% set_global shelf_row = [] %}
+{% set_global shelf_row_w = 0 %}
+{% endif %}
+{% set_global shelf_row = shelf_row | concat(with=[book]) %}
+{% set_global shelf_row_w = shelf_row_w + w + gap %}
+{% endfor %}
+{% if shelf_row | length > 0 %}
+{% set_global shelf_rows = shelf_rows | concat(with=[shelf_row]) %}
+{% endif %}
+
+<div class="bookshelf">
+  <div class="bookshelf-scale">
+    <div class="bookshelf-inner">
+      {% if section.content %}<div class="bookshelf-intro">{{ section.content | safe }}</div>{% endif %}
+      {% for row in shelf_rows %}
+      <div class="shelf-row">
+        {% for book in row %}
+        {% set w = book.extra.width | default(value=64) | int %}
+        {% set h = book.extra.height | default(value=96) | int %}
+        <div class="book-tile" style="width: {{ w }}px">
+          <a class="book-cover-link" href="{{ book.permalink }}">
+            <img class="bookshelf-cover" src="{{ book.extra.cover | safe }}"
+                 width="{{ w }}" height="{{ h }}" alt="Cover of {{ book.title }}">
+          </a>
+          <div class="book-info-card">
+            <a class="book-info-link" href="{{ book.permalink }}">{{ book.title }}</a>
+            {% if book.extra.blurb %}<p class="book-blurb-mobile">{{ book.extra.blurb }}</p>{% endif %}
+            {% if book.extra.blurb %}<p class="book-blurb-tooltip">{{ book.extra.blurb }}</p>{% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="shelf-plank" role="presentation"></div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endblock content %}

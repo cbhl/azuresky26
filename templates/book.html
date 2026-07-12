@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block head_extra %}
+{% set bookshelf_section = get_section(path="bookshelf/_index.md") %}
+{% if bookshelf_section.extra.visible is not defined or not bookshelf_section.extra.visible %}
+<meta name="robots" content="noindex, nofollow">
+{% endif %}
+{% endblock head_extra %}
+
+{% block content %}
+{% set bookshelf_section = get_section(path="bookshelf/_index.md") %}
+{% if bookshelf_section.extra.visible is not defined or not bookshelf_section.extra.visible %}
+<p>Not found.</p>
+{% else %}
+<article class="book-detail">
+  <h1>{{ page.title }}</h1>
+  {% if page.extra.author %}<p class="book-author">{{ page.extra.author }}</p>{% endif %}
+  {% if page.extra.cover and page.extra.width and page.extra.height %}
+  <p>
+    <img class="bookshelf-cover" src="{{ page.extra.cover | safe }}"
+         width="{{ page.extra.width }}" height="{{ page.extra.height }}"
+         alt="Cover of {{ page.title }}">
+  </p>
+  {% endif %}
+  {% if page.extra.blurb %}<p class="book-blurb">{{ page.extra.blurb }}</p>{% endif %}
+  {{ page.content | safe }}
+</article>
+{% endif %}
+{% endblock content %}

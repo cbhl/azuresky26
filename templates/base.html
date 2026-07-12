@@ -21,8 +21,12 @@
         <hr>
         <div id="blog-title"><a href="/">{{ config.title }}</a></div>
         <div id="blog-nav">
+            {% set defaults_section = get_section(path="defaults/_index.md") %}
+            {% set bookshelf_section = get_section(path="bookshelf/_index.md") %}
             <a href="/resume/">Résumé</a> |
-            <a href="/travel/">Travel</a> |
+            <a href="/travel/">Travel</a>{% if defaults_section.extra.visible %} |
+            <a href="/defaults/">Defaults</a>{% endif %}{% if bookshelf_section.extra.visible %} |
+            <a href="/bookshelf/">Bookshelf</a>{% endif %} |
             Blog |
             <a href="https://linkedin.com/in/m9chang/">LinkedIn</a>
         </div>

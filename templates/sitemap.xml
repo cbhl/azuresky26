@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- set defaults_section = get_section(path="defaults/_index.md") %}
+    {%- set bookshelf_section = get_section(path="bookshelf/_index.md") %}
+    {%- set hide_defaults = defaults_section.extra.visible is not defined or not defaults_section.extra.visible %}
+    {%- set hide_bookshelf = bookshelf_section.extra.visible is not defined or not bookshelf_section.extra.visible %}
     {%- for sitemap_entry in entries %}
     {%- if sitemap_entry.extra.hidden is not defined or not sitemap_entry.extra.hidden %}
+    {%- if hide_defaults and "/defaults/" in sitemap_entry.permalink %}{% continue %}{% endif -%}
+    {%- if hide_bookshelf and "/bookshelf/" in sitemap_entry.permalink %}{% continue %}{% endif -%}
     <url>
         <loc>{{ sitemap_entry.permalink | escape_xml | safe }}</loc>
         {%- if sitemap_entry.updated %}
