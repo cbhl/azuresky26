@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set flights = load_data(path="data/flights.json") %}
+{% set stats = flights.stats %}
+
+<h1>{{ section.title }}</h1>
+
+<section class="travel-stats" aria-label="Flight statistics">
+  <h2>In the air</h2>
+  {% if stats.flights > 0 %}
+  <dl class="travel-stats-grid">
+    <div><dt>Flights</dt><dd>{{ stats.flights }}</dd></div>
+    <div><dt>Airports</dt><dd>{{ stats.airports }}</dd></div>
+    <div><dt>Countries</dt><dd>{{ stats.countries }}</dd></div>
+    <div><dt>Miles</dt><dd>{{ stats.miles }}</dd></div>
+  </dl>
+  {% if stats.top_routes or stats.top_airports or stats.top_airlines or stats.top_aircraft %}
+  <div class="travel-tops">
+    {% if stats.top_routes %}
+    <div class="travel-tops-col">
+      <h3>Top routes</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_routes %}
+        <li><span class="travel-label">{{ item.route }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if stats.top_airports %}
+    <div class="travel-tops-col">
+      <h3>Top airports</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_airports %}
+        <li><span class="travel-label">{{ item.airport }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if stats.top_airlines %}
+    <div class="travel-tops-col">
+      <h3>Top airlines</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_airlines %}
+        <li><span class="travel-label">{{ item.airline }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if stats.top_aircraft %}
+    <div class="travel-tops-col">
+      <h3>Top aircraft</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_aircraft %}
+        <li><span class="travel-label">{{ item.aircraft }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% else %}
+  <p class="travel-empty">Flight stats will appear here after a Flighty export is imported.</p>
+  {% endif %}
+</section>
+
+{% if stats.flights > 0 %}
+<section class="travel-map-section" aria-label="Flight map">
+  <h2>Map</h2>
+  <img class="travel-map" src="/images/travel-map.svg" width="720" height="360"
+       alt="Great-circle flight routes on a Web Mercator world map">
+</section>
+{% endif %}
+
+{% if section.pages %}
+<section class="travel-posts" aria-label="Travel writing">
+  <h2>Trips &amp; notes</h2>
+  <ul class="post-list">
+    {% for post in section.pages %}
+    <li>
+      <span class="post-list-item-date">{{ post.date | date(format="%Y-%m-%d") }}</span>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
+{% if flights.recent %}
+<section class="travel-recent" aria-label="Recent flights">
+  <h2>Recent flights</h2>
+  <table class="travel-flights-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Route</th>
+        <th>Airline</th>
+        <th>Flight</th>
+        <th>Aircraft</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for f in flights.recent %}
+      <tr>
+        <td>{{ f.date }}</td>
+        <td>{{ f.from }} → {{ f.to }}</td>
+        <td>{{ f.airline }}</td>
+        <td>{{ f.flight }}</td>
+        <td>{% if f.aircraft %}{{ f.aircraft }}{% else %}—{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</section>
+{% endif %}
+{% endblock content %}

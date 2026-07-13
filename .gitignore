@@ -2,3 +2,8 @@ public/
 .DS_Store
 Thumbs.db
 
+# Raw Flighty export (generated JSON in data/flights.json is committed)
+data/flighty/export.csv
+data/flighty/*.csv
+
+__pycache__/
