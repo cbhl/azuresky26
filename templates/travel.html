@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 
+{% block head_extra %}
+{% set flights = load_data(path="data/flights.json") %}
+{% if flights.map is defined and flights.map.routes %}
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+{% endif %}
+{% endblock head_extra %}
+
 {% block content %}
 {% set flights = load_data(path="data/flights.json") %}
 {% set stats = flights.stats %}
@@ -68,6 +75,28 @@
   {% endif %}
 </section>
 
+{% if flights.map is defined and flights.map.routes %}
+<section class="travel-map-section" aria-label="Flight map">
+  <h2>Map</h2>
+  <div id="travel-map" class="travel-map" role="img" aria-label="Map of airports and routes flown"></div>
+  <script id="travel-map-data" type="application/json">{{ flights.map | json_encode() | safe }}</script>
+</section>
+{% endif %}
+
+{% if section.pages %}
+<section class="travel-posts" aria-label="Travel writing">
+  <h2>Trips &amp; notes</h2>
+  <ul class="post-list">
+    {% for post in section.pages %}
+    <li>
+      <span class="post-list-item-date">{{ post.date | date(format="%Y-%m-%d") }}</span>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
+
 {% if flights.recent %}
 <section class="travel-recent" aria-label="Recent flights">
   <h2>Recent flights</h2>
@@ -95,18 +124,12 @@
   </table>
 </section>
 {% endif %}
-
-{% if section.pages %}
-<section class="travel-posts" aria-label="Travel writing">
-  <h2>Trips &amp; notes</h2>
-  <ul class="post-list">
-    {% for post in section.pages %}
-    <li>
-      <span class="post-list-item-date">{{ post.date | date(format="%Y-%m-%d") }}</span>
-      <a href="{{ post.permalink }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %}
 {% endblock content %}
+
+{% block scripts %}
+{% set flights = load_data(path="data/flights.json") %}
+{% if flights.map is defined and flights.map.routes %}
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="/js/travel-map.js"></script>
+{% endif %}
+{% endblock scripts %}

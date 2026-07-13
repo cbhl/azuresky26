@@ -487,10 +487,24 @@ code .il {
 }
 
 .travel-stats h2,
+.travel-map-section h2,
 .travel-recent h2,
 .travel-posts h2 {
   font-size: 1.25rem;
   margin-top: 1.5em;
+}
+
+.travel-map {
+  width: 100%;
+  height: 360px;
+  margin: 0 0 1em;
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.travel-map .leaflet-control-attribution {
+  font-size: 0.65rem;
 }
 
 .travel-stats-grid {

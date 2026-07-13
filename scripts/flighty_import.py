@@ -131,6 +131,37 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
         for airport, count in airport_visit_counts.most_common(TOP_LIST_LIMIT)
     ]
 
+    map_airports = []
+    for code in sorted(airport_codes):
+        info = airports.get(code)
+        if info:
+            entry = {"code": code, "lat": info["lat"], "lon": info["lon"]}
+            if info.get("city"):
+                entry["city"] = info["city"]
+            map_airports.append(entry)
+
+    route_segments: set[tuple[str, str]] = set()
+    map_routes = []
+    for flight in flights:
+        segment = (flight["from"], flight["to"])
+        if segment in route_segments:
+            continue
+        origin = airports.get(flight["from"])
+        dest = airports.get(flight["to"])
+        if not origin or not dest:
+            continue
+        route_segments.add(segment)
+        map_routes.append(
+            {
+                "from": flight["from"],
+                "to": flight["to"],
+                "lat1": origin["lat"],
+                "lon1": origin["lon"],
+                "lat2": dest["lat"],
+                "lon2": dest["lon"],
+            }
+        )
+
     return {
         "generated_at": date.today().isoformat(),
         "stats": {
@@ -142,6 +173,10 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
             "top_airports": top_airports,
             "top_airlines": top_airlines,
             "top_aircraft": top_aircraft,
+        },
+        "map": {
+            "airports": map_airports,
+            "routes": map_routes,
         },
         "recent": flights[:RECENT_LIMIT],
     }
