@@ -22,4 +22,6 @@ This writes sanitized flight data to `data/flights.json` (committed). Re-run aft
 
 It also renders `static/images/travel-map.svg` (great-circle routes, Web Mercator).
 
+For architecture and design notes, see [`../../scripts/travel-section.md`](../../scripts/travel-section.md).
+
 Optional flags: `-i path/to/export.csv` and `-o path/to/flights.json`.
