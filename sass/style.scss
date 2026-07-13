@@ -518,17 +518,36 @@ code .il {
   margin: 0;
 }
 
-.travel-top-routes {
-  list-style: none;
-  padding: 0;
+.travel-tops {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25em;
   margin: 0 0 1em;
 }
 
-.travel-top-routes li {
-  margin-bottom: 0.25em;
+@media only screen and (min-width: 600px) {
+  .travel-tops {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
-.travel-route {
+.travel-tops-col h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5em;
+}
+
+.travel-top-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.travel-top-list li {
+  margin-bottom: 0.25em;
+  font-size: 0.9rem;
+}
+
+.travel-label {
   font-variant-numeric: tabular-nums;
 }
 

@@ -26,7 +26,7 @@ DEFAULT_INPUT = ROOT / "data" / "flighty" / "export.csv"
 DEFAULT_OUTPUT = ROOT / "data" / "flights.json"
 AIRPORTS_PATH = ROOT / "data" / "airports.json"
 RECENT_LIMIT = 20
-TOP_ROUTES_LIMIT = 5
+TOP_LIST_LIMIT = 5
 
 
 def pick(row: dict[str, str], key: str) -> str:
@@ -75,6 +75,8 @@ def flight_from_row(row: dict[str, str]) -> dict | None:
 def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
     flights: list[dict] = []
     route_counts: Counter[str] = Counter()
+    airline_counts: Counter[str] = Counter()
+    aircraft_counts: Counter[str] = Counter()
     airport_codes: set[str] = set()
     country_codes: set[str] = set()
     total_miles = 0.0
@@ -91,6 +93,10 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
             flights.append(flight)
             route = f"{flight['from']}-{flight['to']}"
             route_counts[route] += 1
+            if flight["airline"]:
+                airline_counts[flight["airline"]] += 1
+            if flight.get("aircraft"):
+                aircraft_counts[flight["aircraft"]] += 1
             for code in (flight["from"], flight["to"]):
                 airport_codes.add(code)
                 info = airports.get(code)
@@ -108,7 +114,15 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
 
     top_routes = [
         {"route": route, "count": count}
-        for route, count in route_counts.most_common(TOP_ROUTES_LIMIT)
+        for route, count in route_counts.most_common(TOP_LIST_LIMIT)
+    ]
+    top_airlines = [
+        {"airline": airline, "count": count}
+        for airline, count in airline_counts.most_common(TOP_LIST_LIMIT)
+    ]
+    top_aircraft = [
+        {"aircraft": aircraft, "count": count}
+        for aircraft, count in aircraft_counts.most_common(TOP_LIST_LIMIT)
     ]
 
     return {
@@ -119,6 +133,8 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
             "countries": len(country_codes),
             "miles": round(total_miles),
             "top_routes": top_routes,
+            "top_airlines": top_airlines,
+            "top_aircraft": top_aircraft,
         },
         "recent": flights[:RECENT_LIMIT],
     }

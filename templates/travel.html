@@ -19,13 +19,39 @@
     <div><dt>Countries</dt><dd>{{ stats.countries }}</dd></div>
     <div><dt>Miles</dt><dd>{{ stats.miles }}</dd></div>
   </dl>
-  {% if stats.top_routes %}
-  <h3>Top routes</h3>
-  <ul class="travel-top-routes">
-    {% for item in stats.top_routes %}
-    <li><span class="travel-route">{{ item.route }}</span> ({{ item.count }})</li>
-    {% endfor %}
-  </ul>
+  {% if stats.top_routes or stats.top_airlines or stats.top_aircraft %}
+  <div class="travel-tops">
+    {% if stats.top_routes %}
+    <div class="travel-tops-col">
+      <h3>Top routes</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_routes %}
+        <li><span class="travel-label">{{ item.route }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if stats.top_airlines %}
+    <div class="travel-tops-col">
+      <h3>Top airlines</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_airlines %}
+        <li><span class="travel-label">{{ item.airline }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if stats.top_aircraft %}
+    <div class="travel-tops-col">
+      <h3>Top aircraft</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_aircraft %}
+        <li><span class="travel-label">{{ item.aircraft }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
   {% endif %}
   {% else %}
   <p class="travel-empty">Flight stats will appear here after a Flighty export is imported.</p>
