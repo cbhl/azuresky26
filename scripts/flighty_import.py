@@ -198,6 +198,13 @@ def main() -> int:
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2) + "\n")
 
+    sys.path.insert(0, str(ROOT / "scripts"))
+    from render_travel_map import render_travel_map
+
+    map_output = ROOT / "static" / "images" / "travel-map.svg"
+    if render_travel_map(payload.get("map", {}), map_output):
+        print(f"Wrote {map_output}")
+
     stats = payload["stats"]
     print(
         f"Wrote {args.output}: {stats['flights']} flights, "

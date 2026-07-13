@@ -6,3 +6,4 @@ Thumbs.db
 data/flighty/export.csv
 data/flighty/*.csv
 
+__pycache__/

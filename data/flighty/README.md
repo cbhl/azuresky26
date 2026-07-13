@@ -20,4 +20,6 @@ python3 scripts/flighty_import.py
 
 This writes sanitized flight data to `data/flights.json` (committed). Re-run after each new export.
 
+It also renders `static/images/travel-map.svg` (great-circle routes, Web Mercator).
+
 Optional flags: `-i path/to/export.csv` and `-o path/to/flights.json`.
