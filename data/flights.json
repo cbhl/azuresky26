@@ -27,6 +27,28 @@
         "count": 7
       }
     ],
+    "top_airports": [
+      {
+        "airport": "SFO",
+        "count": 139
+      },
+      {
+        "airport": "YYZ",
+        "count": 67
+      },
+      {
+        "airport": "LAX",
+        "count": 26
+      },
+      {
+        "airport": "ORD",
+        "count": 16
+      },
+      {
+        "airport": "JFK",
+        "count": 14
+      }
+    ],
     "top_airlines": [
       {
         "airline": "ACA",

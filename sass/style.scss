@@ -520,14 +520,14 @@ code .il {
 
 .travel-tops {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.25em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25em 1em;
   margin: 0 0 1em;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
   .travel-tops {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

@@ -77,6 +77,7 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
     route_counts: Counter[str] = Counter()
     airline_counts: Counter[str] = Counter()
     aircraft_counts: Counter[str] = Counter()
+    airport_visit_counts: Counter[str] = Counter()
     airport_codes: set[str] = set()
     country_codes: set[str] = set()
     total_miles = 0.0
@@ -99,6 +100,7 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
                 aircraft_counts[flight["aircraft"]] += 1
             for code in (flight["from"], flight["to"]):
                 airport_codes.add(code)
+                airport_visit_counts[code] += 1
                 info = airports.get(code)
                 if info and info.get("country"):
                     country_codes.add(info["country"])
@@ -124,6 +126,10 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
         {"aircraft": aircraft, "count": count}
         for aircraft, count in aircraft_counts.most_common(TOP_LIST_LIMIT)
     ]
+    top_airports = [
+        {"airport": airport, "count": count}
+        for airport, count in airport_visit_counts.most_common(TOP_LIST_LIMIT)
+    ]
 
     return {
         "generated_at": date.today().isoformat(),
@@ -133,6 +139,7 @@ def import_csv(input_path: Path, airports: dict[str, dict]) -> dict:
             "countries": len(country_codes),
             "miles": round(total_miles),
             "top_routes": top_routes,
+            "top_airports": top_airports,
             "top_airlines": top_airlines,
             "top_aircraft": top_aircraft,
         },

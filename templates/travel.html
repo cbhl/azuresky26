@@ -19,7 +19,7 @@
     <div><dt>Countries</dt><dd>{{ stats.countries }}</dd></div>
     <div><dt>Miles</dt><dd>{{ stats.miles }}</dd></div>
   </dl>
-  {% if stats.top_routes or stats.top_airlines or stats.top_aircraft %}
+  {% if stats.top_routes or stats.top_airports or stats.top_airlines or stats.top_aircraft %}
   <div class="travel-tops">
     {% if stats.top_routes %}
     <div class="travel-tops-col">
@@ -27,6 +27,16 @@
       <ul class="travel-top-list">
         {% for item in stats.top_routes %}
         <li><span class="travel-label">{{ item.route }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if stats.top_airports %}
+    <div class="travel-tops-col">
+      <h3>Top airports</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_airports %}
+        <li><span class="travel-label">{{ item.airport }}</span> ({{ item.count }})</li>
         {% endfor %}
       </ul>
     </div>
