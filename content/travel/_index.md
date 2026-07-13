@@ -1,5 +1,5 @@
 +++
-title = "Travel"
+title = "Travel Notes"
 template = "travel.html"
 sort_by = "date"
 +++
