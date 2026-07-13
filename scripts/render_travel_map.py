@@ -19,6 +19,8 @@ from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_INPUT = ROOT / "data" / "flights.json"
 DEFAULT_OUTPUT = ROOT / "static" / "images" / "travel-map.svg"
+LAND_PATH = ROOT / "data" / "ne_110m_land.geojson"
+COASTLINE_PATH = ROOT / "data" / "ne_110m_coastline.geojson"
 
 WIDTH = 720
 HEIGHT = 360
@@ -27,6 +29,8 @@ ROUTE_SAMPLES = 64
 
 # Light palette that reads on the site's dark and light backgrounds.
 OCEAN = "#d8e6f2"
+LAND_FILL = "#ebe7df"
+COAST_STROKE = "#8b949c"
 ROUTE_STROKE = "#0070e0"
 AIRPORT_FILL = "#0070e0"
 AIRPORT_STROKE = "#004080"
@@ -121,18 +125,95 @@ def split_at_antimeridian(points: list[tuple[float, float]]) -> list[list[tuple[
     return segments
 
 
-def path_for_segments(segments: Iterable[list[tuple[float, float]]]) -> str:
+def path_for_segments(segments: Iterable[list[tuple[float, float]]], close: bool = False) -> str:
     parts: list[str] = []
     for segment in segments:
         if len(segment) < 2:
             continue
         coords = [project(lat, lon) for lat, lon in segment]
+        if _is_spurious_dateline_span(coords):
+            continue
         start_x, start_y = coords[0]
         line = f"M {start_x:.2f} {start_y:.2f}"
         for x, y in coords[1:]:
             line += f" L {x:.2f} {y:.2f}"
+        if close and len(segment) >= 3:
+            line += " Z"
         parts.append(line)
     return " ".join(parts)
+
+
+def _is_spurious_dateline_span(coords: list[tuple[float, float]]) -> bool:
+    if len(coords) > 4:
+        return False
+    xs = [x for x, _ in coords]
+    return max(xs) - min(xs) > WIDTH * 0.85
+
+
+def latlon_ring(coords: list) -> list[tuple[float, float]]:
+    return [(pt[1], normalize_lon(pt[0])) for pt in coords]
+
+
+def geometry_line_paths(geom: dict) -> list[str]:
+    gtype = geom["type"]
+    coords = geom["coordinates"]
+    paths: list[str] = []
+
+    if gtype == "LineString":
+        linestrings = [coords]
+    elif gtype == "MultiLineString":
+        linestrings = coords
+    else:
+        return paths
+
+    for line in linestrings:
+        for segment in split_at_antimeridian(latlon_ring(line)):
+            path = path_for_segments([segment])
+            if path:
+                paths.append(path)
+    return paths
+
+
+def geometry_land_paths(geom: dict) -> list[str]:
+    gtype = geom["type"]
+    coords = geom["coordinates"]
+    polygons: list = []
+
+    if gtype == "Polygon":
+        polygons = [coords]
+    elif gtype == "MultiPolygon":
+        polygons = coords
+    else:
+        return []
+
+    paths: list[str] = []
+    for polygon in polygons:
+        for ring in polygon:
+            for segment in split_at_antimeridian(latlon_ring(ring)):
+                path = path_for_segments([segment], close=len(segment) >= 3)
+                if path:
+                    paths.append(path)
+    return paths
+
+
+def load_land_paths() -> list[str]:
+    if not LAND_PATH.exists():
+        return []
+    data = json.loads(LAND_PATH.read_text())
+    paths: list[str] = []
+    for feature in data.get("features", []):
+        paths.extend(geometry_land_paths(feature["geometry"]))
+    return paths
+
+
+def load_coastline_paths() -> list[str]:
+    if not COASTLINE_PATH.exists():
+        return []
+    data = json.loads(COASTLINE_PATH.read_text())
+    paths: list[str] = []
+    for feature in data.get("features", []):
+        paths.extend(geometry_line_paths(feature["geometry"]))
+    return paths
 
 
 def graticule_paths() -> str:
@@ -172,8 +253,25 @@ def render_travel_map(map_data: dict, output_path: Path) -> bool:
             f"<title>{escape(title)}</title></circle>"
         )
 
+    land_paths = load_land_paths()
+    coastline_paths = load_coastline_paths()
+    land_layer = ""
+    if land_paths:
+        land_layer = (
+            f'<g fill="{LAND_FILL}" fill-rule="evenodd" stroke="none">'
+            f'<path d="{" ".join(land_paths)}"/></g>'
+        )
+    coast_layer = ""
+    if coastline_paths:
+        coast_layer = (
+            f'<g fill="none" stroke="{COAST_STROKE}" stroke-width="0.6">'
+            f'{" ".join(f"<path d=\"{path}\"/>" for path in coastline_paths)}</g>'
+        )
+
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" role="img" aria-label="Great-circle flight routes on a Web Mercator world map">
   <rect width="100%" height="100%" fill="{OCEAN}"/>
+  {land_layer}
+  {coast_layer}
   <g stroke="{GRATICULE}" stroke-width="0.5" fill="none">{graticule_paths()}</g>
   <g stroke="{ROUTE_STROKE}" stroke-width="1.25" stroke-opacity="0.55" fill="none">
     {" ".join(f'<path d="{path}"/>' for path in route_paths)}
