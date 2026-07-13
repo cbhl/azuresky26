@@ -23,3 +23,14 @@ To expose the dev server on all interfaces (useful in the cloud VM): `zola serve
 - The config file is named `zola.toml`, not the Zola default `config.toml`. **Zola >= 0.22 reads `zola.toml` natively**, so plain `zola serve` / `zola build` / `zola check` work. On older Zola versions you would need to pass `--config zola.toml`.
 - `deploy.sh` runs `zola build` then `rsync`s `public/` to a NearlyFreeSpeech.net host over SSH. It is for production deploys only and requires SSH credentials — do not run it for local testing.
 - `themes/` is intentionally empty (no external theme dependency).
+
+## Pull request workflow
+
+When opening or updating a PR:
+
+1. Run `zola check`.
+2. Inspect the diff against `main` and determine which site pages are visually affected. Explore `content/`, `templates/`, and related paths as needed — do not assume a fixed page list.
+3. Run `zola serve --interface 0.0.0.0 --port 1111` and screenshot each affected page (full-page). Save to `/opt/cursor/artifacts/screenshots/`.
+4. Embed screenshots in the PR description using absolute artifact paths (e.g. `/opt/cursor/artifacts/screenshots/...`); they are uploaded automatically.
+
+If nothing renderable changed, skip screenshots and note that in the PR.
