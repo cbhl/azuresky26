@@ -42,8 +42,13 @@
         {% set h = book.extra.height | default(value=96) | int %}
         <div class="book-tile" style="width: {{ w }}px">
           <a class="book-cover-link" href="{{ book.permalink }}">
+            {% if book.extra.cover %}
             <img class="bookshelf-cover" src="{{ book.extra.cover | safe }}"
                  width="{{ w }}" height="{{ h }}" alt="Cover of {{ book.title }}">
+            {% else %}
+            <div class="book-cover-placeholder" style="width: {{ w }}px; height: {{ h }}px"
+                 aria-label="Cover placeholder for {{ book.title }}"></div>
+            {% endif %}
           </a>
           <div class="book-info-card">
             <a class="book-info-link" href="{{ book.permalink }}">{{ book.title }}</a>
