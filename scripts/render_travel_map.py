@@ -24,8 +24,8 @@ COASTLINE_PATH = ROOT / "data" / "ne_110m_coastline.geojson"
 
 WIDTH = 720
 HEIGHT = 360
-MAX_LAT = 85.05112878
-MIN_LAT = -58.0  # crop Antarctica
+VIEW_MIN_LAT = -58.0  # crop Antarctica
+VIEW_MAX_LAT = 72.0  # crop Arctic (routes peak ~64°N)
 ROUTE_SAMPLES = 64
 
 # Light palette that reads on the site's dark and light backgrounds.
@@ -43,13 +43,13 @@ def normalize_lon(lon: float) -> float:
 
 
 def mercator_y(lat: float) -> float:
-    lat = max(min(lat, MAX_LAT), MIN_LAT)
+    lat = max(min(lat, VIEW_MAX_LAT), VIEW_MIN_LAT)
     lat_rad = math.radians(lat)
     return math.log(math.tan(math.pi / 4 + lat_rad / 2))
 
 
-_Y_MAX = mercator_y(MAX_LAT)
-_Y_MIN = mercator_y(MIN_LAT)
+_Y_MAX = mercator_y(VIEW_MAX_LAT)
+_Y_MIN = mercator_y(VIEW_MIN_LAT)
 _Y_SPAN = _Y_MAX - _Y_MIN
 
 
@@ -62,7 +62,7 @@ def project_x(lon: float) -> float:
 
 
 def project(lat: float, lon: float) -> tuple[float, float]:
-    lat = max(lat, MIN_LAT)
+    lat = max(min(lat, VIEW_MAX_LAT), VIEW_MIN_LAT)
     x = project_x(lon)
     y = (1 - (mercator_y(lat) - _Y_MIN) / _Y_SPAN) * HEIGHT
     return x, y
@@ -168,11 +168,16 @@ def path_for_segments(segments: Iterable[list[tuple[float, float]]], close: bool
 
 
 def latlon_ring(coords: list) -> list[tuple[float, float]]:
-    return [(pt[1], normalize_lon(pt[0])) for pt in coords if pt[1] >= MIN_LAT]
+    return [
+        (pt[1], normalize_lon(pt[0]))
+        for pt in coords
+        if VIEW_MIN_LAT <= pt[1] <= VIEW_MAX_LAT
+    ]
 
 
-def ring_below_crop(ring: list) -> bool:
-    return max(pt[1] for pt in ring) < MIN_LAT
+def ring_outside_view(ring: list) -> bool:
+    lats = [pt[1] for pt in ring]
+    return max(lats) < VIEW_MIN_LAT or min(lats) > VIEW_MAX_LAT
 
 
 def geometry_line_paths(geom: dict) -> list[str]:
@@ -188,7 +193,7 @@ def geometry_line_paths(geom: dict) -> list[str]:
         return paths
 
     for line in linestrings:
-        if ring_below_crop(line):
+        if ring_outside_view(line):
             continue
         ring = latlon_ring(line)
         if len(ring) < 2:
@@ -215,7 +220,7 @@ def geometry_land_paths(geom: dict) -> list[str]:
     paths: list[str] = []
     for polygon in polygons:
         for ring in polygon:
-            if ring_below_crop(ring):
+            if ring_outside_view(ring):
                 continue
             ring_pts = latlon_ring(ring)
             if len(ring_pts) < 2:
@@ -252,7 +257,7 @@ def graticule_paths() -> str:
     for lon in range(-180, 181, 30):
         x, _ = project(0, lon)
         lines.append(f'M {x:.2f} 0 L {x:.2f} {HEIGHT:.2f}')
-    for lat in range(-60, 61, 30):
+    for lat in range(-60, 73, 30):
         _, y = project(lat, 0)
         lines.append(f'M 0 {y:.2f} L {WIDTH:.2f} {y:.2f}')
     return " ".join(lines)
