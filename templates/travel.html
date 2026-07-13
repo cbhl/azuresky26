@@ -6,10 +6,6 @@
 
 <h1>{{ section.title }}</h1>
 
-{% if section.content %}
-<div class="travel-intro">{{ section.content | safe }}</div>
-{% endif %}
-
 <section class="travel-stats" aria-label="Flight statistics">
   <h2>In the air</h2>
   {% if stats.flights > 0 %}
