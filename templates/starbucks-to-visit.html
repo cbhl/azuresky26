@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set stats = load_data(path="data/starbucks/starbucks.json") %}
+
+<p class="starbucks-back"><a href="/starbucks/">← Starbucks</a></p>
+<h1>{{ page.title }}</h1>
+
+{% if stats.to_visit %}
+<p class="starbucks-history-span">
+  {{ stats.to_visit | length }} unvisited standalone stores
+  ({{ stats.standalone.visited }} of {{ stats.standalone.total }} visited).
+</p>
+
+<table class="travel-flights-table starbucks-sort-table" id="to-visit-table">
+  <thead>
+    <tr>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="0" data-type="text" aria-label="Sort by name">Name</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="1" data-type="text" aria-label="Sort by street">Street</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="2" data-type="text" aria-label="Sort by city">City</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="3" data-type="text" aria-label="Sort by region">Region</button></th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for store in stats.to_visit %}
+    <tr>
+      <td data-sort="{{ store.name | lower }}">{{ store.name }}</td>
+      <td data-sort="{{ store.street | lower }}">{{ store.street }}</td>
+      <td data-sort="{{ store.city | lower }}">{{ store.city }}</td>
+      <td data-sort="{{ store.region | lower }}">{{ store.region }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% else %}
+<p class="travel-empty">No unvisited standalone stores — or stats have not been imported yet.</p>
+{% endif %}
+{% endblock content %}
+
+{% block scripts %}
+<script>
+(function () {
+  var table = document.getElementById("to-visit-table");
+  if (!table) return;
+  var tbody = table.tBodies[0];
+  var buttons = table.querySelectorAll(".starbucks-sort-btn");
+  var state = { col: 3, dir: 1 };
+
+  function sortBy(col, dir) {
+    var rows = Array.prototype.slice.call(tbody.rows);
+    rows.sort(function (a, b) {
+      var av = (a.cells[col].getAttribute("data-sort") || a.cells[col].textContent || "").trim();
+      var bv = (b.cells[col].getAttribute("data-sort") || b.cells[col].textContent || "").trim();
+      if (av < bv) return -1 * dir;
+      if (av > bv) return 1 * dir;
+      return 0;
+    });
+    rows.forEach(function (row) { tbody.appendChild(row); });
+  }
+
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var col = parseInt(btn.getAttribute("data-col"), 10);
+      var dir = state.col === col ? -state.dir : 1;
+      state = { col: col, dir: dir };
+      buttons.forEach(function (b) {
+        b.removeAttribute("aria-sort");
+        b.classList.remove("is-asc", "is-desc");
+      });
+      btn.setAttribute("aria-sort", dir === 1 ? "ascending" : "descending");
+      btn.classList.add(dir === 1 ? "is-asc" : "is-desc");
+      sortBy(col, dir);
+    });
+  });
+
+  // Default: region (col 3), matching import order.
+  var regionBtn = table.querySelector('.starbucks-sort-btn[data-col="3"]');
+  if (regionBtn) {
+    regionBtn.setAttribute("aria-sort", "ascending");
+    regionBtn.classList.add("is-asc");
+  }
+})();
+</script>
+{% endblock scripts %}

@@ -586,6 +586,83 @@ code .il {
   opacity: 0.75;
 }
 
+/* Starbucks page: reuse .travel-* layout; thin extras only */
+.starbucks-subhead {
+  font-size: 1rem;
+  margin: 1em 0 0.5em;
+}
+
+.starbucks-tops {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media only screen and (min-width: 480px) {
+  .starbucks-tops {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.starbucks-history-span {
+  margin-top: -0.25em;
+  margin-bottom: 1em;
+}
+
+.starbucks-map {
+  max-width: 100%;
+}
+
+.starbucks-unmatched {
+  margin-bottom: 1em;
+}
+
+.starbucks-back {
+  margin: 0 0 0.5em;
+  font-size: 0.9rem;
+}
+
+.starbucks-sort-table th {
+  opacity: 1;
+  padding-right: 0.75em;
+  white-space: nowrap;
+}
+
+.starbucks-sort-btn {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.75;
+  text-align: left;
+}
+
+.starbucks-sort-btn:hover,
+.starbucks-sort-btn:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.starbucks-sort-btn.is-asc::after {
+  content: " \25B2";
+  font-size: 0.7em;
+  opacity: 0.85;
+}
+
+.starbucks-sort-btn.is-desc::after {
+  content: " \25BC";
+  font-size: 0.7em;
+  opacity: 0.85;
+}
+
+.travel-stats-grid a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .post-date {
   opacity: 0.75;
   margin-top: -0.5em;

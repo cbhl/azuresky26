@@ -6,4 +6,18 @@ Thumbs.db
 data/flighty/export.csv
 data/flighty/*.csv
 
+# Raw Starbucks receipts / fetch artifacts (generated starbucks.json is committed)
+data/starbucks/receipts.json
+data/starbucks/receipt-errors.json
+data/starbucks/unmatched-receipts.json
+data/starbucks/_*.json
+data/starbucks/page-*.json
+data/starbucks/all-items.json
+data/starbucks/locator-*.json
+data/starbucks/stores-all-sweep.json
+data/starbucks/sweep-meta.json
+data/starbucks/starbuckseverywhere-*
+get-transaction-history*.json
+get-transaction-history.sh
+
 __pycache__/

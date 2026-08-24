@@ -1,0 +1,34 @@
+{
+  "endpoint": "GET https://www.starbucks.ca/apiproxy/v1/locations",
+  "query_params": [
+    "lat",
+    "lng",
+    "place",
+    "features"
+  ],
+  "response": "JSON array of {distance, isFavorite, isNearby, isPrevious, recommendationReason, store:{id, storeNumber, name, ownershipTypeCode, address:{...}, coordinates:{latitude,longitude}, amenities, ...}}",
+  "limit_per_request": 50,
+  "gta_total": 312,
+  "standalone": 195,
+  "within_grocery": 68,
+  "banner_counts": {
+    "within-retailer": 4,
+    "within-grocery": 68,
+    "standalone": 195,
+    "embedded-other": 23,
+    "licensed": 22
+  },
+  "ownership_counts": {
+    "CO": 206,
+    "LS": 106
+  },
+  "region_counts": {
+    "Durham": 25,
+    "Halton": 35,
+    "Peel": 58,
+    "Toronto": 141,
+    "York Region": 53
+  },
+  "sbe_gta_rows": 206,
+  "stores_gta_json_bytes": 148307
+}

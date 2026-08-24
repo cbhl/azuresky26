@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set stats = load_data(path="data/starbucks/starbucks.json") %}
+
+<h1>{{ section.title }}</h1>
+
+<section class="travel-stats" aria-label="Starbucks visit statistics">
+  <h2>Visited standalone stores</h2>
+  {% if stats.standalone and stats.standalone.total > 0 %}
+  <dl class="travel-stats-grid">
+    <div><dt>Visited</dt><dd>{{ stats.standalone.visited }}</dd></div>
+    <div><dt>Total</dt><dd>{{ stats.standalone.total }}</dd></div>
+    <div><dt>Remaining</dt><dd>{% if stats.standalone.remaining > 0 %}<a href="/starbucks/to-visit/">{{ stats.standalone.remaining }}</a>{% else %}{{ stats.standalone.remaining }}{% endif %}</dd></div>
+    <div><dt>History</dt><dd>{{ stats.history_count }}</dd></div>
+  </dl>
+  {% if stats.date_range and stats.date_range.min and stats.date_range.max %}
+  <p class="travel-empty starbucks-history-span">
+    Receipts {{ stats.date_range.min }} – {{ stats.date_range.max }}
+    ({{ stats.receipt_count }} receipts)
+  </p>
+  {% endif %}
+
+  {% if stats.by_region %}
+  <h3 class="starbucks-subhead">By region</h3>
+  <table class="travel-flights-table starbucks-region-table">
+    <thead>
+      <tr>
+        <th>Region</th>
+        <th>Visited</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for row in stats.by_region %}
+      <tr>
+        <td>{{ row.region }}</td>
+        <td>{{ row.visited }}</td>
+        <td>{{ row.total }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+
+  {% if stats.top_items or stats.top_stores %}
+  <div class="travel-tops starbucks-tops">
+    {% if stats.top_items %}
+    <div class="travel-tops-col">
+      <h3>Top ordered items</h3>
+      <ul class="travel-top-list">
+        {% for item in stats.top_items %}
+        <li><span class="travel-label">{{ item.item }}</span> ({{ item.count }})</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    {% if stats.top_stores %}
+    <div class="travel-tops-col">
+      <h3>Top Starbucks</h3>
+      <ul class="travel-top-list">
+        {% for store in stats.top_stores %}
+        <li><span class="travel-label">{{ store.name }}</span> ({{ store.count }} visits)</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  {% endif %}
+
+  {% if stats.unmatched %}
+  <div class="starbucks-unmatched">
+    <h3 class="starbucks-subhead">Unmatched receipts</h3>
+    <ul class="travel-top-list">
+      {% for u in stats.unmatched %}
+      <li>
+        <span class="travel-label">{% if u.storeName %}{{ u.storeName }}{% elif u.storeNumber %}{{ u.storeNumber }}{% else %}unknown{% endif %}</span>
+        {% if u.reason %} — {{ u.reason }}{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {% else %}
+  <p class="travel-empty">Starbucks stats will appear here after receipts are imported.</p>
+  {% endif %}
+</section>
+
+{% if stats.standalone and stats.standalone.total > 0 %}
+<section class="travel-map-section" aria-label="Starbucks map">
+  <h2>Map</h2>
+  <img class="travel-map starbucks-map" src="/images/starbucks-map.svg" width="720" height="420"
+       alt="GTA standalone Starbucks stores visited vs remaining, plus other visited locations">
+</section>
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,3376 @@
+{
+  "generated_at": "2026-08-24",
+  "date_range": {
+    "min": "2026-04-26",
+    "max": "2026-08-23"
+  },
+  "history_count": 270,
+  "receipt_count": 156,
+  "standalone": {
+    "total": 195,
+    "visited": 18,
+    "remaining": 177
+  },
+  "by_region": [
+    {
+      "region": "Toronto",
+      "total": 92,
+      "visited": 8
+    },
+    {
+      "region": "Peel",
+      "total": 31,
+      "visited": 1
+    },
+    {
+      "region": "York Region",
+      "total": 31,
+      "visited": 9
+    },
+    {
+      "region": "Halton",
+      "total": 23,
+      "visited": 0
+    },
+    {
+      "region": "Durham",
+      "total": 18,
+      "visited": 0
+    }
+  ],
+  "top_items": [
+    {
+      "item": "Cool Lime Lemonade Refresher",
+      "count": 33
+    },
+    {
+      "item": "Starbucks\u00ae Iced Coffee Blend",
+      "count": 28
+    },
+    {
+      "item": "Lemonade",
+      "count": 22
+    },
+    {
+      "item": "Iced Peach Green Tea Lemonade",
+      "count": 17
+    },
+    {
+      "item": "Rolled Steel-Cut Oatmeal",
+      "count": 12
+    },
+    {
+      "item": "Jalape\u00f1o Chicken Pocket",
+      "count": 10
+    },
+    {
+      "item": "8 Maple Mini Pancakes",
+      "count": 10
+    },
+    {
+      "item": "Strawberry A\u00e7a\u00ed Lemonade Refresher",
+      "count": 8
+    }
+  ],
+  "top_stores": [
+    {
+      "name": "Bayview & Romfield",
+      "storeNumber": "23280-204964",
+      "count": 58,
+      "type": "standalone"
+    },
+    {
+      "name": "Yonge & Dundas",
+      "storeNumber": "4497-90784",
+      "count": 40,
+      "type": "standalone"
+    },
+    {
+      "name": "Yonge & Finch",
+      "storeNumber": "4717-102447",
+      "count": 15,
+      "type": "standalone"
+    },
+    {
+      "name": "Oak Ridges",
+      "storeNumber": "58132-289531",
+      "count": 11,
+      "type": "standalone"
+    },
+    {
+      "name": "Yonge St & Hwy 7",
+      "storeNumber": "54228-286471",
+      "count": 9,
+      "type": "standalone"
+    },
+    {
+      "name": "Jane & Major Mackenzie",
+      "storeNumber": "54360-286336",
+      "count": 3,
+      "type": "standalone"
+    },
+    {
+      "name": "Vaughan Mills - Entry 2 Food C",
+      "storeNumber": "4612-220385",
+      "count": 2,
+      "type": "standalone"
+    },
+    {
+      "name": "439 University Ave",
+      "storeNumber": "56473-289530",
+      "count": 2,
+      "type": "other"
+    }
+  ],
+  "visited_stores": [
+    "201 Main Street",
+    "25 Gateway Blvd",
+    "404 & Major Mackenzie",
+    "5954 Hwy 7",
+    "Bayview & Romfield",
+    "Jane & Major Mackenzie",
+    "King and John",
+    "Markville Mall - Upper Level",
+    "Oak Ridges",
+    "Spadina & Fort York",
+    "Toronto Eaton Centre North",
+    "Union XP Go-West York Concours",
+    "Vaughan Mills - Entry 2 Food C",
+    "Yonge & Dundas",
+    "Yonge & Finch",
+    "Yonge & Park Home",
+    "Yonge St & Hwy 7",
+    "Yorkdale Mall Kiosk"
+  ],
+  "to_visit": [
+    {
+      "name": "170 Evans Avenue",
+      "street": "170 Evans Avenue",
+      "city": "Etobicoke",
+      "region": "Toronto",
+      "address": "170 Evans Avenue, Etobicoke"
+    },
+    {
+      "name": "43 Milner Avenue Building C",
+      "street": "43 Milner Avenue",
+      "city": "Scarborough",
+      "region": "Toronto",
+      "address": "43 Milner Avenue, Scarborough"
+    },
+    {
+      "name": "Eglinton & Warden",
+      "street": "1900 Eglinton Avenue East",
+      "city": "Scarborough",
+      "region": "Toronto",
+      "address": "1900 Eglinton Avenue East, Scarborough"
+    },
+    {
+      "name": "Upper level Scarborough Town C",
+      "street": "300 Borough Dr",
+      "city": "Scarborough",
+      "region": "Toronto",
+      "address": "300 Borough Dr, Scarborough"
+    },
+    {
+      "name": "Victoria Terrace",
+      "street": "1430 Lawrence Ave E",
+      "city": "Scarborough",
+      "region": "Toronto",
+      "address": "1430 Lawrence Ave E, Scarborough"
+    },
+    {
+      "name": "1156 Kennedy Road",
+      "street": "1156 Kennedy Road",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1156 Kennedy Road, Toronto"
+    },
+    {
+      "name": "150 Park Lawn Road",
+      "street": "150 Park Lawn Rd",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "150 Park Lawn Rd, Toronto"
+    },
+    {
+      "name": "16 York Street",
+      "street": "16 York St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "16 York St, Toronto"
+    },
+    {
+      "name": "1960 Queen Street East",
+      "street": "1960 Queen St E",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1960 Queen St E, Toronto"
+    },
+    {
+      "name": "2 St. Clair Avenue East",
+      "street": "2 St. Clair Avenue East",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2 St. Clair Avenue East, Toronto"
+    },
+    {
+      "name": "221 Queen Street West",
+      "street": "221 Queen St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "221 Queen St W, Toronto"
+    },
+    {
+      "name": "2210 Bloor St. W.",
+      "street": "2210 Bloor Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2210 Bloor Street, Toronto"
+    },
+    {
+      "name": "2235 Yonge Street",
+      "street": "2235 Yonge St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2235 Yonge St, Toronto"
+    },
+    {
+      "name": "253 Jarvis Street",
+      "street": "253 Jarvis Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "253 Jarvis Street, Toronto"
+    },
+    {
+      "name": "3300 Dufferin Street",
+      "street": "3300 Dufferin Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "3300 Dufferin Street, Toronto"
+    },
+    {
+      "name": "350 Bay Street",
+      "street": "350 Bay St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "350 Bay St, Toronto"
+    },
+    {
+      "name": "444 Eglinton Ave. W.",
+      "street": "444 Eglinton Ave W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "444 Eglinton Ave W, Toronto"
+    },
+    {
+      "name": "446 Spadina Rd.",
+      "street": "446 Spadina Rd",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "446 Spadina Rd, Toronto"
+    },
+    {
+      "name": "485 Church at Wellesley",
+      "street": "485 Church St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "485 Church St, Toronto"
+    },
+    {
+      "name": "4915 Steeles Avenue West",
+      "street": "4915 Steeles Avenue West",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "4915 Steeles Avenue West, Toronto"
+    },
+    {
+      "name": "604 Danforth",
+      "street": "604 Danforth Ave",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "604 Danforth Ave, Toronto"
+    },
+    {
+      "name": "6355 Yonge St",
+      "street": "6355 Yonge St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "6355 Yonge St, Toronto"
+    },
+    {
+      "name": "75 Billy Bishop Way",
+      "street": "75 Billy Bishop Way",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "75 Billy Bishop Way, Toronto"
+    },
+    {
+      "name": "829 The Queensway",
+      "street": "829 The Queensway",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "829 The Queensway, Toronto"
+    },
+    {
+      "name": "869 Queen Street East",
+      "street": "869 Queen St E",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "869 Queen St E, Toronto"
+    },
+    {
+      "name": "Allen Road & Rimrock Road",
+      "street": "170 Rimrock Rd",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "170 Rimrock Rd, Toronto"
+    },
+    {
+      "name": "Avenue & Lawrence",
+      "street": "1507 Avenue Road",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1507 Avenue Road, Toronto"
+    },
+    {
+      "name": "Avenue & St Germain",
+      "street": "1740-42 Avenue Road",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1740-42 Avenue Road, Toronto"
+    },
+    {
+      "name": "Bathurst & Eglinton",
+      "street": "859 Eglinton Avenue West",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "859 Eglinton Avenue West, Toronto"
+    },
+    {
+      "name": "Bathurst & Joicey",
+      "street": "3671 Bathurst St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "3671 Bathurst St, Toronto"
+    },
+    {
+      "name": "Bathurst & Sheppard",
+      "street": "626 Sheppard Ave W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "626 Sheppard Ave W, Toronto"
+    },
+    {
+      "name": "Bay & Charles",
+      "street": "47 Charles St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "47 Charles St W, Toronto"
+    },
+    {
+      "name": "Bay & Cumberland",
+      "street": "1250 Bay St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1250 Bay St, Toronto"
+    },
+    {
+      "name": "Bayview & Millwood",
+      "street": "1545 Bayview Ave",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1545 Bayview Ave, Toronto"
+    },
+    {
+      "name": "Bayview Village",
+      "street": "2901 Bayview Avenue",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2901 Bayview Avenue, Toronto"
+    },
+    {
+      "name": "Bedford & Bloor",
+      "street": "1 Bedford Avenue",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1 Bedford Avenue, Toronto"
+    },
+    {
+      "name": "Bloor & Jarvis",
+      "street": "235 Bloor St. East",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "235 Bloor St. East, Toronto"
+    },
+    {
+      "name": "Bloor & Thompson",
+      "street": "3079-3081 Bloor St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "3079-3081 Bloor St W, Toronto"
+    },
+    {
+      "name": "Bloor & West Mall",
+      "street": "4201 Bloor St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "4201 Bloor St W, Toronto"
+    },
+    {
+      "name": "Castlefield & Caledonia CA",
+      "street": "1320 Castlefield Avenue",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1320 Castlefield Avenue, Toronto"
+    },
+    {
+      "name": "CF Shops at Don Mills",
+      "street": "6 Pabst Lane",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "6 Pabst Lane, Toronto"
+    },
+    {
+      "name": "Cliffside Plaza D/T",
+      "street": "2387 Kingston Rd",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2387 Kingston Rd, Toronto"
+    },
+    {
+      "name": "Coxwell & Plains",
+      "street": "978 Coxwell Ave",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "978 Coxwell Ave, Toronto"
+    },
+    {
+      "name": "Cumberland & Critchley Lane",
+      "street": "110 Bloor St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "110 Bloor St W, Toronto"
+    },
+    {
+      "name": "Dufferin & Steeles",
+      "street": "2081 Steeles Ave W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2081 Steeles Ave W, Toronto"
+    },
+    {
+      "name": "Dundas & Roncesvalles",
+      "street": "2201 Dundas St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2201 Dundas St W, Toronto"
+    },
+    {
+      "name": "Ellesmere & Midland D/T",
+      "street": "1100 Ellesmere Road",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1100 Ellesmere Road, Toronto"
+    },
+    {
+      "name": "Fairview Mall",
+      "street": "1800 Sheppard Ave E",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1800 Sheppard Ave E, Toronto"
+    },
+    {
+      "name": "Finch & Chesswood",
+      "street": "1115 Finch Ave W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1115 Finch Ave W, Toronto"
+    },
+    {
+      "name": "Finch & Hwy 27",
+      "street": "6620 Finch Ave W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "6620 Finch Ave W, Toronto"
+    },
+    {
+      "name": "First Canadian Place PATH",
+      "street": "100 King Street West",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "100 King Street West, Toronto"
+    },
+    {
+      "name": "Front & Berkeley",
+      "street": "351 King Street East",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "351 King Street East, Toronto"
+    },
+    {
+      "name": "Front & John",
+      "street": "300 Front St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "300 Front St W, Toronto"
+    },
+    {
+      "name": "Hanna & Atlantic",
+      "street": "85 Hanna Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "85 Hanna Street, Toronto"
+    },
+    {
+      "name": "Hudson Bay Centre",
+      "street": "2 Bloor St E",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2 Bloor St E, Toronto"
+    },
+    {
+      "name": "Jane & St. Clair",
+      "street": "2575 St Clair Ave W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2575 St Clair Ave W, Toronto"
+    },
+    {
+      "name": "King & Bathurst",
+      "street": "625 King St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "625 King St W, Toronto"
+    },
+    {
+      "name": "Kingston Rd & Bingham Ave",
+      "street": "1020 Kingston Rd",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1020 Kingston Rd, Toronto"
+    },
+    {
+      "name": "Kingston Rd & Rylander",
+      "street": "6714 Kingston Rd",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "6714 Kingston Rd, Toronto"
+    },
+    {
+      "name": "Kingsway Mills",
+      "street": "4242 Dundas St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "4242 Dundas St W, Toronto"
+    },
+    {
+      "name": "Laird & Wicksteed",
+      "street": "65 Wicksteed Ave",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "65 Wicksteed Ave, Toronto"
+    },
+    {
+      "name": "Lakeshore & Leslie Drive-Thru",
+      "street": "23 Leslie Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "23 Leslie Street, Toronto"
+    },
+    {
+      "name": "Midland & McNicoll",
+      "street": "3740 Midland Avenue",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "3740 Midland Avenue, Toronto"
+    },
+    {
+      "name": "Mount Pleasant & Soudan",
+      "street": "694 Mount Pleasant",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "694 Mount Pleasant, Toronto"
+    },
+    {
+      "name": "Portland & Adelaide",
+      "street": "123 Portland Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "123 Portland Street, Toronto"
+    },
+    {
+      "name": "Queen & Victoria",
+      "street": "1 Queen St E",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1 Queen St E, Toronto"
+    },
+    {
+      "name": "Queens Quay & York",
+      "street": "208 Queens Quay West",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "208 Queens Quay West, Toronto"
+    },
+    {
+      "name": "RBC Centre",
+      "street": "155 Wellington St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "155 Wellington St W, Toronto"
+    },
+    {
+      "name": "Richmond & Adelaide Centre",
+      "street": "120 Adelaide Street West",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "120 Adelaide Street West, Toronto"
+    },
+    {
+      "name": "Royal Bank Plaza PATH",
+      "street": "200 Bay Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "200 Bay Street, Toronto"
+    },
+    {
+      "name": "Royal York & The Westway",
+      "street": "1564 Royal York Road",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1564 Royal York Road, Toronto"
+    },
+    {
+      "name": "SECURE ACCESS - SickKids Hospi",
+      "street": "555 University Ave",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "555 University Ave, Toronto"
+    },
+    {
+      "name": "Sheppard & Leslie- CTC",
+      "street": "1015 Sheppard Ave E",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "1015 Sheppard Ave E, Toronto"
+    },
+    {
+      "name": "Sheppard Avenue & Weston Road",
+      "street": "2295 Sheppard Avenue West",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2295 Sheppard Avenue West, Toronto"
+    },
+    {
+      "name": "Sherway Gardens",
+      "street": "25 The West Mall",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "25 The West Mall, Toronto"
+    },
+    {
+      "name": "Six Points Plaza-5230 Dundas S",
+      "street": "5230 Dundas St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "5230 Dundas St W, Toronto"
+    },
+    {
+      "name": "TD Bank Tower - PATH Concourse",
+      "street": "66 Wellington Street West",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "66 Wellington Street West, Toronto"
+    },
+    {
+      "name": "Toronto Eaton Centre South",
+      "street": "220 Yonge St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "220 Yonge St, Toronto"
+    },
+    {
+      "name": "Victoria Park & Consumers Rd.",
+      "street": "2555 Victoria Park Ave",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2555 Victoria Park Ave, Toronto"
+    },
+    {
+      "name": "Yonge & Brookdale",
+      "street": "3250-3252 Yonge Street",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "3250-3252 Yonge Street, Toronto"
+    },
+    {
+      "name": "Yonge & Erskine",
+      "street": "2451 Yonge Street N",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "2451 Yonge Street N, Toronto"
+    },
+    {
+      "name": "Yonge & King",
+      "street": "4 King St W",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "4 King St W, Toronto"
+    },
+    {
+      "name": "York Mills and Lesmill",
+      "street": "861 York Mills Road",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "861 York Mills Road, Toronto"
+    },
+    {
+      "name": "Yorkdale Cafe",
+      "street": "3401 Dufferin St",
+      "city": "Toronto",
+      "region": "Toronto",
+      "address": "3401 Dufferin St, Toronto"
+    },
+    {
+      "name": "Bolton Highway 50",
+      "street": "12550 Hwy 50",
+      "city": "Bolton",
+      "region": "Peel",
+      "address": "12550 Hwy 50, Bolton"
+    },
+    {
+      "name": "10 Earlsbridge Blvd.",
+      "street": "10 Earlsbridge Blvd",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "10 Earlsbridge Blvd, Brampton"
+    },
+    {
+      "name": "17 Worthington Ave",
+      "street": "17 Worthington Avenue",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "17 Worthington Avenue, Brampton"
+    },
+    {
+      "name": "190 Queen Street East",
+      "street": "190 Queen Street East",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "190 Queen Street East, Brampton"
+    },
+    {
+      "name": "3995 Cottrelle Blvd",
+      "street": "3995 Cottrelle Blvd",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "3995 Cottrelle Blvd, Brampton"
+    },
+    {
+      "name": "65 Dusk Dr",
+      "street": "65 Dusk Drive",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "65 Dusk Drive, Brampton"
+    },
+    {
+      "name": "80 Resolution Dr",
+      "street": "80 Resolution Dr",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "80 Resolution Dr, Brampton"
+    },
+    {
+      "name": "90 Great Lakes Dr",
+      "street": "90 Great Lakes Dr",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "90 Great Lakes Dr, Brampton"
+    },
+    {
+      "name": "Bramalea City Centre",
+      "street": "25 Peel Centre Dr",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "25 Peel Centre Dr, Brampton"
+    },
+    {
+      "name": "Queen and Beaumaris",
+      "street": "5 Beaumaris Drive",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "5 Beaumaris Drive, Brampton"
+    },
+    {
+      "name": "Sandalwood Pkwy",
+      "street": "15 Sandalwood Pky W",
+      "city": "Brampton",
+      "region": "Peel",
+      "address": "15 Sandalwood Pky W, Brampton"
+    },
+    {
+      "name": "1016 Eglinton Ave E",
+      "street": "1016 Eglinton Avenue East",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "1016 Eglinton Avenue East, Mississauga"
+    },
+    {
+      "name": "111 Lakeshore Rd W",
+      "street": "111 Lakeshore Rd W",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "111 Lakeshore Rd W, Mississauga"
+    },
+    {
+      "name": "189 Rathburn Rd W",
+      "street": "189 Rathburn Rd W",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "189 Rathburn Rd W, Mississauga"
+    },
+    {
+      "name": "1930 Fowler Dr",
+      "street": "1930 Fowler Dr",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "1930 Fowler Dr, Mississauga"
+    },
+    {
+      "name": "2100 Hurontario St",
+      "street": "2100 Hurontario Street",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "2100 Hurontario Street, Mississauga"
+    },
+    {
+      "name": "2963 Argentia Rd",
+      "street": "2963 Argentia Rd.",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "2963 Argentia Rd., Mississauga"
+    },
+    {
+      "name": "30 World Drive",
+      "street": "30 World Drive",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "30 World Drive, Mississauga"
+    },
+    {
+      "name": "3030 Thomas St",
+      "street": "3030 Thomas St",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "3030 Thomas St, Mississauga"
+    },
+    {
+      "name": "3235 Dundas St W",
+      "street": "3235 Dundas Street West",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "3235 Dundas Street West, Mississauga"
+    },
+    {
+      "name": "334 Dundas Street East",
+      "street": "334 Dundas St E",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "334 Dundas St E, Mississauga"
+    },
+    {
+      "name": "362 Lakeshore Road East",
+      "street": "362 Lakeshore Rd E",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "362 Lakeshore Rd E, Mississauga"
+    },
+    {
+      "name": "4076 Confederation Parkway",
+      "street": "4076 Confederation Parkway",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "4076 Confederation Parkway, Mississauga"
+    },
+    {
+      "name": "5029 Hurontario St",
+      "street": "5029 Hurontario St",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "5029 Hurontario St, Mississauga"
+    },
+    {
+      "name": "5067 Dixie Rd",
+      "street": "5067 Dixie Rd",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "5067 Dixie Rd, Mississauga"
+    },
+    {
+      "name": "6155 Erin Mills Parkway",
+      "street": "6155 Erin Mills Parkway",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "6155 Erin Mills Parkway, Mississauga"
+    },
+    {
+      "name": "6974 Financial Drive",
+      "street": "6974 Financial Dr",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "6974 Financial Dr, Mississauga"
+    },
+    {
+      "name": "960 Southdown Rd",
+      "street": "960 Southdown Road",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "960 Southdown Road, Mississauga"
+    },
+    {
+      "name": "Heartland Town Centre",
+      "street": "6055 Mavis Rd",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "6055 Mavis Rd, Mississauga"
+    },
+    {
+      "name": "Square One South",
+      "street": "100 City Centre Dr",
+      "city": "Mississauga",
+      "region": "Peel",
+      "address": "100 City Centre Dr, Mississauga"
+    },
+    {
+      "name": "Bayview & Pedersen",
+      "street": "129 Pedersen Drive",
+      "city": "Aurora",
+      "region": "York Region",
+      "address": "129 Pedersen Drive, Aurora"
+    },
+    {
+      "name": "Leslie & St. John's Sideroad E",
+      "street": "10 Melvin Robson Ave",
+      "city": "Aurora",
+      "region": "York Region",
+      "address": "10 Melvin Robson Ave, Aurora"
+    },
+    {
+      "name": "Yonge & Ransom",
+      "street": "14980 Yonge St",
+      "city": "Aurora",
+      "region": "York Region",
+      "address": "14980 Yonge St, Aurora"
+    },
+    {
+      "name": "10 Spring Hill Drive",
+      "street": "10 Spring Hill Dr",
+      "city": "King City",
+      "region": "York Region",
+      "address": "10 Spring Hill Dr, King City"
+    },
+    {
+      "name": "70 Copper Creek Dr, Bldg H",
+      "street": "70 Copper Creek Drive Building H,",
+      "city": "Markham",
+      "region": "York Region",
+      "address": "70 Copper Creek Drive Building H,, Markham"
+    },
+    {
+      "name": "7080 Warden Ave",
+      "street": "7080 Warden Avenue",
+      "city": "Markham",
+      "region": "York Region",
+      "address": "7080 Warden Avenue, Markham"
+    },
+    {
+      "name": "7333 Woodbine Ave",
+      "street": "7333 Woodbine Ave",
+      "city": "Markham",
+      "region": "York Region",
+      "address": "7333 Woodbine Ave, Markham"
+    },
+    {
+      "name": "404 and Davis Dr",
+      "street": "27 Harry Walker Pky S",
+      "city": "Newmarket",
+      "region": "York Region",
+      "address": "27 Harry Walker Pky S, Newmarket"
+    },
+    {
+      "name": "Leslie and Gorham",
+      "street": "17130 Leslie Street Building A - Unit A",
+      "city": "Newmarket",
+      "region": "York Region",
+      "address": "17130 Leslie Street Building A - Unit A, Newmarket"
+    },
+    {
+      "name": "Leslie and Stackhouse",
+      "street": "17285 Leslie Street",
+      "city": "Newmarket",
+      "region": "York Region",
+      "address": "17285 Leslie Street, Newmarket"
+    },
+    {
+      "name": "Upper Canada Mall",
+      "street": "17600 Yonge St",
+      "city": "Newmarket",
+      "region": "York Region",
+      "address": "17600 Yonge St, Newmarket"
+    },
+    {
+      "name": "Elgin Mills & Redstone",
+      "street": "1241 Elgin Mills Road East",
+      "city": "Richmond Hill",
+      "region": "York Region",
+      "address": "1241 Elgin Mills Road East, Richmond Hill"
+    },
+    {
+      "name": "Yonge & Brookside",
+      "street": "11108 Yonge Street",
+      "city": "Richmond Hill",
+      "region": "York Region",
+      "address": "11108 Yonge Street, Richmond Hill"
+    },
+    {
+      "name": "Stouffville",
+      "street": "5771 Main Street",
+      "city": "Stouffville",
+      "region": "York Region",
+      "address": "5771 Main Street, Stouffville"
+    },
+    {
+      "name": "20 Innovation Dr",
+      "street": "20 Innovation Drive",
+      "city": "Vaughan",
+      "region": "York Region",
+      "address": "20 Innovation Drive, Vaughan"
+    },
+    {
+      "name": "8010 Bathurst St",
+      "street": "8010 Bathurst Street",
+      "city": "Vaughan",
+      "region": "York Region",
+      "address": "8010 Bathurst Street, Vaughan"
+    },
+    {
+      "name": "Dufferin & Langstaff",
+      "street": "8470 DUFFERIN ST",
+      "city": "Vaughan",
+      "region": "York Region",
+      "address": "8470 DUFFERIN ST, Vaughan"
+    },
+    {
+      "name": "Dufferin & Major Mackenzie",
+      "street": "1420 Major Mackenzie Dr",
+      "city": "Vaughan",
+      "region": "York Region",
+      "address": "1420 Major Mackenzie Dr, Vaughan"
+    },
+    {
+      "name": "Thornhill Woods",
+      "street": "1101 Rutherford Rd",
+      "city": "Vaughan",
+      "region": "York Region",
+      "address": "1101 Rutherford Rd, Vaughan"
+    },
+    {
+      "name": "Vaughan Mills Drive Thru",
+      "street": "3175 Rutherford Road",
+      "city": "Vaughan",
+      "region": "York Region",
+      "address": "3175 Rutherford Road, Vaughan"
+    },
+    {
+      "name": "Weston & Major Mackenzie",
+      "street": "3737 Major Mackenzie Dr",
+      "city": "Vaughan",
+      "region": "York Region",
+      "address": "3737 Major Mackenzie Dr, Vaughan"
+    },
+    {
+      "name": "7850 Weston Road",
+      "street": "7850 Weston Rd",
+      "city": "Woodbridge",
+      "region": "York Region",
+      "address": "7850 Weston Rd, Woodbridge"
+    },
+    {
+      "name": "1860 Appleby Line",
+      "street": "1860 Appleby Line",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "1860 Appleby Line, Burlington"
+    },
+    {
+      "name": "2500 Appleby Line",
+      "street": "2500 Appleby Line",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "2500 Appleby Line, Burlington"
+    },
+    {
+      "name": "3051 Walkers Line",
+      "street": "3051 Walkers Line",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "3051 Walkers Line, Burlington"
+    },
+    {
+      "name": "3497 Fairview Street",
+      "street": "3497 Fairview Street",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "3497 Fairview Street, Burlington"
+    },
+    {
+      "name": "503 Brant St",
+      "street": "503 Brant St",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "503 Brant St, Burlington"
+    },
+    {
+      "name": "675 Appleby Line",
+      "street": "675 Appleby Line",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "675 Appleby Line, Burlington"
+    },
+    {
+      "name": "900 Maple Ave",
+      "street": "900 Maple Ave",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "900 Maple Ave, Burlington"
+    },
+    {
+      "name": "901 Brant Street Drive Thru",
+      "street": "901 Brant St",
+      "city": "Burlington",
+      "region": "Halton",
+      "address": "901 Brant St, Burlington"
+    },
+    {
+      "name": "Toronto Premium Outlets",
+      "street": "13850 Steeles Avenue West",
+      "city": "Halton Hills",
+      "region": "Halton",
+      "address": "13850 Steeles Avenue West, Halton Hills"
+    },
+    {
+      "name": "20 Market Dr",
+      "street": "20 Market Drive",
+      "city": "Milton",
+      "region": "Halton",
+      "address": "20 Market Drive, Milton"
+    },
+    {
+      "name": "51 James Snow Parkway",
+      "street": "51 James Snow Parkway",
+      "city": "Milton",
+      "region": "Halton",
+      "address": "51 James Snow Parkway, Milton"
+    },
+    {
+      "name": "6030 Main Street",
+      "street": "6030 Main Street W",
+      "city": "Milton",
+      "region": "Halton",
+      "address": "6030 Main Street W, Milton"
+    },
+    {
+      "name": "870 Main St E",
+      "street": "870 Main St E",
+      "city": "Milton",
+      "region": "Halton",
+      "address": "870 Main St E, Milton"
+    },
+    {
+      "name": "1915 Ironoak Way",
+      "street": "1915 Ironoak Way",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "1915 Ironoak Way, Oakville"
+    },
+    {
+      "name": "2027 Winston Park Drive",
+      "street": "2027 Winston Park Dr",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "2027 Winston Park Dr, Oakville"
+    },
+    {
+      "name": "2055 Cornwall Road",
+      "street": "2055 Cornwall Rd",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "2055 Cornwall Rd, Oakville"
+    },
+    {
+      "name": "215 North Service Road",
+      "street": "215 North Service Road",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "215 North Service Road, Oakville"
+    },
+    {
+      "name": "2501 Third Line",
+      "street": "2501 Third Line",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "2501 Third Line, Oakville"
+    },
+    {
+      "name": "2509 Prince Michael Dr",
+      "street": "2509 Prince Michael Dr.",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "2509 Prince Michael Dr., Oakville"
+    },
+    {
+      "name": "2983 Westoak Trails",
+      "street": "2983 Westoak Trails",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "2983 Westoak Trails, Oakville"
+    },
+    {
+      "name": "321 Cornwall Rd",
+      "street": "321 Cornwall Rd",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "321 Cornwall Rd, Oakville"
+    },
+    {
+      "name": "330 Dundas St E",
+      "street": "330 Dundas Street East",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "330 Dundas Street East, Oakville"
+    },
+    {
+      "name": "Downtown Oakville",
+      "street": "239 Lakeshore Rd E",
+      "city": "Oakville",
+      "region": "Halton",
+      "address": "239 Lakeshore Rd E, Oakville"
+    },
+    {
+      "name": "Rossland and Harwood Avenue",
+      "street": "5 Rossland Road East",
+      "city": "Ajax",
+      "region": "Durham",
+      "address": "5 Rossland Road East, Ajax"
+    },
+    {
+      "name": "Westney and Kingston",
+      "street": "15 Westney Road",
+      "city": "Ajax",
+      "region": "Durham",
+      "address": "15 Westney Road, Ajax"
+    },
+    {
+      "name": "Bowmanville Cafe",
+      "street": "2348 Hwy 2",
+      "city": "Bowmanville",
+      "region": "Durham",
+      "address": "2348 Hwy 2, Bowmanville"
+    },
+    {
+      "name": "Bowmanville Drive Thru",
+      "street": "96 King St E",
+      "city": "Bowmanville",
+      "region": "Durham",
+      "address": "96 King St E, Bowmanville"
+    },
+    {
+      "name": "Trulls Road & Highway 2",
+      "street": "1635 Highway 2",
+      "city": "Courtice",
+      "region": "Durham",
+      "address": "1635 Highway 2, Courtice"
+    },
+    {
+      "name": "1365 Wilson Rd N",
+      "street": "1365 Wilson Rd N",
+      "city": "Oshawa",
+      "region": "Durham",
+      "address": "1365 Wilson Rd N, Oshawa"
+    },
+    {
+      "name": "575 Laval Drive",
+      "street": "575 Laval Dr",
+      "city": "Oshawa",
+      "region": "Durham",
+      "address": "575 Laval Dr, Oshawa"
+    },
+    {
+      "name": "Oshawa Centre Food Court",
+      "street": "419 King St W",
+      "city": "Oshawa",
+      "region": "Durham",
+      "address": "419 King St W, Oshawa"
+    },
+    {
+      "name": "Ritson & Beatrice",
+      "street": "1177 Ritson Rd N",
+      "city": "Oshawa",
+      "region": "Durham",
+      "address": "1177 Ritson Rd N, Oshawa"
+    },
+    {
+      "name": "Winchester and Simcoe",
+      "street": "2670 Simcoe Street North",
+      "city": "Oshawa",
+      "region": "Durham",
+      "address": "2670 Simcoe Street North, Oshawa"
+    },
+    {
+      "name": "Bayly and Liverpool",
+      "street": "1300 Bayly Street",
+      "city": "Pickering",
+      "region": "Durham",
+      "address": "1300 Bayly Street, Pickering"
+    },
+    {
+      "name": "Liverpool and Kingston",
+      "street": "1300 Kingston Road",
+      "city": "Pickering",
+      "region": "Durham",
+      "address": "1300 Kingston Road, Pickering"
+    },
+    {
+      "name": "2 Douglas Road",
+      "street": "2 Douglas Road",
+      "city": "Uxbridge",
+      "region": "Durham",
+      "address": "2 Douglas Road, Uxbridge"
+    },
+    {
+      "name": "Brock and Taunton",
+      "street": "3940 Brock Street North",
+      "city": "Whitby",
+      "region": "Durham",
+      "address": "3940 Brock Street North, Whitby"
+    },
+    {
+      "name": "Consumers and Thickson",
+      "street": "25 Consumers Drive",
+      "city": "Whitby",
+      "region": "Durham",
+      "address": "25 Consumers Drive, Whitby"
+    },
+    {
+      "name": "Taunton Gardens",
+      "street": "4140 Garden St",
+      "city": "Whitby",
+      "region": "Durham",
+      "address": "4140 Garden St, Whitby"
+    },
+    {
+      "name": "Thickson and Nichol",
+      "street": "80 Thickson Road South",
+      "city": "Whitby",
+      "region": "Durham",
+      "address": "80 Thickson Road South, Whitby"
+    },
+    {
+      "name": "Thickson and Taunton",
+      "street": "660 Taunton Rd E",
+      "city": "Whitby",
+      "region": "Durham",
+      "address": "660 Taunton Rd E, Whitby"
+    }
+  ],
+  "unmatched": [],
+  "recent": [
+    {
+      "date": "2026-08-23",
+      "store": "Union XP Go-West York Concours",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Starbucks\u00ae Iced Coffee Blend"
+      ]
+    },
+    {
+      "date": "2026-08-23",
+      "store": "Spadina & Fort York",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Strawberry A\u00e7a\u00ed Lemonade Refresher",
+        "Jalape\u00f1o Chicken Pocket"
+      ]
+    },
+    {
+      "date": "2026-08-22",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Green Tea Lemonade"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Starbucks\u00ae Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Lemonade",
+        "Jalape\u00f1o Chicken Pocket"
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Chocolate Croissant",
+        "Mango Strawberry Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-16",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Peach Green Tea Lemonade",
+        "Cheese Danish"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Starbucks\u00ae Iced Coffee Blend"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Peach Green Tea Lemonade",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-10",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Starbucks\u00ae Iced Coffee Blend"
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Rolled Steel-Cut Oatmeal",
+        "Starbucks\u00ae Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Peach Green Tea Lemonade",
+        "Ginger Molasses Cookie",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Peach Green Tea Lemonade",
+        "Ginger Molasses Cookie",
+        "Iced White Chocolate Mocha"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "King and John",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Lemonade"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "King and John",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Lemonade",
+        "Iced Lemon Loaf"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "Oak Ridges",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Pink Drink",
+        "8 Maple Mini Pancakes"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Peach Green Tea Lemonade"
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Black Tea Lemonade"
+      ]
+    },
+    {
+      "date": "2026-08-02",
+      "store": "Loblaws High Tech Rd Rich Hill",
+      "standalone": false,
+      "region": "York Region",
+      "items": [
+        "Starbucks\u00ae Iced Coffee Blend"
+      ]
+    },
+    {
+      "date": "2026-08-01",
+      "store": "25 Gateway Blvd",
+      "standalone": true,
+      "region": "Peel",
+      "items": [
+        "Lemonade",
+        "Cinnamon Coffee Cake"
+      ]
+    }
+  ],
+  "map": {
+    "bbox": {
+      "lat_min": 43.3,
+      "lat_max": 44.12,
+      "lng_min": -80.05,
+      "lng_max": -78.5
+    },
+    "stores": [
+      {
+        "name": "Rossland and Harwood Avenue",
+        "lat": 43.88002,
+        "lon": -79.02498,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Westney and Kingston",
+        "lat": 43.85879,
+        "lon": -79.03786,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Bowmanville Cafe",
+        "lat": 43.90973,
+        "lon": -78.71258,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Bowmanville Drive Thru",
+        "lat": 43.91173,
+        "lon": -78.68618,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Trulls Road & Highway 2",
+        "lat": 43.91061,
+        "lon": -78.78716,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "1365 Wilson Rd N",
+        "lat": 43.93829,
+        "lon": -78.857,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "575 Laval Drive",
+        "lat": 43.87934,
+        "lon": -78.87873,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Oshawa Centre Food Court",
+        "lat": 43.89029,
+        "lon": -78.87958,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Ritson & Beatrice",
+        "lat": 43.93085,
+        "lon": -78.86629,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Winchester and Simcoe",
+        "lat": 43.96447,
+        "lon": -78.90523,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Bayly and Liverpool",
+        "lat": 43.82907,
+        "lon": -79.08809,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Liverpool and Kingston",
+        "lat": 43.83664,
+        "lon": -79.08992,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "2 Douglas Road",
+        "lat": 44.09141,
+        "lon": -79.13238,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Brock and Taunton",
+        "lat": 43.91461,
+        "lon": -78.95885,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Consumers and Thickson",
+        "lat": 43.87187,
+        "lon": -78.90822,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Taunton Gardens",
+        "lat": 43.91936,
+        "lon": -78.9488,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Thickson and Nichol",
+        "lat": 43.88305,
+        "lon": -78.91179,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "Thickson and Taunton",
+        "lat": 43.92215,
+        "lon": -78.92912,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Durham"
+      },
+      {
+        "name": "1860 Appleby Line",
+        "lat": 43.39108,
+        "lon": -79.78833,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "2500 Appleby Line",
+        "lat": 43.40549,
+        "lon": -79.80809,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "3051 Walkers Line",
+        "lat": 43.3938,
+        "lon": -79.82372,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "3497 Fairview Street",
+        "lat": 43.35884,
+        "lon": -79.78134,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "503 Brant St",
+        "lat": 43.32762,
+        "lon": -79.80044,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "675 Appleby Line",
+        "lat": 43.37332,
+        "lon": -79.76111,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "900 Maple Ave",
+        "lat": 43.32591,
+        "lon": -79.81986,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "901 Brant Street Drive Thru",
+        "lat": 43.33687,
+        "lon": -79.8132,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "Toronto Premium Outlets",
+        "lat": 43.57502,
+        "lon": -79.82931,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "20 Market Dr",
+        "lat": 43.52315,
+        "lon": -79.89937,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "51 James Snow Parkway",
+        "lat": 43.53915,
+        "lon": -79.85667,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "6030 Main Street",
+        "lat": 43.49556,
+        "lon": -79.89631,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "870 Main St E",
+        "lat": 43.52726,
+        "lon": -79.86615,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "1915 Ironoak Way",
+        "lat": 43.49343,
+        "lon": -79.68073,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "2027 Winston Park Drive",
+        "lat": 43.5112,
+        "lon": -79.66829,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "2055 Cornwall Road",
+        "lat": 43.48114,
+        "lon": -79.6569,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "215 North Service Road",
+        "lat": 43.45089,
+        "lon": -79.70291,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "2501 Third Line",
+        "lat": 43.44964,
+        "lon": -79.75904,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "2509 Prince Michael Dr",
+        "lat": 43.49761,
+        "lon": -79.70751,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "2983 Westoak Trails",
+        "lat": 43.42893,
+        "lon": -79.76528,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "321 Cornwall Rd",
+        "lat": 43.45757,
+        "lon": -79.67862,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "330 Dundas St E",
+        "lat": 43.4874,
+        "lon": -79.71824,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "Downtown Oakville",
+        "lat": 43.44657,
+        "lon": -79.66758,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Halton"
+      },
+      {
+        "name": "Bolton Highway 50",
+        "lat": 43.85868,
+        "lon": -79.70996,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "10 Earlsbridge Blvd.",
+        "lat": 43.70243,
+        "lon": -79.8292,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "17 Worthington Ave",
+        "lat": 43.68177,
+        "lon": -79.81499,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "190 Queen Street East",
+        "lat": 43.69373,
+        "lon": -79.75211,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "25 Gateway Blvd",
+        "lat": 43.73763,
+        "lon": -79.701,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "Peel"
+      },
+      {
+        "name": "3995 Cottrelle Blvd",
+        "lat": 43.78432,
+        "lon": -79.65881,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "65 Dusk Dr",
+        "lat": 43.6558,
+        "lon": -79.76786,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "80 Resolution Dr",
+        "lat": 43.67726,
+        "lon": -79.72143,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "90 Great Lakes Dr",
+        "lat": 43.72871,
+        "lon": -79.76249,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "Bramalea City Centre",
+        "lat": 43.71546,
+        "lon": -79.72202,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "Queen and Beaumaris",
+        "lat": 43.76475,
+        "lon": -79.66037,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "Sandalwood Pkwy",
+        "lat": 43.71631,
+        "lon": -79.80383,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "1016 Eglinton Ave E",
+        "lat": 43.62751,
+        "lon": -79.62932,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "111 Lakeshore Rd W",
+        "lat": 43.54987,
+        "lon": -79.58727,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "189 Rathburn Rd W",
+        "lat": 43.59447,
+        "lon": -79.64806,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "1930 Fowler Dr",
+        "lat": 43.52668,
+        "lon": -79.65062,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "2100 Hurontario St",
+        "lat": 43.57028,
+        "lon": -79.60278,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "2963 Argentia Rd",
+        "lat": 43.59828,
+        "lon": -79.78361,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "30 World Drive",
+        "lat": 43.63356,
+        "lon": -79.68714,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "3030 Thomas St",
+        "lat": 43.55977,
+        "lon": -79.7338,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "3235 Dundas St W",
+        "lat": 43.51829,
+        "lon": -79.68719,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "334 Dundas Street East",
+        "lat": 43.5871,
+        "lon": -79.60789,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "362 Lakeshore Road East",
+        "lat": 43.56322,
+        "lon": -79.57279,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "4076 Confederation Parkway",
+        "lat": 43.5865,
+        "lon": -79.64709,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "5029 Hurontario St",
+        "lat": 43.60757,
+        "lon": -79.65318,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "5067 Dixie Rd",
+        "lat": 43.63689,
+        "lon": -79.62106,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "6155 Erin Mills Parkway",
+        "lat": 43.58133,
+        "lon": -79.73654,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "6974 Financial Drive",
+        "lat": 43.60967,
+        "lon": -79.75076,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "960 Southdown Rd",
+        "lat": 43.50906,
+        "lon": -79.63147,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "Heartland Town Centre",
+        "lat": 43.6133,
+        "lon": -79.6964,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "Square One South",
+        "lat": 43.59168,
+        "lon": -79.64336,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Peel"
+      },
+      {
+        "name": "170 Evans Avenue",
+        "lat": 43.6185,
+        "lon": -79.51259,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "43 Milner Avenue Building C",
+        "lat": 43.78377,
+        "lon": -79.25331,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Eglinton & Warden",
+        "lat": 43.72691,
+        "lon": -79.29324,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Upper level Scarborough Town C",
+        "lat": 43.77632,
+        "lon": -79.25929,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Victoria Terrace",
+        "lat": 43.74188,
+        "lon": -79.31352,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "1156 Kennedy Road",
+        "lat": 43.75247,
+        "lon": -79.27637,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "150 Park Lawn Road",
+        "lat": 43.62766,
+        "lon": -79.48919,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "16 York Street",
+        "lat": 43.64254,
+        "lon": -79.38248,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "1960 Queen Street East",
+        "lat": 43.66972,
+        "lon": -79.30212,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "2 St. Clair Avenue East",
+        "lat": 43.68851,
+        "lon": -79.39409,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "221 Queen Street West",
+        "lat": 43.65044,
+        "lon": -79.38788,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "2210 Bloor St. W.",
+        "lat": 43.65135,
+        "lon": -79.47587,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "2235 Yonge Street",
+        "lat": 43.70609,
+        "lon": -79.39798,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "253 Jarvis Street",
+        "lat": 43.65729,
+        "lon": -79.37437,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "3300 Dufferin Street",
+        "lat": 43.72152,
+        "lon": -79.45673,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "350 Bay Street",
+        "lat": 43.65042,
+        "lon": -79.38124,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "439 University Ave",
+        "lat": 43.65444,
+        "lon": -79.38775,
+        "standalone": false,
+        "visited": true,
+        "visits": 2,
+        "region": "Toronto"
+      },
+      {
+        "name": "444 Eglinton Ave. W.",
+        "lat": 43.70393,
+        "lon": -79.41166,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "446 Spadina Rd.",
+        "lat": 43.68926,
+        "lon": -79.41296,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "485 Church at Wellesley",
+        "lat": 43.66498,
+        "lon": -79.3805,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "4915 Steeles Avenue West",
+        "lat": 43.77062,
+        "lon": -79.5435,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "604 Danforth",
+        "lat": 43.67879,
+        "lon": -79.3463,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "6355 Yonge St",
+        "lat": 43.79668,
+        "lon": -79.41923,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "75 Billy Bishop Way",
+        "lat": 43.73316,
+        "lon": -79.4522,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "829 The Queensway",
+        "lat": 43.62468,
+        "lon": -79.50825,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "869 Queen Street East",
+        "lat": 43.66043,
+        "lon": -79.34253,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Allen Road & Rimrock Road",
+        "lat": 43.75756,
+        "lon": -79.46582,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Avenue & Lawrence",
+        "lat": 43.72263,
+        "lon": -79.41532,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Avenue & St Germain",
+        "lat": 43.7287,
+        "lon": -79.41843,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bathurst & Eglinton",
+        "lat": 43.70088,
+        "lon": -79.42585,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bathurst & Joicey",
+        "lat": 43.73409,
+        "lon": -79.4332,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bathurst & Sheppard",
+        "lat": 43.7556,
+        "lon": -79.44039,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bay & Charles",
+        "lat": 43.66805,
+        "lon": -79.3885,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bay & Cumberland",
+        "lat": 43.67059,
+        "lon": -79.39006,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bayview & Millwood",
+        "lat": 43.70518,
+        "lon": -79.37476,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bayview Village",
+        "lat": 43.76907,
+        "lon": -79.38668,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bedford & Bloor",
+        "lat": 43.66865,
+        "lon": -79.39742,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bloor & Jarvis",
+        "lat": 43.67134,
+        "lon": -79.38069,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bloor & Thompson",
+        "lat": 43.64658,
+        "lon": -79.51404,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bloor & West Mall",
+        "lat": 43.63514,
+        "lon": -79.56331,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "CF Shops at Don Mills",
+        "lat": 43.73591,
+        "lon": -79.34428,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Castlefield & Caledonia CA",
+        "lat": 43.69845,
+        "lon": -79.4632,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Cliffside Plaza D/T",
+        "lat": 43.70808,
+        "lon": -79.24952,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Coxwell & Plains",
+        "lat": 43.69598,
+        "lon": -79.32891,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Cumberland & Critchley Lane",
+        "lat": 43.67003,
+        "lon": -79.39161,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Dufferin & Steeles",
+        "lat": 43.78603,
+        "lon": -79.47439,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Dundas & Roncesvalles",
+        "lat": 43.65346,
+        "lon": -79.45159,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Ellesmere & Midland D/T",
+        "lat": 43.76832,
+        "lon": -79.27186,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Fairview Mall",
+        "lat": 43.77802,
+        "lon": -79.3433,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Finch & Chesswood",
+        "lat": 43.76613,
+        "lon": -79.47633,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Finch & Hwy 27",
+        "lat": 43.73498,
+        "lon": -79.60162,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "First Canadian Place PATH",
+        "lat": 43.649,
+        "lon": -79.38178,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Front & Berkeley",
+        "lat": 43.6514,
+        "lon": -79.36432,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Front & John",
+        "lat": 43.64423,
+        "lon": -79.38912,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Hanna & Atlantic",
+        "lat": 43.63981,
+        "lon": -79.41959,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Hudson Bay Centre",
+        "lat": 43.67069,
+        "lon": -79.38632,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Jane & St. Clair",
+        "lat": 43.66741,
+        "lon": -79.48925,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "King & Bathurst",
+        "lat": 43.64386,
+        "lon": -79.40181,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "King and John",
+        "lat": 43.64674,
+        "lon": -79.38961,
+        "standalone": true,
+        "visited": true,
+        "visits": 2,
+        "region": "Toronto"
+      },
+      {
+        "name": "Kingston Rd & Bingham Ave",
+        "lat": 43.68088,
+        "lon": -79.28497,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Kingston Rd & Rylander",
+        "lat": 43.79747,
+        "lon": -79.1488,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Kingsway Mills",
+        "lat": 43.65981,
+        "lon": -79.51399,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Laird & Wicksteed",
+        "lat": 43.71068,
+        "lon": -79.36096,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Lakeshore & Leslie Drive-Thru",
+        "lat": 43.65958,
+        "lon": -79.3283,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Midland & McNicoll",
+        "lat": 43.8163,
+        "lon": -79.29331,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Mount Pleasant & Soudan",
+        "lat": 43.70593,
+        "lon": -79.38943,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Portland & Adelaide",
+        "lat": 43.6459,
+        "lon": -79.40047,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Queen & Victoria",
+        "lat": 43.65243,
+        "lon": -79.37866,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Queens Quay & York",
+        "lat": 43.64001,
+        "lon": -79.38098,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "RBC Centre",
+        "lat": 43.64584,
+        "lon": -79.38629,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Richmond & Adelaide Centre",
+        "lat": 43.64965,
+        "lon": -79.38342,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Royal Bank Plaza PATH",
+        "lat": 43.6461,
+        "lon": -79.37995,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Royal York & The Westway",
+        "lat": 43.69641,
+        "lon": -79.53343,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "SECURE ACCESS - SickKids Hospi",
+        "lat": 43.65775,
+        "lon": -79.3875,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Sheppard & Leslie- CTC",
+        "lat": 43.76972,
+        "lon": -79.37277,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Sheppard Avenue & Weston Road",
+        "lat": 43.73455,
+        "lon": -79.53369,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Sherway Gardens",
+        "lat": 43.61288,
+        "lon": -79.55569,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Six Points Plaza-5230 Dundas S",
+        "lat": 43.63962,
+        "lon": -79.53751,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Spadina & Fort York",
+        "lat": 43.64011,
+        "lon": -79.39327,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
+        "name": "TD Bank Tower - PATH Concourse",
+        "lat": 43.64723,
+        "lon": -79.38091,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Toronto Eaton Centre North",
+        "lat": 43.65534,
+        "lon": -79.38119,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
+        "name": "Toronto Eaton Centre South",
+        "lat": 43.65276,
+        "lon": -79.38036,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Union XP Go-West York Concours",
+        "lat": 43.64504,
+        "lon": -79.38191,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
+        "name": "Victoria Park & Consumers Rd.",
+        "lat": 43.77221,
+        "lon": -79.32112,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yonge & Brookdale",
+        "lat": 43.72981,
+        "lon": -79.40364,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yonge & Dundas",
+        "lat": 43.65643,
+        "lon": -79.38045,
+        "standalone": true,
+        "visited": true,
+        "visits": 40,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yonge & Erskine",
+        "lat": 43.71101,
+        "lon": -79.39902,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yonge & Finch",
+        "lat": 43.77988,
+        "lon": -79.41622,
+        "standalone": true,
+        "visited": true,
+        "visits": 15,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yonge & King",
+        "lat": 43.64924,
+        "lon": -79.37813,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yonge & Park Home",
+        "lat": 43.76828,
+        "lon": -79.41295,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
+        "name": "York Mills and Lesmill",
+        "lat": 43.75407,
+        "lon": -79.35174,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yorkdale Cafe",
+        "lat": 43.72501,
+        "lon": -79.45494,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "Toronto"
+      },
+      {
+        "name": "Yorkdale Mall Kiosk",
+        "lat": 43.72527,
+        "lon": -79.44957,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
+        "name": "Bayview & Pedersen",
+        "lat": 44.01841,
+        "lon": -79.44743,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Leslie & St. John's Sideroad E",
+        "lat": 44.03068,
+        "lon": -79.4226,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Yonge & Ransom",
+        "lat": 43.99298,
+        "lon": -79.46636,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "10 Spring Hill Drive",
+        "lat": 43.93249,
+        "lon": -79.51031,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "404 & Major Mackenzie",
+        "lat": 43.88507,
+        "lon": -79.37279,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "York Region"
+      },
+      {
+        "name": "5954 Hwy 7",
+        "lat": 43.87397,
+        "lon": -79.26074,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "York Region"
+      },
+      {
+        "name": "70 Copper Creek Dr, Bldg H",
+        "lat": 43.86633,
+        "lon": -79.22908,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "7080 Warden Ave",
+        "lat": 43.8226,
+        "lon": -79.3259,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "7333 Woodbine Ave",
+        "lat": 43.8226,
+        "lon": -79.35059,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Bayview & Romfield",
+        "lat": 43.83232,
+        "lon": -79.40508,
+        "standalone": true,
+        "visited": true,
+        "visits": 58,
+        "region": "York Region"
+      },
+      {
+        "name": "Markville Mall - Upper Level",
+        "lat": 43.86821,
+        "lon": -79.28774,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "York Region"
+      },
+      {
+        "name": "404 and Davis Dr",
+        "lat": 44.06689,
+        "lon": -79.4258,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Leslie and Gorham",
+        "lat": 44.05643,
+        "lon": -79.43006,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Leslie and Stackhouse",
+        "lat": 44.06056,
+        "lon": -79.43017,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Upper Canada Mall",
+        "lat": 44.05661,
+        "lon": -79.48364,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Elgin Mills & Redstone",
+        "lat": 43.89629,
+        "lon": -79.40395,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "INDIGO - Hillcrest",
+        "lat": 43.85508,
+        "lon": -79.43523,
+        "standalone": false,
+        "visited": true,
+        "visits": 2,
+        "region": "York Region"
+      },
+      {
+        "name": "Loblaws High Tech Rd Rich Hill",
+        "lat": 43.84405,
+        "lon": -79.41131,
+        "standalone": false,
+        "visited": true,
+        "visits": 2,
+        "region": "York Region"
+      },
+      {
+        "name": "Oak Ridges",
+        "lat": 43.94782,
+        "lon": -79.45487,
+        "standalone": true,
+        "visited": true,
+        "visits": 11,
+        "region": "York Region"
+      },
+      {
+        "name": "Yonge & Brookside",
+        "lat": 43.89841,
+        "lon": -79.44399,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Yonge St & Hwy 7",
+        "lat": 43.83858,
+        "lon": -79.43027,
+        "standalone": true,
+        "visited": true,
+        "visits": 9,
+        "region": "York Region"
+      },
+      {
+        "name": "Stouffville",
+        "lat": 43.96652,
+        "lon": -79.26445,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "201 Main Street",
+        "lat": 43.8683,
+        "lon": -79.31204,
+        "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "York Region"
+      },
+      {
+        "name": "20 Innovation Dr",
+        "lat": 43.7886,
+        "lon": -79.62592,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "8010 Bathurst St",
+        "lat": 43.81681,
+        "lon": -79.45213,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Dufferin & Langstaff",
+        "lat": 43.8238,
+        "lon": -79.47879,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Dufferin & Major Mackenzie",
+        "lat": 43.86219,
+        "lon": -79.48513,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Jane & Major Mackenzie",
+        "lat": 43.84423,
+        "lon": -79.53522,
+        "standalone": true,
+        "visited": true,
+        "visits": 3,
+        "region": "York Region"
+      },
+      {
+        "name": "Thornhill Woods",
+        "lat": 43.84494,
+        "lon": -79.47059,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Vaughan Mills - Entry 2 Food C",
+        "lat": 43.82587,
+        "lon": -79.53866,
+        "standalone": true,
+        "visited": true,
+        "visits": 2,
+        "region": "York Region"
+      },
+      {
+        "name": "Vaughan Mills Drive Thru",
+        "lat": 43.82929,
+        "lon": -79.53688,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "Weston & Major Mackenzie",
+        "lat": 43.84441,
+        "lon": -79.56007,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      },
+      {
+        "name": "7850 Weston Road",
+        "lat": 43.79189,
+        "lon": -79.55034,
+        "standalone": true,
+        "visited": false,
+        "visits": 0,
+        "region": "York Region"
+      }
+    ]
+  }
+}
