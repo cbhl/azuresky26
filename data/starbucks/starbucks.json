@@ -144,1243 +144,1774 @@
   ],
   "to_visit": [
     {
+      "id": "74009-306469",
       "name": "170 Evans Avenue",
       "street": "170 Evans Avenue",
       "city": "Etobicoke",
       "region": "Toronto",
-      "address": "170 Evans Avenue, Etobicoke"
+      "address": "170 Evans Avenue, Etobicoke",
+      "lat": 43.6185,
+      "lon": -79.51259
     },
     {
+      "id": "4318-249544",
       "name": "43 Milner Avenue Building C",
       "street": "43 Milner Avenue",
       "city": "Scarborough",
       "region": "Toronto",
-      "address": "43 Milner Avenue, Scarborough"
+      "address": "43 Milner Avenue, Scarborough",
+      "lat": 43.78377,
+      "lon": -79.25331
     },
     {
+      "id": "4803-97529",
       "name": "Eglinton & Warden",
       "street": "1900 Eglinton Avenue East",
       "city": "Scarborough",
       "region": "Toronto",
-      "address": "1900 Eglinton Avenue East, Scarborough"
+      "address": "1900 Eglinton Avenue East, Scarborough",
+      "lat": 43.72691,
+      "lon": -79.29324
     },
     {
+      "id": "54931-288675",
       "name": "Upper level Scarborough Town C",
       "street": "300 Borough Dr",
       "city": "Scarborough",
       "region": "Toronto",
-      "address": "300 Borough Dr, Scarborough"
+      "address": "300 Borough Dr, Scarborough",
+      "lat": 43.77632,
+      "lon": -79.25929
     },
     {
+      "id": "58728-292978",
       "name": "Victoria Terrace",
       "street": "1430 Lawrence Ave E",
       "city": "Scarborough",
       "region": "Toronto",
-      "address": "1430 Lawrence Ave E, Scarborough"
+      "address": "1430 Lawrence Ave E, Scarborough",
+      "lat": 43.74188,
+      "lon": -79.31352
     },
     {
+      "id": "24209-236145",
       "name": "1156 Kennedy Road",
       "street": "1156 Kennedy Road",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1156 Kennedy Road, Toronto"
+      "address": "1156 Kennedy Road, Toronto",
+      "lat": 43.75247,
+      "lon": -79.27637
     },
     {
+      "id": "23090-212865",
       "name": "150 Park Lawn Road",
       "street": "150 Park Lawn Rd",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "150 Park Lawn Rd, Toronto"
+      "address": "150 Park Lawn Rd, Toronto",
+      "lat": 43.62766,
+      "lon": -79.48919
     },
     {
+      "id": "70839-305225",
       "name": "16 York Street",
       "street": "16 York St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "16 York St, Toronto"
+      "address": "16 York St, Toronto",
+      "lat": 43.64254,
+      "lon": -79.38248
     },
     {
+      "id": "4227-271584",
       "name": "1960 Queen Street East",
       "street": "1960 Queen St E",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1960 Queen St E, Toronto"
+      "address": "1960 Queen St E, Toronto",
+      "lat": 43.66972,
+      "lon": -79.30212
     },
     {
+      "id": "4296-250015",
       "name": "2 St. Clair Avenue East",
       "street": "2 St. Clair Avenue East",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2 St. Clair Avenue East, Toronto"
+      "address": "2 St. Clair Avenue East, Toronto",
+      "lat": 43.68851,
+      "lon": -79.39409
     },
     {
+      "id": "82862-311997",
       "name": "221 Queen Street West",
       "street": "221 Queen St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "221 Queen St W, Toronto"
+      "address": "221 Queen St W, Toronto",
+      "lat": 43.65044,
+      "lon": -79.38788
     },
     {
+      "id": "4233-544",
       "name": "2210 Bloor St. W.",
       "street": "2210 Bloor Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2210 Bloor Street, Toronto"
+      "address": "2210 Bloor Street, Toronto",
+      "lat": 43.65135,
+      "lon": -79.47587
     },
     {
+      "id": "4929-294862",
       "name": "2235 Yonge Street",
       "street": "2235 Yonge St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2235 Yonge St, Toronto"
+      "address": "2235 Yonge St, Toronto",
+      "lat": 43.70609,
+      "lon": -79.39798
     },
     {
+      "id": "56315-278012",
       "name": "253 Jarvis Street",
       "street": "253 Jarvis Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "253 Jarvis Street, Toronto"
+      "address": "253 Jarvis Street, Toronto",
+      "lat": 43.65729,
+      "lon": -79.37437
     },
     {
+      "id": "61606-296058",
       "name": "3300 Dufferin Street",
       "street": "3300 Dufferin Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "3300 Dufferin Street, Toronto"
+      "address": "3300 Dufferin Street, Toronto",
+      "lat": 43.72152,
+      "lon": -79.45673
     },
     {
+      "id": "82564-311706",
       "name": "350 Bay Street",
       "street": "350 Bay St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "350 Bay St, Toronto"
+      "address": "350 Bay St, Toronto",
+      "lat": 43.65042,
+      "lon": -79.38124
     },
     {
+      "id": "4226-771",
       "name": "444 Eglinton Ave. W.",
       "street": "444 Eglinton Ave W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "444 Eglinton Ave W, Toronto"
+      "address": "444 Eglinton Ave W, Toronto",
+      "lat": 43.70393,
+      "lon": -79.41166
     },
     {
+      "id": "4210-531",
       "name": "446 Spadina Rd.",
       "street": "446 Spadina Rd",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "446 Spadina Rd, Toronto"
+      "address": "446 Spadina Rd, Toronto",
+      "lat": 43.68926,
+      "lon": -79.41296
     },
     {
+      "id": "4208-524",
       "name": "485 Church at Wellesley",
       "street": "485 Church St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "485 Church St, Toronto"
+      "address": "485 Church St, Toronto",
+      "lat": 43.66498,
+      "lon": -79.3805
     },
     {
+      "id": "58427-290004",
       "name": "4915 Steeles Avenue West",
       "street": "4915 Steeles Avenue West",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "4915 Steeles Avenue West, Toronto"
+      "address": "4915 Steeles Avenue West, Toronto",
+      "lat": 43.77062,
+      "lon": -79.5435
     },
     {
+      "id": "4205-530",
       "name": "604 Danforth",
       "street": "604 Danforth Ave",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "604 Danforth Ave, Toronto"
+      "address": "604 Danforth Ave, Toronto",
+      "lat": 43.67879,
+      "lon": -79.3463
     },
     {
+      "id": "26281-243832",
       "name": "6355 Yonge St",
       "street": "6355 Yonge St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "6355 Yonge St, Toronto"
+      "address": "6355 Yonge St, Toronto",
+      "lat": 43.79668,
+      "lon": -79.41923
     },
     {
+      "id": "47666-232784",
       "name": "75 Billy Bishop Way",
       "street": "75 Billy Bishop Way",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "75 Billy Bishop Way, Toronto"
+      "address": "75 Billy Bishop Way, Toronto",
+      "lat": 43.73316,
+      "lon": -79.4522
     },
     {
+      "id": "25747-242317",
       "name": "829 The Queensway",
       "street": "829 The Queensway",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "829 The Queensway, Toronto"
+      "address": "829 The Queensway, Toronto",
+      "lat": 43.62468,
+      "lon": -79.50825
     },
     {
+      "id": "4718-288881",
       "name": "869 Queen Street East",
       "street": "869 Queen St E",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "869 Queen St E, Toronto"
+      "address": "869 Queen St E, Toronto",
+      "lat": 43.66043,
+      "lon": -79.34253
     },
     {
+      "id": "16078-166544",
       "name": "Allen Road & Rimrock Road",
       "street": "170 Rimrock Rd",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "170 Rimrock Rd, Toronto"
+      "address": "170 Rimrock Rd, Toronto",
+      "lat": 43.75756,
+      "lon": -79.46582
     },
     {
+      "id": "54396-286182",
       "name": "Avenue & Lawrence",
       "street": "1507 Avenue Road",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1507 Avenue Road, Toronto"
+      "address": "1507 Avenue Road, Toronto",
+      "lat": 43.72263,
+      "lon": -79.41532
     },
     {
+      "id": "4207-525",
       "name": "Avenue & St Germain",
       "street": "1740-42 Avenue Road",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1740-42 Avenue Road, Toronto"
+      "address": "1740-42 Avenue Road, Toronto",
+      "lat": 43.7287,
+      "lon": -79.41843
     },
     {
+      "id": "4206-309972",
       "name": "Bathurst & Eglinton",
       "street": "859 Eglinton Avenue West",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "859 Eglinton Avenue West, Toronto"
+      "address": "859 Eglinton Avenue West, Toronto",
+      "lat": 43.70088,
+      "lon": -79.42585
     },
     {
+      "id": "15977-156245",
       "name": "Bathurst & Joicey",
       "street": "3671 Bathurst St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "3671 Bathurst St, Toronto"
+      "address": "3671 Bathurst St, Toronto",
+      "lat": 43.73409,
+      "lon": -79.4332
     },
     {
+      "id": "4585-95347",
       "name": "Bathurst & Sheppard",
       "street": "626 Sheppard Ave W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "626 Sheppard Ave W, Toronto"
+      "address": "626 Sheppard Ave W, Toronto",
+      "lat": 43.7556,
+      "lon": -79.44039
     },
     {
+      "id": "20991-207444",
       "name": "Bay & Charles",
       "street": "47 Charles St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "47 Charles St W, Toronto"
+      "address": "47 Charles St W, Toronto",
+      "lat": 43.66805,
+      "lon": -79.3885
     },
     {
+      "id": "4402-2830",
       "name": "Bay & Cumberland",
       "street": "1250 Bay St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1250 Bay St, Toronto"
+      "address": "1250 Bay St, Toronto",
+      "lat": 43.67059,
+      "lon": -79.39006
     },
     {
+      "id": "4276-936",
       "name": "Bayview & Millwood",
       "street": "1545 Bayview Ave",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1545 Bayview Ave, Toronto"
+      "address": "1545 Bayview Ave, Toronto",
+      "lat": 43.70518,
+      "lon": -79.37476
     },
     {
+      "id": "49141-266125",
       "name": "Bayview Village",
       "street": "2901 Bayview Avenue",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2901 Bayview Avenue, Toronto"
+      "address": "2901 Bayview Avenue, Toronto",
+      "lat": 43.76907,
+      "lon": -79.38668
     },
     {
+      "id": "15631-158804",
       "name": "Bedford & Bloor",
       "street": "1 Bedford Avenue",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1 Bedford Avenue, Toronto"
+      "address": "1 Bedford Avenue, Toronto",
+      "lat": 43.66865,
+      "lon": -79.39742
     },
     {
+      "id": "4448-67903",
       "name": "Bloor & Jarvis",
       "street": "235 Bloor St. East",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "235 Bloor St. East, Toronto"
+      "address": "235 Bloor St. East, Toronto",
+      "lat": 43.67134,
+      "lon": -79.38069
     },
     {
+      "id": "4613-98127",
       "name": "Bloor & Thompson",
       "street": "3079-3081 Bloor St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "3079-3081 Bloor St W, Toronto"
+      "address": "3079-3081 Bloor St W, Toronto",
+      "lat": 43.64658,
+      "lon": -79.51404
     },
     {
+      "id": "29915-255605",
       "name": "Bloor & West Mall",
       "street": "4201 Bloor St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "4201 Bloor St W, Toronto"
+      "address": "4201 Bloor St W, Toronto",
+      "lat": 43.63514,
+      "lon": -79.56331
     },
     {
+      "id": "22838-224385",
       "name": "Castlefield & Caledonia CA",
       "street": "1320 Castlefield Avenue",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1320 Castlefield Avenue, Toronto"
+      "address": "1320 Castlefield Avenue, Toronto",
+      "lat": 43.69845,
+      "lon": -79.4632
     },
     {
+      "id": "4095-282005",
       "name": "CF Shops at Don Mills",
       "street": "6 Pabst Lane",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "6 Pabst Lane, Toronto"
+      "address": "6 Pabst Lane, Toronto",
+      "lat": 43.73591,
+      "lon": -79.34428
     },
     {
+      "id": "49964-251783",
       "name": "Cliffside Plaza D/T",
       "street": "2387 Kingston Rd",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2387 Kingston Rd, Toronto"
+      "address": "2387 Kingston Rd, Toronto",
+      "lat": 43.70808,
+      "lon": -79.24952
     },
     {
+      "id": "17181-170464",
       "name": "Coxwell & Plains",
       "street": "978 Coxwell Ave",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "978 Coxwell Ave, Toronto"
+      "address": "978 Coxwell Ave, Toronto",
+      "lat": 43.69598,
+      "lon": -79.32891
     },
     {
+      "id": "22866-225584",
       "name": "Cumberland & Critchley Lane",
       "street": "110 Bloor St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "110 Bloor St W, Toronto"
+      "address": "110 Bloor St W, Toronto",
+      "lat": 43.67003,
+      "lon": -79.39161
     },
     {
+      "id": "4525-93920",
       "name": "Dufferin & Steeles",
       "street": "2081 Steeles Ave W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2081 Steeles Ave W, Toronto"
+      "address": "2081 Steeles Ave W, Toronto",
+      "lat": 43.78603,
+      "lon": -79.47439
     },
     {
+      "id": "4720-103563",
       "name": "Dundas & Roncesvalles",
       "street": "2201 Dundas St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2201 Dundas St W, Toronto"
+      "address": "2201 Dundas St W, Toronto",
+      "lat": 43.65346,
+      "lon": -79.45159
     },
     {
+      "id": "47181-251744",
       "name": "Ellesmere & Midland D/T",
       "street": "1100 Ellesmere Road",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1100 Ellesmere Road, Toronto"
+      "address": "1100 Ellesmere Road, Toronto",
+      "lat": 43.76832,
+      "lon": -79.27186
     },
     {
+      "id": "4863-286832",
       "name": "Fairview Mall",
       "street": "1800 Sheppard Ave E",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1800 Sheppard Ave E, Toronto"
+      "address": "1800 Sheppard Ave E, Toronto",
+      "lat": 43.77802,
+      "lon": -79.3433
     },
     {
+      "id": "21883-215124",
       "name": "Finch & Chesswood",
       "street": "1115 Finch Ave W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1115 Finch Ave W, Toronto"
+      "address": "1115 Finch Ave W, Toronto",
+      "lat": 43.76613,
+      "lon": -79.47633
     },
     {
+      "id": "25370-240804",
       "name": "Finch & Hwy 27",
       "street": "6620 Finch Ave W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "6620 Finch Ave W, Toronto"
+      "address": "6620 Finch Ave W, Toronto",
+      "lat": 43.73498,
+      "lon": -79.60162
     },
     {
+      "id": "71733-306849",
       "name": "First Canadian Place PATH",
       "street": "100 King Street West",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "100 King Street West, Toronto"
+      "address": "100 King Street West, Toronto",
+      "lat": 43.649,
+      "lon": -79.38178
     },
     {
+      "id": "47561-255989",
       "name": "Front & Berkeley",
       "street": "351 King Street East",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "351 King Street East, Toronto"
+      "address": "351 King Street East, Toronto",
+      "lat": 43.6514,
+      "lon": -79.36432
     },
     {
+      "id": "21891-207467",
       "name": "Front & John",
       "street": "300 Front St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "300 Front St W, Toronto"
+      "address": "300 Front St W, Toronto",
+      "lat": 43.64423,
+      "lon": -79.38912
     },
     {
+      "id": "4841-109906",
       "name": "Hanna & Atlantic",
       "street": "85 Hanna Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "85 Hanna Street, Toronto"
+      "address": "85 Hanna Street, Toronto",
+      "lat": 43.63981,
+      "lon": -79.41959
     },
     {
+      "id": "4460-67901",
       "name": "Hudson Bay Centre",
       "street": "2 Bloor St E",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2 Bloor St E, Toronto"
+      "address": "2 Bloor St E, Toronto",
+      "lat": 43.67069,
+      "lon": -79.38632
     },
     {
+      "id": "4477-265766",
       "name": "Jane & St. Clair",
       "street": "2575 St Clair Ave W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2575 St Clair Ave W, Toronto"
+      "address": "2575 St Clair Ave W, Toronto",
+      "lat": 43.66741,
+      "lon": -79.48925
     },
     {
+      "id": "4636-255353",
       "name": "King & Bathurst",
       "street": "625 King St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "625 King St W, Toronto"
+      "address": "625 King St W, Toronto",
+      "lat": 43.64386,
+      "lon": -79.40181
     },
     {
+      "id": "4719-101643",
       "name": "Kingston Rd & Bingham Ave",
       "street": "1020 Kingston Rd",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1020 Kingston Rd, Toronto"
+      "address": "1020 Kingston Rd, Toronto",
+      "lat": 43.68088,
+      "lon": -79.28497
     },
     {
+      "id": "16709-161186",
       "name": "Kingston Rd & Rylander",
       "street": "6714 Kingston Rd",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "6714 Kingston Rd, Toronto"
+      "address": "6714 Kingston Rd, Toronto",
+      "lat": 43.79747,
+      "lon": -79.1488
     },
     {
+      "id": "52762-280748",
       "name": "Kingsway Mills",
       "street": "4242 Dundas St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "4242 Dundas St W, Toronto"
+      "address": "4242 Dundas St W, Toronto",
+      "lat": 43.65981,
+      "lon": -79.51399
     },
     {
+      "id": "4667-100881",
       "name": "Laird & Wicksteed",
       "street": "65 Wicksteed Ave",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "65 Wicksteed Ave, Toronto"
+      "address": "65 Wicksteed Ave, Toronto",
+      "lat": 43.71068,
+      "lon": -79.36096
     },
     {
+      "id": "4817-251106",
       "name": "Lakeshore & Leslie Drive-Thru",
       "street": "23 Leslie Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "23 Leslie Street, Toronto"
+      "address": "23 Leslie Street, Toronto",
+      "lat": 43.65958,
+      "lon": -79.3283
     },
     {
+      "id": "4874-115910",
       "name": "Midland & McNicoll",
       "street": "3740 Midland Avenue",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "3740 Midland Avenue, Toronto"
+      "address": "3740 Midland Avenue, Toronto",
+      "lat": 43.8163,
+      "lon": -79.29331
     },
     {
+      "id": "16896-163444",
       "name": "Mount Pleasant & Soudan",
       "street": "694 Mount Pleasant",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "694 Mount Pleasant, Toronto"
+      "address": "694 Mount Pleasant, Toronto",
+      "lat": 43.70593,
+      "lon": -79.38943
     },
     {
+      "id": "83743-310065",
       "name": "Portland & Adelaide",
       "street": "123 Portland Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "123 Portland Street, Toronto"
+      "address": "123 Portland Street, Toronto",
+      "lat": 43.6459,
+      "lon": -79.40047
     },
     {
+      "id": "4270-186347",
       "name": "Queen & Victoria",
       "street": "1 Queen St E",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1 Queen St E, Toronto"
+      "address": "1 Queen St E, Toronto",
+      "lat": 43.65243,
+      "lon": -79.37866
     },
     {
+      "id": "4524-93176",
       "name": "Queens Quay & York",
       "street": "208 Queens Quay West",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "208 Queens Quay West, Toronto"
+      "address": "208 Queens Quay West, Toronto",
+      "lat": 43.64001,
+      "lon": -79.38098
     },
     {
+      "id": "71004-305434",
       "name": "RBC Centre",
       "street": "155 Wellington St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "155 Wellington St W, Toronto"
+      "address": "155 Wellington St W, Toronto",
+      "lat": 43.64584,
+      "lon": -79.38629
     },
     {
+      "id": "74080-306751",
       "name": "Richmond & Adelaide Centre",
       "street": "120 Adelaide Street West",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "120 Adelaide Street West, Toronto"
+      "address": "120 Adelaide Street West, Toronto",
+      "lat": 43.64965,
+      "lon": -79.38342
     },
     {
+      "id": "71639-306381",
       "name": "Royal Bank Plaza PATH",
       "street": "200 Bay Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "200 Bay Street, Toronto"
+      "address": "200 Bay Street, Toronto",
+      "lat": 43.6461,
+      "lon": -79.37995
     },
     {
+      "id": "23244-228105",
       "name": "Royal York & The Westway",
       "street": "1564 Royal York Road",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1564 Royal York Road, Toronto"
+      "address": "1564 Royal York Road, Toronto",
+      "lat": 43.69641,
+      "lon": -79.53343
     },
     {
+      "id": "4225-767",
       "name": "SECURE ACCESS - SickKids Hospi",
       "street": "555 University Ave",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "555 University Ave, Toronto"
+      "address": "555 University Ave, Toronto",
+      "lat": 43.65775,
+      "lon": -79.3875
     },
     {
+      "id": "5161-135184",
       "name": "Sheppard & Leslie- CTC",
       "street": "1015 Sheppard Ave E",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "1015 Sheppard Ave E, Toronto"
+      "address": "1015 Sheppard Ave E, Toronto",
+      "lat": 43.76972,
+      "lon": -79.37277
     },
     {
+      "id": "54189-276866",
       "name": "Sheppard Avenue & Weston Road",
       "street": "2295 Sheppard Avenue West",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2295 Sheppard Avenue West, Toronto"
+      "address": "2295 Sheppard Avenue West, Toronto",
+      "lat": 43.73455,
+      "lon": -79.53369
     },
     {
+      "id": "17220-168432",
       "name": "Sherway Gardens",
       "street": "25 The West Mall",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "25 The West Mall, Toronto"
+      "address": "25 The West Mall, Toronto",
+      "lat": 43.61288,
+      "lon": -79.55569
     },
     {
+      "id": "4608-98091",
       "name": "Six Points Plaza-5230 Dundas S",
       "street": "5230 Dundas St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "5230 Dundas St W, Toronto"
+      "address": "5230 Dundas St W, Toronto",
+      "lat": 43.63962,
+      "lon": -79.53751
     },
     {
+      "id": "19474-181945",
       "name": "TD Bank Tower - PATH Concourse",
       "street": "66 Wellington Street West",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "66 Wellington Street West, Toronto"
+      "address": "66 Wellington Street West, Toronto",
+      "lat": 43.64723,
+      "lon": -79.38091
     },
     {
+      "id": "4455-310581",
       "name": "Toronto Eaton Centre South",
       "street": "220 Yonge St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "220 Yonge St, Toronto"
+      "address": "220 Yonge St, Toronto",
+      "lat": 43.65276,
+      "lon": -79.38036
     },
     {
+      "id": "4804-106564",
       "name": "Victoria Park & Consumers Rd.",
       "street": "2555 Victoria Park Ave",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2555 Victoria Park Ave, Toronto"
+      "address": "2555 Victoria Park Ave, Toronto",
+      "lat": 43.77221,
+      "lon": -79.32112
     },
     {
+      "id": "4254-586",
       "name": "Yonge & Brookdale",
       "street": "3250-3252 Yonge Street",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "3250-3252 Yonge Street, Toronto"
+      "address": "3250-3252 Yonge Street, Toronto",
+      "lat": 43.72981,
+      "lon": -79.40364
     },
     {
+      "id": "4742-104613",
       "name": "Yonge & Erskine",
       "street": "2451 Yonge Street N",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "2451 Yonge Street N, Toronto"
+      "address": "2451 Yonge Street N, Toronto",
+      "lat": 43.71101,
+      "lon": -79.39902
     },
     {
+      "id": "4300-884",
       "name": "Yonge & King",
       "street": "4 King St W",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "4 King St W, Toronto"
+      "address": "4 King St W, Toronto",
+      "lat": 43.64924,
+      "lon": -79.37813
     },
     {
+      "id": "4384-253006",
       "name": "York Mills and Lesmill",
       "street": "861 York Mills Road",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "861 York Mills Road, Toronto"
+      "address": "861 York Mills Road, Toronto",
+      "lat": 43.75407,
+      "lon": -79.35174
     },
     {
+      "id": "17922-307536",
       "name": "Yorkdale Cafe",
       "street": "3401 Dufferin St",
       "city": "Toronto",
       "region": "Toronto",
-      "address": "3401 Dufferin St, Toronto"
+      "address": "3401 Dufferin St, Toronto",
+      "lat": 43.72501,
+      "lon": -79.45494
     },
     {
+      "id": "17843-173859",
       "name": "Bolton Highway 50",
       "street": "12550 Hwy 50",
       "city": "Bolton",
       "region": "Peel",
-      "address": "12550 Hwy 50, Bolton"
+      "address": "12550 Hwy 50, Bolton",
+      "lat": 43.85868,
+      "lon": -79.70996
     },
     {
+      "id": "55133-288878",
       "name": "10 Earlsbridge Blvd.",
       "street": "10 Earlsbridge Blvd",
       "city": "Brampton",
       "region": "Peel",
-      "address": "10 Earlsbridge Blvd, Brampton"
+      "address": "10 Earlsbridge Blvd, Brampton",
+      "lat": 43.70243,
+      "lon": -79.8292
     },
     {
+      "id": "19572-200494",
       "name": "17 Worthington Ave",
       "street": "17 Worthington Avenue",
       "city": "Brampton",
       "region": "Peel",
-      "address": "17 Worthington Avenue, Brampton"
+      "address": "17 Worthington Avenue, Brampton",
+      "lat": 43.68177,
+      "lon": -79.81499
     },
     {
+      "id": "48145-261615",
       "name": "190 Queen Street East",
       "street": "190 Queen Street East",
       "city": "Brampton",
       "region": "Peel",
-      "address": "190 Queen Street East, Brampton"
+      "address": "190 Queen Street East, Brampton",
+      "lat": 43.69373,
+      "lon": -79.75211
     },
     {
+      "id": "50289-273864",
       "name": "3995 Cottrelle Blvd",
       "street": "3995 Cottrelle Blvd",
       "city": "Brampton",
       "region": "Peel",
-      "address": "3995 Cottrelle Blvd, Brampton"
+      "address": "3995 Cottrelle Blvd, Brampton",
+      "lat": 43.78432,
+      "lon": -79.65881
     },
     {
+      "id": "23274-210524",
       "name": "65 Dusk Dr",
       "street": "65 Dusk Drive",
       "city": "Brampton",
       "region": "Peel",
-      "address": "65 Dusk Drive, Brampton"
+      "address": "65 Dusk Drive, Brampton",
+      "lat": 43.6558,
+      "lon": -79.76786
     },
     {
+      "id": "18196-186624",
       "name": "80 Resolution Dr",
       "street": "80 Resolution Dr",
       "city": "Brampton",
       "region": "Peel",
-      "address": "80 Resolution Dr, Brampton"
+      "address": "80 Resolution Dr, Brampton",
+      "lat": 43.67726,
+      "lon": -79.72143
     },
     {
+      "id": "4344-1729",
       "name": "90 Great Lakes Dr",
       "street": "90 Great Lakes Dr",
       "city": "Brampton",
       "region": "Peel",
-      "address": "90 Great Lakes Dr, Brampton"
+      "address": "90 Great Lakes Dr, Brampton",
+      "lat": 43.72871,
+      "lon": -79.76249
     },
     {
+      "id": "53844-284904",
       "name": "Bramalea City Centre",
       "street": "25 Peel Centre Dr",
       "city": "Brampton",
       "region": "Peel",
-      "address": "25 Peel Centre Dr, Brampton"
+      "address": "25 Peel Centre Dr, Brampton",
+      "lat": 43.71546,
+      "lon": -79.72202
     },
     {
+      "id": "56095-289985",
       "name": "Queen and Beaumaris",
       "street": "5 Beaumaris Drive",
       "city": "Brampton",
       "region": "Peel",
-      "address": "5 Beaumaris Drive, Brampton"
+      "address": "5 Beaumaris Drive, Brampton",
+      "lat": 43.76475,
+      "lon": -79.66037
     },
     {
+      "id": "74035-304249",
       "name": "Sandalwood Pkwy",
       "street": "15 Sandalwood Pky W",
       "city": "Brampton",
       "region": "Peel",
-      "address": "15 Sandalwood Pky W, Brampton"
+      "address": "15 Sandalwood Pky W, Brampton",
+      "lat": 43.71631,
+      "lon": -79.80383
     },
     {
+      "id": "23283-228465",
       "name": "1016 Eglinton Ave E",
       "street": "1016 Eglinton Avenue East",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "1016 Eglinton Avenue East, Mississauga"
+      "address": "1016 Eglinton Avenue East, Mississauga",
+      "lat": 43.62751,
+      "lon": -79.62932
     },
     {
+      "id": "4387-23529",
       "name": "111 Lakeshore Rd W",
       "street": "111 Lakeshore Rd W",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "111 Lakeshore Rd W, Mississauga"
+      "address": "111 Lakeshore Rd W, Mississauga",
+      "lat": 43.54987,
+      "lon": -79.58727
     },
     {
+      "id": "4303-1148",
       "name": "189 Rathburn Rd W",
       "street": "189 Rathburn Rd W",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "189 Rathburn Rd W, Mississauga"
+      "address": "189 Rathburn Rd W, Mississauga",
+      "lat": 43.59447,
+      "lon": -79.64806
     },
     {
+      "id": "17341-179604",
       "name": "1930 Fowler Dr",
       "street": "1930 Fowler Dr",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "1930 Fowler Dr, Mississauga"
+      "address": "1930 Fowler Dr, Mississauga",
+      "lat": 43.52668,
+      "lon": -79.65062
     },
     {
+      "id": "4408-6346",
       "name": "2100 Hurontario St",
       "street": "2100 Hurontario Street",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "2100 Hurontario Street, Mississauga"
+      "address": "2100 Hurontario Street, Mississauga",
+      "lat": 43.57028,
+      "lon": -79.60278
     },
     {
+      "id": "4872-106562",
       "name": "2963 Argentia Rd",
       "street": "2963 Argentia Rd.",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "2963 Argentia Rd., Mississauga"
+      "address": "2963 Argentia Rd., Mississauga",
+      "lat": 43.59828,
+      "lon": -79.78361
     },
     {
+      "id": "23275-225064",
       "name": "30 World Drive",
       "street": "30 World Drive",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "30 World Drive, Mississauga"
+      "address": "30 World Drive, Mississauga",
+      "lat": 43.63356,
+      "lon": -79.68714
     },
     {
+      "id": "16201-140064",
       "name": "3030 Thomas St",
       "street": "3030 Thomas St",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "3030 Thomas St, Mississauga"
+      "address": "3030 Thomas St, Mississauga",
+      "lat": 43.55977,
+      "lon": -79.7338
     },
     {
+      "id": "4278-885",
       "name": "3235 Dundas St W",
       "street": "3235 Dundas Street West",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "3235 Dundas Street West, Mississauga"
+      "address": "3235 Dundas Street West, Mississauga",
+      "lat": 43.51829,
+      "lon": -79.68719
     },
     {
+      "id": "61580-296055",
       "name": "334 Dundas Street East",
       "street": "334 Dundas St E",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "334 Dundas St E, Mississauga"
+      "address": "334 Dundas St E, Mississauga",
+      "lat": 43.5871,
+      "lon": -79.60789
     },
     {
+      "id": "61699-296119",
       "name": "362 Lakeshore Road East",
       "street": "362 Lakeshore Rd E",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "362 Lakeshore Rd E, Mississauga"
+      "address": "362 Lakeshore Rd E, Mississauga",
+      "lat": 43.56322,
+      "lon": -79.57279
     },
     {
+      "id": "20687-181584",
       "name": "4076 Confederation Parkway",
       "street": "4076 Confederation Parkway",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "4076 Confederation Parkway, Mississauga"
+      "address": "4076 Confederation Parkway, Mississauga",
+      "lat": 43.5865,
+      "lon": -79.64709
     },
     {
+      "id": "20593-206884",
       "name": "5029 Hurontario St",
       "street": "5029 Hurontario St",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "5029 Hurontario St, Mississauga"
+      "address": "5029 Hurontario St, Mississauga",
+      "lat": 43.60757,
+      "lon": -79.65318
     },
     {
+      "id": "4657-100002",
       "name": "5067 Dixie Rd",
       "street": "5067 Dixie Rd",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "5067 Dixie Rd, Mississauga"
+      "address": "5067 Dixie Rd, Mississauga",
+      "lat": 43.63689,
+      "lon": -79.62106
     },
     {
+      "id": "69769-304659",
       "name": "6155 Erin Mills Parkway",
       "street": "6155 Erin Mills Parkway",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "6155 Erin Mills Parkway, Mississauga"
+      "address": "6155 Erin Mills Parkway, Mississauga",
+      "lat": 43.58133,
+      "lon": -79.73654
     },
     {
+      "id": "16144-164684",
       "name": "6974 Financial Drive",
       "street": "6974 Financial Dr",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "6974 Financial Dr, Mississauga"
+      "address": "6974 Financial Dr, Mississauga",
+      "lat": 43.60967,
+      "lon": -79.75076
     },
     {
+      "id": "4469-87801",
       "name": "960 Southdown Rd",
       "street": "960 Southdown Road",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "960 Southdown Road, Mississauga"
+      "address": "960 Southdown Road, Mississauga",
+      "lat": 43.50906,
+      "lon": -79.63147
     },
     {
+      "id": "56976-290976",
       "name": "Heartland Town Centre",
       "street": "6055 Mavis Rd",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "6055 Mavis Rd, Mississauga"
+      "address": "6055 Mavis Rd, Mississauga",
+      "lat": 43.6133,
+      "lon": -79.6964
     },
     {
+      "id": "29141-252625",
       "name": "Square One South",
       "street": "100 City Centre Dr",
       "city": "Mississauga",
       "region": "Peel",
-      "address": "100 City Centre Dr, Mississauga"
+      "address": "100 City Centre Dr, Mississauga",
+      "lat": 43.59168,
+      "lon": -79.64336
     },
     {
+      "id": "4761-103569",
       "name": "Bayview & Pedersen",
       "street": "129 Pedersen Drive",
       "city": "Aurora",
       "region": "York Region",
-      "address": "129 Pedersen Drive, Aurora"
+      "address": "129 Pedersen Drive, Aurora",
+      "lat": 44.01841,
+      "lon": -79.44743
     },
     {
+      "id": "64790-292813",
       "name": "Leslie & St. John's Sideroad E",
       "street": "10 Melvin Robson Ave",
       "city": "Aurora",
       "region": "York Region",
-      "address": "10 Melvin Robson Ave, Aurora"
+      "address": "10 Melvin Robson Ave, Aurora",
+      "lat": 44.03068,
+      "lon": -79.4226
     },
     {
+      "id": "60968-295300",
       "name": "Yonge & Ransom",
       "street": "14980 Yonge St",
       "city": "Aurora",
       "region": "York Region",
-      "address": "14980 Yonge St, Aurora"
+      "address": "14980 Yonge St, Aurora",
+      "lat": 43.99298,
+      "lon": -79.46636
     },
     {
+      "id": "54361-279904",
       "name": "10 Spring Hill Drive",
       "street": "10 Spring Hill Dr",
       "city": "King City",
       "region": "York Region",
-      "address": "10 Spring Hill Dr, King City"
+      "address": "10 Spring Hill Dr, King City",
+      "lat": 43.93249,
+      "lon": -79.51031
     },
     {
+      "id": "4951-128928",
       "name": "70 Copper Creek Dr, Bldg H",
       "street": "70 Copper Creek Drive Building H,",
       "city": "Markham",
       "region": "York Region",
-      "address": "70 Copper Creek Drive Building H,, Markham"
+      "address": "70 Copper Creek Drive Building H,, Markham",
+      "lat": 43.86633,
+      "lon": -79.22908
     },
     {
+      "id": "4580-96128",
       "name": "7080 Warden Ave",
       "street": "7080 Warden Avenue",
       "city": "Markham",
       "region": "York Region",
-      "address": "7080 Warden Avenue, Markham"
+      "address": "7080 Warden Avenue, Markham",
+      "lat": 43.8226,
+      "lon": -79.3259
     },
     {
+      "id": "4609-97961",
       "name": "7333 Woodbine Ave",
       "street": "7333 Woodbine Ave",
       "city": "Markham",
       "region": "York Region",
-      "address": "7333 Woodbine Ave, Markham"
+      "address": "7333 Woodbine Ave, Markham",
+      "lat": 43.8226,
+      "lon": -79.35059
     },
     {
+      "id": "66221-300220",
       "name": "404 and Davis Dr",
       "street": "27 Harry Walker Pky S",
       "city": "Newmarket",
       "region": "York Region",
-      "address": "27 Harry Walker Pky S, Newmarket"
+      "address": "27 Harry Walker Pky S, Newmarket",
+      "lat": 44.06689,
+      "lon": -79.4258
     },
     {
+      "id": "4916-124147",
       "name": "Leslie and Gorham",
       "street": "17130 Leslie Street Building A - Unit A",
       "city": "Newmarket",
       "region": "York Region",
-      "address": "17130 Leslie Street Building A - Unit A, Newmarket"
+      "address": "17130 Leslie Street Building A - Unit A, Newmarket",
+      "lat": 44.05643,
+      "lon": -79.43006
     },
     {
+      "id": "54658-288386",
       "name": "Leslie and Stackhouse",
       "street": "17285 Leslie Street",
       "city": "Newmarket",
       "region": "York Region",
-      "address": "17285 Leslie Street, Newmarket"
+      "address": "17285 Leslie Street, Newmarket",
+      "lat": 44.06056,
+      "lon": -79.43017
     },
     {
+      "id": "4764-275526",
       "name": "Upper Canada Mall",
       "street": "17600 Yonge St",
       "city": "Newmarket",
       "region": "York Region",
-      "address": "17600 Yonge St, Newmarket"
+      "address": "17600 Yonge St, Newmarket",
+      "lat": 44.05661,
+      "lon": -79.48364
     },
     {
+      "id": "4905-110264",
       "name": "Elgin Mills & Redstone",
       "street": "1241 Elgin Mills Road East",
       "city": "Richmond Hill",
       "region": "York Region",
-      "address": "1241 Elgin Mills Road East, Richmond Hill"
+      "address": "1241 Elgin Mills Road East, Richmond Hill",
+      "lat": 43.89629,
+      "lon": -79.40395
     },
     {
+      "id": "29443-253504",
       "name": "Yonge & Brookside",
       "street": "11108 Yonge Street",
       "city": "Richmond Hill",
       "region": "York Region",
-      "address": "11108 Yonge Street, Richmond Hill"
+      "address": "11108 Yonge Street, Richmond Hill",
+      "lat": 43.89841,
+      "lon": -79.44399
     },
     {
+      "id": "55422-289291",
       "name": "Stouffville",
       "street": "5771 Main Street",
       "city": "Stouffville",
       "region": "York Region",
-      "address": "5771 Main Street, Stouffville"
+      "address": "5771 Main Street, Stouffville",
+      "lat": 43.96652,
+      "lon": -79.26445
     },
     {
+      "id": "4938-124144",
       "name": "20 Innovation Dr",
       "street": "20 Innovation Drive",
       "city": "Vaughan",
       "region": "York Region",
-      "address": "20 Innovation Drive, Vaughan"
+      "address": "20 Innovation Drive, Vaughan",
+      "lat": 43.7886,
+      "lon": -79.62592
     },
     {
+      "id": "4743-103298",
       "name": "8010 Bathurst St",
       "street": "8010 Bathurst Street",
       "city": "Vaughan",
       "region": "York Region",
-      "address": "8010 Bathurst Street, Vaughan"
+      "address": "8010 Bathurst Street, Vaughan",
+      "lat": 43.81681,
+      "lon": -79.45213
     },
     {
+      "id": "57277-286473",
       "name": "Dufferin & Langstaff",
       "street": "8470 DUFFERIN ST",
       "city": "Vaughan",
       "region": "York Region",
-      "address": "8470 DUFFERIN ST, Vaughan"
+      "address": "8470 DUFFERIN ST, Vaughan",
+      "lat": 43.8238,
+      "lon": -79.47879
     },
     {
+      "id": "4982-105180",
       "name": "Dufferin & Major Mackenzie",
       "street": "1420 Major Mackenzie Dr",
       "city": "Vaughan",
       "region": "York Region",
-      "address": "1420 Major Mackenzie Dr, Vaughan"
+      "address": "1420 Major Mackenzie Dr, Vaughan",
+      "lat": 43.86219,
+      "lon": -79.48513
     },
     {
+      "id": "4906-124044",
       "name": "Thornhill Woods",
       "street": "1101 Rutherford Rd",
       "city": "Vaughan",
       "region": "York Region",
-      "address": "1101 Rutherford Rd, Vaughan"
+      "address": "1101 Rutherford Rd, Vaughan",
+      "lat": 43.84494,
+      "lon": -79.47059
     },
     {
+      "id": "4732-104193",
       "name": "Vaughan Mills Drive Thru",
       "street": "3175 Rutherford Road",
       "city": "Vaughan",
       "region": "York Region",
-      "address": "3175 Rutherford Road, Vaughan"
+      "address": "3175 Rutherford Road, Vaughan",
+      "lat": 43.82929,
+      "lon": -79.53688
     },
     {
+      "id": "4791-104690",
       "name": "Weston & Major Mackenzie",
       "street": "3737 Major Mackenzie Dr",
       "city": "Vaughan",
       "region": "York Region",
-      "address": "3737 Major Mackenzie Dr, Vaughan"
+      "address": "3737 Major Mackenzie Dr, Vaughan",
+      "lat": 43.84441,
+      "lon": -79.56007
     },
     {
+      "id": "4313-316785",
       "name": "7850 Weston Road",
       "street": "7850 Weston Rd",
       "city": "Woodbridge",
       "region": "York Region",
-      "address": "7850 Weston Rd, Woodbridge"
+      "address": "7850 Weston Rd, Woodbridge",
+      "lat": 43.79189,
+      "lon": -79.55034
     },
     {
+      "id": "18433-182389",
       "name": "1860 Appleby Line",
       "street": "1860 Appleby Line",
       "city": "Burlington",
       "region": "Halton",
-      "address": "1860 Appleby Line, Burlington"
+      "address": "1860 Appleby Line, Burlington",
+      "lat": 43.39108,
+      "lon": -79.78833
     },
     {
+      "id": "4678-100978",
       "name": "2500 Appleby Line",
       "street": "2500 Appleby Line",
       "city": "Burlington",
       "region": "Halton",
-      "address": "2500 Appleby Line, Burlington"
+      "address": "2500 Appleby Line, Burlington",
+      "lat": 43.40549,
+      "lon": -79.80809
     },
     {
+      "id": "19770-183025",
       "name": "3051 Walkers Line",
       "street": "3051 Walkers Line",
       "city": "Burlington",
       "region": "Halton",
-      "address": "3051 Walkers Line, Burlington"
+      "address": "3051 Walkers Line, Burlington",
+      "lat": 43.3938,
+      "lon": -79.82372
     },
     {
+      "id": "50088-272604",
       "name": "3497 Fairview Street",
       "street": "3497 Fairview Street",
       "city": "Burlington",
       "region": "Halton",
-      "address": "3497 Fairview Street, Burlington"
+      "address": "3497 Fairview Street, Burlington",
+      "lat": 43.35884,
+      "lon": -79.78134
     },
     {
+      "id": "4709-103125",
       "name": "503 Brant St",
       "street": "503 Brant St",
       "city": "Burlington",
       "region": "Halton",
-      "address": "503 Brant St, Burlington"
+      "address": "503 Brant St, Burlington",
+      "lat": 43.32762,
+      "lon": -79.80044
     },
     {
+      "id": "4675-100793",
       "name": "675 Appleby Line",
       "street": "675 Appleby Line",
       "city": "Burlington",
       "region": "Halton",
-      "address": "675 Appleby Line, Burlington"
+      "address": "675 Appleby Line, Burlington",
+      "lat": 43.37332,
+      "lon": -79.76111
     },
     {
+      "id": "4494-93178",
       "name": "900 Maple Ave",
       "street": "900 Maple Ave",
       "city": "Burlington",
       "region": "Halton",
-      "address": "900 Maple Ave, Burlington"
+      "address": "900 Maple Ave, Burlington",
+      "lat": 43.32591,
+      "lon": -79.81986
     },
     {
+      "id": "84759-304858",
       "name": "901 Brant Street Drive Thru",
       "street": "901 Brant St",
       "city": "Burlington",
       "region": "Halton",
-      "address": "901 Brant St, Burlington"
+      "address": "901 Brant St, Burlington",
+      "lat": 43.33687,
+      "lon": -79.8132
     },
     {
+      "id": "52984-283789",
       "name": "Toronto Premium Outlets",
       "street": "13850 Steeles Avenue West",
       "city": "Halton Hills",
       "region": "Halton",
-      "address": "13850 Steeles Avenue West, Halton Hills"
+      "address": "13850 Steeles Avenue West, Halton Hills",
+      "lat": 43.57502,
+      "lon": -79.82931
     },
     {
+      "id": "4584-96820",
       "name": "20 Market Dr",
       "street": "20 Market Drive",
       "city": "Milton",
       "region": "Halton",
-      "address": "20 Market Drive, Milton"
+      "address": "20 Market Drive, Milton",
+      "lat": 43.52315,
+      "lon": -79.89937
     },
     {
+      "id": "4912-108636",
       "name": "51 James Snow Parkway",
       "street": "51 James Snow Parkway",
       "city": "Milton",
       "region": "Halton",
-      "address": "51 James Snow Parkway, Milton"
+      "address": "51 James Snow Parkway, Milton",
+      "lat": 43.53915,
+      "lon": -79.85667
     },
     {
+      "id": "58591-291969",
       "name": "6030 Main Street",
       "street": "6030 Main Street W",
       "city": "Milton",
       "region": "Halton",
-      "address": "6030 Main Street W, Milton"
+      "address": "6030 Main Street W, Milton",
+      "lat": 43.49556,
+      "lon": -79.89631
     },
     {
+      "id": "4833-107475",
       "name": "870 Main St E",
       "street": "870 Main St E",
       "city": "Milton",
       "region": "Halton",
-      "address": "870 Main St E, Milton"
+      "address": "870 Main St E, Milton",
+      "lat": 43.52726,
+      "lon": -79.86615
     },
     {
+      "id": "57459-290857",
       "name": "1915 Ironoak Way",
       "street": "1915 Ironoak Way",
       "city": "Oakville",
       "region": "Halton",
-      "address": "1915 Ironoak Way, Oakville"
+      "address": "1915 Ironoak Way, Oakville",
+      "lat": 43.49343,
+      "lon": -79.68073
     },
     {
+      "id": "59520-293740",
       "name": "2027 Winston Park Drive",
       "street": "2027 Winston Park Dr",
       "city": "Oakville",
       "region": "Halton",
-      "address": "2027 Winston Park Dr, Oakville"
+      "address": "2027 Winston Park Dr, Oakville",
+      "lat": 43.5112,
+      "lon": -79.66829
     },
     {
+      "id": "62699-297195",
       "name": "2055 Cornwall Road",
       "street": "2055 Cornwall Rd",
       "city": "Oakville",
       "region": "Halton",
-      "address": "2055 Cornwall Rd, Oakville"
+      "address": "2055 Cornwall Rd, Oakville",
+      "lat": 43.48114,
+      "lon": -79.6569
     },
     {
+      "id": "4258-286587",
       "name": "215 North Service Road",
       "street": "215 North Service Road",
       "city": "Oakville",
       "region": "Halton",
-      "address": "215 North Service Road, Oakville"
+      "address": "215 North Service Road, Oakville",
+      "lat": 43.45089,
+      "lon": -79.70291
     },
     {
+      "id": "4531-94623",
       "name": "2501 Third Line",
       "street": "2501 Third Line",
       "city": "Oakville",
       "region": "Halton",
-      "address": "2501 Third Line, Oakville"
+      "address": "2501 Third Line, Oakville",
+      "lat": 43.44964,
+      "lon": -79.75904
     },
     {
+      "id": "4816-104227",
       "name": "2509 Prince Michael Dr",
       "street": "2509 Prince Michael Dr.",
       "city": "Oakville",
       "region": "Halton",
-      "address": "2509 Prince Michael Dr., Oakville"
+      "address": "2509 Prince Michael Dr., Oakville",
+      "lat": 43.49761,
+      "lon": -79.70751
     },
     {
+      "id": "4757-104792",
       "name": "2983 Westoak Trails",
       "street": "2983 Westoak Trails",
       "city": "Oakville",
       "region": "Halton",
-      "address": "2983 Westoak Trails, Oakville"
+      "address": "2983 Westoak Trails, Oakville",
+      "lat": 43.42893,
+      "lon": -79.76528
     },
     {
+      "id": "4573-96127",
       "name": "321 Cornwall Rd",
       "street": "321 Cornwall Rd",
       "city": "Oakville",
       "region": "Halton",
-      "address": "321 Cornwall Rd, Oakville"
+      "address": "321 Cornwall Rd, Oakville",
+      "lat": 43.45757,
+      "lon": -79.67862
     },
     {
+      "id": "4430-18659",
       "name": "330 Dundas St E",
       "street": "330 Dundas Street East",
       "city": "Oakville",
       "region": "Halton",
-      "address": "330 Dundas Street East, Oakville"
+      "address": "330 Dundas Street East, Oakville",
+      "lat": 43.4874,
+      "lon": -79.71824
     },
     {
+      "id": "17342-314580",
       "name": "Downtown Oakville",
       "street": "239 Lakeshore Rd E",
       "city": "Oakville",
       "region": "Halton",
-      "address": "239 Lakeshore Rd E, Oakville"
+      "address": "239 Lakeshore Rd E, Oakville",
+      "lat": 43.44657,
+      "lon": -79.66758
     },
     {
+      "id": "50472-265924",
       "name": "Rossland and Harwood Avenue",
       "street": "5 Rossland Road East",
       "city": "Ajax",
       "region": "Durham",
-      "address": "5 Rossland Road East, Ajax"
+      "address": "5 Rossland Road East, Ajax",
+      "lat": 43.88002,
+      "lon": -79.02498
     },
     {
+      "id": "4860-106552",
       "name": "Westney and Kingston",
       "street": "15 Westney Road",
       "city": "Ajax",
       "region": "Durham",
-      "address": "15 Westney Road, Ajax"
+      "address": "15 Westney Road, Ajax",
+      "lat": 43.85879,
+      "lon": -79.03786
     },
     {
+      "id": "55535-286668",
       "name": "Bowmanville Cafe",
       "street": "2348 Hwy 2",
       "city": "Bowmanville",
       "region": "Durham",
-      "address": "2348 Hwy 2, Bowmanville"
+      "address": "2348 Hwy 2, Bowmanville",
+      "lat": 43.90973,
+      "lon": -78.71258
     },
     {
+      "id": "62158-296726",
       "name": "Bowmanville Drive Thru",
       "street": "96 King St E",
       "city": "Bowmanville",
       "region": "Durham",
-      "address": "96 King St E, Bowmanville"
+      "address": "96 King St E, Bowmanville",
+      "lat": 43.91173,
+      "lon": -78.68618
     },
     {
+      "id": "57962-291993",
       "name": "Trulls Road & Highway 2",
       "street": "1635 Highway 2",
       "city": "Courtice",
       "region": "Durham",
-      "address": "1635 Highway 2, Courtice"
+      "address": "1635 Highway 2, Courtice",
+      "lat": 43.91061,
+      "lon": -78.78716
     },
     {
+      "id": "4790-104208",
       "name": "1365 Wilson Rd N",
       "street": "1365 Wilson Rd N",
       "city": "Oshawa",
       "region": "Durham",
-      "address": "1365 Wilson Rd N, Oshawa"
+      "address": "1365 Wilson Rd N, Oshawa",
+      "lat": 43.93829,
+      "lon": -78.857
     },
     {
+      "id": "4932-117888",
       "name": "575 Laval Drive",
       "street": "575 Laval Dr",
       "city": "Oshawa",
       "region": "Durham",
-      "address": "575 Laval Dr, Oshawa"
+      "address": "575 Laval Dr, Oshawa",
+      "lat": 43.87934,
+      "lon": -78.87873
     },
     {
+      "id": "47180-256825",
       "name": "Oshawa Centre Food Court",
       "street": "419 King St W",
       "city": "Oshawa",
       "region": "Durham",
-      "address": "419 King St W, Oshawa"
+      "address": "419 King St W, Oshawa",
+      "lat": 43.89029,
+      "lon": -78.87958
     },
     {
+      "id": "84324-313611",
       "name": "Ritson & Beatrice",
       "street": "1177 Ritson Rd N",
       "city": "Oshawa",
       "region": "Durham",
-      "address": "1177 Ritson Rd N, Oshawa"
+      "address": "1177 Ritson Rd N, Oshawa",
+      "lat": 43.93085,
+      "lon": -78.86629
     },
     {
+      "id": "61740-294562",
       "name": "Winchester and Simcoe",
       "street": "2670 Simcoe Street North",
       "city": "Oshawa",
       "region": "Durham",
-      "address": "2670 Simcoe Street North, Oshawa"
+      "address": "2670 Simcoe Street North, Oshawa",
+      "lat": 43.96447,
+      "lon": -78.90523
     },
     {
+      "id": "57286-290788",
       "name": "Bayly and Liverpool",
       "street": "1300 Bayly Street",
       "city": "Pickering",
       "region": "Durham",
-      "address": "1300 Bayly Street, Pickering"
+      "address": "1300 Bayly Street, Pickering",
+      "lat": 43.82907,
+      "lon": -79.08809
     },
     {
+      "id": "4414-20599",
       "name": "Liverpool and Kingston",
       "street": "1300 Kingston Road",
       "city": "Pickering",
       "region": "Durham",
-      "address": "1300 Kingston Road, Pickering"
+      "address": "1300 Kingston Road, Pickering",
+      "lat": 43.83664,
+      "lon": -79.08992
     },
     {
+      "id": "52436-281915",
       "name": "2 Douglas Road",
       "street": "2 Douglas Road",
       "city": "Uxbridge",
       "region": "Durham",
-      "address": "2 Douglas Road, Uxbridge"
+      "address": "2 Douglas Road, Uxbridge",
+      "lat": 44.09141,
+      "lon": -79.13238
     },
     {
+      "id": "4911-108286",
       "name": "Brock and Taunton",
       "street": "3940 Brock Street North",
       "city": "Whitby",
       "region": "Durham",
-      "address": "3940 Brock Street North, Whitby"
+      "address": "3940 Brock Street North, Whitby",
+      "lat": 43.91461,
+      "lon": -78.95885
     },
     {
+      "id": "4627-99063",
       "name": "Consumers and Thickson",
       "street": "25 Consumers Drive",
       "city": "Whitby",
       "region": "Durham",
-      "address": "25 Consumers Drive, Whitby"
+      "address": "25 Consumers Drive, Whitby",
+      "lat": 43.87187,
+      "lon": -78.90822
     },
     {
+      "id": "84958-314542",
       "name": "Taunton Gardens",
       "street": "4140 Garden St",
       "city": "Whitby",
       "region": "Durham",
-      "address": "4140 Garden St, Whitby"
+      "address": "4140 Garden St, Whitby",
+      "lat": 43.91936,
+      "lon": -78.9488
     },
     {
+      "id": "16278-161004",
       "name": "Thickson and Nichol",
       "street": "80 Thickson Road South",
       "city": "Whitby",
       "region": "Durham",
-      "address": "80 Thickson Road South, Whitby"
+      "address": "80 Thickson Road South, Whitby",
+      "lat": 43.88305,
+      "lon": -78.91179
     },
     {
+      "id": "15720-156244",
       "name": "Thickson and Taunton",
       "street": "660 Taunton Rd E",
       "city": "Whitby",
       "region": "Durham",
-      "address": "660 Taunton Rd E, Whitby"
+      "address": "660 Taunton Rd E, Whitby",
+      "lat": 43.92215,
+      "lon": -78.92912
     }
   ],
   "unmatched": [],

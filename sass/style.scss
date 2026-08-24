@@ -663,6 +663,49 @@ code .il {
   text-underline-offset: 0.12em;
 }
 
+.starbucks-map-hint {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin: -0.5em 0 0.75em;
+}
+
+.starbucks-leaflet {
+  width: 100%;
+  height: min(52vh, 420px);
+  min-height: 260px;
+  margin: 0 0 1.25em;
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.starbucks-dist-col {
+  width: 3.25em;
+}
+
+.starbucks-dist {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
+#to-visit-table tbody tr {
+  cursor: pointer;
+}
+
+#to-visit-table tbody tr.is-focus {
+  background: rgba(26, 127, 75, 0.12);
+}
+
+#to-visit-table tbody tr.is-nearby {
+  background: rgba(43, 108, 176, 0.1);
+}
+
+#to-visit-table tbody tr.is-focus td:nth-child(2),
+#to-visit-table tbody tr.is-nearby td:nth-child(2) {
+  font-weight: 600;
+}
+
 .post-date {
   opacity: 0.75;
   margin-top: -0.5em;

@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block head_extra %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+{% endblock head_extra %}
+
 {% block content %}
 {% set stats = load_data(path="data/starbucks/starbucks.json") %}
 
@@ -11,19 +16,29 @@
   {{ stats.to_visit | length }} unvisited standalone stores
   ({{ stats.standalone.visited }} of {{ stats.standalone.total }} visited).
 </p>
+<p class="starbucks-map-hint" id="to-visit-hint">
+  Hover, tap, or click a map pin to sort the list by distance from that store.
+</p>
+
+<div id="to-visit-map" class="starbucks-leaflet" role="region" aria-label="Map of unvisited standalone stores"></div>
 
 <table class="travel-flights-table starbucks-sort-table" id="to-visit-table">
   <thead>
     <tr>
-      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="0" data-type="text" aria-label="Sort by name">Name</button></th>
-      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="1" data-type="text" aria-label="Sort by street">Street</button></th>
-      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="2" data-type="text" aria-label="Sort by city">City</button></th>
-      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="3" data-type="text" aria-label="Sort by region">Region</button></th>
+      <th scope="col" class="starbucks-dist-col"><button type="button" class="starbucks-sort-btn" data-col="0" data-type="num" aria-label="Sort by distance">km</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="1" data-type="text" aria-label="Sort by name">Name</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="2" data-type="text" aria-label="Sort by street">Street</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="3" data-type="text" aria-label="Sort by city">City</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="4" data-type="text" aria-label="Sort by region">Region</button></th>
     </tr>
   </thead>
   <tbody>
     {% for store in stats.to_visit %}
-    <tr>
+    <tr data-id="{{ store.id }}"
+        data-lat="{{ store.lat }}"
+        data-lon="{{ store.lon }}"
+        data-name="{{ store.name }}">
+      <td class="starbucks-dist" data-sort="" data-dist=""></td>
       <td data-sort="{{ store.name | lower }}">{{ store.name }}</td>
       <td data-sort="{{ store.street | lower }}">{{ store.street }}</td>
       <td data-sort="{{ store.city | lower }}">{{ store.city }}</td>
@@ -38,19 +53,65 @@
 {% endblock content %}
 
 {% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 <script>
 (function () {
   var table = document.getElementById("to-visit-table");
-  if (!table) return;
+  var mapEl = document.getElementById("to-visit-map");
+  var hint = document.getElementById("to-visit-hint");
+  if (!table || !mapEl || typeof L === "undefined") return;
+
   var tbody = table.tBodies[0];
   var buttons = table.querySelectorAll(".starbucks-sort-btn");
-  var state = { col: 3, dir: 1 };
+  var state = { col: 4, dir: 1, mode: "col" };
+  var NEARBY_N = 12;
+  var markersById = {};
+  var selectedId = null;
+  var hoverTimer = null;
 
-  function sortBy(col, dir) {
+  function haversineKm(lat1, lon1, lat2, lon2) {
+    var R = 6371;
+    var toRad = Math.PI / 180;
+    var dLat = (lat2 - lat1) * toRad;
+    var dLon = (lon2 - lon1) * toRad;
+    var a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * toRad) * Math.cos(lat2 * toRad) *
+      Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  }
+
+  function clearSortUi() {
+    buttons.forEach(function (b) {
+      b.removeAttribute("aria-sort");
+      b.classList.remove("is-asc", "is-desc");
+    });
+  }
+
+  function setSortUi(col, dir) {
+    clearSortUi();
+    var btn = table.querySelector('.starbucks-sort-btn[data-col="' + col + '"]');
+    if (!btn) return;
+    btn.setAttribute("aria-sort", dir === 1 ? "ascending" : "descending");
+    btn.classList.add(dir === 1 ? "is-asc" : "is-desc");
+  }
+
+  function sortByCol(col, dir, type) {
+    state = { col: col, dir: dir, mode: "col" };
+    setSortUi(col, dir);
     var rows = Array.prototype.slice.call(tbody.rows);
     rows.sort(function (a, b) {
       var av = (a.cells[col].getAttribute("data-sort") || a.cells[col].textContent || "").trim();
       var bv = (b.cells[col].getAttribute("data-sort") || b.cells[col].textContent || "").trim();
+      if (type === "num") {
+        var an = parseFloat(av);
+        var bn = parseFloat(bv);
+        if (isNaN(an) && isNaN(bn)) return 0;
+        if (isNaN(an)) return 1;
+        if (isNaN(bn)) return -1;
+        return (an - bn) * dir;
+      }
       if (av < bv) return -1 * dir;
       if (av > bv) return 1 * dir;
       return 0;
@@ -58,27 +119,168 @@
     rows.forEach(function (row) { tbody.appendChild(row); });
   }
 
+  function clearDistanceMode() {
+    selectedId = null;
+    Array.prototype.forEach.call(tbody.rows, function (row) {
+      row.classList.remove("is-focus", "is-nearby");
+      var cell = row.cells[0];
+      cell.textContent = "";
+      cell.setAttribute("data-sort", "");
+      cell.setAttribute("data-dist", "");
+    });
+    Object.keys(markersById).forEach(function (id) {
+      var m = markersById[id];
+      m.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
+    });
+    if (hint) {
+      hint.textContent = "Hover, tap, or click a map pin to sort the list by distance from that store.";
+    }
+  }
+
+  function focusStore(id, opts) {
+    opts = opts || {};
+    var focusRow = null;
+    Array.prototype.forEach.call(tbody.rows, function (row) {
+      if (row.getAttribute("data-id") === id) focusRow = row;
+    });
+    if (!focusRow) return;
+    var flat = parseFloat(focusRow.getAttribute("data-lat"));
+    var flon = parseFloat(focusRow.getAttribute("data-lon"));
+    if (isNaN(flat) || isNaN(flon)) return;
+
+    selectedId = id;
+    var rows = Array.prototype.slice.call(tbody.rows);
+    var scored = rows.map(function (row) {
+      var lat = parseFloat(row.getAttribute("data-lat"));
+      var lon = parseFloat(row.getAttribute("data-lon"));
+      var dist = (isNaN(lat) || isNaN(lon)) ? Infinity : haversineKm(flat, flon, lat, lon);
+      return { row: row, dist: dist, id: row.getAttribute("data-id") };
+    });
+    scored.sort(function (a, b) { return a.dist - b.dist; });
+
+    scored.forEach(function (item, index) {
+      var cell = item.row.cells[0];
+      var label = isFinite(item.dist) ? item.dist.toFixed(1) : "";
+      cell.textContent = label;
+      cell.setAttribute("data-sort", isFinite(item.dist) ? String(item.dist) : "");
+      cell.setAttribute("data-dist", label);
+      item.row.classList.toggle("is-focus", item.id === id);
+      item.row.classList.toggle("is-nearby", index > 0 && index < NEARBY_N);
+      tbody.appendChild(item.row);
+
+      var marker = markersById[item.id];
+      if (!marker) return;
+      if (item.id === id) {
+        marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
+        marker.setZIndexOffset(1000);
+      } else if (index < NEARBY_N) {
+        marker.setStyle({ radius: 6, weight: 1.5, fillOpacity: 0.95, color: "#1a365d", fillColor: "#2b6cb0" });
+        marker.setZIndexOffset(500 - index);
+      } else {
+        marker.setStyle({ radius: 4, weight: 1, fillOpacity: 0.45, color: "#9ca3af", fillColor: "#d1d5db" });
+        marker.setZIndexOffset(0);
+      }
+    });
+
+    state = { col: 0, dir: 1, mode: "distance" };
+    setSortUi(0, 1);
+
+    var name = focusRow.getAttribute("data-name") || "store";
+    if (hint) {
+      hint.textContent = "Sorted by distance from " + name + " (nearest " + Math.min(NEARBY_N, scored.length) + " highlighted). Click the pin again or press Esc to reset.";
+    }
+
+    if (opts.scrollTable) {
+      focusRow.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    }
+  }
+
   buttons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       var col = parseInt(btn.getAttribute("data-col"), 10);
-      var dir = state.col === col ? -state.dir : 1;
-      state = { col: col, dir: dir };
-      buttons.forEach(function (b) {
-        b.removeAttribute("aria-sort");
-        b.classList.remove("is-asc", "is-desc");
-      });
-      btn.setAttribute("aria-sort", dir === 1 ? "ascending" : "descending");
-      btn.classList.add(dir === 1 ? "is-asc" : "is-desc");
-      sortBy(col, dir);
+      var type = btn.getAttribute("data-type") || "text";
+      if (state.mode === "distance" && col !== 0) {
+        clearDistanceMode();
+      }
+      if (col === 0 && state.mode !== "distance") {
+        return;
+      }
+      var dir = state.mode === "col" && state.col === col ? -state.dir : 1;
+      sortByCol(col, dir, type);
     });
   });
 
-  // Default: region (col 3), matching import order.
-  var regionBtn = table.querySelector('.starbucks-sort-btn[data-col="3"]');
-  if (regionBtn) {
-    regionBtn.setAttribute("aria-sort", "ascending");
-    regionBtn.classList.add("is-asc");
+  // Map
+  var map = L.map(mapEl, { scrollWheelZoom: true });
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 18,
+  }).addTo(map);
+
+  var bounds = [];
+  Array.prototype.forEach.call(tbody.rows, function (row) {
+    var id = row.getAttribute("data-id");
+    var lat = parseFloat(row.getAttribute("data-lat"));
+    var lon = parseFloat(row.getAttribute("data-lon"));
+    if (!id || isNaN(lat) || isNaN(lon)) return;
+    bounds.push([lat, lon]);
+    var marker = L.circleMarker([lat, lon], {
+      radius: 5,
+      weight: 1,
+      color: "#6b7280",
+      fillColor: "#c5ccd4",
+      fillOpacity: 0.85,
+    });
+    marker.bindTooltip(row.getAttribute("data-name") || id, { direction: "top", opacity: 0.9 });
+    marker.on("mouseover", function () {
+      if (window.matchMedia && window.matchMedia("(hover: none)").matches) return;
+      clearTimeout(hoverTimer);
+      hoverTimer = setTimeout(function () { focusStore(id, { scrollTable: true }); }, 80);
+    });
+    marker.on("click", function () {
+      if (selectedId === id && state.mode === "distance") {
+        clearDistanceMode();
+        setSortUi(4, 1);
+        sortByCol(4, 1, "text");
+        return;
+      }
+      focusStore(id, { scrollTable: true });
+    });
+    marker.addTo(map);
+    markersById[id] = marker;
+
+    row.addEventListener("mouseenter", function () {
+      if (state.mode !== "distance") {
+        marker.setStyle({ radius: 7, weight: 2, fillColor: "#9ca3af" });
+      }
+    });
+    row.addEventListener("mouseleave", function () {
+      if (state.mode !== "distance") {
+        marker.setStyle({ radius: 5, weight: 1, fillColor: "#c5ccd4", color: "#6b7280" });
+      }
+    });
+    row.addEventListener("click", function () {
+      focusStore(id, { scrollTable: false });
+      map.panTo([lat, lon], { animate: true });
+      marker.openTooltip();
+    });
+  });
+
+  if (bounds.length) {
+    map.fitBounds(bounds, { padding: [24, 24], maxZoom: 11 });
+  } else {
+    map.setView([43.7, -79.4], 9);
   }
+
+  document.addEventListener("keydown", function (ev) {
+    if (ev.key === "Escape" && state.mode === "distance") {
+      clearDistanceMode();
+      setSortUi(4, 1);
+      sortByCol(4, 1, "text");
+    }
+  });
+
+  setSortUi(4, 1);
 })();
 </script>
 {% endblock scripts %}

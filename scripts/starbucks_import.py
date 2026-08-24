@@ -327,11 +327,14 @@ def import_receipts(
         if is_standalone and not visited:
             to_visit.append(
                 {
+                    "id": sn or (store.get("name") or ""),
                     "name": store.get("name") or "",
                     "street": store.get("street") or "",
                     "city": store.get("city") or "",
                     "region": store.get("region") or "",
                     "address": store.get("address") or "",
+                    "lat": store.get("lat"),
+                    "lon": store.get("lng"),
                 }
             )
         # Map: all standalone + any visited non-standalone only.

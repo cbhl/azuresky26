@@ -149,9 +149,120 @@ def simplify_ring(coords: list[list[float]], tolerance: float) -> list[list[floa
     return simplified
 
 
-def thin_line(coords: list[list[float]], min_step: float) -> list[list[float]]:
-    """Legacy helper kept for callers; prefer simplify_line."""
-    return simplify_line(coords, tolerance=min_step * 0.5)
+def path_length(coords: list[list[float]]) -> float:
+    total = 0.0
+    for a, b in zip(coords, coords[1:]):
+        total += _dist((a[0], a[1]), (b[0], b[1]))
+    return total
+
+
+def _endpoint_key(pt: list[float], decimals: int = 4) -> tuple[float, float]:
+    """Snap endpoints so adjacent OSM ways join (≈11m at GTA latitude)."""
+    return (round(float(pt[0]), decimals), round(float(pt[1]), decimals))
+
+
+def merge_road_segments(segments: list[dict]) -> list[dict]:
+    """Join OSM way stubs that share endpoints into continuous polylines.
+
+    Uses endpoint hashing + iterative degree-2 chaining (linear-ish), not
+    pairwise search — OSM motorways arrive as thousands of short ways.
+    """
+    if not segments:
+        return []
+
+    by_class: dict[str, list[dict]] = {}
+    for seg in segments:
+        by_class.setdefault(seg.get("class") or "primary", []).append(seg)
+
+    merged: list[dict] = []
+    for cls, group in by_class.items():
+        # Each chain is a list of points; track free ends in a hash map.
+        chains: list[list[list[float]] | None] = []
+        names: list[str] = []
+        ends: dict[tuple[float, float], list[tuple[int, str]]] = {}
+
+        def add_end(cid: int, which: str, pt: list[float]) -> None:
+            ends.setdefault(_endpoint_key(pt), []).append((cid, which))
+
+        def remove_end(cid: int, which: str, pt: list[float]) -> None:
+            k = _endpoint_key(pt)
+            lst = ends.get(k)
+            if not lst:
+                return
+            ends[k] = [e for e in lst if e != (cid, which)]
+            if not ends[k]:
+                del ends[k]
+
+        for seg in group:
+            coords = [list(p) for p in seg["coords"]]
+            if len(coords) < 2:
+                continue
+            cid = len(chains)
+            chains.append(coords)
+            names.append(seg.get("name") or "")
+            add_end(cid, "start", coords[0])
+            add_end(cid, "end", coords[-1])
+
+        changed = True
+        while changed:
+            changed = False
+            for key, occupants in list(ends.items()):
+                if len(occupants) < 2:
+                    continue
+                # Join first two live ends at this node.
+                (i, ei), (j, ej) = occupants[0], occupants[1]
+                if i == j:
+                    continue
+                pi, pj = chains[i], chains[j]
+                if pi is None or pj is None:
+                    continue
+
+                # Detach old endpoints.
+                remove_end(i, "start", pi[0])
+                remove_end(i, "end", pi[-1])
+                remove_end(j, "start", pj[0])
+                remove_end(j, "end", pj[-1])
+
+                if ei == "end" and ej == "start":
+                    new_pts = pi + pj[1:]
+                elif ei == "start" and ej == "end":
+                    new_pts = pj + pi[1:]
+                elif ei == "end" and ej == "end":
+                    new_pts = pi + list(reversed(pj))[1:]
+                else:  # start + start
+                    new_pts = list(reversed(pj)) + pi[1:]
+
+                chains[i] = new_pts
+                chains[j] = None
+                if names[j] and not names[i]:
+                    names[i] = names[j]
+                add_end(i, "start", new_pts[0])
+                add_end(i, "end", new_pts[-1])
+                changed = True
+                break
+
+        for i, pts in enumerate(chains):
+            if pts is not None and len(pts) >= 2:
+                merged.append({"class": cls, "name": names[i], "coords": pts})
+    return merged
+
+
+def finalize_roads(segments: list[dict]) -> list[dict]:
+    """Merge stubs, gently simplify, drop tiny leftovers."""
+    merged = merge_road_segments(segments)
+    # Gentle RDP — keep curvature of freeways/arterials visible at city scale.
+    tol = {"motorway": 0.0008, "trunk": 0.0009, "primary": 0.0012}
+    min_len = {"motorway": 0.008, "trunk": 0.01, "primary": 0.015}
+    out: list[dict] = []
+    for seg in merged:
+        cls = seg.get("class") or "primary"
+        coords = simplify_line(seg["coords"], tolerance=tol.get(cls, 0.001))
+        if len(coords) < 2:
+            continue
+        if path_length(coords) < min_len.get(cls, 0.015):
+            continue
+        out.append({"class": cls, "name": seg.get("name") or "", "coords": coords})
+    return out
 
 
 def elements_to_basemap(payload: dict) -> dict:
@@ -173,7 +284,7 @@ def elements_to_basemap(payload: dict) -> dict:
         elif et == "relation":
             relations.append(el)
 
-    roads: list[dict] = []
+    road_segments: list[dict] = []
     water: list[dict] = []
     labels: list[dict] = []
 
@@ -196,22 +307,12 @@ def elements_to_basemap(payload: dict) -> dict:
 
         highway = tags.get("highway")
         if highway in road_classes:
-            cls = road_classes[highway]
-            tol = {"motorway": 0.0035, "trunk": 0.003, "primary": 0.004}.get(cls, 0.004)
-            min_len = {"motorway": 0.01, "trunk": 0.012, "primary": 0.02}.get(cls, 0.02)
-            simplified = simplify_line(coords, tolerance=tol)
-            if len(simplified) < 2:
-                continue
-            length = 0.0
-            for a, b in zip(simplified, simplified[1:]):
-                length += _dist((a[0], a[1]), (b[0], b[1]))
-            if length < min_len:
-                continue
-            roads.append(
+            # Keep full geometry here; merge + simplify in finalize_roads.
+            road_segments.append(
                 {
-                    "class": cls,
+                    "class": road_classes[highway],
                     "name": tags.get("name") or tags.get("ref") or "",
-                    "coords": simplified,
+                    "coords": coords,
                 }
             )
             continue
@@ -231,6 +332,8 @@ def elements_to_basemap(payload: dict) -> dict:
             simplified = simplify_ring(coords, tolerance=0.003)
             if len(simplified) >= 4:
                 water.append({"coords": [simplified]})
+
+    roads = finalize_roads(road_segments)
 
     # Relations: outer rings only for water
     for rel in relations:

@@ -316,13 +316,21 @@ def render_starbucks_map(map_data: dict, output_path: Path, basemap: dict | None
     legend = legend_svg(x0, y0, plot_w, plot_h)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" role="img" aria-label="Starbucks stores visited across the Greater Toronto Area">
+  <defs>
+    <clipPath id="plot-clip">
+      <rect x="{x0}" y="{y0}" width="{plot_w}" height="{plot_h}"/>
+    </clipPath>
+  </defs>
   <rect width="100%" height="100%" fill="{BG}"/>
   <rect x="{x0}" y="{y0}" width="{plot_w}" height="{plot_h}" fill="{LAND}" stroke="{BORDER}" stroke-width="0.75"/>
+  <g clip-path="url(#plot-clip)">
   {water_svg}
   {roads_svg}
   {layers}
   {labels_svg}
+  </g>
   {legend}
+  <rect x="{x0}" y="{y0}" width="{plot_w}" height="{plot_h}" fill="none" stroke="{BORDER}" stroke-width="0.75"/>
 </svg>
 """
 
