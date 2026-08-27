@@ -1,0 +1,14 @@
+{
+  "name": "two-truths-and-a-lie",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --out ../../static/chang26 --base /chang26/ && node scripts/postbuild.mjs ../../static/chang26"
+  },
+  "devDependencies": {
+    "@slidev/cli": "^52.19.1",
+    "@slidev/theme-default": "^0.25.0",
+    "vue": "^3.5.41"
+  }
+}

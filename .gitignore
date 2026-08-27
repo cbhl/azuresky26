@@ -2,6 +2,12 @@ public/
 .DS_Store
 Thumbs.db
 
+# Slidev deck sources: keep slides.md/public assets, ignore local tooling state.
+# The built deck is committed under static/chang26/ (see slidev/*/README.md).
+slidev/*/node_modules/
+slidev/*/.slidev/
+slidev/*/dist/
+
 # Raw Flighty export (generated JSON in data/flights.json is committed)
 data/flighty/export.csv
 data/flighty/*.csv
