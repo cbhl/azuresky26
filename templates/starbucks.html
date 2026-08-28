@@ -21,28 +21,6 @@
   </p>
   {% endif %}
 
-  {% if stats.by_region %}
-  <h3 class="starbucks-subhead">By region</h3>
-  <table class="travel-flights-table starbucks-region-table">
-    <thead>
-      <tr>
-        <th>Region</th>
-        <th>Visited</th>
-        <th>Total</th>
-      </tr>
-    </thead>
-    <tbody>
-      {% for row in stats.by_region %}
-      <tr>
-        <td>{{ row.region }}</td>
-        <td>{{ row.visited }}</td>
-        <td>{{ row.total }}</td>
-      </tr>
-      {% endfor %}
-    </tbody>
-  </table>
-  {% endif %}
-
   {% if stats.top_items or stats.top_stores %}
   <div class="travel-tops starbucks-tops">
     {% if stats.top_items %}
