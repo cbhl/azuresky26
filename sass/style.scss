@@ -613,16 +613,28 @@ code .il {
 }
 
 .starbucks-activity {
-  --activity-0: rgba(127, 127, 127, 0.22);
-  --activity-1: #0e4429;
-  --activity-2: #006d32;
-  --activity-3: #26a641;
-  --activity-4: #39d353;
+  --activity-border: rgba(255, 255, 255, 0.25);
+  --activity-0: rgba(255, 255, 255, 0.12);
+  --activity-1: #0d5131;
+  --activity-2: #087a40;
+  --activity-3: #16a05a;
+  --activity-4: #34d399;
+}
+
+@media (prefers-color-scheme: light) {
+  .starbucks-activity {
+    --activity-border: rgba(0, 0, 0, 0.25);
+    --activity-0: rgba(0, 0, 0, 0.10);
+    --activity-1: #c6e9d2;
+    --activity-2: #7acb93;
+    --activity-3: #28a65d;
+    --activity-4: #087f3f;
+  }
 }
 
 .starbucks-activity-scroll {
   overflow-x: auto;
-  border: 1px solid rgba(127, 127, 127, 0.35);
+  border: 1px solid var(--activity-border);
   border-radius: 4px;
   padding: 0.75em;
   touch-action: pan-x;
