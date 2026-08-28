@@ -653,6 +653,10 @@ code .il {
   gap: 2px;
 }
 
+.starbucks-activity-days {
+  gap: 1px;
+}
+
 .starbucks-activity-month-labels {
   position: relative;
   height: 1em;
@@ -667,7 +671,7 @@ code .il {
 
 .starbucks-activity-rows {
   display: grid;
-  gap: 2px;
+  gap: 1px;
 }
 
 .starbucks-activity-row {
