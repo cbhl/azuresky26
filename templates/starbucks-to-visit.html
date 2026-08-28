@@ -65,7 +65,6 @@
   var tbody = table.tBodies[0];
   var buttons = table.querySelectorAll(".starbucks-sort-btn");
   var state = { col: 4, dir: 1, mode: "col" };
-  var NEARBY_N = 12;
   var markersById = {};
   var selectedId = null;
   var hoveredId = null;
@@ -123,7 +122,7 @@
     selectedId = null;
     hoveredId = null;
     Array.prototype.forEach.call(tbody.rows, function (row) {
-      row.classList.remove("is-focus", "is-nearby");
+      row.classList.remove("is-focus");
       var cell = row.cells[0];
       cell.textContent = "";
       cell.setAttribute("data-sort", "");
@@ -166,7 +165,6 @@
       cell.setAttribute("data-sort", isFinite(item.dist) ? String(item.dist) : "");
       cell.setAttribute("data-dist", label);
       item.row.classList.toggle("is-focus", item.id === id);
-      item.row.classList.toggle("is-nearby", index > 0 && index < NEARBY_N);
       tbody.appendChild(item.row);
 
       var marker = markersById[item.id];
@@ -174,15 +172,11 @@
       // CircleMarker is a Path, so use bringToFront rather than Marker methods.
       if (item.id === selectedId || item.id === hoveredId) {
         marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
-      } else if (index < NEARBY_N) {
-        marker.setStyle({ radius: 6, weight: 1.5, fillOpacity: 0.95, color: "#1a365d", fillColor: "#2b6cb0" });
-        marker.bringToFront();
       } else {
-        marker.setStyle({ radius: 4, weight: 1, fillOpacity: 0.45, color: "#9ca3af", fillColor: "#d1d5db" });
+        marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
       }
     });
 
-    // Focus pin last so it stays above nearby pins restyled above.
     var focusMarker = markersById[selectedId] || markersById[hoveredId] || markersById[id];
     if (focusMarker) focusMarker.bringToFront();
 
@@ -191,7 +185,7 @@
 
     var name = focusRow.getAttribute("data-name") || "store";
     if (hint) {
-      hint.textContent = "Sorted by distance from " + name + " (nearest " + Math.min(NEARBY_N, scored.length) + " highlighted). Click the pin again or press Esc to reset.";
+      hint.textContent = "Sorted by distance from " + name + ". Click the pin again or press Esc to reset.";
     }
 
     if (opts.scrollTable) {
@@ -251,14 +245,7 @@
       hoveredId = null;
       if (selectedId === id) return;
       if (state.mode === "distance") {
-        var rowIndex = Array.prototype.indexOf.call(tbody.rows, row);
-        if (rowIndex > 0 && rowIndex < NEARBY_N) {
-          marker.setStyle({ radius: 6, weight: 1.5, fillOpacity: 0.95, color: "#1a365d", fillColor: "#2b6cb0" });
-        } else if (rowIndex >= NEARBY_N) {
-          marker.setStyle({ radius: 4, weight: 1, fillOpacity: 0.45, color: "#9ca3af", fillColor: "#d1d5db" });
-        } else {
-          marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
-        }
+        marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
       } else {
         marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
       }
