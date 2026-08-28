@@ -12,7 +12,8 @@
     <div><dt>Visited</dt><dd>{{ stats.standalone.visited }}</dd></div>
     <div><dt>Total</dt><dd>{{ stats.standalone.total }}</dd></div>
     <div><dt>Remaining</dt><dd>{% if stats.standalone.remaining > 0 %}<a href="/starbucks/to-visit/">{{ stats.standalone.remaining }}</a>{% else %}{{ stats.standalone.remaining }}{% endif %}</dd></div>
-    <div><dt>History</dt><dd>{{ stats.history_count }}</dd></div>
+    <div><dt>Visits in GTA</dt><dd>{{ stats.history_count }}</dd></div>
+    {% if stats.stars %}<div><dt>Stars earned</dt><dd>{{ stats.stars.earned }}</dd></div><div><dt>Stars redeemed</dt><dd>{{ stats.stars.redeemed }}</dd></div>{% endif %}
   </dl>
   {% if stats.date_range and stats.date_range.min and stats.date_range.max %}
   <p class="travel-empty starbucks-history-span">
@@ -51,6 +52,20 @@
   {% endif %}
 </section>
 
+{% if stats.activity and stats.activity.years %}
+<section class="starbucks-activity" aria-label="Starbucks daily visit activity">
+  <h2>Daily activity</h2>
+  <p class="travel-empty">{{ stats.activity.total_events }} visits across {{ stats.activity.total_days_active }} days. Each year is normalized to its busiest day.</p>
+  <div class="starbucks-activity-scroll">
+    <div class="starbucks-activity-grid" data-activity='{{ stats.activity | json_encode() | safe }}'>
+      <div class="starbucks-activity-months"><span></span><div class="starbucks-activity-month-labels"></div></div>
+      <div class="starbucks-activity-rows"></div>
+    </div>
+  </div>
+  <div class="starbucks-activity-legend" aria-hidden="true"><span>Less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>More</span></div>
+</section>
+{% endif %}
+
 {% if stats.standalone and stats.standalone.total > 0 %}
 <section class="travel-map-section" aria-label="Starbucks map">
   <h2>Map</h2>
@@ -59,3 +74,78 @@
 </section>
 {% endif %}
 {% endblock content %}
+
+{% block scripts %}
+{% if stats.activity and stats.activity.years %}
+<script>
+  (function () {
+    var root = document.querySelector(".starbucks-activity-grid");
+    if (!root) return;
+    var activity = JSON.parse(root.dataset.activity);
+    var names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    activity.years.forEach(function (year) {
+      var block = document.createElement("div");
+      block.className = "starbucks-activity-year-block";
+      var firstDay = new Date(Date.UTC(Number(year), 0, 1));
+      var firstSunday = new Date(firstDay);
+      firstSunday.setUTCDate(firstSunday.getUTCDate() - firstSunday.getUTCDay());
+      var end = new Date(Date.UTC(Number(year) + 1, 0, 1));
+      var weeks = Math.ceil((end - firstSunday) / 86400000 / 7);
+
+      var months = document.createElement("div");
+      months.className = "starbucks-activity-months";
+      var yearLabel = document.createElement("span");
+      yearLabel.className = "starbucks-activity-year";
+      yearLabel.textContent = year;
+      months.appendChild(yearLabel);
+      var labels = document.createElement("div");
+      labels.className = "starbucks-activity-month-labels";
+      labels.style.gridTemplateColumns = "repeat(" + weeks + ", 10px)";
+      names.forEach(function (name, month) {
+        var label = document.createElement("span");
+        var monthStart = new Date(Date.UTC(Number(year), month, 1));
+        var startColumn = Math.floor((monthStart - firstSunday) / 86400000 / 7) + 1;
+        label.textContent = name;
+        label.style.left = ((startColumn - 1) * 12) + "px";
+        labels.appendChild(label);
+      });
+      months.appendChild(labels);
+      block.appendChild(months);
+
+      var rows = document.createElement("div");
+      rows.className = "starbucks-activity-rows";
+      var max = activity.max_count_by_year[year] || 1;
+      ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].forEach(function (weekday, dayOfWeek) {
+        var row = document.createElement("div");
+        row.className = "starbucks-activity-row";
+        var weekdayLabel = document.createElement("span");
+        weekdayLabel.className = "starbucks-activity-weekday";
+        weekdayLabel.textContent = weekday;
+        row.appendChild(weekdayLabel);
+        var days = document.createElement("div");
+        days.className = "starbucks-activity-days";
+        days.style.gridTemplateColumns = "repeat(" + weeks + ", 10px)";
+        for (var week = 0; week < weeks; week += 1) {
+          var day = new Date(firstSunday);
+          day.setUTCDate(day.getUTCDate() + week * 7 + dayOfWeek);
+          var iso = day.toISOString().slice(0, 10);
+          var count = day >= firstDay && day < end ? (activity.days[iso] || 0) : 0;
+          var cell = document.createElement("span");
+          cell.className = "starbucks-activity-cell";
+          cell.dataset.level = count ? Math.max(1, Math.ceil(count / max * 4)) : 0;
+          if (day >= firstDay && day < end) {
+            cell.title = count + " visit" + (count === 1 ? "" : "s") + " on " + iso;
+            cell.setAttribute("aria-label", cell.title);
+          }
+          days.appendChild(cell);
+        }
+        row.appendChild(days);
+        rows.appendChild(row);
+      });
+      block.appendChild(rows);
+      root.appendChild(block);
+    });
+  }());
+</script>
+{% endif %}
+{% endblock scripts %}

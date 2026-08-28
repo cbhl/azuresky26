@@ -488,6 +488,7 @@ code .il {
 
 .travel-stats h2,
 .travel-map-section h2,
+.starbucks-activity h2,
 .travel-recent h2,
 .travel-posts h2 {
   font-size: 1.25rem;
@@ -606,6 +607,114 @@ code .il {
   margin-top: -0.25em;
   margin-bottom: 1em;
 }
+
+.starbucks-activity {
+  --activity-0: rgba(127, 127, 127, 0.22);
+  --activity-1: #0e4429;
+  --activity-2: #006d32;
+  --activity-3: #26a641;
+  --activity-4: #39d353;
+}
+
+.starbucks-activity-scroll {
+  overflow-x: auto;
+  border: 1px solid rgba(127, 127, 127, 0.35);
+  border-radius: 4px;
+  padding: 0.75em;
+  touch-action: pan-x;
+}
+
+.starbucks-activity-grid {
+  min-width: 690px;
+}
+
+.starbucks-activity-year-block + .starbucks-activity-year-block {
+  margin-top: 0.75em;
+}
+
+.starbucks-activity-months,
+.starbucks-activity-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.starbucks-activity-months > span,
+.starbucks-activity-year {
+  flex: 0 0 3rem;
+}
+
+.starbucks-activity-month-labels,
+.starbucks-activity-days {
+  display: grid;
+  gap: 2px;
+}
+
+.starbucks-activity-month-labels {
+  position: relative;
+  height: 1em;
+}
+
+.starbucks-activity-month-labels span {
+  font-size: 0.7rem;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+}
+
+.starbucks-activity-rows {
+  display: grid;
+  gap: 2px;
+}
+
+.starbucks-activity-row {
+  align-items: center;
+}
+
+.starbucks-activity-year,
+.starbucks-activity-weekday {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  font-variant-numeric: tabular-nums;
+}
+
+.starbucks-activity-weekday {
+  flex: 0 0 3rem;
+}
+
+.starbucks-activity-cell {
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  background: var(--activity-0);
+}
+
+.starbucks-activity-cell[data-level="1"] { background: var(--activity-1); }
+.starbucks-activity-cell[data-level="2"] { background: var(--activity-2); }
+.starbucks-activity-cell[data-level="3"] { background: var(--activity-3); }
+.starbucks-activity-cell[data-level="4"] { background: var(--activity-4); }
+.starbucks-activity-cell:hover { outline: 1px solid currentColor; }
+
+.starbucks-activity-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  margin: 0.5em 0 1em;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.starbucks-activity-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--activity-0);
+}
+
+.starbucks-activity-legend i[data-level="1"] { background: var(--activity-1); }
+.starbucks-activity-legend i[data-level="2"] { background: var(--activity-2); }
+.starbucks-activity-legend i[data-level="3"] { background: var(--activity-3); }
+.starbucks-activity-legend i[data-level="4"] { background: var(--activity-4); }
 
 .starbucks-map {
   max-width: 100%;
