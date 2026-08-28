@@ -4,16 +4,14 @@
 {% set stats = load_data(path="data/starbucks/starbucks.json") %}
 
 <h1>{{ section.title }}</h1>
-<p class="travel-intro">One day, I want to visit every Starbucks store in Toronto. This page tracks my progress toward that goal.</p>
+<p class="travel-intro">Someday, I want to visit every Starbucks store in the Greater Toronto Area. This page tracks my progress.</p>
 
 <section class="travel-stats" aria-label="Starbucks visit statistics">
-  <h2>Visited standalone stores</h2>
+  <h2>Stats</h2>
   {% if stats.standalone and stats.standalone.total > 0 %}
   <dl class="travel-stats-grid">
-    <div><dt>Visited</dt><dd>{{ stats.standalone.visited }}</dd></div>
-    <div><dt>Total</dt><dd>{{ stats.standalone.total }}</dd></div>
-    <div><dt>Remaining</dt><dd>{% if stats.standalone.remaining > 0 %}<a href="/starbucks/to-visit/">{{ stats.standalone.remaining }}</a>{% else %}{{ stats.standalone.remaining }}{% endif %}</dd></div>
-    <div><dt>Visits in GTA</dt><dd>{{ stats.history_count }}</dd></div>
+    <div><dt>Visited</dt><dd>{{ stats.standalone.visited }} / {{ stats.standalone.total }}</dd></div>
+    <div><dt>To visit</dt><dd>{% if stats.standalone.remaining > 0 %}<a href="/starbucks/to-visit/">{{ stats.standalone.remaining }}</a>{% else %}{{ stats.standalone.remaining }}{% endif %}</dd></div>
     {% if stats.stars %}<div><dt>Stars earned</dt><dd>{{ stats.stars.earned }}</dd></div><div><dt>Stars redeemed</dt><dd>{{ stats.stars.redeemed }}</dd></div>{% endif %}
   </dl>
   {% if stats.top_items or stats.top_stores %}

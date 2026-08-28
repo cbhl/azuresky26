@@ -828,7 +828,8 @@
       "region": "Toronto",
       "address": "170 Evans Avenue, Etobicoke",
       "lat": 43.6185,
-      "lon": -79.51259
+      "lon": -79.51259,
+      "drive_thru": true
     },
     {
       "id": "4318-249544",
@@ -838,7 +839,8 @@
       "region": "Toronto",
       "address": "43 Milner Avenue, Scarborough",
       "lat": 43.78377,
-      "lon": -79.25331
+      "lon": -79.25331,
+      "drive_thru": true
     },
     {
       "id": "4803-97529",
@@ -848,7 +850,8 @@
       "region": "Toronto",
       "address": "1900 Eglinton Avenue East, Scarborough",
       "lat": 43.72691,
-      "lon": -79.29324
+      "lon": -79.29324,
+      "drive_thru": false
     },
     {
       "id": "54931-288675",
@@ -858,7 +861,8 @@
       "region": "Toronto",
       "address": "300 Borough Dr, Scarborough",
       "lat": 43.77632,
-      "lon": -79.25929
+      "lon": -79.25929,
+      "drive_thru": false
     },
     {
       "id": "58728-292978",
@@ -868,7 +872,8 @@
       "region": "Toronto",
       "address": "1430 Lawrence Ave E, Scarborough",
       "lat": 43.74188,
-      "lon": -79.31352
+      "lon": -79.31352,
+      "drive_thru": true
     },
     {
       "id": "24209-236145",
@@ -878,7 +883,8 @@
       "region": "Toronto",
       "address": "1156 Kennedy Road, Toronto",
       "lat": 43.75247,
-      "lon": -79.27637
+      "lon": -79.27637,
+      "drive_thru": true
     },
     {
       "id": "23090-212865",
@@ -888,7 +894,8 @@
       "region": "Toronto",
       "address": "150 Park Lawn Rd, Toronto",
       "lat": 43.62766,
-      "lon": -79.48919
+      "lon": -79.48919,
+      "drive_thru": true
     },
     {
       "id": "70839-305225",
@@ -898,7 +905,8 @@
       "region": "Toronto",
       "address": "16 York St, Toronto",
       "lat": 43.64254,
-      "lon": -79.38248
+      "lon": -79.38248,
+      "drive_thru": false
     },
     {
       "id": "4227-271584",
@@ -908,7 +916,8 @@
       "region": "Toronto",
       "address": "1960 Queen St E, Toronto",
       "lat": 43.66972,
-      "lon": -79.30212
+      "lon": -79.30212,
+      "drive_thru": false
     },
     {
       "id": "4296-250015",
@@ -918,7 +927,8 @@
       "region": "Toronto",
       "address": "2 St. Clair Avenue East, Toronto",
       "lat": 43.68851,
-      "lon": -79.39409
+      "lon": -79.39409,
+      "drive_thru": false
     },
     {
       "id": "82862-311997",
@@ -928,7 +938,8 @@
       "region": "Toronto",
       "address": "221 Queen St W, Toronto",
       "lat": 43.65044,
-      "lon": -79.38788
+      "lon": -79.38788,
+      "drive_thru": false
     },
     {
       "id": "4233-544",
@@ -938,7 +949,8 @@
       "region": "Toronto",
       "address": "2210 Bloor Street, Toronto",
       "lat": 43.65135,
-      "lon": -79.47587
+      "lon": -79.47587,
+      "drive_thru": false
     },
     {
       "id": "4929-294862",
@@ -948,7 +960,8 @@
       "region": "Toronto",
       "address": "2235 Yonge St, Toronto",
       "lat": 43.70609,
-      "lon": -79.39798
+      "lon": -79.39798,
+      "drive_thru": false
     },
     {
       "id": "56315-278012",
@@ -958,7 +971,8 @@
       "region": "Toronto",
       "address": "253 Jarvis Street, Toronto",
       "lat": 43.65729,
-      "lon": -79.37437
+      "lon": -79.37437,
+      "drive_thru": false
     },
     {
       "id": "61606-296058",
@@ -968,7 +982,8 @@
       "region": "Toronto",
       "address": "3300 Dufferin Street, Toronto",
       "lat": 43.72152,
-      "lon": -79.45673
+      "lon": -79.45673,
+      "drive_thru": false
     },
     {
       "id": "82564-311706",
@@ -978,7 +993,8 @@
       "region": "Toronto",
       "address": "350 Bay St, Toronto",
       "lat": 43.65042,
-      "lon": -79.38124
+      "lon": -79.38124,
+      "drive_thru": false
     },
     {
       "id": "4226-771",
@@ -988,7 +1004,8 @@
       "region": "Toronto",
       "address": "444 Eglinton Ave W, Toronto",
       "lat": 43.70393,
-      "lon": -79.41166
+      "lon": -79.41166,
+      "drive_thru": false
     },
     {
       "id": "4210-531",
@@ -998,7 +1015,8 @@
       "region": "Toronto",
       "address": "446 Spadina Rd, Toronto",
       "lat": 43.68926,
-      "lon": -79.41296
+      "lon": -79.41296,
+      "drive_thru": false
     },
     {
       "id": "4208-524",
@@ -1008,7 +1026,8 @@
       "region": "Toronto",
       "address": "485 Church St, Toronto",
       "lat": 43.66498,
-      "lon": -79.3805
+      "lon": -79.3805,
+      "drive_thru": false
     },
     {
       "id": "58427-290004",
@@ -1018,7 +1037,8 @@
       "region": "Toronto",
       "address": "4915 Steeles Avenue West, Toronto",
       "lat": 43.77062,
-      "lon": -79.5435
+      "lon": -79.5435,
+      "drive_thru": true
     },
     {
       "id": "4205-530",
@@ -1028,7 +1048,8 @@
       "region": "Toronto",
       "address": "604 Danforth Ave, Toronto",
       "lat": 43.67879,
-      "lon": -79.3463
+      "lon": -79.3463,
+      "drive_thru": false
     },
     {
       "id": "26281-243832",
@@ -1038,7 +1059,8 @@
       "region": "Toronto",
       "address": "6355 Yonge St, Toronto",
       "lat": 43.79668,
-      "lon": -79.41923
+      "lon": -79.41923,
+      "drive_thru": true
     },
     {
       "id": "47666-232784",
@@ -1048,7 +1070,8 @@
       "region": "Toronto",
       "address": "75 Billy Bishop Way, Toronto",
       "lat": 43.73316,
-      "lon": -79.4522
+      "lon": -79.4522,
+      "drive_thru": false
     },
     {
       "id": "25747-242317",
@@ -1058,7 +1081,8 @@
       "region": "Toronto",
       "address": "829 The Queensway, Toronto",
       "lat": 43.62468,
-      "lon": -79.50825
+      "lon": -79.50825,
+      "drive_thru": true
     },
     {
       "id": "4718-288881",
@@ -1068,7 +1092,8 @@
       "region": "Toronto",
       "address": "869 Queen St E, Toronto",
       "lat": 43.66043,
-      "lon": -79.34253
+      "lon": -79.34253,
+      "drive_thru": false
     },
     {
       "id": "16078-166544",
@@ -1078,7 +1103,8 @@
       "region": "Toronto",
       "address": "170 Rimrock Rd, Toronto",
       "lat": 43.75756,
-      "lon": -79.46582
+      "lon": -79.46582,
+      "drive_thru": false
     },
     {
       "id": "54396-286182",
@@ -1088,7 +1114,8 @@
       "region": "Toronto",
       "address": "1507 Avenue Road, Toronto",
       "lat": 43.72263,
-      "lon": -79.41532
+      "lon": -79.41532,
+      "drive_thru": false
     },
     {
       "id": "4207-525",
@@ -1098,7 +1125,8 @@
       "region": "Toronto",
       "address": "1740-42 Avenue Road, Toronto",
       "lat": 43.7287,
-      "lon": -79.41843
+      "lon": -79.41843,
+      "drive_thru": false
     },
     {
       "id": "4206-309972",
@@ -1108,7 +1136,8 @@
       "region": "Toronto",
       "address": "859 Eglinton Avenue West, Toronto",
       "lat": 43.70088,
-      "lon": -79.42585
+      "lon": -79.42585,
+      "drive_thru": false
     },
     {
       "id": "15977-156245",
@@ -1118,7 +1147,8 @@
       "region": "Toronto",
       "address": "3671 Bathurst St, Toronto",
       "lat": 43.73409,
-      "lon": -79.4332
+      "lon": -79.4332,
+      "drive_thru": false
     },
     {
       "id": "4585-95347",
@@ -1128,7 +1158,8 @@
       "region": "Toronto",
       "address": "626 Sheppard Ave W, Toronto",
       "lat": 43.7556,
-      "lon": -79.44039
+      "lon": -79.44039,
+      "drive_thru": false
     },
     {
       "id": "20991-207444",
@@ -1138,7 +1169,8 @@
       "region": "Toronto",
       "address": "47 Charles St W, Toronto",
       "lat": 43.66805,
-      "lon": -79.3885
+      "lon": -79.3885,
+      "drive_thru": false
     },
     {
       "id": "4402-2830",
@@ -1148,7 +1180,8 @@
       "region": "Toronto",
       "address": "1250 Bay St, Toronto",
       "lat": 43.67059,
-      "lon": -79.39006
+      "lon": -79.39006,
+      "drive_thru": false
     },
     {
       "id": "4276-936",
@@ -1158,7 +1191,8 @@
       "region": "Toronto",
       "address": "1545 Bayview Ave, Toronto",
       "lat": 43.70518,
-      "lon": -79.37476
+      "lon": -79.37476,
+      "drive_thru": false
     },
     {
       "id": "49141-266125",
@@ -1168,7 +1202,8 @@
       "region": "Toronto",
       "address": "2901 Bayview Avenue, Toronto",
       "lat": 43.76907,
-      "lon": -79.38668
+      "lon": -79.38668,
+      "drive_thru": false
     },
     {
       "id": "15631-158804",
@@ -1178,7 +1213,8 @@
       "region": "Toronto",
       "address": "1 Bedford Avenue, Toronto",
       "lat": 43.66865,
-      "lon": -79.39742
+      "lon": -79.39742,
+      "drive_thru": false
     },
     {
       "id": "4448-67903",
@@ -1188,7 +1224,8 @@
       "region": "Toronto",
       "address": "235 Bloor St. East, Toronto",
       "lat": 43.67134,
-      "lon": -79.38069
+      "lon": -79.38069,
+      "drive_thru": false
     },
     {
       "id": "4613-98127",
@@ -1198,7 +1235,8 @@
       "region": "Toronto",
       "address": "3079-3081 Bloor St W, Toronto",
       "lat": 43.64658,
-      "lon": -79.51404
+      "lon": -79.51404,
+      "drive_thru": false
     },
     {
       "id": "29915-255605",
@@ -1208,7 +1246,8 @@
       "region": "Toronto",
       "address": "4201 Bloor St W, Toronto",
       "lat": 43.63514,
-      "lon": -79.56331
+      "lon": -79.56331,
+      "drive_thru": false
     },
     {
       "id": "22838-224385",
@@ -1218,7 +1257,8 @@
       "region": "Toronto",
       "address": "1320 Castlefield Avenue, Toronto",
       "lat": 43.69845,
-      "lon": -79.4632
+      "lon": -79.4632,
+      "drive_thru": false
     },
     {
       "id": "4095-282005",
@@ -1228,7 +1268,8 @@
       "region": "Toronto",
       "address": "6 Pabst Lane, Toronto",
       "lat": 43.73591,
-      "lon": -79.34428
+      "lon": -79.34428,
+      "drive_thru": false
     },
     {
       "id": "49964-251783",
@@ -1238,7 +1279,8 @@
       "region": "Toronto",
       "address": "2387 Kingston Rd, Toronto",
       "lat": 43.70808,
-      "lon": -79.24952
+      "lon": -79.24952,
+      "drive_thru": true
     },
     {
       "id": "17181-170464",
@@ -1248,7 +1290,8 @@
       "region": "Toronto",
       "address": "978 Coxwell Ave, Toronto",
       "lat": 43.69598,
-      "lon": -79.32891
+      "lon": -79.32891,
+      "drive_thru": false
     },
     {
       "id": "22866-225584",
@@ -1258,7 +1301,8 @@
       "region": "Toronto",
       "address": "110 Bloor St W, Toronto",
       "lat": 43.67003,
-      "lon": -79.39161
+      "lon": -79.39161,
+      "drive_thru": false
     },
     {
       "id": "4525-93920",
@@ -1268,7 +1312,8 @@
       "region": "Toronto",
       "address": "2081 Steeles Ave W, Toronto",
       "lat": 43.78603,
-      "lon": -79.47439
+      "lon": -79.47439,
+      "drive_thru": false
     },
     {
       "id": "4720-103563",
@@ -1278,7 +1323,8 @@
       "region": "Toronto",
       "address": "2201 Dundas St W, Toronto",
       "lat": 43.65346,
-      "lon": -79.45159
+      "lon": -79.45159,
+      "drive_thru": false
     },
     {
       "id": "47181-251744",
@@ -1288,7 +1334,8 @@
       "region": "Toronto",
       "address": "1100 Ellesmere Road, Toronto",
       "lat": 43.76832,
-      "lon": -79.27186
+      "lon": -79.27186,
+      "drive_thru": true
     },
     {
       "id": "4863-286832",
@@ -1298,7 +1345,8 @@
       "region": "Toronto",
       "address": "1800 Sheppard Ave E, Toronto",
       "lat": 43.77802,
-      "lon": -79.3433
+      "lon": -79.3433,
+      "drive_thru": false
     },
     {
       "id": "21883-215124",
@@ -1308,7 +1356,8 @@
       "region": "Toronto",
       "address": "1115 Finch Ave W, Toronto",
       "lat": 43.76613,
-      "lon": -79.47633
+      "lon": -79.47633,
+      "drive_thru": true
     },
     {
       "id": "25370-240804",
@@ -1318,7 +1367,8 @@
       "region": "Toronto",
       "address": "6620 Finch Ave W, Toronto",
       "lat": 43.73498,
-      "lon": -79.60162
+      "lon": -79.60162,
+      "drive_thru": true
     },
     {
       "id": "71733-306849",
@@ -1328,7 +1378,8 @@
       "region": "Toronto",
       "address": "100 King Street West, Toronto",
       "lat": 43.649,
-      "lon": -79.38178
+      "lon": -79.38178,
+      "drive_thru": false
     },
     {
       "id": "47561-255989",
@@ -1338,7 +1389,8 @@
       "region": "Toronto",
       "address": "351 King Street East, Toronto",
       "lat": 43.6514,
-      "lon": -79.36432
+      "lon": -79.36432,
+      "drive_thru": false
     },
     {
       "id": "21891-207467",
@@ -1348,7 +1400,8 @@
       "region": "Toronto",
       "address": "300 Front St W, Toronto",
       "lat": 43.64423,
-      "lon": -79.38912
+      "lon": -79.38912,
+      "drive_thru": false
     },
     {
       "id": "4841-109906",
@@ -1358,7 +1411,8 @@
       "region": "Toronto",
       "address": "85 Hanna Street, Toronto",
       "lat": 43.63981,
-      "lon": -79.41959
+      "lon": -79.41959,
+      "drive_thru": false
     },
     {
       "id": "4460-67901",
@@ -1368,7 +1422,8 @@
       "region": "Toronto",
       "address": "2 Bloor St E, Toronto",
       "lat": 43.67069,
-      "lon": -79.38632
+      "lon": -79.38632,
+      "drive_thru": false
     },
     {
       "id": "4477-265766",
@@ -1378,7 +1433,8 @@
       "region": "Toronto",
       "address": "2575 St Clair Ave W, Toronto",
       "lat": 43.66741,
-      "lon": -79.48925
+      "lon": -79.48925,
+      "drive_thru": true
     },
     {
       "id": "4636-255353",
@@ -1388,7 +1444,8 @@
       "region": "Toronto",
       "address": "625 King St W, Toronto",
       "lat": 43.64386,
-      "lon": -79.40181
+      "lon": -79.40181,
+      "drive_thru": false
     },
     {
       "id": "4719-101643",
@@ -1398,7 +1455,8 @@
       "region": "Toronto",
       "address": "1020 Kingston Rd, Toronto",
       "lat": 43.68088,
-      "lon": -79.28497
+      "lon": -79.28497,
+      "drive_thru": false
     },
     {
       "id": "16709-161186",
@@ -1408,7 +1466,8 @@
       "region": "Toronto",
       "address": "6714 Kingston Rd, Toronto",
       "lat": 43.79747,
-      "lon": -79.1488
+      "lon": -79.1488,
+      "drive_thru": true
     },
     {
       "id": "52762-280748",
@@ -1418,7 +1477,8 @@
       "region": "Toronto",
       "address": "4242 Dundas St W, Toronto",
       "lat": 43.65981,
-      "lon": -79.51399
+      "lon": -79.51399,
+      "drive_thru": false
     },
     {
       "id": "4667-100881",
@@ -1428,7 +1488,8 @@
       "region": "Toronto",
       "address": "65 Wicksteed Ave, Toronto",
       "lat": 43.71068,
-      "lon": -79.36096
+      "lon": -79.36096,
+      "drive_thru": false
     },
     {
       "id": "4817-251106",
@@ -1438,7 +1499,8 @@
       "region": "Toronto",
       "address": "23 Leslie Street, Toronto",
       "lat": 43.65958,
-      "lon": -79.3283
+      "lon": -79.3283,
+      "drive_thru": true
     },
     {
       "id": "4874-115910",
@@ -1448,7 +1510,8 @@
       "region": "Toronto",
       "address": "3740 Midland Avenue, Toronto",
       "lat": 43.8163,
-      "lon": -79.29331
+      "lon": -79.29331,
+      "drive_thru": true
     },
     {
       "id": "16896-163444",
@@ -1458,7 +1521,8 @@
       "region": "Toronto",
       "address": "694 Mount Pleasant, Toronto",
       "lat": 43.70593,
-      "lon": -79.38943
+      "lon": -79.38943,
+      "drive_thru": false
     },
     {
       "id": "83743-310065",
@@ -1468,7 +1532,8 @@
       "region": "Toronto",
       "address": "123 Portland Street, Toronto",
       "lat": 43.6459,
-      "lon": -79.40047
+      "lon": -79.40047,
+      "drive_thru": false
     },
     {
       "id": "4270-186347",
@@ -1478,7 +1543,8 @@
       "region": "Toronto",
       "address": "1 Queen St E, Toronto",
       "lat": 43.65243,
-      "lon": -79.37866
+      "lon": -79.37866,
+      "drive_thru": false
     },
     {
       "id": "4524-93176",
@@ -1488,7 +1554,8 @@
       "region": "Toronto",
       "address": "208 Queens Quay West, Toronto",
       "lat": 43.64001,
-      "lon": -79.38098
+      "lon": -79.38098,
+      "drive_thru": false
     },
     {
       "id": "71004-305434",
@@ -1498,7 +1565,8 @@
       "region": "Toronto",
       "address": "155 Wellington St W, Toronto",
       "lat": 43.64584,
-      "lon": -79.38629
+      "lon": -79.38629,
+      "drive_thru": false
     },
     {
       "id": "74080-306751",
@@ -1508,7 +1576,8 @@
       "region": "Toronto",
       "address": "120 Adelaide Street West, Toronto",
       "lat": 43.64965,
-      "lon": -79.38342
+      "lon": -79.38342,
+      "drive_thru": false
     },
     {
       "id": "71639-306381",
@@ -1518,7 +1587,8 @@
       "region": "Toronto",
       "address": "200 Bay Street, Toronto",
       "lat": 43.6461,
-      "lon": -79.37995
+      "lon": -79.37995,
+      "drive_thru": false
     },
     {
       "id": "23244-228105",
@@ -1528,7 +1598,8 @@
       "region": "Toronto",
       "address": "1564 Royal York Road, Toronto",
       "lat": 43.69641,
-      "lon": -79.53343
+      "lon": -79.53343,
+      "drive_thru": false
     },
     {
       "id": "4225-767",
@@ -1538,7 +1609,8 @@
       "region": "Toronto",
       "address": "555 University Ave, Toronto",
       "lat": 43.65775,
-      "lon": -79.3875
+      "lon": -79.3875,
+      "drive_thru": false
     },
     {
       "id": "5161-135184",
@@ -1548,7 +1620,8 @@
       "region": "Toronto",
       "address": "1015 Sheppard Ave E, Toronto",
       "lat": 43.76972,
-      "lon": -79.37277
+      "lon": -79.37277,
+      "drive_thru": false
     },
     {
       "id": "54189-276866",
@@ -1558,7 +1631,8 @@
       "region": "Toronto",
       "address": "2295 Sheppard Avenue West, Toronto",
       "lat": 43.73455,
-      "lon": -79.53369
+      "lon": -79.53369,
+      "drive_thru": true
     },
     {
       "id": "17220-168432",
@@ -1568,7 +1642,8 @@
       "region": "Toronto",
       "address": "25 The West Mall, Toronto",
       "lat": 43.61288,
-      "lon": -79.55569
+      "lon": -79.55569,
+      "drive_thru": false
     },
     {
       "id": "4608-98091",
@@ -1578,7 +1653,8 @@
       "region": "Toronto",
       "address": "5230 Dundas St W, Toronto",
       "lat": 43.63962,
-      "lon": -79.53751
+      "lon": -79.53751,
+      "drive_thru": false
     },
     {
       "id": "19474-181945",
@@ -1588,7 +1664,8 @@
       "region": "Toronto",
       "address": "66 Wellington Street West, Toronto",
       "lat": 43.64723,
-      "lon": -79.38091
+      "lon": -79.38091,
+      "drive_thru": false
     },
     {
       "id": "4455-310581",
@@ -1598,7 +1675,8 @@
       "region": "Toronto",
       "address": "220 Yonge St, Toronto",
       "lat": 43.65276,
-      "lon": -79.38036
+      "lon": -79.38036,
+      "drive_thru": false
     },
     {
       "id": "4804-106564",
@@ -1608,7 +1686,8 @@
       "region": "Toronto",
       "address": "2555 Victoria Park Ave, Toronto",
       "lat": 43.77221,
-      "lon": -79.32112
+      "lon": -79.32112,
+      "drive_thru": false
     },
     {
       "id": "4254-586",
@@ -1618,7 +1697,8 @@
       "region": "Toronto",
       "address": "3250-3252 Yonge Street, Toronto",
       "lat": 43.72981,
-      "lon": -79.40364
+      "lon": -79.40364,
+      "drive_thru": false
     },
     {
       "id": "4742-104613",
@@ -1628,7 +1708,8 @@
       "region": "Toronto",
       "address": "2451 Yonge Street N, Toronto",
       "lat": 43.71101,
-      "lon": -79.39902
+      "lon": -79.39902,
+      "drive_thru": false
     },
     {
       "id": "4300-884",
@@ -1638,7 +1719,8 @@
       "region": "Toronto",
       "address": "4 King St W, Toronto",
       "lat": 43.64924,
-      "lon": -79.37813
+      "lon": -79.37813,
+      "drive_thru": false
     },
     {
       "id": "4384-253006",
@@ -1648,7 +1730,8 @@
       "region": "Toronto",
       "address": "861 York Mills Road, Toronto",
       "lat": 43.75407,
-      "lon": -79.35174
+      "lon": -79.35174,
+      "drive_thru": true
     },
     {
       "id": "17922-307536",
@@ -1658,7 +1741,8 @@
       "region": "Toronto",
       "address": "3401 Dufferin St, Toronto",
       "lat": 43.72501,
-      "lon": -79.45494
+      "lon": -79.45494,
+      "drive_thru": false
     },
     {
       "id": "17843-173859",
@@ -1668,7 +1752,8 @@
       "region": "Peel",
       "address": "12550 Hwy 50, Bolton",
       "lat": 43.85868,
-      "lon": -79.70996
+      "lon": -79.70996,
+      "drive_thru": true
     },
     {
       "id": "55133-288878",
@@ -1678,7 +1763,8 @@
       "region": "Peel",
       "address": "10 Earlsbridge Blvd, Brampton",
       "lat": 43.70243,
-      "lon": -79.8292
+      "lon": -79.8292,
+      "drive_thru": true
     },
     {
       "id": "19572-200494",
@@ -1688,7 +1774,8 @@
       "region": "Peel",
       "address": "17 Worthington Avenue, Brampton",
       "lat": 43.68177,
-      "lon": -79.81499
+      "lon": -79.81499,
+      "drive_thru": false
     },
     {
       "id": "48145-261615",
@@ -1698,7 +1785,8 @@
       "region": "Peel",
       "address": "190 Queen Street East, Brampton",
       "lat": 43.69373,
-      "lon": -79.75211
+      "lon": -79.75211,
+      "drive_thru": true
     },
     {
       "id": "50289-273864",
@@ -1708,7 +1796,8 @@
       "region": "Peel",
       "address": "3995 Cottrelle Blvd, Brampton",
       "lat": 43.78432,
-      "lon": -79.65881
+      "lon": -79.65881,
+      "drive_thru": true
     },
     {
       "id": "23274-210524",
@@ -1718,7 +1807,8 @@
       "region": "Peel",
       "address": "65 Dusk Drive, Brampton",
       "lat": 43.6558,
-      "lon": -79.76786
+      "lon": -79.76786,
+      "drive_thru": true
     },
     {
       "id": "18196-186624",
@@ -1728,7 +1818,8 @@
       "region": "Peel",
       "address": "80 Resolution Dr, Brampton",
       "lat": 43.67726,
-      "lon": -79.72143
+      "lon": -79.72143,
+      "drive_thru": true
     },
     {
       "id": "4344-1729",
@@ -1738,7 +1829,8 @@
       "region": "Peel",
       "address": "90 Great Lakes Dr, Brampton",
       "lat": 43.72871,
-      "lon": -79.76249
+      "lon": -79.76249,
+      "drive_thru": false
     },
     {
       "id": "53844-284904",
@@ -1748,7 +1840,8 @@
       "region": "Peel",
       "address": "25 Peel Centre Dr, Brampton",
       "lat": 43.71546,
-      "lon": -79.72202
+      "lon": -79.72202,
+      "drive_thru": false
     },
     {
       "id": "56095-289985",
@@ -1758,7 +1851,8 @@
       "region": "Peel",
       "address": "5 Beaumaris Drive, Brampton",
       "lat": 43.76475,
-      "lon": -79.66037
+      "lon": -79.66037,
+      "drive_thru": true
     },
     {
       "id": "74035-304249",
@@ -1768,7 +1862,8 @@
       "region": "Peel",
       "address": "15 Sandalwood Pky W, Brampton",
       "lat": 43.71631,
-      "lon": -79.80383
+      "lon": -79.80383,
+      "drive_thru": true
     },
     {
       "id": "23283-228465",
@@ -1778,7 +1873,8 @@
       "region": "Peel",
       "address": "1016 Eglinton Avenue East, Mississauga",
       "lat": 43.62751,
-      "lon": -79.62932
+      "lon": -79.62932,
+      "drive_thru": true
     },
     {
       "id": "4387-23529",
@@ -1788,7 +1884,8 @@
       "region": "Peel",
       "address": "111 Lakeshore Rd W, Mississauga",
       "lat": 43.54987,
-      "lon": -79.58727
+      "lon": -79.58727,
+      "drive_thru": false
     },
     {
       "id": "4303-1148",
@@ -1798,7 +1895,8 @@
       "region": "Peel",
       "address": "189 Rathburn Rd W, Mississauga",
       "lat": 43.59447,
-      "lon": -79.64806
+      "lon": -79.64806,
+      "drive_thru": false
     },
     {
       "id": "17341-179604",
@@ -1808,7 +1906,8 @@
       "region": "Peel",
       "address": "1930 Fowler Dr, Mississauga",
       "lat": 43.52668,
-      "lon": -79.65062
+      "lon": -79.65062,
+      "drive_thru": false
     },
     {
       "id": "4408-6346",
@@ -1818,7 +1917,8 @@
       "region": "Peel",
       "address": "2100 Hurontario Street, Mississauga",
       "lat": 43.57028,
-      "lon": -79.60278
+      "lon": -79.60278,
+      "drive_thru": false
     },
     {
       "id": "4872-106562",
@@ -1828,7 +1928,8 @@
       "region": "Peel",
       "address": "2963 Argentia Rd., Mississauga",
       "lat": 43.59828,
-      "lon": -79.78361
+      "lon": -79.78361,
+      "drive_thru": true
     },
     {
       "id": "23275-225064",
@@ -1838,7 +1939,8 @@
       "region": "Peel",
       "address": "30 World Drive, Mississauga",
       "lat": 43.63356,
-      "lon": -79.68714
+      "lon": -79.68714,
+      "drive_thru": true
     },
     {
       "id": "16201-140064",
@@ -1848,7 +1950,8 @@
       "region": "Peel",
       "address": "3030 Thomas St, Mississauga",
       "lat": 43.55977,
-      "lon": -79.7338
+      "lon": -79.7338,
+      "drive_thru": false
     },
     {
       "id": "4278-885",
@@ -1858,7 +1961,8 @@
       "region": "Peel",
       "address": "3235 Dundas Street West, Mississauga",
       "lat": 43.51829,
-      "lon": -79.68719
+      "lon": -79.68719,
+      "drive_thru": true
     },
     {
       "id": "61580-296055",
@@ -1868,7 +1972,8 @@
       "region": "Peel",
       "address": "334 Dundas St E, Mississauga",
       "lat": 43.5871,
-      "lon": -79.60789
+      "lon": -79.60789,
+      "drive_thru": true
     },
     {
       "id": "61699-296119",
@@ -1878,7 +1983,8 @@
       "region": "Peel",
       "address": "362 Lakeshore Rd E, Mississauga",
       "lat": 43.56322,
-      "lon": -79.57279
+      "lon": -79.57279,
+      "drive_thru": true
     },
     {
       "id": "20687-181584",
@@ -1888,7 +1994,8 @@
       "region": "Peel",
       "address": "4076 Confederation Parkway, Mississauga",
       "lat": 43.5865,
-      "lon": -79.64709
+      "lon": -79.64709,
+      "drive_thru": false
     },
     {
       "id": "20593-206884",
@@ -1898,7 +2005,8 @@
       "region": "Peel",
       "address": "5029 Hurontario St, Mississauga",
       "lat": 43.60757,
-      "lon": -79.65318
+      "lon": -79.65318,
+      "drive_thru": true
     },
     {
       "id": "4657-100002",
@@ -1908,7 +2016,8 @@
       "region": "Peel",
       "address": "5067 Dixie Rd, Mississauga",
       "lat": 43.63689,
-      "lon": -79.62106
+      "lon": -79.62106,
+      "drive_thru": true
     },
     {
       "id": "69769-304659",
@@ -1918,7 +2027,8 @@
       "region": "Peel",
       "address": "6155 Erin Mills Parkway, Mississauga",
       "lat": 43.58133,
-      "lon": -79.73654
+      "lon": -79.73654,
+      "drive_thru": true
     },
     {
       "id": "16144-164684",
@@ -1928,7 +2038,8 @@
       "region": "Peel",
       "address": "6974 Financial Dr, Mississauga",
       "lat": 43.60967,
-      "lon": -79.75076
+      "lon": -79.75076,
+      "drive_thru": false
     },
     {
       "id": "4469-87801",
@@ -1938,7 +2049,8 @@
       "region": "Peel",
       "address": "960 Southdown Road, Mississauga",
       "lat": 43.50906,
-      "lon": -79.63147
+      "lon": -79.63147,
+      "drive_thru": false
     },
     {
       "id": "56976-290976",
@@ -1948,7 +2060,8 @@
       "region": "Peel",
       "address": "6055 Mavis Rd, Mississauga",
       "lat": 43.6133,
-      "lon": -79.6964
+      "lon": -79.6964,
+      "drive_thru": false
     },
     {
       "id": "29141-252625",
@@ -1958,7 +2071,8 @@
       "region": "Peel",
       "address": "100 City Centre Dr, Mississauga",
       "lat": 43.59168,
-      "lon": -79.64336
+      "lon": -79.64336,
+      "drive_thru": false
     },
     {
       "id": "4761-103569",
@@ -1968,7 +2082,8 @@
       "region": "York Region",
       "address": "129 Pedersen Drive, Aurora",
       "lat": 44.01841,
-      "lon": -79.44743
+      "lon": -79.44743,
+      "drive_thru": true
     },
     {
       "id": "64790-292813",
@@ -1978,7 +2093,8 @@
       "region": "York Region",
       "address": "10 Melvin Robson Ave, Aurora",
       "lat": 44.03068,
-      "lon": -79.4226
+      "lon": -79.4226,
+      "drive_thru": true
     },
     {
       "id": "60968-295300",
@@ -1988,7 +2104,8 @@
       "region": "York Region",
       "address": "14980 Yonge St, Aurora",
       "lat": 43.99298,
-      "lon": -79.46636
+      "lon": -79.46636,
+      "drive_thru": true
     },
     {
       "id": "54361-279904",
@@ -1998,7 +2115,8 @@
       "region": "York Region",
       "address": "10 Spring Hill Dr, King City",
       "lat": 43.93249,
-      "lon": -79.51031
+      "lon": -79.51031,
+      "drive_thru": true
     },
     {
       "id": "4951-128928",
@@ -2008,7 +2126,8 @@
       "region": "York Region",
       "address": "70 Copper Creek Drive Building H,, Markham",
       "lat": 43.86633,
-      "lon": -79.22908
+      "lon": -79.22908,
+      "drive_thru": true
     },
     {
       "id": "4580-96128",
@@ -2018,7 +2137,8 @@
       "region": "York Region",
       "address": "7080 Warden Avenue, Markham",
       "lat": 43.8226,
-      "lon": -79.3259
+      "lon": -79.3259,
+      "drive_thru": false
     },
     {
       "id": "4609-97961",
@@ -2028,7 +2148,8 @@
       "region": "York Region",
       "address": "7333 Woodbine Ave, Markham",
       "lat": 43.8226,
-      "lon": -79.35059
+      "lon": -79.35059,
+      "drive_thru": false
     },
     {
       "id": "66221-300220",
@@ -2038,7 +2159,8 @@
       "region": "York Region",
       "address": "27 Harry Walker Pky S, Newmarket",
       "lat": 44.06689,
-      "lon": -79.4258
+      "lon": -79.4258,
+      "drive_thru": true
     },
     {
       "id": "4916-124147",
@@ -2048,7 +2170,8 @@
       "region": "York Region",
       "address": "17130 Leslie Street Building A - Unit A, Newmarket",
       "lat": 44.05643,
-      "lon": -79.43006
+      "lon": -79.43006,
+      "drive_thru": true
     },
     {
       "id": "54658-288386",
@@ -2058,7 +2181,8 @@
       "region": "York Region",
       "address": "17285 Leslie Street, Newmarket",
       "lat": 44.06056,
-      "lon": -79.43017
+      "lon": -79.43017,
+      "drive_thru": true
     },
     {
       "id": "4764-275526",
@@ -2068,7 +2192,8 @@
       "region": "York Region",
       "address": "17600 Yonge St, Newmarket",
       "lat": 44.05661,
-      "lon": -79.48364
+      "lon": -79.48364,
+      "drive_thru": false
     },
     {
       "id": "4905-110264",
@@ -2078,7 +2203,8 @@
       "region": "York Region",
       "address": "1241 Elgin Mills Road East, Richmond Hill",
       "lat": 43.89629,
-      "lon": -79.40395
+      "lon": -79.40395,
+      "drive_thru": true
     },
     {
       "id": "29443-253504",
@@ -2088,7 +2214,8 @@
       "region": "York Region",
       "address": "11108 Yonge Street, Richmond Hill",
       "lat": 43.89841,
-      "lon": -79.44399
+      "lon": -79.44399,
+      "drive_thru": true
     },
     {
       "id": "55422-289291",
@@ -2098,7 +2225,8 @@
       "region": "York Region",
       "address": "5771 Main Street, Stouffville",
       "lat": 43.96652,
-      "lon": -79.26445
+      "lon": -79.26445,
+      "drive_thru": true
     },
     {
       "id": "4938-124144",
@@ -2108,7 +2236,8 @@
       "region": "York Region",
       "address": "20 Innovation Drive, Vaughan",
       "lat": 43.7886,
-      "lon": -79.62592
+      "lon": -79.62592,
+      "drive_thru": true
     },
     {
       "id": "4743-103298",
@@ -2118,7 +2247,8 @@
       "region": "York Region",
       "address": "8010 Bathurst Street, Vaughan",
       "lat": 43.81681,
-      "lon": -79.45213
+      "lon": -79.45213,
+      "drive_thru": false
     },
     {
       "id": "57277-286473",
@@ -2128,7 +2258,8 @@
       "region": "York Region",
       "address": "8470 DUFFERIN ST, Vaughan",
       "lat": 43.8238,
-      "lon": -79.47879
+      "lon": -79.47879,
+      "drive_thru": true
     },
     {
       "id": "4982-105180",
@@ -2138,7 +2269,8 @@
       "region": "York Region",
       "address": "1420 Major Mackenzie Dr, Vaughan",
       "lat": 43.86219,
-      "lon": -79.48513
+      "lon": -79.48513,
+      "drive_thru": true
     },
     {
       "id": "4906-124044",
@@ -2148,7 +2280,8 @@
       "region": "York Region",
       "address": "1101 Rutherford Rd, Vaughan",
       "lat": 43.84494,
-      "lon": -79.47059
+      "lon": -79.47059,
+      "drive_thru": false
     },
     {
       "id": "4732-104193",
@@ -2158,7 +2291,8 @@
       "region": "York Region",
       "address": "3175 Rutherford Road, Vaughan",
       "lat": 43.82929,
-      "lon": -79.53688
+      "lon": -79.53688,
+      "drive_thru": true
     },
     {
       "id": "4791-104690",
@@ -2168,7 +2302,8 @@
       "region": "York Region",
       "address": "3737 Major Mackenzie Dr, Vaughan",
       "lat": 43.84441,
-      "lon": -79.56007
+      "lon": -79.56007,
+      "drive_thru": false
     },
     {
       "id": "4313-316785",
@@ -2178,7 +2313,8 @@
       "region": "York Region",
       "address": "7850 Weston Rd, Woodbridge",
       "lat": 43.79189,
-      "lon": -79.55034
+      "lon": -79.55034,
+      "drive_thru": false
     },
     {
       "id": "18433-182389",
@@ -2188,7 +2324,8 @@
       "region": "Halton",
       "address": "1860 Appleby Line, Burlington",
       "lat": 43.39108,
-      "lon": -79.78833
+      "lon": -79.78833,
+      "drive_thru": true
     },
     {
       "id": "4678-100978",
@@ -2198,7 +2335,8 @@
       "region": "Halton",
       "address": "2500 Appleby Line, Burlington",
       "lat": 43.40549,
-      "lon": -79.80809
+      "lon": -79.80809,
+      "drive_thru": true
     },
     {
       "id": "19770-183025",
@@ -2208,7 +2346,8 @@
       "region": "Halton",
       "address": "3051 Walkers Line, Burlington",
       "lat": 43.3938,
-      "lon": -79.82372
+      "lon": -79.82372,
+      "drive_thru": false
     },
     {
       "id": "50088-272604",
@@ -2218,7 +2357,8 @@
       "region": "Halton",
       "address": "3497 Fairview Street, Burlington",
       "lat": 43.35884,
-      "lon": -79.78134
+      "lon": -79.78134,
+      "drive_thru": true
     },
     {
       "id": "4709-103125",
@@ -2228,7 +2368,8 @@
       "region": "Halton",
       "address": "503 Brant St, Burlington",
       "lat": 43.32762,
-      "lon": -79.80044
+      "lon": -79.80044,
+      "drive_thru": false
     },
     {
       "id": "4675-100793",
@@ -2238,7 +2379,8 @@
       "region": "Halton",
       "address": "675 Appleby Line, Burlington",
       "lat": 43.37332,
-      "lon": -79.76111
+      "lon": -79.76111,
+      "drive_thru": true
     },
     {
       "id": "4494-93178",
@@ -2248,7 +2390,8 @@
       "region": "Halton",
       "address": "900 Maple Ave, Burlington",
       "lat": 43.32591,
-      "lon": -79.81986
+      "lon": -79.81986,
+      "drive_thru": false
     },
     {
       "id": "84759-304858",
@@ -2258,7 +2401,8 @@
       "region": "Halton",
       "address": "901 Brant St, Burlington",
       "lat": 43.33687,
-      "lon": -79.8132
+      "lon": -79.8132,
+      "drive_thru": true
     },
     {
       "id": "52984-283789",
@@ -2268,7 +2412,8 @@
       "region": "Halton",
       "address": "13850 Steeles Avenue West, Halton Hills",
       "lat": 43.57502,
-      "lon": -79.82931
+      "lon": -79.82931,
+      "drive_thru": false
     },
     {
       "id": "4584-96820",
@@ -2278,7 +2423,8 @@
       "region": "Halton",
       "address": "20 Market Drive, Milton",
       "lat": 43.52315,
-      "lon": -79.89937
+      "lon": -79.89937,
+      "drive_thru": true
     },
     {
       "id": "4912-108636",
@@ -2288,7 +2434,8 @@
       "region": "Halton",
       "address": "51 James Snow Parkway, Milton",
       "lat": 43.53915,
-      "lon": -79.85667
+      "lon": -79.85667,
+      "drive_thru": true
     },
     {
       "id": "58591-291969",
@@ -2298,7 +2445,8 @@
       "region": "Halton",
       "address": "6030 Main Street W, Milton",
       "lat": 43.49556,
-      "lon": -79.89631
+      "lon": -79.89631,
+      "drive_thru": true
     },
     {
       "id": "4833-107475",
@@ -2308,7 +2456,8 @@
       "region": "Halton",
       "address": "870 Main St E, Milton",
       "lat": 43.52726,
-      "lon": -79.86615
+      "lon": -79.86615,
+      "drive_thru": true
     },
     {
       "id": "57459-290857",
@@ -2318,7 +2467,8 @@
       "region": "Halton",
       "address": "1915 Ironoak Way, Oakville",
       "lat": 43.49343,
-      "lon": -79.68073
+      "lon": -79.68073,
+      "drive_thru": false
     },
     {
       "id": "59520-293740",
@@ -2328,7 +2478,8 @@
       "region": "Halton",
       "address": "2027 Winston Park Dr, Oakville",
       "lat": 43.5112,
-      "lon": -79.66829
+      "lon": -79.66829,
+      "drive_thru": true
     },
     {
       "id": "62699-297195",
@@ -2338,7 +2489,8 @@
       "region": "Halton",
       "address": "2055 Cornwall Rd, Oakville",
       "lat": 43.48114,
-      "lon": -79.6569
+      "lon": -79.6569,
+      "drive_thru": true
     },
     {
       "id": "4258-286587",
@@ -2348,7 +2500,8 @@
       "region": "Halton",
       "address": "215 North Service Road, Oakville",
       "lat": 43.45089,
-      "lon": -79.70291
+      "lon": -79.70291,
+      "drive_thru": true
     },
     {
       "id": "4531-94623",
@@ -2358,7 +2511,8 @@
       "region": "Halton",
       "address": "2501 Third Line, Oakville",
       "lat": 43.44964,
-      "lon": -79.75904
+      "lon": -79.75904,
+      "drive_thru": false
     },
     {
       "id": "4816-104227",
@@ -2368,7 +2522,8 @@
       "region": "Halton",
       "address": "2509 Prince Michael Dr., Oakville",
       "lat": 43.49761,
-      "lon": -79.70751
+      "lon": -79.70751,
+      "drive_thru": true
     },
     {
       "id": "4757-104792",
@@ -2378,7 +2533,8 @@
       "region": "Halton",
       "address": "2983 Westoak Trails, Oakville",
       "lat": 43.42893,
-      "lon": -79.76528
+      "lon": -79.76528,
+      "drive_thru": false
     },
     {
       "id": "4573-96127",
@@ -2388,7 +2544,8 @@
       "region": "Halton",
       "address": "321 Cornwall Rd, Oakville",
       "lat": 43.45757,
-      "lon": -79.67862
+      "lon": -79.67862,
+      "drive_thru": false
     },
     {
       "id": "4430-18659",
@@ -2398,7 +2555,8 @@
       "region": "Halton",
       "address": "330 Dundas Street East, Oakville",
       "lat": 43.4874,
-      "lon": -79.71824
+      "lon": -79.71824,
+      "drive_thru": true
     },
     {
       "id": "17342-314580",
@@ -2408,7 +2566,8 @@
       "region": "Halton",
       "address": "239 Lakeshore Rd E, Oakville",
       "lat": 43.44657,
-      "lon": -79.66758
+      "lon": -79.66758,
+      "drive_thru": false
     },
     {
       "id": "50472-265924",
@@ -2418,7 +2577,8 @@
       "region": "Durham",
       "address": "5 Rossland Road East, Ajax",
       "lat": 43.88002,
-      "lon": -79.02498
+      "lon": -79.02498,
+      "drive_thru": true
     },
     {
       "id": "4860-106552",
@@ -2428,7 +2588,8 @@
       "region": "Durham",
       "address": "15 Westney Road, Ajax",
       "lat": 43.85879,
-      "lon": -79.03786
+      "lon": -79.03786,
+      "drive_thru": true
     },
     {
       "id": "55535-286668",
@@ -2438,7 +2599,8 @@
       "region": "Durham",
       "address": "2348 Hwy 2, Bowmanville",
       "lat": 43.90973,
-      "lon": -78.71258
+      "lon": -78.71258,
+      "drive_thru": false
     },
     {
       "id": "62158-296726",
@@ -2448,7 +2610,8 @@
       "region": "Durham",
       "address": "96 King St E, Bowmanville",
       "lat": 43.91173,
-      "lon": -78.68618
+      "lon": -78.68618,
+      "drive_thru": true
     },
     {
       "id": "57962-291993",
@@ -2458,7 +2621,8 @@
       "region": "Durham",
       "address": "1635 Highway 2, Courtice",
       "lat": 43.91061,
-      "lon": -78.78716
+      "lon": -78.78716,
+      "drive_thru": false
     },
     {
       "id": "4790-104208",
@@ -2468,7 +2632,8 @@
       "region": "Durham",
       "address": "1365 Wilson Rd N, Oshawa",
       "lat": 43.93829,
-      "lon": -78.857
+      "lon": -78.857,
+      "drive_thru": true
     },
     {
       "id": "4932-117888",
@@ -2478,7 +2643,8 @@
       "region": "Durham",
       "address": "575 Laval Dr, Oshawa",
       "lat": 43.87934,
-      "lon": -78.87873
+      "lon": -78.87873,
+      "drive_thru": false
     },
     {
       "id": "47180-256825",
@@ -2488,7 +2654,8 @@
       "region": "Durham",
       "address": "419 King St W, Oshawa",
       "lat": 43.89029,
-      "lon": -78.87958
+      "lon": -78.87958,
+      "drive_thru": false
     },
     {
       "id": "84324-313611",
@@ -2498,7 +2665,8 @@
       "region": "Durham",
       "address": "1177 Ritson Rd N, Oshawa",
       "lat": 43.93085,
-      "lon": -78.86629
+      "lon": -78.86629,
+      "drive_thru": false
     },
     {
       "id": "61740-294562",
@@ -2508,7 +2676,8 @@
       "region": "Durham",
       "address": "2670 Simcoe Street North, Oshawa",
       "lat": 43.96447,
-      "lon": -78.90523
+      "lon": -78.90523,
+      "drive_thru": true
     },
     {
       "id": "57286-290788",
@@ -2518,7 +2687,8 @@
       "region": "Durham",
       "address": "1300 Bayly Street, Pickering",
       "lat": 43.82907,
-      "lon": -79.08809
+      "lon": -79.08809,
+      "drive_thru": true
     },
     {
       "id": "4414-20599",
@@ -2528,7 +2698,8 @@
       "region": "Durham",
       "address": "1300 Kingston Road, Pickering",
       "lat": 43.83664,
-      "lon": -79.08992
+      "lon": -79.08992,
+      "drive_thru": false
     },
     {
       "id": "52436-281915",
@@ -2538,7 +2709,8 @@
       "region": "Durham",
       "address": "2 Douglas Road, Uxbridge",
       "lat": 44.09141,
-      "lon": -79.13238
+      "lon": -79.13238,
+      "drive_thru": true
     },
     {
       "id": "4911-108286",
@@ -2548,7 +2720,8 @@
       "region": "Durham",
       "address": "3940 Brock Street North, Whitby",
       "lat": 43.91461,
-      "lon": -78.95885
+      "lon": -78.95885,
+      "drive_thru": false
     },
     {
       "id": "4627-99063",
@@ -2558,7 +2731,8 @@
       "region": "Durham",
       "address": "25 Consumers Drive, Whitby",
       "lat": 43.87187,
-      "lon": -78.90822
+      "lon": -78.90822,
+      "drive_thru": true
     },
     {
       "id": "84958-314542",
@@ -2568,7 +2742,8 @@
       "region": "Durham",
       "address": "4140 Garden St, Whitby",
       "lat": 43.91936,
-      "lon": -78.9488
+      "lon": -78.9488,
+      "drive_thru": true
     },
     {
       "id": "16278-161004",
@@ -2578,7 +2753,8 @@
       "region": "Durham",
       "address": "80 Thickson Road South, Whitby",
       "lat": 43.88305,
-      "lon": -78.91179
+      "lon": -78.91179,
+      "drive_thru": true
     },
     {
       "id": "15720-156244",
@@ -2588,7 +2764,8 @@
       "region": "Durham",
       "address": "660 Taunton Rd E, Whitby",
       "lat": 43.92215,
-      "lon": -78.92912
+      "lon": -78.92912,
+      "drive_thru": true
     }
   ],
   "unmatched": [

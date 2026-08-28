@@ -28,6 +28,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RECEIPTS = ROOT / "data" / "starbucks" / "receipts.json"
 DEFAULT_ALL_ITEMS = ROOT / "data" / "starbucks" / "all-items.json"
 DEFAULT_CATALOG = ROOT / "data" / "starbucks" / "stores-gta.json"
+DEFAULT_ALL_SWEEP = ROOT / "data" / "starbucks" / "stores-all-sweep.json"
 DEFAULT_STANDALONE = ROOT / "data" / "starbucks" / "stores-gta-standalone.json"
 DEFAULT_OUTPUT = ROOT / "data" / "starbucks" / "starbucks.json"
 DEFAULT_UNMATCHED = ROOT / "data" / "starbucks" / "unmatched-receipts.json"
@@ -367,6 +368,7 @@ def import_receipts(
                     "address": store.get("address") or "",
                     "lat": store.get("lat"),
                     "lon": store.get("lng"),
+                    "drive_thru": "DT" in (store.get("amenities") or []),
                 }
             )
         # Map: all standalone + any visited non-standalone only.
@@ -443,6 +445,10 @@ def main() -> int:
     parser.add_argument("--history", type=Path, default=DEFAULT_HISTORY)
     parser.add_argument("-c", "--catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument(
+        "--all-sweep", type=Path, default=DEFAULT_ALL_SWEEP,
+        help="Full locator sweep used to enrich catalog stores with amenities.",
+    )
+    parser.add_argument(
         "--standalone", type=Path, default=DEFAULT_STANDALONE, dest="standalone_path"
     )
     parser.add_argument("-o", "--output", type=Path, default=DEFAULT_OUTPUT)
@@ -460,6 +466,17 @@ def main() -> int:
 
     receipts = json.loads(args.input.read_text())
     catalog = json.loads(args.catalog.read_text())
+    if args.all_sweep.exists():
+        sweep = json.loads(args.all_sweep.read_text())
+        amenities_by_number = {
+            str(store.get("storeNumber")): store.get("amenities") or []
+            for store in sweep
+            if store.get("storeNumber")
+        }
+        for store in catalog:
+            store["amenities"] = amenities_by_number.get(
+                str(store.get("storeNumber")), []
+            )
     if args.standalone_path.exists():
         standalone_total = len(json.loads(args.standalone_path.read_text()))
     else:

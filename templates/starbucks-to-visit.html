@@ -30,6 +30,7 @@
       <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="2" data-type="text" aria-label="Sort by street">Street</button></th>
       <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="3" data-type="text" aria-label="Sort by city">City</button></th>
       <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="4" data-type="text" aria-label="Sort by region">Region</button></th>
+      <th scope="col"><button type="button" class="starbucks-sort-btn" data-col="5" data-type="text" aria-label="Sort by drive thru">Has drive thru</button></th>
     </tr>
   </thead>
   <tbody>
@@ -43,6 +44,7 @@
       <td data-sort="{{ store.street | lower }}">{{ store.street }}</td>
       <td data-sort="{{ store.city | lower }}">{{ store.city }}</td>
       <td data-sort="{{ store.region | lower }}">{{ store.region }}</td>
+      <td data-sort="{% if store.drive_thru %}yes{% else %}no{% endif %}">{% if store.drive_thru %}Yes{% else %}No{% endif %}</td>
     </tr>
     {% endfor %}
   </tbody>
