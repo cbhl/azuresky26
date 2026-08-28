@@ -48,10 +48,8 @@
 <section class="starbucks-activity" aria-label="Starbucks daily visit activity">
   <h2>Starbucks visits by calendar day</h2>
   <p class="travel-empty" id="starbucks-activity-summary"></p>
-  <div class="starbucks-activity-scroll">
-    <div class="starbucks-activity-grid" data-activity='{{ stats.activity | json_encode() | safe }}'>
-      <div class="starbucks-activity-months"><span></span><div class="starbucks-activity-month-labels"></div></div>
-    </div>
+  <div class="starbucks-activity-grid" data-activity='{{ stats.activity | json_encode() | safe }}'>
+    <div class="starbucks-activity-months"><span></span><div class="starbucks-activity-month-labels"></div></div>
   </div>
   <div class="starbucks-activity-legend" aria-hidden="true"><span>Less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>More</span></div>
 </section>
@@ -98,19 +96,19 @@
 
       var months = document.createElement("div");
       months.className = "starbucks-activity-months";
+      months.style.setProperty("--activity-weeks", weeks);
       var yearLabel = document.createElement("span");
       yearLabel.className = "starbucks-activity-year";
       yearLabel.textContent = year;
       months.appendChild(yearLabel);
       var labels = document.createElement("div");
       labels.className = "starbucks-activity-month-labels";
-      labels.style.gridTemplateColumns = "repeat(" + weeks + ", 12px)";
       names.forEach(function (name, month) {
         var label = document.createElement("span");
         var monthStart = new Date(Date.UTC(Number(year), month, 1));
         var startColumn = Math.floor((monthStart - firstSunday) / 86400000 / 7) + 1;
         label.textContent = name;
-        label.style.left = ((startColumn - 1) * 14) + "px";
+        label.style.left = "calc(" + (startColumn - 1) + " * (100% / " + weeks + "))";
         labels.appendChild(label);
       });
       months.appendChild(labels);
@@ -128,7 +126,7 @@
         row.appendChild(weekdayLabel);
         var days = document.createElement("div");
         days.className = "starbucks-activity-days";
-        days.style.gridTemplateColumns = "repeat(" + weeks + ", 12px)";
+        days.style.setProperty("--activity-weeks", weeks);
         for (var week = 0; week < weeks; week += 1) {
           var day = new Date(firstSunday);
           day.setUTCDate(day.getUTCDate() + week * 7 + dayOfWeek);
