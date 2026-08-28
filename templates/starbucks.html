@@ -129,13 +129,16 @@
           var day = new Date(firstSunday);
           day.setUTCDate(day.getUTCDate() + week * 7 + dayOfWeek);
           var iso = day.toISOString().slice(0, 10);
-          var count = day >= firstDay && day < end ? (activity.days[iso] || 0) : 0;
+          var inYear = day >= firstDay && day < end;
+          var count = inYear ? (activity.days[iso] || 0) : 0;
           var cell = document.createElement("span");
           cell.className = "starbucks-activity-cell";
           cell.dataset.level = count ? Math.max(1, Math.ceil(count / max * 4)) : 0;
-          if (day >= firstDay && day < end) {
+          if (inYear) {
             cell.title = count + " visit" + (count === 1 ? "" : "s") + " on " + iso;
             cell.setAttribute("aria-label", cell.title);
+          } else {
+            cell.className += " starbucks-activity-cell-outside";
           }
           days.appendChild(cell);
         }

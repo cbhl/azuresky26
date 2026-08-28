@@ -50,6 +50,10 @@ body {
   margin: 30px 0;
 }
 
+#main:has(.starbucks-activity) {
+  max-width: 800px;
+}
+
 #avatar {
   width: 130px;
   height: 130px;
@@ -692,6 +696,10 @@ code .il {
 .starbucks-activity-cell[data-level="2"] { background: var(--activity-2); }
 .starbucks-activity-cell[data-level="3"] { background: var(--activity-3); }
 .starbucks-activity-cell[data-level="4"] { background: var(--activity-4); }
+.starbucks-activity-cell-outside {
+  background: transparent;
+  pointer-events: none;
+}
 .starbucks-activity-cell:hover { outline: 1px solid currentColor; }
 
 .starbucks-activity-legend {
