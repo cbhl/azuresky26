@@ -523,12 +523,6 @@ code .il {
   border-radius: 4px;
 }
 
-@media (prefers-color-scheme: dark) {
-  .starbucks-map {
-    filter: invert(90%) hue-rotate(180deg) saturate(75%) brightness(85%) contrast(90%);
-  }
-}
-
 .travel-stats-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
