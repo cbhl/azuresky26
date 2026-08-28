@@ -23,7 +23,7 @@ To expose the dev server on all interfaces (useful in the cloud VM): `zola serve
 ### Non-obvious notes
 
 - The config file is named `zola.toml`, not the Zola default `config.toml`. **Zola >= 0.22 reads `zola.toml` natively**, so plain `zola serve` / `zola build` / `zola check` work. On older Zola versions you would need to pass `--config zola.toml`.
-- `deploy.sh` runs `zola build` then `rsync`s `public/` to a NearlyFreeSpeech.net host over SSH. It is for production deploys only and requires SSH credentials — do not run it for local testing.
+- For production deployments, tell the human to run `./deploy.sh` rather than attempting deployment directly. The script builds the site and uses SFTP, which requires password-interactive authentication. Do not run it for local testing.
 - `themes/` is intentionally empty (no external theme dependency).
 
 ## Completion workflow
