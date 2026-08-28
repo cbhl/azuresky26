@@ -106,7 +106,7 @@
         var monthStart = new Date(Date.UTC(Number(year), month, 1));
         var startColumn = Math.floor((monthStart - firstSunday) / 86400000 / 7) + 1;
         label.textContent = name;
-        label.style.left = ((startColumn - 1) * 12) + "px";
+        label.style.left = ((startColumn - 1) * 11) + "px";
         labels.appendChild(label);
       });
       months.appendChild(labels);
