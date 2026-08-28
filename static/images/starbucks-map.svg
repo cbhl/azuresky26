@@ -3,6 +3,19 @@
     <clipPath id="plot-clip">
       <rect x="14" y="14" width="692" height="392"/>
     </clipPath>
+    <style>
+      @media (prefers-color-scheme: dark) {
+        rect[fill="#dce6ef"] { fill: #111820; }
+        rect[fill="#f3efe6"] { fill: #202b33; stroke: #61717e; }
+        rect[fill="none"] { stroke: #61717e; }
+        .water { fill: #294456; }
+        .roads-primary { stroke: #5b6b78; }
+        .standalone-unvisited circle { fill: #667583; stroke: #b1bec8; }
+        .labels text { fill: #d5dee8; stroke: #202b33; }
+        .legend rect { fill: #202b33; stroke: #61717e; }
+        .legend text { fill: #d5dee8; }
+      }
+    </style>
   </defs>
   <rect width="100%" height="100%" fill="#dce6ef"/>
   <rect x="14" y="14" width="692" height="392" fill="#f3efe6" stroke="#a8b2bc" stroke-width="0.75"/>
