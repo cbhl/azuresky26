@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "activity_timezone": "America/Toronto",
-  "updated_at": "2026-08-28T08:45:57Z",
+  "updated_at": "2026-08-28T09:47:29Z",
   "sources": [
     "api_export",
     "ca_customer_information_report",
@@ -13152,6 +13152,68 @@
       "kind": "purchase_item",
       "raw_item_names": [
         "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7131718449935717902",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-25T13:31:56.5684093Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-25",
+      "local_second": "2026-08-25 09:31:56",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "221 Queen Street West",
+      "store_key": "221 queen street west",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Espresso",
+        "Banana Loaf",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:4156156463032030651",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-26T22:18:35.2642529Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-26",
+      "local_second": "2026-08-26 18:18:35",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Peach Green Tea Lemonade",
+        "Hedgehog Cake Pop"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3695706668002754348",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-27T21:28:06.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-27",
+      "local_second": "2026-08-27 17:28:06",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Peach Green Tea Lemonade",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
       ]
     }
   ],
@@ -54181,6 +54243,154 @@
       "dedupe": {
         "method": "confirmed_local_second_store",
         "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_b7b93a5247b4fd969e27",
+      "status": "active",
+      "occurred_at": "2026-08-25T13:31:56.5684093Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-25",
+      "local_second": "2026-08-25 09:31:56",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "amount_order_total": null,
+      "store": {
+        "name_raw": "221 Queen Street West",
+        "name_key": "221 queen street west",
+        "catalog_store_number": "82862-311997",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Espresso",
+          "name_key": "iced espresso",
+          "quantity": null
+        },
+        {
+          "name": "Banana Loaf",
+          "name_key": "banana loaf",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7131718449935717902"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_75bc1ccedf113db4bf65",
+      "status": "active",
+      "occurred_at": "2026-08-26T22:18:35.2642529Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-26",
+      "local_second": "2026-08-26 18:18:35",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "amount_order_total": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Peach Green Tea Lemonade",
+          "name_key": "iced peach green tea lemonade",
+          "quantity": null
+        },
+        {
+          "name": "Hedgehog Cake Pop",
+          "name_key": "hedgehog cake pop",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:4156156463032030651"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_5cd9369ce828c5bcc2ae",
+      "status": "active",
+      "occurred_at": "2026-08-27T21:28:06.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-27",
+      "local_second": "2026-08-27 17:28:06",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "amount_order_total": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Peach Green Tea Lemonade",
+          "name_key": "iced peach green tea lemonade",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3695706668002754348"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
       }
     }
   ],

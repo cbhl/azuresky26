@@ -2,17 +2,17 @@
   "generated_at": "2026-08-28",
   "date_range": {
     "min": "2022-01-04",
-    "max": "2026-08-23"
+    "max": "2026-08-27"
   },
-  "history_count": 155,
-  "receipt_count": 863,
+  "history_count": 158,
+  "receipt_count": 866,
   "stars": {
     "earned": 23045.8,
     "redeemed": 22945.6,
     "policy": "reports-through-coverage-end-then-api-tail",
     "report_coverage_end": "2026-08-23"
   },
-  "visit_count": 863,
+  "visit_count": 866,
   "activity": {
     "unit": "distinct_purchase_orders",
     "timezone": "America/Toronto",
@@ -678,21 +678,24 @@
       "2026-08-17": 1,
       "2026-08-20": 1,
       "2026-08-22": 1,
-      "2026-08-23": 2
+      "2026-08-23": 2,
+      "2026-08-25": 1,
+      "2026-08-26": 1,
+      "2026-08-27": 1
     },
-    "total_days_active": 648,
-    "total_events": 863
+    "total_days_active": 651,
+    "total_events": 866
   },
   "standalone": {
     "total": 195,
-    "visited": 18,
-    "remaining": 177
+    "visited": 19,
+    "remaining": 176
   },
   "by_region": [
     {
       "region": "Toronto",
       "total": 92,
-      "visited": 8
+      "visited": 9
     },
     {
       "region": "Peel",
@@ -734,7 +737,7 @@
     },
     {
       "item": "Cool Lime Lemonade Refresher",
-      "count": 34
+      "count": 35
     },
     {
       "item": "Sugar Plum Cheese Danish Us",
@@ -753,7 +756,7 @@
     {
       "name": "Bayview & Romfield",
       "storeNumber": "23280-204964",
-      "count": 57,
+      "count": 59,
       "type": "standalone"
     },
     {
@@ -801,6 +804,7 @@
   ],
   "visited_stores": [
     "201 Main Street",
+    "221 Queen Street West",
     "25 Gateway Blvd",
     "404 & Major Mackenzie",
     "5954 Hwy 7",
@@ -928,17 +932,6 @@
       "address": "2 St. Clair Avenue East, Toronto",
       "lat": 43.68851,
       "lon": -79.39409,
-      "drive_thru": false
-    },
-    {
-      "id": "82862-311997",
-      "name": "221 Queen Street West",
-      "street": "221 Queen St W",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "221 Queen St W, Toronto",
-      "lat": 43.65044,
-      "lon": -79.38788,
       "drive_thru": false
     },
     {
@@ -2777,6 +2770,38 @@
   ],
   "recent": [
     {
+      "date": "2026-08-27",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Peach Green Tea Lemonade",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "date": "2026-08-26",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Peach Green Tea Lemonade",
+        "Hedgehog Cake Pop"
+      ]
+    },
+    {
+      "date": "2026-08-25",
+      "store": "221 Queen Street West",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Iced Espresso",
+        "Banana Loaf",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
       "date": "2026-08-23",
       "store": "Spadina & Fort York",
       "standalone": true,
@@ -2941,33 +2966,6 @@
       "region": null,
       "items": [
         "Tl Icd Peach Grn Tea Lemonade"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Iced Peach Green Tea Lemonade"
-      ]
-    },
-    {
-      "date": "2026-08-02",
-      "store": "Loblaws High Tech Rd Rich Hill",
-      "standalone": false,
-      "region": "York Region",
-      "items": [
-        "Starbucks\u00ae Iced Coffee Blend"
-      ]
-    },
-    {
-      "date": "2026-08-02",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Iced Black Tea Lemonade"
       ]
     }
   ],
@@ -3722,8 +3720,8 @@
         "lat": 43.65044,
         "lon": -79.38788,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4551,7 +4549,7 @@
         "lon": -79.40508,
         "standalone": true,
         "visited": true,
-        "visits": 57,
+        "visits": 59,
         "region": "York Region"
       },
       {
