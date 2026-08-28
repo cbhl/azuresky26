@@ -172,17 +172,20 @@
 
       var marker = markersById[item.id];
       if (!marker) return;
+      // CircleMarker is a Path, so use bringToFront rather than Marker methods.
       if (item.id === selectedId || item.id === hoveredId) {
         marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
-        marker.setZIndexOffset(1000);
       } else if (index < NEARBY_N) {
         marker.setStyle({ radius: 6, weight: 1.5, fillOpacity: 0.95, color: "#1a365d", fillColor: "#2b6cb0" });
-        marker.setZIndexOffset(500 - index);
+        marker.bringToFront();
       } else {
         marker.setStyle({ radius: 4, weight: 1, fillOpacity: 0.45, color: "#9ca3af", fillColor: "#d1d5db" });
-        marker.setZIndexOffset(0);
       }
     });
+
+    // Focus pin last so it stays above nearby pins restyled above.
+    var focusMarker = markersById[selectedId] || markersById[hoveredId] || markersById[id];
+    if (focusMarker) focusMarker.bringToFront();
 
     state = { col: 0, dir: 1, mode: "distance" };
     setSortUi(0, 1);
@@ -239,11 +242,15 @@
       clearTimeout(hoverTimer);
       hoveredId = id;
       marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
-      marker.setZIndexOffset(1000);
-      hoverTimer = setTimeout(function () { focusStore(id, { scrollTable: true, hover: true }); }, 80);
+      marker.bringToFront();
+      Object.keys(markersById).forEach(function (otherId) {
+        if (otherId !== id) markersById[otherId].closeTooltip();
+      });
+      hoverTimer = setTimeout(function () { focusStore(id, { scrollTable: false, hover: true }); }, 80);
     });
     marker.on("mouseout", function () {
       clearTimeout(hoverTimer);
+      marker.closeTooltip();
       if (hoveredId !== id) return;
       hoveredId = null;
       if (selectedId === id) return;
@@ -251,7 +258,6 @@
         focusStore(id, { scrollTable: false, hover: true });
       } else {
         marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
-        marker.setZIndexOffset(0);
       }
     });
     marker.on("click", function () {
