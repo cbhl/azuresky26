@@ -14,10 +14,11 @@ This repository is the source for the static personal website **michael-chang.ca
 
 To expose the dev server on all interfaces (useful in the cloud VM): `zola serve --interface 0.0.0.0 --port 1111`.
 
-### Build / check / run (no lint or test frameworks exist)
+### Build / check / run
 
 - Build: `zola build` → outputs to `public/` (gitignored).
 - "Lint"/validation: `zola check` validates internal links and the site structure (closest thing to a lint/test step; there is no separate test suite).
+- Starbucks history tests: `python3 -m unittest discover -s tests -p 'test_*.py'` (run when touching `scripts/starbucks_history.py`, Starbucks import logic, or related Starbucks data generation).
 - Serve (dev): `zola serve` (see table above). See `README.md` for the documented workflow.
 
 ### Non-obvious notes
