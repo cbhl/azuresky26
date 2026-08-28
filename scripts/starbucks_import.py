@@ -36,6 +36,7 @@ DEFAULT_HISTORY = ROOT / "data" / "starbucks" / "history.json"
 RECENT_LIMIT = 20
 TOP_LIST_LIMIT = 8
 FUZZY_THRESHOLD = 0.85
+REFERENCE_STORE_NAMES = {"Bayview & Romfield"}
 
 # Covers full GTA standalone set including southern Halton (Burlington).
 BBOX = {
@@ -348,6 +349,7 @@ def import_receipts(
 
     map_stores = []
     to_visit = []
+    reference_stores = []
     for store in catalog:
         sn = (store.get("storeNumber") or "").strip()
         is_standalone = bool(store.get("standalone"))
@@ -357,6 +359,19 @@ def import_receipts(
         )
         visit_key = sn if sn and sn in store_visits else (store.get("name") or "")
         visits = int(store_visits.get(visit_key) or 0)
+        if store.get("name") in REFERENCE_STORE_NAMES and visited:
+            reference_stores.append(
+                {
+                    "id": sn or (store.get("name") or ""),
+                    "name": store.get("name") or "",
+                    "street": store.get("street") or "",
+                    "city": store.get("city") or "",
+                    "region": store.get("region") or "",
+                    "lat": store.get("lat"),
+                    "lon": store.get("lng"),
+                    "visits": visits,
+                }
+            )
         if is_standalone and not visited:
             to_visit.append(
                 {
@@ -414,6 +429,7 @@ def import_receipts(
         "top_items": top_items,
         "top_stores": top_stores,
         "visited_stores": visited_stores,
+        "reference_stores": reference_stores,
         "to_visit": to_visit,
         "unmatched": [],
         "recent": recent,

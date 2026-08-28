@@ -11,7 +11,7 @@
 <p class="starbucks-back"><a href="/starbucks/">← Starbucks</a></p>
 <h1>{{ page.title }}</h1>
 
-{% if stats.to_visit %}
+{% if stats.to_visit or stats.reference_stores %}
 <p class="starbucks-history-span">
   {{ stats.to_visit | length }} unvisited standalone stores
   ({{ stats.standalone.visited }} of {{ stats.standalone.total }} visited).
@@ -47,6 +47,19 @@
       <td data-sort="{% if store.drive_thru %}yes{% else %}no{% endif %}">{% if store.drive_thru %}Yes{% else %}No{% endif %}</td>
     </tr>
     {% endfor %}
+    {% for store in stats.reference_stores %}
+    <tr class="is-reference" data-id="{{ store.id }}"
+        data-lat="{{ store.lat }}"
+        data-lon="{{ store.lon }}"
+        data-name="{{ store.name }}">
+      <td class="starbucks-dist" data-sort="" data-dist=""></td>
+      <td data-sort="{{ store.name | lower }}">{{ store.name }} <small>(visited reference)</small></td>
+      <td data-sort="{{ store.street | lower }}">{{ store.street }}</td>
+      <td data-sort="{{ store.city | lower }}">{{ store.city }}</td>
+      <td data-sort="{{ store.region | lower }}">{{ store.region }}</td>
+      <td data-sort="visited">Visited ({{ store.visits }})</td>
+    </tr>
+    {% endfor %}
   </tbody>
 </table>
 {% else %}
@@ -77,11 +90,22 @@
     focusFill: mapStyles.getPropertyValue("--map-marker-focus-fill").trim(),
     focusStroke: mapStyles.getPropertyValue("--map-marker-focus-stroke").trim()
   };
+  var referenceColors = {
+    fill: mapStyles.getPropertyValue("--map-marker-reference-fill").trim(),
+    stroke: mapStyles.getPropertyValue("--map-marker-reference-stroke").trim()
+  };
 
   function markerStyle(focused) {
     return focused
       ? { radius: 8, weight: 2, fillOpacity: 1, color: mapColors.focusStroke, fillColor: mapColors.focusFill }
       : { radius: 5, weight: 1, fillOpacity: 0.85, color: mapColors.markerStroke, fillColor: mapColors.markerFill };
+  }
+
+  function markerStyleFor(row, focused) {
+    if (row.classList.contains("is-reference") && !focused) {
+      return { radius: 6, weight: 2, fillOpacity: 0.95, color: referenceColors.stroke, fillColor: referenceColors.fill };
+    }
+    return markerStyle(focused);
   }
 
   function haversineKm(lat1, lon1, lat2, lon2) {
@@ -145,7 +169,7 @@
     });
     Object.keys(markersById).forEach(function (id) {
       var m = markersById[id];
-      m.setStyle(markerStyle(false));
+      m.setStyle(markerStyleFor(m._toVisitRow, false));
     });
     if (hint) {
       hint.textContent = "Tap or click a map pin to sort the list by distance from that store.";
@@ -188,7 +212,7 @@
       if (item.id === selectedId || item.id === hoveredId) {
         marker.setStyle(markerStyle(true));
       } else {
-        marker.setStyle(markerStyle(false));
+        marker.setStyle(markerStyleFor(item.row, false));
       }
     });
 
@@ -244,6 +268,8 @@
       fillColor: mapColors.markerFill,
       fillOpacity: 0.85,
     });
+    marker._toVisitRow = row;
+    marker.setStyle(markerStyleFor(row, false));
     marker.bindTooltip(row.getAttribute("data-name") || id, { direction: "top", opacity: 0.9 });
     marker.on("mouseover", function () {
       if (window.matchMedia && window.matchMedia("(hover: none)").matches) return;
@@ -260,9 +286,9 @@
       hoveredId = null;
       if (selectedId === id) return;
       if (state.mode === "distance") {
-        marker.setStyle(markerStyle(false));
+        marker.setStyle(markerStyleFor(row, false));
       } else {
-        marker.setStyle(markerStyle(false));
+        marker.setStyle(markerStyleFor(row, false));
       }
     });
     marker.on("click", function () {
@@ -293,7 +319,7 @@
       if (hoveredId !== id) return;
       hoveredId = null;
       if (selectedId === id) return;
-      marker.setStyle(markerStyle(false));
+      marker.setStyle(markerStyleFor(row, false));
     });
     row.addEventListener("click", function () {
       hoveredId = null;

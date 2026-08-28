@@ -4,15 +4,15 @@
     "min": "2022-01-04",
     "max": "2026-08-27"
   },
-  "history_count": 598,
-  "receipt_count": 1017,
+  "history_count": 449,
+  "receipt_count": 868,
   "stars": {
     "earned": 23045.8,
     "redeemed": 22945.6,
     "policy": "reports-through-coverage-end-then-api-tail",
     "report_coverage_end": "2026-08-23"
   },
-  "visit_count": 1017,
+  "visit_count": 868,
   "activity": {
     "unit": "distinct_purchase_orders",
     "timezone": "America/Toronto",
@@ -28,7 +28,7 @@
       "2023": 2,
       "2024": 3,
       "2025": 5,
-      "2026": 10
+      "2026": 5
     },
     "days": {
       "2022-01-04": 1,
@@ -598,93 +598,93 @@
       "2026-04-21": 1,
       "2026-04-22": 2,
       "2026-04-26": 2,
-      "2026-04-27": 4,
-      "2026-04-28": 6,
-      "2026-04-29": 4,
-      "2026-04-30": 2,
-      "2026-05-03": 2,
-      "2026-05-04": 8,
-      "2026-05-05": 6,
-      "2026-05-06": 4,
-      "2026-05-07": 8,
-      "2026-05-08": 2,
-      "2026-05-11": 4,
-      "2026-05-12": 4,
-      "2026-05-13": 2,
-      "2026-05-14": 8,
-      "2026-05-15": 2,
-      "2026-05-17": 6,
-      "2026-05-18": 4,
-      "2026-05-19": 10,
-      "2026-05-20": 2,
-      "2026-05-21": 6,
-      "2026-05-22": 4,
-      "2026-05-24": 2,
-      "2026-05-25": 4,
-      "2026-05-26": 6,
-      "2026-05-27": 4,
-      "2026-05-28": 6,
-      "2026-05-30": 4,
-      "2026-06-01": 6,
-      "2026-06-02": 6,
-      "2026-06-03": 4,
-      "2026-06-04": 6,
-      "2026-06-05": 4,
-      "2026-06-06": 4,
-      "2026-06-07": 2,
-      "2026-06-08": 8,
-      "2026-06-09": 6,
-      "2026-06-12": 4,
+      "2026-04-27": 2,
+      "2026-04-28": 3,
+      "2026-04-29": 2,
+      "2026-04-30": 1,
+      "2026-05-03": 1,
+      "2026-05-04": 4,
+      "2026-05-05": 3,
+      "2026-05-06": 2,
+      "2026-05-07": 4,
+      "2026-05-08": 1,
+      "2026-05-11": 2,
+      "2026-05-12": 2,
+      "2026-05-13": 1,
+      "2026-05-14": 4,
+      "2026-05-15": 1,
+      "2026-05-17": 3,
+      "2026-05-18": 2,
+      "2026-05-19": 5,
+      "2026-05-20": 1,
+      "2026-05-21": 3,
+      "2026-05-22": 2,
+      "2026-05-24": 1,
+      "2026-05-25": 2,
+      "2026-05-26": 3,
+      "2026-05-27": 2,
+      "2026-05-28": 3,
+      "2026-05-30": 2,
+      "2026-06-01": 3,
+      "2026-06-02": 3,
+      "2026-06-03": 2,
+      "2026-06-04": 3,
+      "2026-06-05": 2,
+      "2026-06-06": 2,
+      "2026-06-07": 1,
+      "2026-06-08": 4,
+      "2026-06-09": 3,
+      "2026-06-12": 2,
       "2026-06-14": 1,
-      "2026-06-15": 2,
-      "2026-06-18": 4,
-      "2026-06-19": 2,
-      "2026-06-21": 3,
-      "2026-06-22": 2,
-      "2026-06-23": 2,
-      "2026-06-25": 2,
-      "2026-06-26": 2,
-      "2026-06-27": 2,
-      "2026-06-29": 4,
-      "2026-06-30": 2,
-      "2026-07-02": 2,
-      "2026-07-05": 6,
-      "2026-07-06": 2,
-      "2026-07-08": 2,
-      "2026-07-09": 4,
-      "2026-07-10": 4,
-      "2026-07-11": 2,
-      "2026-07-13": 6,
-      "2026-07-15": 4,
-      "2026-07-16": 6,
-      "2026-07-17": 2,
-      "2026-07-18": 4,
-      "2026-07-19": 8,
-      "2026-07-21": 4,
-      "2026-07-22": 2,
-      "2026-07-26": 2,
-      "2026-07-27": 2,
-      "2026-07-31": 2,
-      "2026-08-01": 4,
-      "2026-08-02": 3,
-      "2026-08-03": 2,
-      "2026-08-05": 8,
-      "2026-08-07": 2,
-      "2026-08-08": 2,
-      "2026-08-10": 2,
-      "2026-08-14": 4,
-      "2026-08-15": 2,
-      "2026-08-16": 2,
-      "2026-08-17": 2,
-      "2026-08-20": 2,
-      "2026-08-22": 2,
+      "2026-06-15": 1,
+      "2026-06-18": 2,
+      "2026-06-19": 1,
+      "2026-06-21": 2,
+      "2026-06-22": 1,
+      "2026-06-23": 1,
+      "2026-06-25": 1,
+      "2026-06-26": 1,
+      "2026-06-27": 1,
+      "2026-06-29": 2,
+      "2026-06-30": 1,
+      "2026-07-02": 1,
+      "2026-07-05": 3,
+      "2026-07-06": 1,
+      "2026-07-08": 1,
+      "2026-07-09": 2,
+      "2026-07-10": 2,
+      "2026-07-11": 1,
+      "2026-07-13": 3,
+      "2026-07-15": 2,
+      "2026-07-16": 3,
+      "2026-07-17": 1,
+      "2026-07-18": 2,
+      "2026-07-19": 5,
+      "2026-07-21": 2,
+      "2026-07-22": 1,
+      "2026-07-26": 1,
+      "2026-07-27": 1,
+      "2026-07-31": 1,
+      "2026-08-01": 2,
+      "2026-08-02": 2,
+      "2026-08-03": 1,
+      "2026-08-05": 4,
+      "2026-08-07": 1,
+      "2026-08-08": 1,
+      "2026-08-10": 1,
+      "2026-08-14": 2,
+      "2026-08-15": 1,
+      "2026-08-16": 1,
+      "2026-08-17": 1,
+      "2026-08-20": 1,
+      "2026-08-22": 1,
       "2026-08-23": 2,
       "2026-08-25": 1,
       "2026-08-26": 1,
       "2026-08-27": 1
     },
     "total_days_active": 651,
-    "total_events": 1017
+    "total_events": 868
   },
   "standalone": {
     "total": 195,
@@ -756,49 +756,49 @@
     {
       "name": "Bayview & Romfield",
       "storeNumber": "23280-204964",
-      "count": 175,
+      "count": 118,
       "type": "standalone"
     },
     {
       "name": "Yonge & Dundas",
       "storeNumber": "4497-90784",
-      "count": 131,
+      "count": 91,
       "type": "standalone"
     },
     {
       "name": "Yonge & Finch",
       "storeNumber": "4717-102447",
-      "count": 85,
-      "type": "standalone"
-    },
-    {
-      "name": "Oak Ridges",
-      "storeNumber": "58132-289531",
-      "count": 52,
+      "count": 70,
       "type": "standalone"
     },
     {
       "name": "Jane & Major Mackenzie",
       "storeNumber": "54360-286336",
-      "count": 47,
+      "count": 44,
+      "type": "standalone"
+    },
+    {
+      "name": "Oak Ridges",
+      "storeNumber": "58132-289531",
+      "count": 41,
       "type": "standalone"
     },
     {
       "name": "Yonge St & Hwy 7",
       "storeNumber": "54228-286471",
-      "count": 23,
+      "count": 14,
       "type": "standalone"
     },
     {
       "name": "INDIGO - Hillcrest",
       "storeNumber": "55463-289303",
-      "count": 14,
+      "count": 12,
       "type": "other"
     },
     {
       "name": "Markville Mall - Upper Level",
       "storeNumber": "19865-177964",
-      "count": 7,
+      "count": 6,
       "type": "standalone"
     }
   ],
@@ -840,6 +840,18 @@
     "Yonge St & Hwy 7",
     "York Mills and Lesmill",
     "Yorkdale Mall Kiosk"
+  ],
+  "reference_stores": [
+    {
+      "id": "23280-204964",
+      "name": "Bayview & Romfield",
+      "street": "8220 Bayview Avenue",
+      "city": "Markham",
+      "region": "York Region",
+      "lat": 43.83232,
+      "lon": -79.40508,
+      "visits": 118
+    }
   ],
   "to_visit": [
     {
@@ -2841,26 +2853,8 @@
       "standalone": true,
       "region": "York Region",
       "items": [
+        "Tr Green Iced Tea Lemonade",
         "Iced Green Tea Lemonade"
-      ]
-    },
-    {
-      "date": "2026-08-22",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Tr Green Iced Tea Lemonade"
-      ]
-    },
-    {
-      "date": "2026-08-20",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Starbucks\u00ae Iced Coffee Blend",
-        "Cool Lime Lemonade Refresher"
       ]
     },
     {
@@ -2870,7 +2864,9 @@
       "region": "York Region",
       "items": [
         "Tall Iced Coffee",
-        "Tr Lemonade Cool Lime"
+        "Tr Lemonade Cool Lime",
+        "Starbucks\u00ae Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
       ]
     },
     {
@@ -2880,15 +2876,7 @@
       "region": "York Region",
       "items": [
         "Tall Lemonade",
-        "Chicken Jalapeno Pocket Whole"
-      ]
-    },
-    {
-      "date": "2026-08-17",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
+        "Chicken Jalapeno Pocket Whole",
         "Lemonade",
         "Jalape\u00f1o Chicken Pocket"
       ]
@@ -2899,18 +2887,10 @@
       "standalone": true,
       "region": "York Region",
       "items": [
+        "Vt Mango Strbe Lemde",
+        "Croissant Chocolate Can",
         "Chocolate Croissant",
         "Mango Strawberry Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-16",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Vt Mango Strbe Lemde",
-        "Croissant Chocolate Can"
       ]
     },
     {
@@ -2920,15 +2900,7 @@
       "region": "York Region",
       "items": [
         "Tl Icd Peach Grn Tea Lemonade",
-        "Cheese Danish 30/cs"
-      ]
-    },
-    {
-      "date": "2026-08-15",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
+        "Cheese Danish 30/cs",
         "Iced Peach Green Tea Lemonade",
         "Cheese Danish"
       ]
@@ -2939,15 +2911,7 @@
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Tall Iced Coffee"
-      ]
-    },
-    {
-      "date": "2026-08-14",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
+        "Tall Iced Coffee",
         "Starbucks\u00ae Iced Coffee Blend"
       ]
     },
@@ -2957,18 +2921,10 @@
       "standalone": true,
       "region": "York Region",
       "items": [
+        "Tr Lemonade Cool Lime",
+        "Tl Icd Peach Grn Tea Lemonade",
         "Iced Peach Green Tea Lemonade",
         "Cool Lime Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-14",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Tr Lemonade Cool Lime",
-        "Tl Icd Peach Grn Tea Lemonade"
       ]
     },
     {
@@ -2977,7 +2933,98 @@
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Gr Iced Coffee"
+        "Gr Iced Coffee",
+        "Starbucks\u00ae Iced Coffee Blend"
+      ]
+    },
+    {
+      "date": "2026-08-08",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Add Dried Fruit Topping",
+        "Tr Lemonade Cool Lime",
+        "Xtr Green Coffee Extract Blend",
+        "Whole Grain Oatmeal",
+        "Tall Iced Coffee",
+        "Rolled Steel-Cut Oatmeal",
+        "Starbucks\u00ae Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Ginger Molasses Cookie Ca",
+        "Gr Lemonade Cool Lime",
+        "Xtr Green Coffee Extract Blend",
+        "Tl Icd Peach Grn Tea Lemonade",
+        "Iced Peach Green Tea Lemonade",
+        "Ginger Molasses Cookie",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "White Mocha Iced Venti",
+        "Ginger Molasses Cookie Ca",
+        "Tl Icd Peach Grn Tea Lemonade",
+        "Iced Peach Green Tea Lemonade",
+        "Ginger Molasses Cookie",
+        "Iced White Chocolate Mocha"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "King and John",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Tall Lemonade",
+        "Lemonade"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "King and John",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Lemon Loaf New Fy20 Ca",
+        "Tall Lemonade",
+        "Lemonade",
+        "Iced Lemon Loaf"
+      ]
+    },
+    {
+      "date": "2026-08-05",
+      "store": "Oak Ridges",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Gr Strawberry Coconut Drink",
+        "Maple Mini Pancakes 8 Pc",
+        "Add Van Protein Cold Foam",
+        "Pink Drink",
+        "8 Maple Mini Pancakes"
+      ]
+    },
+    {
+      "date": "2026-08-03",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Tl Icd Peach Grn Tea Lemonade",
+        "Iced Peach Green Tea Lemonade"
       ]
     }
   ],
@@ -3400,7 +3447,7 @@
         "lon": -79.701,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 1,
         "region": "Peel"
       },
       {
@@ -3796,7 +3843,7 @@
         "lon": -79.38775,
         "standalone": false,
         "visited": true,
-        "visits": 5,
+        "visits": 3,
         "region": "Toronto"
       },
       {
@@ -4183,7 +4230,7 @@
         "lon": -79.38961,
         "standalone": true,
         "visited": true,
-        "visits": 4,
+        "visits": 2,
         "region": "Toronto"
       },
       {
@@ -4381,7 +4428,7 @@
         "lon": -79.38119,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4426,7 +4473,7 @@
         "lon": -79.38045,
         "standalone": true,
         "visited": true,
-        "visits": 131,
+        "visits": 91,
         "region": "Toronto"
       },
       {
@@ -4444,7 +4491,7 @@
         "lon": -79.41622,
         "standalone": true,
         "visited": true,
-        "visits": 85,
+        "visits": 70,
         "region": "Toronto"
       },
       {
@@ -4462,7 +4509,7 @@
         "lon": -79.41295,
         "standalone": true,
         "visited": true,
-        "visits": 3,
+        "visits": 2,
         "region": "Toronto"
       },
       {
@@ -4489,7 +4536,7 @@
         "lon": -79.44957,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4534,7 +4581,7 @@
         "lon": -79.37279,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 1,
         "region": "York Region"
       },
       {
@@ -4543,7 +4590,7 @@
         "lon": -79.26074,
         "standalone": true,
         "visited": true,
-        "visits": 3,
+        "visits": 2,
         "region": "York Region"
       },
       {
@@ -4579,7 +4626,7 @@
         "lon": -79.40508,
         "standalone": true,
         "visited": true,
-        "visits": 175,
+        "visits": 118,
         "region": "York Region"
       },
       {
@@ -4588,7 +4635,7 @@
         "lon": -79.28774,
         "standalone": true,
         "visited": true,
-        "visits": 7,
+        "visits": 6,
         "region": "York Region"
       },
       {
@@ -4642,7 +4689,7 @@
         "lon": -79.43523,
         "standalone": false,
         "visited": true,
-        "visits": 14,
+        "visits": 12,
         "region": "York Region"
       },
       {
@@ -4660,7 +4707,7 @@
         "lon": -79.45487,
         "standalone": true,
         "visited": true,
-        "visits": 52,
+        "visits": 41,
         "region": "York Region"
       },
       {
@@ -4678,7 +4725,7 @@
         "lon": -79.43027,
         "standalone": true,
         "visited": true,
-        "visits": 23,
+        "visits": 14,
         "region": "York Region"
       },
       {
@@ -4696,7 +4743,7 @@
         "lon": -79.31204,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 1,
         "region": "York Region"
       },
       {
@@ -4741,7 +4788,7 @@
         "lon": -79.53522,
         "standalone": true,
         "visited": true,
-        "visits": 47,
+        "visits": 44,
         "region": "York Region"
       },
       {

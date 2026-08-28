@@ -104,7 +104,8 @@ def parse_report(path: Path, source: str, currency: str) -> tuple[list[dict], li
         groups.append({
             "visit_id": stable_id(source, [r["observation_id"] for r in rows]), "status": "active",
             "occurred_at": rows[0]["occurred_at"], "occurred_at_precision": "second", "time_basis": "local_wall",
-            "local_date": rows[0]["local_date"], "source_profile_countries": sorted({r["profile_country"] for r in rows}),
+            "local_date": rows[0]["local_date"], "local_second": rows[0]["local_second"],
+            "source_profile_countries": sorted({r["profile_country"] for r in rows}),
             "currency": rows[0]["currency"], "amount_lines_sum": _sum_amounts(r["line_amount"] for r in rows),
             "store": {"name_raw": rows[0]["store_name_raw"], "name_key": rows[0]["store_key"], "catalog_store_number": None,
                       "in_gta_catalog": False, "standalone": False, "region": None, "match_method": "unresolved"},
@@ -139,6 +140,15 @@ def _sum_amounts(values) -> str | None:
         return f"{sum(float(v) for v in values if v):.2f}"
     except (TypeError, ValueError):
         return None
+
+
+def _within_reconciliation_window(left: str | None, right: str | None) -> bool:
+    if not left or not right:
+        return False
+    try:
+        return abs((datetime.fromisoformat(left) - datetime.fromisoformat(right)).total_seconds()) <= 15
+    except ValueError:
+        return False
 
 
 def api_visits(receipts: list[dict]) -> tuple[list[dict], list[dict]]:
@@ -190,10 +200,10 @@ def _merge(visits: list[dict]) -> list[dict]:
         match = next((old for old in result if ids & set(old.get("source_observation_ids", []))), None)
         if match is None and visit.get("time_basis") == "utc":
             candidates = [old for old in result if old.get("time_basis") == "local_wall"
-                          and old.get("local_second") == visit.get("local_second")
+                          and _within_reconciliation_window(old.get("local_second"), visit.get("local_second"))
                           and old.get("store", {}).get("name_key") == visit.get("store", {}).get("name_key")]
-            # Never collapse two report orders merely because the API has a
-            # matching second; only a unique reconciliation is safe.
+            # Never collapse two report orders merely because the API is close
+            # in time; only a unique same-store reconciliation is safe.
             if len(candidates) == 1:
                 match = candidates[0]
         if match is None:

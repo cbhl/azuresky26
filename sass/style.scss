@@ -9,6 +9,8 @@
   --map-marker-stroke: #d5dee8;
   --map-marker-focus-fill: #43d18a;
   --map-marker-focus-stroke: #b8f3d1;
+  --map-marker-reference-fill: #55a9e6;
+  --map-marker-reference-stroke: #d5efff;
   --map-control-background: rgba(18, 25, 32, 0.9);
   --map-control-color: #f2f7fb;
 }
@@ -24,6 +26,8 @@
     --map-marker-stroke: #6b7280;
     --map-marker-focus-fill: #1a7f4b;
     --map-marker-focus-stroke: #0d4d2c;
+    --map-marker-reference-fill: #2b6cb0;
+    --map-marker-reference-stroke: #1a365d;
     --map-control-background: rgba(255, 255, 255, 0.9);
     --map-control-color: #26323d;
   }
@@ -864,6 +868,14 @@ code .il {
 
 #to-visit-table tbody tr.is-nearby {
   background: rgba(43, 108, 176, 0.1);
+}
+
+#to-visit-table tbody tr.is-reference {
+  background: rgba(43, 108, 176, 0.12);
+}
+
+#to-visit-table tbody tr.is-reference small {
+  opacity: 0.8;
 }
 
 #to-visit-table tbody tr.is-focus td:nth-child(2),
