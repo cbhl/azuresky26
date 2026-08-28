@@ -6,6 +6,7 @@
 
 <h1>{{ section.title }}</h1>
 <p class="travel-intro">I originally started using TripIt to track travel for a past job and Flighty for live notifications when my flight was delayed. Only after using them for a few years did I realize that these tools could help me remember where I've been and which aircraft types I've flown so that I can better plan my next adventure.</p>
+<p class="travel-empty">Last updated: <time datetime="{{ flights.generated_at }}">{{ flights.generated_at | date(format="%B %-d, %Y") }}</time></p>
 
 <section class="travel-stats" aria-label="Flight statistics">
   <h2>In the air</h2>
@@ -67,7 +68,7 @@
 
 {% if stats.flights > 0 %}
 <section class="travel-map-section" aria-label="Flight map">
-  <h2>Map</h2>
+  <h2>World map</h2>
   <img class="travel-map" src="/images/travel-map.svg" width="720" height="360"
        alt="Great-circle flight routes on a Web Mercator world map">
 </section>
