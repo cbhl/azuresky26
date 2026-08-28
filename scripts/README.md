@@ -19,22 +19,56 @@ Raw Flighty export instructions: [`../data/flighty/README.md`](../data/flighty/R
 
 ## Updating Starbucks data
 
-1. Refresh the session cookie in repo-root `get-transaction-history.sh` if needed (the `-b '...'` value). Do not execute that file.
-2. Fetch history + any new Redemption receipts:
-   ```bash
-   python3 scripts/starbucks_fetch.py
-   ```
-3. Rebuild derived stats, the map SVG, then the site:
-   ```bash
-   python3 scripts/starbucks_import.py
-   python3 scripts/render_starbucks_map.py
-   zola build
-   ```
-   Receipt fetches are incremental: already-saved `historyId`s in `receipts.json` are skipped on later runs.
+`data/starbucks/history.json` is the committed canonical ledger. It may retain
+source observation IDs for reconciliation, but generated
+`data/starbucks/starbucks.json` and the rendered HTML must not expose source
+IDs or native API history IDs. Keep CIR exports, the session cookie, and raw
+fetch artifacts private and uncommitted.
 
-   Basemap (roads/water/labels) is committed as `data/starbucks/basemap.json`. Refresh rarely:
+For a report import, provide the private USA and/or Canada Customer Information
+Report paths explicitly:
 
-   ```bash
-   python3 scripts/fetch_starbucks_basemap.py
-   python3 scripts/render_starbucks_map.py
-   ```
+```bash
+python3 scripts/starbucks_history.py \
+  --us-report /private/path/usa-report.csv \
+  --ca-report /private/path/canada-report.csv \
+  --receipts data/starbucks/receipts.json \
+  --output data/starbucks/history.json
+```
+
+The API session is refreshed separately. Update the cookie in repo-root
+`get-transaction-history.sh` if needed (the `-b '...'` value), but do not
+execute that file. Then fetch history and any new Redemption receipts:
+
+```bash
+python3 scripts/starbucks_fetch.py
+```
+
+The fetch is incremental for receipts and merges the current API export into
+the existing canonical ledger without deleting report history. Rebuild derived
+data and the site afterward:
+
+```bash
+python3 scripts/starbucks_import.py
+python3 scripts/render_starbucks_map.py
+zola check
+zola build
+```
+
+Verify that public artifacts contain no source identifiers before publishing:
+
+```bash
+rg -n 'source_observation_ids|historyId|visit_id' data/starbucks/starbucks.json public/starbucks
+```
+
+The verification command should produce no matches. Receipt fetches are
+incremental: already-saved `historyId`s in `receipts.json` are skipped on later
+runs.
+
+Basemap (roads/water/labels) is committed as `data/starbucks/basemap.json`.
+Refresh rarely:
+
+```bash
+python3 scripts/fetch_starbucks_basemap.py
+python3 scripts/render_starbucks_map.py
+```

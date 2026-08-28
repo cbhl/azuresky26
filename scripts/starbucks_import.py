@@ -22,6 +22,8 @@ from datetime import date
 from difflib import SequenceMatcher
 from pathlib import Path
 
+from starbucks_history import merge_history
+
 ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_RECEIPTS = ROOT / "data" / "starbucks" / "receipts.json"
 DEFAULT_ALL_ITEMS = ROOT / "data" / "starbucks" / "all-items.json"
@@ -29,6 +31,7 @@ DEFAULT_CATALOG = ROOT / "data" / "starbucks" / "stores-gta.json"
 DEFAULT_STANDALONE = ROOT / "data" / "starbucks" / "stores-gta-standalone.json"
 DEFAULT_OUTPUT = ROOT / "data" / "starbucks" / "starbucks.json"
 DEFAULT_UNMATCHED = ROOT / "data" / "starbucks" / "unmatched-receipts.json"
+DEFAULT_HISTORY = ROOT / "data" / "starbucks" / "history.json"
 RECENT_LIMIT = 20
 TOP_LIST_LIMIT = 8
 FUZZY_THRESHOLD = 0.85
@@ -142,6 +145,7 @@ def import_receipts(
     catalog: list[dict],
     standalone_total: int,
     history_count: int = 0,
+    history: list[dict] | None = None,
 ) -> tuple[dict, list[dict]]:
     by_number, by_norm = build_catalog_index(catalog)
     match_cache: dict[tuple[str, str], dict | None] = {}
@@ -156,6 +160,8 @@ def import_receipts(
     unmatched_first: dict[str, dict] = {}
     matched_count = 0
 
+    activity_counts: Counter[str] = Counter()
+    activity_max_by_year: dict[str, int] = defaultdict(int)
     for receipt in receipts:
         store_name = (receipt.get("storeName") or "").strip()
         store_number = (receipt.get("storeNumber") or "").strip()
@@ -168,6 +174,9 @@ def import_receipts(
 
         raw_date = receipt.get("date") or ""
         day = raw_date[:10] if len(raw_date) >= 10 else raw_date
+        if day.startswith("20"):
+            activity_counts[day] += 1
+            activity_max_by_year[day[:4]] = max(activity_max_by_year[day[:4]], activity_counts[day])
 
         item_names: list[str] = []
         for purchased in receipt.get("purchasedItems") or []:
@@ -248,6 +257,29 @@ def import_receipts(
         {"item": item_display_forms[key], "count": count}
         for key, count in item_counts.most_common(TOP_LIST_LIMIT)
     ]
+
+    history_events = [e for e in (history or []) if e.get("status", "active") == "active"]
+    report_star_dates = [e.get("occurred_on") for e in history_events
+                         if e.get("source_kind", "").endswith("customer_information_report")
+                         and e.get("occurred_on")]
+    report_star_end = max(report_star_dates) if report_star_dates else None
+    # CIR/report rows are authoritative through their coverage end. API Stars
+    # are only eligible after that date, preventing overlapping totals.
+    selected_stars = [e for e in history_events
+                      if not (e.get("source_kind") == "api_export" and report_star_end
+                              and (e.get("occurred_on") or "") <= report_star_end)]
+    stars_earned = sum(max(float(e.get("stars_delta") or 0), 0) for e in selected_stars)
+    stars_redeemed = sum(abs(min(float(e.get("stars_delta") or 0), 0)) for e in selected_stars)
+    years = sorted({day[:4] for day in activity_counts if day[:4].isdigit()})
+    activity = {
+        "unit": "distinct_purchase_orders",
+        "timezone": "America/Toronto",
+        "years": years,
+        "max_count_by_year": activity_max_by_year,
+        "days": dict(activity_counts),
+        "total_days_active": len(activity_counts),
+        "total_events": sum(activity_counts.values()),
+    }
 
     standalone_visited = len(standalone_visited_keys)
     stores_all = len(visited_keys)
@@ -366,6 +398,11 @@ def import_receipts(
         "date_range": date_range,
         "history_count": history_count,
         "receipt_count": len(receipts),
+        "stars": {"earned": round(stars_earned, 1), "redeemed": round(stars_redeemed, 1),
+                  "policy": "reports-through-coverage-end-then-api-tail",
+                  "report_coverage_end": report_star_end},
+        "visit_count": sum(activity_counts.values()),
+        "activity": activity,
         "standalone": {
             "total": standalone_total,
             "visited": standalone_visited,
@@ -403,6 +440,7 @@ def main() -> int:
         dest="all_items",
         help="Full flattened history (all-items.json); used for history_count. Optional.",
     )
+    parser.add_argument("--history", type=Path, default=DEFAULT_HISTORY)
     parser.add_argument("-c", "--catalog", type=Path, default=DEFAULT_CATALOG)
     parser.add_argument(
         "--standalone", type=Path, default=DEFAULT_STANDALONE, dest="standalone_path"
@@ -432,9 +470,39 @@ def main() -> int:
         all_items = json.loads(args.all_items.read_text())
         history_count = len(all_items) if isinstance(all_items, list) else 0
 
+    history_ledger = json.loads(args.history.read_text()) if args.history.exists() else {}
+    history = history_ledger.get("stars", []) if isinstance(history_ledger, dict) else []
+    if isinstance(history_ledger, dict) and history_ledger.get("visits"):
+        receipts = [
+            {
+                # Canonical local_date is authoritative for calendar metrics;
+                # report wall-clock strings must not be mistaken for UTC.
+                "date": visit.get("local_date") + ("T" + visit.get("occurred_at", "")[-8:] if visit.get("occurred_at") else ""),
+                "storeName": (visit.get("store") or {}).get("name_raw") if isinstance(visit.get("store"), dict) else visit.get("store"),
+                "storeNumber": (visit.get("store") or {}).get("catalog_store_number") if isinstance(visit.get("store"), dict) else "",
+                "purchasedItems": [{"name": item.get("name")} for item in visit.get("items", [])],
+            }
+            for visit in history_ledger["visits"]
+            if visit.get("status", "active") == "active"
+        ]
+
     payload, unmatched = import_receipts(
-        receipts, catalog, standalone_total, history_count=history_count
+        receipts, catalog, standalone_total, history_count=history_count, history=history
     )
+
+    # Keep the legacy field scoped to catalog-matched visits; the calendar's
+    # global purchase count is exposed separately as visit_count.
+    payload["history_count"] = sum(
+        1 for receipt in receipts
+        if match_store(
+            (receipt.get("storeName") or ""),
+            (receipt.get("storeNumber") or ""),
+            *build_catalog_index(catalog), catalog,
+        ) is not None
+    )
+    # receipt_count is the number of source-independent canonical visits, not
+    # the number of API receipts or report lines.
+    payload["receipt_count"] = payload["visit_count"]
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2) + "\n")

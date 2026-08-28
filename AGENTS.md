@@ -1,5 +1,7 @@
 # AGENTS.md
 
+Read skills/ask-questions-if-underspecified.md.
+
 ## Cursor Cloud specific instructions
 
 This repository is the source for the static personal website **michael-chang.ca**, built with [Zola](https://www.getzola.org/) (a Rust static site generator). There is no backend, database, or package manager — the only dependency is the `zola` binary, and the build output is static HTML/CSS/JS.

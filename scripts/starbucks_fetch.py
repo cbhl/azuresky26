@@ -31,6 +31,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+from starbucks_history import merge_history
+
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data" / "starbucks"
 DEFAULT_COOKIE_FILE = ROOT / "get-transaction-history.sh"
@@ -305,6 +307,9 @@ def fetch_receipts(cookie: str, history_items: list[dict]) -> tuple[list[dict], 
         key=lambda r: (r.get("date") or "", r.get("historyId") or ""),
     )
     write_json(receipts_path, receipts)
+    # Merge the raw receipt cache; the history module creates observations and
+    # performs guarded cross-source reconciliation.
+    merge_history(DATA_DIR / "history.json", receipts)
     write_json(errors_path, sorted(errors_by_id.values(), key=lambda e: e.get("historyId") or ""))
     print(f"wrote {receipts_path} ({len(receipts)} receipts, {new_count} new)")
     if errors_by_id:
