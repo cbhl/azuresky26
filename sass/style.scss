@@ -749,24 +749,26 @@ code .il {
 }
 
 @media only screen and (max-width: 480px) {
-  .starbucks-activity-months,
   .starbucks-activity-row {
-    gap: 0.35rem;
+    gap: 0;
   }
 
-  .starbucks-activity-months > span,
-  .starbucks-activity-year,
-  .starbucks-activity-weekday {
-    flex-basis: 2rem;
+  .starbucks-activity-months {
+    display: block;
+  }
+
+  .starbucks-activity-year {
+    display: block;
+    margin-bottom: 0.35rem;
   }
 
   .starbucks-activity-month-labels,
-  .starbucks-activity-days {
-    gap: 1px;
+  .starbucks-activity-weekday {
+    display: none;
   }
 
-  .starbucks-activity-month-labels span {
-    font-size: 0.6rem;
+  .starbucks-activity-days {
+    gap: 1px;
   }
 }
 
