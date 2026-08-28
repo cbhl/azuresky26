@@ -22,3 +22,9 @@ get-transaction-history*.json
 get-transaction-history.sh
 
 __pycache__/
+
+# OpenCode local dependency installation artifacts
+.opencode/node_modules/
+.opencode/package.json
+.opencode/package-lock.json
+.opencode/bun.lock
