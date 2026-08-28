@@ -24,15 +24,17 @@ To expose the dev server on all interfaces (useful in the cloud VM): `zola serve
 - `deploy.sh` runs `zola build` then `rsync`s `public/` to a NearlyFreeSpeech.net host over SSH. It is for production deploys only and requires SSH credentials — do not run it for local testing.
 - `themes/` is intentionally empty (no external theme dependency).
 
-## Pull request workflow
+## Completion workflow
 
-When opening or updating a PR:
+When finishing any work in the repository, including work that is not being committed or submitted as a PR:
 
 1. Run `zola check`.
 2. Inspect the diff against `main` and determine which site pages are visually affected. Explore `content/`, `templates/`, and related paths as needed — do not assume a fixed page list.
-3. Run `zola serve --interface 0.0.0.0 --port 1111` and screenshot each affected page (full-page). Save screenshots locally. Use a command that exits when done (e.g. headless Chrome with `--virtual-time-budget=5000`, or wrap with `timeout 30s`) so the browser does not linger.
-4. Include screenshots in the PR description:
+3. Run `zola serve --interface 0.0.0.0 --port 1111` and screenshot each affected page using a browser's native full-page capture mode. For example: `npx playwright screenshot --browser chromium --full-page http://127.0.0.1:1111/<path>/ screenshots/<name>.png`. Save screenshots locally; do not use an oversized fixed viewport as a substitute for full-page capture. Use a command that exits when done so the browser does not linger.
+4. If opening or updating a PR, include screenshots in the PR description:
    - **Cursor Cloud agents:** save under `/opt/cursor/artifacts/screenshots/` and embed using absolute artifact paths (e.g. `<img alt="..." src="/opt/cursor/artifacts/screenshots/...">`); they are uploaded automatically.
    - **Other agents:** upload each screenshot via whatever your environment provides (GitHub web UI, `gh`, API, etc.) and embed with standard markdown (`![description](url)`) or HTML `<img>` tags pointing at the hosted image URLs.
 
-If nothing renderable changed, screenshot the home page (`/`) as a fallback so the PR still includes a visual check.
+If nothing renderable changed, screenshot the home page (`/`) as a fallback so the work still includes a visual check.
+
+For commit-specific guidance, see [`skills/commit-work.md`](skills/commit-work.md).
