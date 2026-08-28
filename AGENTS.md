@@ -26,6 +26,10 @@ To expose the dev server on all interfaces (useful in the cloud VM): `zola serve
 - For production deployments, tell the human to run `./deploy.sh` rather than attempting deployment directly. The script builds the site and uses SFTP, which requires password-interactive authentication. Do not run it for local testing.
 - `themes/` is intentionally empty (no external theme dependency).
 
+### Styling
+
+- Provide matching light- and dark-mode CSS styles for site UI and visual assets, including styles embedded inside standalone SVGs.
+
 ## Completion workflow
 
 When finishing any work in the repository, including work that is not being committed or submitted as a PR:
