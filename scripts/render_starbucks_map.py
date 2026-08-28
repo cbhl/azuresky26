@@ -56,6 +56,12 @@ DEFAULT_BBOX = {
     "lng_max": -78.50,
 }
 
+LAKE_ONTARIO = [
+    [-79.95, 43.35], [-79.78, 43.40], [-79.58, 43.51], [-79.38, 43.62],
+    [-79.16, 43.72], [-78.95, 43.84], [-78.72, 43.89], [-78.50, 43.91],
+    [-78.50, 43.30], [-79.95, 43.30], [-79.95, 43.35],
+]
+
 
 def project(
     lat: float,
@@ -127,9 +133,14 @@ def render_basemap(
     water_paths: list[str] = []
     for feat in basemap.get("water") or []:
         rings = feat.get("coords") or []
+        if sum(len(ring) for ring in rings) > 1000:
+            continue
         d = polygon_d(rings, bbox, x0, y0, plot_w, plot_h)
         if d:
             water_paths.append(f'<path d="{d}"/>')
+
+    lake_d = polygon_d([LAKE_ONTARIO], bbox, x0, y0, plot_w, plot_h)
+    water_paths.append(f'<path d="{lake_d}"/>')
 
     road_layers = {
         "secondary": [],

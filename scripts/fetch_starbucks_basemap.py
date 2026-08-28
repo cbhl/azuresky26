@@ -28,6 +28,22 @@ OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 # Match starbucks_import.BBOX
 DEFAULT_BBOX = (43.30, 44.12, -80.05, -78.50)
 
+# The Lake Ontario relation is too large and fragmented for the compact
+# relation parser below. Keep a stable shoreline fallback for this map.
+LAKE_ONTARIO = [
+    [-79.95, 43.35],
+    [-79.78, 43.40],
+    [-79.58, 43.51],
+    [-79.38, 43.62],
+    [-79.16, 43.72],
+    [-78.95, 43.84],
+    [-78.72, 43.89],
+    [-78.50, 43.91],
+    [-78.50, 43.30],
+    [-79.95, 43.30],
+    [-79.95, 43.35],
+]
+
 USER_AGENT = "michael-chang.ca-starbucks-map/1.0 (personal static site)"
 
 
@@ -154,6 +170,43 @@ def path_length(coords: list[list[float]]) -> float:
     for a, b in zip(coords, coords[1:]):
         total += _dist((a[0], a[1]), (b[0], b[1]))
     return total
+
+
+def merge_ring_segments(segments: list[list[list[float]]]) -> list[list[list[float]]]:
+    """Join OSM relation members into closed outer rings."""
+    chains = [[list(point) for point in segment] for segment in segments if len(segment) >= 2]
+    changed = True
+    while changed:
+        changed = False
+        for i, first in enumerate(chains):
+            if not first:
+                continue
+            for j in range(i + 1, len(chains)):
+                second = chains[j]
+                if not second:
+                    continue
+                first_start = _endpoint_key(first[0])
+                first_end = _endpoint_key(first[-1])
+                second_start = _endpoint_key(second[0])
+                second_end = _endpoint_key(second[-1])
+                merged = None
+                if first_start == second_start:
+                    merged = list(reversed(second)) + first[1:]
+                elif first_start == second_end:
+                    merged = second + first[1:]
+                elif first_end == second_start:
+                    merged = first + second[1:]
+                elif first_end == second_end:
+                    merged = first + list(reversed(second))[1:]
+                if merged is None:
+                    continue
+                chains[i] = merged
+                chains[j] = []
+                changed = True
+                break
+            if changed:
+                break
+    return [chain for chain in chains if len(chain) >= 3]
 
 
 def _endpoint_key(pt: list[float], decimals: int = 4) -> tuple[float, float]:
@@ -343,7 +396,7 @@ def elements_to_basemap(payload: dict) -> dict:
             or tags.get("water") in {"lake", "reservoir", "pond", "bay"}
         ):
             continue
-        rings: list[list[list[float]]] = []
+        segments: list[list[list[float]]] = []
         for member in rel.get("members") or []:
             if member.get("type") != "way" or member.get("role") not in ("outer", ""):
                 continue
@@ -357,13 +410,22 @@ def elements_to_basemap(payload: dict) -> dict:
                     coords.append([lon, lat])
             if len(coords) < 3:
                 continue
-            if coords[0] != coords[-1]:
-                coords = coords + [coords[0]]
-            simplified = simplify_ring(coords, tolerance=0.002)
+            segments.append(coords)
+        # Lake Ontario is represented by hundreds of coastline fragments;
+        # joining those fragments without a full polygonizer produces spikes.
+        if len(segments) > 100:
+            continue
+        rings: list[list[list[float]]] = []
+        for ring in merge_ring_segments(segments):
+            if ring[0] != ring[-1]:
+                ring = ring + [ring[0]]
+            simplified = simplify_ring(ring, tolerance=0.002)
             if len(simplified) >= 4:
                 rings.append(simplified)
         if rings:
             water.append({"coords": rings})
+
+    water.append({"coords": [LAKE_ONTARIO]})
 
     # Place labels from nodes that have tags (original nodes with place=*)
     for el in payload.get("elements") or []:
