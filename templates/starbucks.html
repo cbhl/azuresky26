@@ -46,19 +46,6 @@
   </div>
   {% endif %}
 
-  {% if stats.unmatched %}
-  <div class="starbucks-unmatched">
-    <h3 class="starbucks-subhead">Unmatched receipts</h3>
-    <ul class="travel-top-list">
-      {% for u in stats.unmatched %}
-      <li>
-        <span class="travel-label">{% if u.storeName %}{{ u.storeName }}{% elif u.storeNumber %}{{ u.storeNumber }}{% else %}unknown{% endif %}</span>
-        {% if u.reason %} — {{ u.reason }}{% endif %}
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-  {% endif %}
   {% else %}
   <p class="travel-empty">Starbucks stats will appear here after receipts are imported.</p>
   {% endif %}
