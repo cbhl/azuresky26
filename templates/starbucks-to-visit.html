@@ -265,16 +265,23 @@
     markersById[id] = marker;
 
     row.addEventListener("mouseenter", function () {
-      if (state.mode !== "distance") {
-        marker.setStyle({ radius: 7, weight: 2, fillColor: "#9ca3af" });
-      }
+      hoveredId = id;
+      marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
+      marker.bringToFront();
+      Object.keys(markersById).forEach(function (otherId) {
+        if (otherId !== id) markersById[otherId].closeTooltip();
+      });
+      marker.openTooltip();
     });
     row.addEventListener("mouseleave", function () {
-      if (state.mode !== "distance") {
-        marker.setStyle({ radius: 5, weight: 1, fillColor: "#c5ccd4", color: "#6b7280" });
-      }
+      marker.closeTooltip();
+      if (hoveredId !== id) return;
+      hoveredId = null;
+      if (selectedId === id) return;
+      marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
     });
     row.addEventListener("click", function () {
+      hoveredId = null;
       focusStore(id, { scrollTable: false });
       map.panTo([lat, lon], { animate: true });
       marker.openTooltip();
