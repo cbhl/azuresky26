@@ -15,13 +15,6 @@
     <div><dt>Visits in GTA</dt><dd>{{ stats.history_count }}</dd></div>
     {% if stats.stars %}<div><dt>Stars earned</dt><dd>{{ stats.stars.earned }}</dd></div><div><dt>Stars redeemed</dt><dd>{{ stats.stars.redeemed }}</dd></div>{% endif %}
   </dl>
-  {% if stats.date_range and stats.date_range.min and stats.date_range.max %}
-  <p class="travel-empty starbucks-history-span">
-    Receipts {{ stats.date_range.min }} – {{ stats.date_range.max }}
-    ({{ stats.receipt_count }} receipts)
-  </p>
-  {% endif %}
-
   {% if stats.top_items or stats.top_stores %}
   <div class="travel-tops starbucks-tops">
     {% if stats.top_items %}
@@ -54,8 +47,8 @@
 
 {% if stats.activity and stats.activity.years %}
 <section class="starbucks-activity" aria-label="Starbucks daily visit activity">
-  <h2>Daily activity</h2>
-  <p class="travel-empty">{{ stats.activity.total_events }} visits across {{ stats.activity.total_days_active }} days. Each year is normalized to its busiest day.</p>
+  <h2>Starbucks visits by calendar day</h2>
+  <p class="travel-empty" id="starbucks-activity-summary"></p>
   <div class="starbucks-activity-scroll">
     <div class="starbucks-activity-grid" data-activity='{{ stats.activity | json_encode() | safe }}'>
       <div class="starbucks-activity-months"><span></span><div class="starbucks-activity-month-labels"></div></div>
@@ -81,6 +74,17 @@
     var root = document.querySelector(".starbucks-activity-grid");
     if (!root) return;
     var activity = JSON.parse(root.dataset.activity);
+    var summary = document.querySelector("#starbucks-activity-summary");
+    var busiestDate = "";
+    var busiestCount = 0;
+    Object.keys(activity.days).forEach(function (date) {
+      var count = activity.days[date];
+      if (count > busiestCount || (count === busiestCount && date > busiestDate)) {
+        busiestDate = date;
+        busiestCount = count;
+      }
+    });
+    summary.textContent = activity.total_events + " visits across " + activity.years.length + " years. That's a whole lotta caffeine. The day with the most visits was " + busiestDate + " with " + busiestCount + " visits.";
     var names = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     activity.years.forEach(function (year) {
       var block = document.createElement("div");
