@@ -119,13 +119,19 @@ def _report_groups(observations: list[dict]):
     current = None
     for observation in observations:
         if observation["kind"] != "purchase_item":
-            current = None
+            if current is not None:
+                yield current
+                current = None
             continue
         signature = (observation["occurred_at"], observation["store_key"])
-        if current is None or current["signature"] != signature:
-            current = {"signature": signature, "rows": []}
+        if current is not None and current["signature"] != signature:
             yield current
+            current = None
+        if current is None:
+            current = {"signature": signature, "rows": []}
         current["rows"].append(observation)
+    if current is not None:
+        yield current
 
 
 def _sum_amounts(values) -> str | None:

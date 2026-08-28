@@ -4,15 +4,15 @@
     "min": "2022-01-04",
     "max": "2026-08-27"
   },
-  "history_count": 158,
-  "receipt_count": 866,
+  "history_count": 598,
+  "receipt_count": 1017,
   "stars": {
     "earned": 23045.8,
     "redeemed": 22945.6,
     "policy": "reports-through-coverage-end-then-api-tail",
     "report_coverage_end": "2026-08-23"
   },
-  "visit_count": 866,
+  "visit_count": 1017,
   "activity": {
     "unit": "distinct_purchase_orders",
     "timezone": "America/Toronto",
@@ -28,7 +28,7 @@
       "2023": 2,
       "2024": 3,
       "2025": 5,
-      "2026": 5
+      "2026": 10
     },
     "days": {
       "2022-01-04": 1,
@@ -597,105 +597,105 @@
       "2026-04-20": 3,
       "2026-04-21": 1,
       "2026-04-22": 2,
-      "2026-04-26": 1,
-      "2026-04-27": 2,
-      "2026-04-28": 3,
-      "2026-04-29": 2,
-      "2026-04-30": 1,
-      "2026-05-03": 1,
-      "2026-05-04": 4,
-      "2026-05-05": 3,
-      "2026-05-06": 2,
-      "2026-05-07": 4,
-      "2026-05-08": 1,
-      "2026-05-11": 2,
-      "2026-05-12": 2,
-      "2026-05-13": 1,
-      "2026-05-14": 4,
-      "2026-05-15": 1,
-      "2026-05-17": 3,
-      "2026-05-18": 2,
-      "2026-05-19": 5,
-      "2026-05-20": 1,
-      "2026-05-21": 3,
-      "2026-05-22": 2,
-      "2026-05-24": 1,
-      "2026-05-25": 2,
-      "2026-05-26": 3,
-      "2026-05-27": 2,
-      "2026-05-28": 3,
-      "2026-05-30": 2,
-      "2026-06-01": 3,
-      "2026-06-02": 3,
-      "2026-06-03": 2,
-      "2026-06-04": 3,
-      "2026-06-05": 2,
-      "2026-06-06": 2,
-      "2026-06-07": 1,
-      "2026-06-08": 4,
-      "2026-06-09": 3,
-      "2026-06-12": 2,
+      "2026-04-26": 2,
+      "2026-04-27": 4,
+      "2026-04-28": 6,
+      "2026-04-29": 4,
+      "2026-04-30": 2,
+      "2026-05-03": 2,
+      "2026-05-04": 8,
+      "2026-05-05": 6,
+      "2026-05-06": 4,
+      "2026-05-07": 8,
+      "2026-05-08": 2,
+      "2026-05-11": 4,
+      "2026-05-12": 4,
+      "2026-05-13": 2,
+      "2026-05-14": 8,
+      "2026-05-15": 2,
+      "2026-05-17": 6,
+      "2026-05-18": 4,
+      "2026-05-19": 10,
+      "2026-05-20": 2,
+      "2026-05-21": 6,
+      "2026-05-22": 4,
+      "2026-05-24": 2,
+      "2026-05-25": 4,
+      "2026-05-26": 6,
+      "2026-05-27": 4,
+      "2026-05-28": 6,
+      "2026-05-30": 4,
+      "2026-06-01": 6,
+      "2026-06-02": 6,
+      "2026-06-03": 4,
+      "2026-06-04": 6,
+      "2026-06-05": 4,
+      "2026-06-06": 4,
+      "2026-06-07": 2,
+      "2026-06-08": 8,
+      "2026-06-09": 6,
+      "2026-06-12": 4,
       "2026-06-14": 1,
-      "2026-06-15": 1,
-      "2026-06-18": 2,
-      "2026-06-19": 1,
-      "2026-06-21": 1,
-      "2026-06-22": 1,
-      "2026-06-23": 1,
-      "2026-06-25": 1,
-      "2026-06-26": 1,
-      "2026-06-27": 1,
-      "2026-06-29": 2,
-      "2026-06-30": 1,
-      "2026-07-02": 1,
-      "2026-07-05": 3,
-      "2026-07-06": 1,
-      "2026-07-08": 1,
-      "2026-07-09": 2,
-      "2026-07-10": 2,
-      "2026-07-11": 1,
-      "2026-07-13": 3,
-      "2026-07-15": 2,
-      "2026-07-16": 3,
-      "2026-07-17": 1,
-      "2026-07-18": 2,
-      "2026-07-19": 4,
-      "2026-07-21": 2,
-      "2026-07-22": 1,
-      "2026-07-26": 1,
-      "2026-07-27": 1,
-      "2026-07-31": 1,
-      "2026-08-01": 2,
-      "2026-08-02": 2,
+      "2026-06-15": 2,
+      "2026-06-18": 4,
+      "2026-06-19": 2,
+      "2026-06-21": 3,
+      "2026-06-22": 2,
+      "2026-06-23": 2,
+      "2026-06-25": 2,
+      "2026-06-26": 2,
+      "2026-06-27": 2,
+      "2026-06-29": 4,
+      "2026-06-30": 2,
+      "2026-07-02": 2,
+      "2026-07-05": 6,
+      "2026-07-06": 2,
+      "2026-07-08": 2,
+      "2026-07-09": 4,
+      "2026-07-10": 4,
+      "2026-07-11": 2,
+      "2026-07-13": 6,
+      "2026-07-15": 4,
+      "2026-07-16": 6,
+      "2026-07-17": 2,
+      "2026-07-18": 4,
+      "2026-07-19": 8,
+      "2026-07-21": 4,
+      "2026-07-22": 2,
+      "2026-07-26": 2,
+      "2026-07-27": 2,
+      "2026-07-31": 2,
+      "2026-08-01": 4,
+      "2026-08-02": 3,
       "2026-08-03": 2,
-      "2026-08-05": 4,
-      "2026-08-07": 1,
-      "2026-08-08": 1,
-      "2026-08-10": 1,
-      "2026-08-14": 2,
-      "2026-08-15": 1,
-      "2026-08-16": 1,
-      "2026-08-17": 1,
-      "2026-08-20": 1,
-      "2026-08-22": 1,
+      "2026-08-05": 8,
+      "2026-08-07": 2,
+      "2026-08-08": 2,
+      "2026-08-10": 2,
+      "2026-08-14": 4,
+      "2026-08-15": 2,
+      "2026-08-16": 2,
+      "2026-08-17": 2,
+      "2026-08-20": 2,
+      "2026-08-22": 2,
       "2026-08-23": 2,
       "2026-08-25": 1,
       "2026-08-26": 1,
       "2026-08-27": 1
     },
     "total_days_active": 651,
-    "total_events": 866
+    "total_events": 1017
   },
   "standalone": {
     "total": 195,
-    "visited": 19,
-    "remaining": 176
+    "visited": 37,
+    "remaining": 158
   },
   "by_region": [
     {
       "region": "Toronto",
       "total": 92,
-      "visited": 9
+      "visited": 22
     },
     {
       "region": "Peel",
@@ -705,7 +705,7 @@
     {
       "region": "York Region",
       "total": 31,
-      "visited": 9
+      "visited": 14
     },
     {
       "region": "Halton",
@@ -721,11 +721,11 @@
   "top_items": [
     {
       "item": "Tall Iced Espresso",
-      "count": 132
+      "count": 133
     },
     {
       "item": "Americano Iced Grande",
-      "count": 75
+      "count": 78
     },
     {
       "item": "Gr Strawberry Acai Juice",
@@ -737,7 +737,7 @@
     },
     {
       "item": "Cool Lime Lemonade Refresher",
-      "count": 35
+      "count": 34
     },
     {
       "item": "Sugar Plum Cheese Danish Us",
@@ -748,79 +748,97 @@
       "count": 31
     },
     {
-      "item": "Vt Spcy Pinpl Pasfrt Lem Refr",
-      "count": 29
+      "item": "Gr Iced Coffee",
+      "count": 31
     }
   ],
   "top_stores": [
     {
       "name": "Bayview & Romfield",
       "storeNumber": "23280-204964",
-      "count": 59,
+      "count": 175,
       "type": "standalone"
     },
     {
       "name": "Yonge & Dundas",
       "storeNumber": "4497-90784",
-      "count": 40,
+      "count": 131,
       "type": "standalone"
     },
     {
       "name": "Yonge & Finch",
       "storeNumber": "4717-102447",
-      "count": 15,
+      "count": 85,
       "type": "standalone"
     },
     {
       "name": "Oak Ridges",
       "storeNumber": "58132-289531",
-      "count": 11,
-      "type": "standalone"
-    },
-    {
-      "name": "Yonge St & Hwy 7",
-      "storeNumber": "54228-286471",
-      "count": 9,
+      "count": 52,
       "type": "standalone"
     },
     {
       "name": "Jane & Major Mackenzie",
       "storeNumber": "54360-286336",
-      "count": 3,
+      "count": 47,
       "type": "standalone"
     },
     {
-      "name": "Vaughan Mills - Entry 2 Food C",
-      "storeNumber": "4612-220385",
-      "count": 2,
+      "name": "Yonge St & Hwy 7",
+      "storeNumber": "54228-286471",
+      "count": 23,
       "type": "standalone"
     },
     {
-      "name": "439 University Ave",
-      "storeNumber": "56473-289530",
-      "count": 2,
+      "name": "INDIGO - Hillcrest",
+      "storeNumber": "55463-289303",
+      "count": 14,
       "type": "other"
+    },
+    {
+      "name": "Markville Mall - Upper Level",
+      "storeNumber": "19865-177964",
+      "count": 7,
+      "type": "standalone"
     }
   ],
   "visited_stores": [
+    "16 York Street",
+    "2 St. Clair Avenue East",
     "201 Main Street",
     "221 Queen Street West",
     "25 Gateway Blvd",
     "404 & Major Mackenzie",
+    "485 Church at Wellesley",
+    "4915 Steeles Avenue West",
     "5954 Hwy 7",
+    "6355 Yonge St",
+    "7333 Woodbine Ave",
     "Bayview & Romfield",
+    "Bayview Village",
+    "CF Shops at Don Mills",
+    "Dufferin & Langstaff",
+    "Elgin Mills & Redstone",
+    "Finch & Chesswood",
+    "Hudson Bay Centre",
     "Jane & Major Mackenzie",
     "King and John",
     "Markville Mall - Upper Level",
     "Oak Ridges",
+    "Sheppard & Leslie- CTC",
     "Spadina & Fort York",
+    "Thornhill Woods",
     "Toronto Eaton Centre North",
+    "Toronto Eaton Centre South",
     "Union XP Go-West York Concours",
     "Vaughan Mills - Entry 2 Food C",
+    "Victoria Terrace",
+    "Yonge & Brookside",
     "Yonge & Dundas",
     "Yonge & Finch",
     "Yonge & Park Home",
     "Yonge St & Hwy 7",
+    "York Mills and Lesmill",
     "Yorkdale Mall Kiosk"
   ],
   "to_visit": [
@@ -869,17 +887,6 @@
       "drive_thru": false
     },
     {
-      "id": "58728-292978",
-      "name": "Victoria Terrace",
-      "street": "1430 Lawrence Ave E",
-      "city": "Scarborough",
-      "region": "Toronto",
-      "address": "1430 Lawrence Ave E, Scarborough",
-      "lat": 43.74188,
-      "lon": -79.31352,
-      "drive_thru": true
-    },
-    {
       "id": "24209-236145",
       "name": "1156 Kennedy Road",
       "street": "1156 Kennedy Road",
@@ -902,17 +909,6 @@
       "drive_thru": true
     },
     {
-      "id": "70839-305225",
-      "name": "16 York Street",
-      "street": "16 York St",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "16 York St, Toronto",
-      "lat": 43.64254,
-      "lon": -79.38248,
-      "drive_thru": false
-    },
-    {
       "id": "4227-271584",
       "name": "1960 Queen Street East",
       "street": "1960 Queen St E",
@@ -921,17 +917,6 @@
       "address": "1960 Queen St E, Toronto",
       "lat": 43.66972,
       "lon": -79.30212,
-      "drive_thru": false
-    },
-    {
-      "id": "4296-250015",
-      "name": "2 St. Clair Avenue East",
-      "street": "2 St. Clair Avenue East",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "2 St. Clair Avenue East, Toronto",
-      "lat": 43.68851,
-      "lon": -79.39409,
       "drive_thru": false
     },
     {
@@ -1012,28 +997,6 @@
       "drive_thru": false
     },
     {
-      "id": "4208-524",
-      "name": "485 Church at Wellesley",
-      "street": "485 Church St",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "485 Church St, Toronto",
-      "lat": 43.66498,
-      "lon": -79.3805,
-      "drive_thru": false
-    },
-    {
-      "id": "58427-290004",
-      "name": "4915 Steeles Avenue West",
-      "street": "4915 Steeles Avenue West",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "4915 Steeles Avenue West, Toronto",
-      "lat": 43.77062,
-      "lon": -79.5435,
-      "drive_thru": true
-    },
-    {
       "id": "4205-530",
       "name": "604 Danforth",
       "street": "604 Danforth Ave",
@@ -1043,17 +1006,6 @@
       "lat": 43.67879,
       "lon": -79.3463,
       "drive_thru": false
-    },
-    {
-      "id": "26281-243832",
-      "name": "6355 Yonge St",
-      "street": "6355 Yonge St",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "6355 Yonge St, Toronto",
-      "lat": 43.79668,
-      "lon": -79.41923,
-      "drive_thru": true
     },
     {
       "id": "47666-232784",
@@ -1188,17 +1140,6 @@
       "drive_thru": false
     },
     {
-      "id": "49141-266125",
-      "name": "Bayview Village",
-      "street": "2901 Bayview Avenue",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "2901 Bayview Avenue, Toronto",
-      "lat": 43.76907,
-      "lon": -79.38668,
-      "drive_thru": false
-    },
-    {
       "id": "15631-158804",
       "name": "Bedford & Bloor",
       "street": "1 Bedford Avenue",
@@ -1251,17 +1192,6 @@
       "address": "1320 Castlefield Avenue, Toronto",
       "lat": 43.69845,
       "lon": -79.4632,
-      "drive_thru": false
-    },
-    {
-      "id": "4095-282005",
-      "name": "CF Shops at Don Mills",
-      "street": "6 Pabst Lane",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "6 Pabst Lane, Toronto",
-      "lat": 43.73591,
-      "lon": -79.34428,
       "drive_thru": false
     },
     {
@@ -1342,17 +1272,6 @@
       "drive_thru": false
     },
     {
-      "id": "21883-215124",
-      "name": "Finch & Chesswood",
-      "street": "1115 Finch Ave W",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "1115 Finch Ave W, Toronto",
-      "lat": 43.76613,
-      "lon": -79.47633,
-      "drive_thru": true
-    },
-    {
       "id": "25370-240804",
       "name": "Finch & Hwy 27",
       "street": "6620 Finch Ave W",
@@ -1405,17 +1324,6 @@
       "address": "85 Hanna Street, Toronto",
       "lat": 43.63981,
       "lon": -79.41959,
-      "drive_thru": false
-    },
-    {
-      "id": "4460-67901",
-      "name": "Hudson Bay Centre",
-      "street": "2 Bloor St E",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "2 Bloor St E, Toronto",
-      "lat": 43.67069,
-      "lon": -79.38632,
       "drive_thru": false
     },
     {
@@ -1606,17 +1514,6 @@
       "drive_thru": false
     },
     {
-      "id": "5161-135184",
-      "name": "Sheppard & Leslie- CTC",
-      "street": "1015 Sheppard Ave E",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "1015 Sheppard Ave E, Toronto",
-      "lat": 43.76972,
-      "lon": -79.37277,
-      "drive_thru": false
-    },
-    {
       "id": "54189-276866",
       "name": "Sheppard Avenue & Weston Road",
       "street": "2295 Sheppard Avenue West",
@@ -1658,17 +1555,6 @@
       "address": "66 Wellington Street West, Toronto",
       "lat": 43.64723,
       "lon": -79.38091,
-      "drive_thru": false
-    },
-    {
-      "id": "4455-310581",
-      "name": "Toronto Eaton Centre South",
-      "street": "220 Yonge St",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "220 Yonge St, Toronto",
-      "lat": 43.65276,
-      "lon": -79.38036,
       "drive_thru": false
     },
     {
@@ -1714,17 +1600,6 @@
       "lat": 43.64924,
       "lon": -79.37813,
       "drive_thru": false
-    },
-    {
-      "id": "4384-253006",
-      "name": "York Mills and Lesmill",
-      "street": "861 York Mills Road",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "861 York Mills Road, Toronto",
-      "lat": 43.75407,
-      "lon": -79.35174,
-      "drive_thru": true
     },
     {
       "id": "17922-307536",
@@ -2134,17 +2009,6 @@
       "drive_thru": false
     },
     {
-      "id": "4609-97961",
-      "name": "7333 Woodbine Ave",
-      "street": "7333 Woodbine Ave",
-      "city": "Markham",
-      "region": "York Region",
-      "address": "7333 Woodbine Ave, Markham",
-      "lat": 43.8226,
-      "lon": -79.35059,
-      "drive_thru": false
-    },
-    {
       "id": "66221-300220",
       "name": "404 and Davis Dr",
       "street": "27 Harry Walker Pky S",
@@ -2189,28 +2053,6 @@
       "drive_thru": false
     },
     {
-      "id": "4905-110264",
-      "name": "Elgin Mills & Redstone",
-      "street": "1241 Elgin Mills Road East",
-      "city": "Richmond Hill",
-      "region": "York Region",
-      "address": "1241 Elgin Mills Road East, Richmond Hill",
-      "lat": 43.89629,
-      "lon": -79.40395,
-      "drive_thru": true
-    },
-    {
-      "id": "29443-253504",
-      "name": "Yonge & Brookside",
-      "street": "11108 Yonge Street",
-      "city": "Richmond Hill",
-      "region": "York Region",
-      "address": "11108 Yonge Street, Richmond Hill",
-      "lat": 43.89841,
-      "lon": -79.44399,
-      "drive_thru": true
-    },
-    {
       "id": "55422-289291",
       "name": "Stouffville",
       "street": "5771 Main Street",
@@ -2244,17 +2086,6 @@
       "drive_thru": false
     },
     {
-      "id": "57277-286473",
-      "name": "Dufferin & Langstaff",
-      "street": "8470 DUFFERIN ST",
-      "city": "Vaughan",
-      "region": "York Region",
-      "address": "8470 DUFFERIN ST, Vaughan",
-      "lat": 43.8238,
-      "lon": -79.47879,
-      "drive_thru": true
-    },
-    {
       "id": "4982-105180",
       "name": "Dufferin & Major Mackenzie",
       "street": "1420 Major Mackenzie Dr",
@@ -2264,17 +2095,6 @@
       "lat": 43.86219,
       "lon": -79.48513,
       "drive_thru": true
-    },
-    {
-      "id": "4906-124044",
-      "name": "Thornhill Woods",
-      "street": "1101 Rutherford Rd",
-      "city": "Vaughan",
-      "region": "York Region",
-      "address": "1101 Rutherford Rd, Vaughan",
-      "lat": 43.84494,
-      "lon": -79.47059,
-      "drive_thru": false
     },
     {
       "id": "4732-104193",
@@ -2763,9 +2583,204 @@
   ],
   "unmatched": [
     {
-      "storeName": "",
+      "storeName": "Fremont & Folsom",
       "storeNumber": "",
       "firstSeen": "2022-01-04"
+    },
+    {
+      "storeName": "El Camino & McLellan",
+      "storeNumber": "",
+      "firstSeen": "2022-02-05"
+    },
+    {
+      "storeName": "Lander & Linwood - Turlock",
+      "storeNumber": "",
+      "firstSeen": "2022-02-19"
+    },
+    {
+      "storeName": "Bridgepoint & Hwy 92",
+      "storeNumber": "",
+      "firstSeen": "2022-02-25"
+    },
+    {
+      "storeName": "17th & El Camino - San Mateo",
+      "storeNumber": "",
+      "firstSeen": "2022-02-26"
+    },
+    {
+      "storeName": "Hillsdale Mall",
+      "storeNumber": "",
+      "firstSeen": "2022-03-03"
+    },
+    {
+      "storeName": "San Antonio & El Camino",
+      "storeNumber": "",
+      "firstSeen": "2022-06-24"
+    },
+    {
+      "storeName": "7th & Hope - The Bloc",
+      "storeNumber": "",
+      "firstSeen": "2022-07-03"
+    },
+    {
+      "storeName": "3rd & Mission Bay Blvd",
+      "storeNumber": "",
+      "firstSeen": "2022-07-28"
+    },
+    {
+      "storeName": "Mission & Main",
+      "storeNumber": "",
+      "firstSeen": "2022-08-08"
+    },
+    {
+      "storeName": "Burlingame Ave.",
+      "storeNumber": "",
+      "firstSeen": "2022-08-12"
+    },
+    {
+      "storeName": "Peninsula & Delaware - San Mateo",
+      "storeNumber": "",
+      "firstSeen": "2022-08-13"
+    },
+    {
+      "storeName": "King & 4th Street",
+      "storeNumber": "",
+      "firstSeen": "2022-08-21"
+    },
+    {
+      "storeName": "Presidio & Letterman",
+      "storeNumber": "",
+      "firstSeen": "2022-08-21"
+    },
+    {
+      "storeName": "4th St San Mateo",
+      "storeNumber": "",
+      "firstSeen": "2022-08-30"
+    },
+    {
+      "storeName": "Newark & Jarvis",
+      "storeNumber": "",
+      "firstSeen": "2022-10-03"
+    },
+    {
+      "storeName": "Harbor Drive & Coast Highway",
+      "storeNumber": "",
+      "firstSeen": "2022-10-08"
+    },
+    {
+      "storeName": "3rd & Fairfax (Farmers Market)",
+      "storeNumber": "",
+      "firstSeen": "2022-12-11"
+    },
+    {
+      "storeName": "Bayhill & Cherry",
+      "storeNumber": "",
+      "firstSeen": "2023-01-10"
+    },
+    {
+      "storeName": "26th & Broadway",
+      "storeNumber": "",
+      "firstSeen": "2023-02-19"
+    },
+    {
+      "storeName": "85th & Lexington",
+      "storeNumber": "",
+      "firstSeen": "2023-02-20"
+    },
+    {
+      "storeName": "Broadway & 31st St- Astoria",
+      "storeNumber": "",
+      "firstSeen": "2023-02-22"
+    },
+    {
+      "storeName": "1100 Van Ness Avenue",
+      "storeNumber": "",
+      "firstSeen": "2023-04-04"
+    },
+    {
+      "storeName": "Westfield Fashion Square - Level 1",
+      "storeNumber": "",
+      "firstSeen": "2023-04-22"
+    },
+    {
+      "storeName": "Valley Fair - Level 2",
+      "storeNumber": "",
+      "firstSeen": "2023-08-27"
+    },
+    {
+      "storeName": "9th & Irving",
+      "storeNumber": "",
+      "firstSeen": "2023-09-10"
+    },
+    {
+      "storeName": "Lone Tree & Bluerock",
+      "storeNumber": "",
+      "firstSeen": "2023-10-06"
+    },
+    {
+      "storeName": "Fashion Show Mall",
+      "storeNumber": "",
+      "firstSeen": "2023-10-21"
+    },
+    {
+      "storeName": "Flamingo & Howard Hughes Pkwy",
+      "storeNumber": "",
+      "firstSeen": "2023-10-22"
+    },
+    {
+      "storeName": "Stevens Creek & DeAnza",
+      "storeNumber": "",
+      "firstSeen": "2024-02-24"
+    },
+    {
+      "storeName": "El Camino & Sneath",
+      "storeNumber": "",
+      "firstSeen": "2024-03-01"
+    },
+    {
+      "storeName": "Pickup - Commerce Court",
+      "storeNumber": "",
+      "firstSeen": "2024-08-14"
+    },
+    {
+      "storeName": "California & Kearny",
+      "storeNumber": "",
+      "firstSeen": "2024-08-26"
+    },
+    {
+      "storeName": "Pickup - California & Drumm - SF",
+      "storeNumber": "",
+      "firstSeen": "2024-09-16"
+    },
+    {
+      "storeName": "333 Market St.",
+      "storeNumber": "",
+      "firstSeen": "2024-11-13"
+    },
+    {
+      "storeName": "Kansas & 16th St",
+      "storeNumber": "",
+      "firstSeen": "2025-01-03"
+    },
+    {
+      "storeName": "Powell & O'Farrell",
+      "storeNumber": "",
+      "firstSeen": "2025-04-16"
+    },
+    {
+      "storeName": "McCarthy Ranch",
+      "storeNumber": "",
+      "firstSeen": "2025-05-03"
+    },
+    {
+      "storeName": "Eastridge Mall - San Jose",
+      "storeNumber": "",
+      "firstSeen": "2025-07-15"
+    },
+    {
+      "storeName": "7787 Yonge St",
+      "storeNumber": "",
+      "firstSeen": "2025-07-23"
     }
   ],
   "recent": [
@@ -2830,6 +2845,15 @@
       ]
     },
     {
+      "date": "2026-08-22",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Tr Green Iced Tea Lemonade"
+      ]
+    },
+    {
       "date": "2026-08-20",
       "store": "Bayview & Romfield",
       "standalone": true,
@@ -2837,6 +2861,26 @@
       "items": [
         "Starbucks\u00ae Iced Coffee Blend",
         "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-08-20",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Tall Iced Coffee",
+        "Tr Lemonade Cool Lime"
+      ]
+    },
+    {
+      "date": "2026-08-17",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Tall Lemonade",
+        "Chicken Jalapeno Pocket Whole"
       ]
     },
     {
@@ -2860,6 +2904,26 @@
       ]
     },
     {
+      "date": "2026-08-16",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Vt Mango Strbe Lemde",
+        "Croissant Chocolate Can"
+      ]
+    },
+    {
+      "date": "2026-08-15",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Tl Icd Peach Grn Tea Lemonade",
+        "Cheese Danish 30/cs"
+      ]
+    },
+    {
       "date": "2026-08-15",
       "store": "Bayview & Romfield",
       "standalone": true,
@@ -2875,6 +2939,15 @@
       "standalone": true,
       "region": "York Region",
       "items": [
+        "Tall Iced Coffee"
+      ]
+    },
+    {
+      "date": "2026-08-14",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
         "Starbucks\u00ae Iced Coffee Blend"
       ]
     },
@@ -2889,83 +2962,22 @@
       ]
     },
     {
+      "date": "2026-08-14",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Tr Lemonade Cool Lime",
+        "Tl Icd Peach Grn Tea Lemonade"
+      ]
+    },
+    {
       "date": "2026-08-10",
       "store": "Bayview & Romfield",
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Starbucks\u00ae Iced Coffee Blend"
-      ]
-    },
-    {
-      "date": "2026-08-08",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Rolled Steel-Cut Oatmeal",
-        "Starbucks\u00ae Iced Coffee Blend",
-        "Cool Lime Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Iced Peach Green Tea Lemonade",
-        "Ginger Molasses Cookie",
-        "Cool Lime Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Iced Peach Green Tea Lemonade",
-        "Ginger Molasses Cookie",
-        "Iced White Chocolate Mocha"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "Oak Ridges",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Pink Drink",
-        "8 Maple Mini Pancakes"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "King and John",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Lemonade",
-        "Iced Lemon Loaf"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "King and John",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Lemonade"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "store": "Unknown",
-      "standalone": false,
-      "region": null,
-      "items": [
-        "Tl Icd Peach Grn Tea Lemonade"
+        "Gr Iced Coffee"
       ]
     }
   ],
@@ -3388,7 +3400,7 @@
         "lon": -79.701,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 2,
         "region": "Peel"
       },
       {
@@ -3666,8 +3678,8 @@
         "lat": 43.74188,
         "lon": -79.31352,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3693,8 +3705,8 @@
         "lat": 43.64254,
         "lon": -79.38248,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3711,8 +3723,17 @@
         "lat": 43.68851,
         "lon": -79.39409,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
+        "name": "203 College Street",
+        "lat": 43.65859,
+        "lon": -79.39557,
+        "standalone": false,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3775,7 +3796,7 @@
         "lon": -79.38775,
         "standalone": false,
         "visited": true,
-        "visits": 2,
+        "visits": 5,
         "region": "Toronto"
       },
       {
@@ -3801,8 +3822,8 @@
         "lat": 43.66498,
         "lon": -79.3805,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3810,8 +3831,8 @@
         "lat": 43.77062,
         "lon": -79.5435,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3828,8 +3849,8 @@
         "lat": 43.79668,
         "lon": -79.41923,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3945,8 +3966,8 @@
         "lat": 43.76907,
         "lon": -79.38668,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3990,8 +4011,8 @@
         "lat": 43.73591,
         "lon": -79.34428,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 2,
         "region": "Toronto"
       },
       {
@@ -4071,8 +4092,8 @@
         "lat": 43.76613,
         "lon": -79.47633,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4112,6 +4133,15 @@
         "region": "Toronto"
       },
       {
+        "name": "Front & University",
+        "lat": 43.64492,
+        "lon": -79.38345,
+        "standalone": false,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
         "name": "Hanna & Atlantic",
         "lat": 43.63981,
         "lon": -79.41959,
@@ -4125,8 +4155,8 @@
         "lat": 43.67069,
         "lon": -79.38632,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4153,7 +4183,7 @@
         "lon": -79.38961,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 4,
         "region": "Toronto"
       },
       {
@@ -4296,8 +4326,8 @@
         "lat": 43.76972,
         "lon": -79.37277,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4351,7 +4381,7 @@
         "lon": -79.38119,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 2,
         "region": "Toronto"
       },
       {
@@ -4359,8 +4389,8 @@
         "lat": 43.65276,
         "lon": -79.38036,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 2,
         "region": "Toronto"
       },
       {
@@ -4369,7 +4399,7 @@
         "lon": -79.38191,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 2,
         "region": "Toronto"
       },
       {
@@ -4396,7 +4426,7 @@
         "lon": -79.38045,
         "standalone": true,
         "visited": true,
-        "visits": 40,
+        "visits": 131,
         "region": "Toronto"
       },
       {
@@ -4414,7 +4444,7 @@
         "lon": -79.41622,
         "standalone": true,
         "visited": true,
-        "visits": 15,
+        "visits": 85,
         "region": "Toronto"
       },
       {
@@ -4432,7 +4462,7 @@
         "lon": -79.41295,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 3,
         "region": "Toronto"
       },
       {
@@ -4440,8 +4470,8 @@
         "lat": 43.75407,
         "lon": -79.35174,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4459,7 +4489,7 @@
         "lon": -79.44957,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 2,
         "region": "Toronto"
       },
       {
@@ -4504,7 +4534,7 @@
         "lon": -79.37279,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 2,
         "region": "York Region"
       },
       {
@@ -4513,7 +4543,7 @@
         "lon": -79.26074,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 3,
         "region": "York Region"
       },
       {
@@ -4539,8 +4569,8 @@
         "lat": 43.8226,
         "lon": -79.35059,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "York Region"
       },
       {
@@ -4549,7 +4579,7 @@
         "lon": -79.40508,
         "standalone": true,
         "visited": true,
-        "visits": 59,
+        "visits": 175,
         "region": "York Region"
       },
       {
@@ -4558,7 +4588,7 @@
         "lon": -79.28774,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 7,
         "region": "York Region"
       },
       {
@@ -4602,8 +4632,8 @@
         "lat": 43.89629,
         "lon": -79.40395,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 3,
         "region": "York Region"
       },
       {
@@ -4612,7 +4642,7 @@
         "lon": -79.43523,
         "standalone": false,
         "visited": true,
-        "visits": 2,
+        "visits": 14,
         "region": "York Region"
       },
       {
@@ -4630,7 +4660,7 @@
         "lon": -79.45487,
         "standalone": true,
         "visited": true,
-        "visits": 11,
+        "visits": 52,
         "region": "York Region"
       },
       {
@@ -4638,8 +4668,8 @@
         "lat": 43.89841,
         "lon": -79.44399,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 2,
         "region": "York Region"
       },
       {
@@ -4648,7 +4678,7 @@
         "lon": -79.43027,
         "standalone": true,
         "visited": true,
-        "visits": 9,
+        "visits": 23,
         "region": "York Region"
       },
       {
@@ -4666,7 +4696,7 @@
         "lon": -79.31204,
         "standalone": true,
         "visited": true,
-        "visits": 1,
+        "visits": 2,
         "region": "York Region"
       },
       {
@@ -4692,8 +4722,8 @@
         "lat": 43.8238,
         "lon": -79.47879,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "York Region"
       },
       {
@@ -4711,7 +4741,7 @@
         "lon": -79.53522,
         "standalone": true,
         "visited": true,
-        "visits": 3,
+        "visits": 47,
         "region": "York Region"
       },
       {
@@ -4719,8 +4749,8 @@
         "lat": 43.84494,
         "lon": -79.47059,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 3,
         "region": "York Region"
       },
       {
@@ -4729,7 +4759,7 @@
         "lon": -79.53866,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 6,
         "region": "York Region"
       },
       {
