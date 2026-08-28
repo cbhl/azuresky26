@@ -5,7 +5,6 @@
 
 <h1>{{ section.title }}</h1>
 <p class="travel-intro">Someday, I want to visit every Starbucks store in the Greater Toronto Area. This page tracks my progress.</p>
-<p class="travel-empty">Last updated: <time datetime="{{ stats.date_range.max }}">{{ stats.date_range.max | date(format="%B %-d, %Y") }}</time></p>
 
 <section class="travel-stats" aria-label="Starbucks visit statistics">
   <h2>Visit data summary</h2>
@@ -65,6 +64,8 @@
        alt="GTA standalone Starbucks stores visited vs remaining, plus other visited locations">
 </section>
 {% endif %}
+
+<p class="travel-empty">Rewards creation date: <time datetime="2013-10-28">October 28, 2013</time> / Last updated: <time datetime="{{ stats.date_range.max }}">{{ stats.date_range.max | date(format="%B %-d, %Y") }}</time></p>
 {% endblock content %}
 
 {% block scripts %}
