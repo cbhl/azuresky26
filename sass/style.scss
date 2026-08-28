@@ -4,6 +4,13 @@
   --background-color: black;
   --a: #0070e0;
   --a-hover: #e07000;
+  --map-border: rgba(255, 255, 255, 0.28);
+  --map-marker-fill: #93a4b5;
+  --map-marker-stroke: #d5dee8;
+  --map-marker-focus-fill: #43d18a;
+  --map-marker-focus-stroke: #b8f3d1;
+  --map-control-background: rgba(18, 25, 32, 0.9);
+  --map-control-color: #f2f7fb;
 }
 
 @media (prefers-color-scheme: light) {
@@ -12,6 +19,13 @@
     --background-color: white;
     --a: #0070e0;
     --a-hover: #e07000;
+    --map-border: rgba(0, 0, 0, 0.28);
+    --map-marker-fill: #c5ccd4;
+    --map-marker-stroke: #6b7280;
+    --map-marker-focus-fill: #1a7f4b;
+    --map-marker-focus-stroke: #0d4d2c;
+    --map-control-background: rgba(255, 255, 255, 0.9);
+    --map-control-color: #26323d;
   }
 }
 
@@ -505,8 +519,14 @@ code .il {
   height: auto;
   aspect-ratio: 2 / 1;
   margin: 0 0 1em;
-  border: 1px solid rgba(127, 127, 127, 0.35);
+  border: 1px solid var(--map-border);
   border-radius: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .starbucks-map {
+    filter: invert(90%) hue-rotate(180deg) saturate(75%) brightness(85%) contrast(90%);
+  }
 }
 
 .travel-stats-grid {
@@ -808,9 +828,26 @@ code .il {
   height: min(52vh, 420px);
   min-height: 260px;
   margin: 0 0 1.25em;
-  border: 1px solid rgba(127, 127, 127, 0.35);
+  border: 1px solid var(--map-border);
   border-radius: 4px;
   z-index: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .starbucks-leaflet .leaflet-tile-pane {
+    filter: invert(90%) hue-rotate(180deg) saturate(75%) brightness(85%) contrast(90%);
+  }
+}
+
+.starbucks-leaflet .leaflet-control-zoom a,
+.starbucks-leaflet .leaflet-control-attribution {
+  color: var(--map-control-color);
+  background: var(--map-control-background);
+}
+
+.starbucks-leaflet .leaflet-control-zoom a:hover,
+.starbucks-leaflet .leaflet-control-zoom a:focus {
+  color: var(--a-hover);
 }
 
 .starbucks-dist-col {

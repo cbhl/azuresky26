@@ -70,6 +70,19 @@
   var markersById = {};
   var selectedId = null;
   var hoveredId = null;
+  var mapStyles = getComputedStyle(mapEl);
+  var mapColors = {
+    markerFill: mapStyles.getPropertyValue("--map-marker-fill").trim(),
+    markerStroke: mapStyles.getPropertyValue("--map-marker-stroke").trim(),
+    focusFill: mapStyles.getPropertyValue("--map-marker-focus-fill").trim(),
+    focusStroke: mapStyles.getPropertyValue("--map-marker-focus-stroke").trim()
+  };
+
+  function markerStyle(focused) {
+    return focused
+      ? { radius: 8, weight: 2, fillOpacity: 1, color: mapColors.focusStroke, fillColor: mapColors.focusFill }
+      : { radius: 5, weight: 1, fillOpacity: 0.85, color: mapColors.markerStroke, fillColor: mapColors.markerFill };
+  }
 
   function haversineKm(lat1, lon1, lat2, lon2) {
     var R = 6371;
@@ -132,7 +145,7 @@
     });
     Object.keys(markersById).forEach(function (id) {
       var m = markersById[id];
-      m.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
+      m.setStyle(markerStyle(false));
     });
     if (hint) {
       hint.textContent = "Tap or click a map pin to sort the list by distance from that store.";
@@ -173,9 +186,9 @@
       if (!marker) return;
       // CircleMarker is a Path, so use bringToFront rather than Marker methods.
       if (item.id === selectedId || item.id === hoveredId) {
-        marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
+        marker.setStyle(markerStyle(true));
       } else {
-        marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
+        marker.setStyle(markerStyle(false));
       }
     });
 
@@ -227,15 +240,15 @@
     var marker = L.circleMarker([lat, lon], {
       radius: 5,
       weight: 1,
-      color: "#6b7280",
-      fillColor: "#c5ccd4",
+      color: mapColors.markerStroke,
+      fillColor: mapColors.markerFill,
       fillOpacity: 0.85,
     });
     marker.bindTooltip(row.getAttribute("data-name") || id, { direction: "top", opacity: 0.9 });
     marker.on("mouseover", function () {
       if (window.matchMedia && window.matchMedia("(hover: none)").matches) return;
       hoveredId = id;
-      marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
+      marker.setStyle(markerStyle(true));
       marker.bringToFront();
       Object.keys(markersById).forEach(function (otherId) {
         if (otherId !== id) markersById[otherId].closeTooltip();
@@ -247,9 +260,9 @@
       hoveredId = null;
       if (selectedId === id) return;
       if (state.mode === "distance") {
-        marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
+        marker.setStyle(markerStyle(false));
       } else {
-        marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
+        marker.setStyle(markerStyle(false));
       }
     });
     marker.on("click", function () {
@@ -268,7 +281,7 @@
 
     row.addEventListener("mouseenter", function () {
       hoveredId = id;
-      marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
+      marker.setStyle(markerStyle(true));
       marker.bringToFront();
       Object.keys(markersById).forEach(function (otherId) {
         if (otherId !== id) markersById[otherId].closeTooltip();
@@ -280,7 +293,7 @@
       if (hoveredId !== id) return;
       hoveredId = null;
       if (selectedId === id) return;
-      marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
+      marker.setStyle(markerStyle(false));
     });
     row.addEventListener("click", function () {
       hoveredId = null;
