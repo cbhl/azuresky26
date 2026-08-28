@@ -68,6 +68,7 @@
   var NEARBY_N = 12;
   var markersById = {};
   var selectedId = null;
+  var hoveredId = null;
   var hoverTimer = null;
 
   function haversineKm(lat1, lon1, lat2, lon2) {
@@ -121,6 +122,7 @@
 
   function clearDistanceMode() {
     selectedId = null;
+    hoveredId = null;
     Array.prototype.forEach.call(tbody.rows, function (row) {
       row.classList.remove("is-focus", "is-nearby");
       var cell = row.cells[0];
@@ -148,7 +150,7 @@
     var flon = parseFloat(focusRow.getAttribute("data-lon"));
     if (isNaN(flat) || isNaN(flon)) return;
 
-    selectedId = id;
+    if (!opts.hover) selectedId = id;
     var rows = Array.prototype.slice.call(tbody.rows);
     var scored = rows.map(function (row) {
       var lat = parseFloat(row.getAttribute("data-lat"));
@@ -170,7 +172,7 @@
 
       var marker = markersById[item.id];
       if (!marker) return;
-      if (item.id === id) {
+      if (item.id === selectedId || item.id === hoveredId) {
         marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
         marker.setZIndexOffset(1000);
       } else if (index < NEARBY_N) {
@@ -235,15 +237,33 @@
     marker.on("mouseover", function () {
       if (window.matchMedia && window.matchMedia("(hover: none)").matches) return;
       clearTimeout(hoverTimer);
-      hoverTimer = setTimeout(function () { focusStore(id, { scrollTable: true }); }, 80);
+      hoveredId = id;
+      marker.setStyle({ radius: 8, weight: 2, fillOpacity: 1, color: "#0d4d2c", fillColor: "#1a7f4b" });
+      marker.setZIndexOffset(1000);
+      hoverTimer = setTimeout(function () { focusStore(id, { scrollTable: true, hover: true }); }, 80);
+    });
+    marker.on("mouseout", function () {
+      clearTimeout(hoverTimer);
+      if (hoveredId !== id) return;
+      hoveredId = null;
+      if (selectedId === id) return;
+      if (state.mode === "distance") {
+        focusStore(id, { scrollTable: false, hover: true });
+      } else {
+        marker.setStyle({ radius: 5, weight: 1, fillOpacity: 0.85, color: "#6b7280", fillColor: "#c5ccd4" });
+        marker.setZIndexOffset(0);
+      }
     });
     marker.on("click", function () {
+      clearTimeout(hoverTimer);
       if (selectedId === id && state.mode === "distance") {
+        hoveredId = null;
         clearDistanceMode();
         setSortUi(4, 1);
         sortByCol(4, 1, "text");
         return;
       }
+      hoveredId = null;
       focusStore(id, { scrollTable: true });
     });
     marker.addTo(map);
