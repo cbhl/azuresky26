@@ -650,16 +650,11 @@ code .il {
   }
 }
 
-.starbucks-activity-scroll {
-  overflow-x: auto;
+.starbucks-activity-grid {
   border: 1px solid var(--activity-border);
   border-radius: 4px;
   padding: 0.75em;
-  touch-action: pan-x;
-}
-
-.starbucks-activity-grid {
-  min-width: 690px;
+  min-width: 0;
 }
 
 .starbucks-activity-year-block + .starbucks-activity-year-block {
@@ -681,10 +676,13 @@ code .il {
 .starbucks-activity-days {
   display: grid;
   gap: 2px;
+  grid-template-columns: repeat(var(--activity-weeks), 12px);
 }
 
+.starbucks-activity-month-labels,
 .starbucks-activity-days {
-  gap: 2px;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .starbucks-activity-month-labels {
@@ -736,6 +734,43 @@ code .il {
   pointer-events: none;
 }
 .starbucks-activity-cell:hover { outline: 1px solid currentColor; }
+
+@media only screen and (max-width: 880px) {
+  .starbucks-activity-month-labels,
+  .starbucks-activity-days {
+    grid-template-columns: repeat(var(--activity-weeks), minmax(0, 1fr));
+  }
+
+  .starbucks-activity-cell {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .starbucks-activity-row {
+    gap: 0;
+  }
+
+  .starbucks-activity-months {
+    display: block;
+  }
+
+  .starbucks-activity-year {
+    display: block;
+    margin-bottom: 0.35rem;
+  }
+
+  .starbucks-activity-month-labels,
+  .starbucks-activity-weekday {
+    display: none;
+  }
+
+  .starbucks-activity-days {
+    gap: 1px;
+  }
+}
 
 .starbucks-activity-legend {
   display: flex;
