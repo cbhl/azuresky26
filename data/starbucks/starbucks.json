@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-28",
+  "generated_at": "2026-08-30",
   "date_range": {
     "min": "2022-01-04",
-    "max": "2026-08-27"
+    "max": "2026-08-30"
   },
-  "history_count": 449,
-  "receipt_count": 868,
+  "history_count": 456,
+  "receipt_count": 875,
   "stars": {
-    "earned": 23045.8,
-    "redeemed": 22945.6,
+    "earned": 23175.8,
+    "redeemed": 23245.6,
     "policy": "reports-through-coverage-end-then-api-tail",
     "report_coverage_end": "2026-08-23"
   },
-  "visit_count": 868,
+  "visit_count": 875,
   "activity": {
     "unit": "distinct_purchase_orders",
     "timezone": "America/Toronto",
@@ -28,7 +28,7 @@
       "2023": 2,
       "2024": 3,
       "2025": 5,
-      "2026": 5
+      "2026": 7
     },
     "days": {
       "2022-01-04": 1,
@@ -681,21 +681,22 @@
       "2026-08-23": 2,
       "2026-08-25": 1,
       "2026-08-26": 1,
-      "2026-08-27": 1
+      "2026-08-27": 1,
+      "2026-08-30": 7
     },
-    "total_days_active": 651,
-    "total_events": 868
+    "total_days_active": 652,
+    "total_events": 875
   },
   "standalone": {
     "total": 195,
-    "visited": 37,
-    "remaining": 158
+    "visited": 43,
+    "remaining": 152
   },
   "by_region": [
     {
       "region": "Toronto",
       "total": 92,
-      "visited": 22
+      "visited": 28
     },
     {
       "region": "Peel",
@@ -737,7 +738,7 @@
     },
     {
       "item": "Cool Lime Lemonade Refresher",
-      "count": 34
+      "count": 35
     },
     {
       "item": "Sugar Plum Cheese Danish Us",
@@ -803,12 +804,14 @@
     }
   ],
   "visited_stores": [
+    "1156 Kennedy Road",
     "16 York Street",
     "2 St. Clair Avenue East",
     "201 Main Street",
     "221 Queen Street West",
     "25 Gateway Blvd",
     "404 & Major Mackenzie",
+    "43 Milner Avenue Building C",
     "485 Church at Wellesley",
     "4915 Steeles Avenue West",
     "5954 Hwy 7",
@@ -819,11 +822,13 @@
     "CF Shops at Don Mills",
     "Dufferin & Langstaff",
     "Elgin Mills & Redstone",
+    "Ellesmere & Midland D/T",
     "Finch & Chesswood",
     "Hudson Bay Centre",
     "Jane & Major Mackenzie",
     "King and John",
     "Markville Mall - Upper Level",
+    "Midland & McNicoll",
     "Oak Ridges",
     "Sheppard & Leslie- CTC",
     "Spadina & Fort York",
@@ -831,7 +836,9 @@
     "Toronto Eaton Centre North",
     "Toronto Eaton Centre South",
     "Union XP Go-West York Concours",
+    "Upper level Scarborough Town C",
     "Vaughan Mills - Entry 2 Food C",
+    "Victoria Park & Consumers Rd.",
     "Victoria Terrace",
     "Yonge & Brookside",
     "Yonge & Dundas",
@@ -866,17 +873,6 @@
       "drive_thru": true
     },
     {
-      "id": "4318-249544",
-      "name": "43 Milner Avenue Building C",
-      "street": "43 Milner Avenue",
-      "city": "Scarborough",
-      "region": "Toronto",
-      "address": "43 Milner Avenue, Scarborough",
-      "lat": 43.78377,
-      "lon": -79.25331,
-      "drive_thru": true
-    },
-    {
       "id": "4803-97529",
       "name": "Eglinton & Warden",
       "street": "1900 Eglinton Avenue East",
@@ -886,28 +882,6 @@
       "lat": 43.72691,
       "lon": -79.29324,
       "drive_thru": false
-    },
-    {
-      "id": "54931-288675",
-      "name": "Upper level Scarborough Town C",
-      "street": "300 Borough Dr",
-      "city": "Scarborough",
-      "region": "Toronto",
-      "address": "300 Borough Dr, Scarborough",
-      "lat": 43.77632,
-      "lon": -79.25929,
-      "drive_thru": false
-    },
-    {
-      "id": "24209-236145",
-      "name": "1156 Kennedy Road",
-      "street": "1156 Kennedy Road",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "1156 Kennedy Road, Toronto",
-      "lat": 43.75247,
-      "lon": -79.27637,
-      "drive_thru": true
     },
     {
       "id": "23090-212865",
@@ -1262,17 +1236,6 @@
       "drive_thru": false
     },
     {
-      "id": "47181-251744",
-      "name": "Ellesmere & Midland D/T",
-      "street": "1100 Ellesmere Road",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "1100 Ellesmere Road, Toronto",
-      "lat": 43.76832,
-      "lon": -79.27186,
-      "drive_thru": true
-    },
-    {
       "id": "4863-286832",
       "name": "Fairview Mall",
       "street": "1800 Sheppard Ave E",
@@ -1416,17 +1379,6 @@
       "drive_thru": true
     },
     {
-      "id": "4874-115910",
-      "name": "Midland & McNicoll",
-      "street": "3740 Midland Avenue",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "3740 Midland Avenue, Toronto",
-      "lat": 43.8163,
-      "lon": -79.29331,
-      "drive_thru": true
-    },
-    {
       "id": "16896-163444",
       "name": "Mount Pleasant & Soudan",
       "street": "694 Mount Pleasant",
@@ -1567,17 +1519,6 @@
       "address": "66 Wellington Street West, Toronto",
       "lat": 43.64723,
       "lon": -79.38091,
-      "drive_thru": false
-    },
-    {
-      "id": "4804-106564",
-      "name": "Victoria Park & Consumers Rd.",
-      "street": "2555 Victoria Park Ave",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "2555 Victoria Park Ave, Toronto",
-      "lat": 43.77221,
-      "lon": -79.32112,
       "drive_thru": false
     },
     {
@@ -2797,6 +2738,74 @@
   ],
   "recent": [
     {
+      "date": "2026-08-30",
+      "store": "Upper level Scarborough Town C",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Mango Strawberry Lemonade Refresher",
+        "Mini Pumpkin Pie"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "store": "1156 Kennedy Road",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Mango Strawberry Lemonade Refresher",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "store": "Ellesmere & Midland D/T",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Cool Lime Lemonade Refresher",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "store": "43 Milner Avenue Building C",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "store": "Midland & McNicoll",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Starbucks\u00ae Iced Coffee Blend"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "store": "Victoria Park & Consumers Rd.",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Iced Peach Green Tea Lemonade",
+        "Hedgehog Cake Pop"
+      ]
+    },
+    {
+      "date": "2026-08-30",
+      "store": "Victoria Park & Consumers Rd.",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Hot Chocolate"
+      ]
+    },
+    {
       "date": "2026-08-27",
       "store": "Bayview & Romfield",
       "standalone": true,
@@ -2935,96 +2944,6 @@
       "items": [
         "Gr Iced Coffee",
         "Starbucks\u00ae Iced Coffee Blend"
-      ]
-    },
-    {
-      "date": "2026-08-08",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Add Dried Fruit Topping",
-        "Tr Lemonade Cool Lime",
-        "Xtr Green Coffee Extract Blend",
-        "Whole Grain Oatmeal",
-        "Tall Iced Coffee",
-        "Rolled Steel-Cut Oatmeal",
-        "Starbucks\u00ae Iced Coffee Blend",
-        "Cool Lime Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-07",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Ginger Molasses Cookie Ca",
-        "Gr Lemonade Cool Lime",
-        "Xtr Green Coffee Extract Blend",
-        "Tl Icd Peach Grn Tea Lemonade",
-        "Iced Peach Green Tea Lemonade",
-        "Ginger Molasses Cookie",
-        "Cool Lime Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "White Mocha Iced Venti",
-        "Ginger Molasses Cookie Ca",
-        "Tl Icd Peach Grn Tea Lemonade",
-        "Iced Peach Green Tea Lemonade",
-        "Ginger Molasses Cookie",
-        "Iced White Chocolate Mocha"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "King and John",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Tall Lemonade",
-        "Lemonade"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "King and John",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Lemon Loaf New Fy20 Ca",
-        "Tall Lemonade",
-        "Lemonade",
-        "Iced Lemon Loaf"
-      ]
-    },
-    {
-      "date": "2026-08-05",
-      "store": "Oak Ridges",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Gr Strawberry Coconut Drink",
-        "Maple Mini Pancakes 8 Pc",
-        "Add Van Protein Cold Foam",
-        "Pink Drink",
-        "8 Maple Mini Pancakes"
-      ]
-    },
-    {
-      "date": "2026-08-03",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Tl Icd Peach Grn Tea Lemonade",
-        "Iced Peach Green Tea Lemonade"
       ]
     }
   ],
@@ -3698,8 +3617,8 @@
         "lat": 43.78377,
         "lon": -79.25331,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3716,8 +3635,8 @@
         "lat": 43.77632,
         "lon": -79.25929,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -3734,8 +3653,8 @@
         "lat": 43.75247,
         "lon": -79.27637,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4121,8 +4040,8 @@
         "lat": 43.76832,
         "lon": -79.27186,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4283,8 +4202,8 @@
         "lat": 43.8163,
         "lon": -79.29331,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4454,8 +4373,8 @@
         "lat": 43.77221,
         "lon": -79.32112,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 2,
         "region": "Toronto"
       },
       {

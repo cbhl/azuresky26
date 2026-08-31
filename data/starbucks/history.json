@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "activity_timezone": "America/Toronto",
-  "updated_at": "2026-08-28T10:13:38Z",
+  "updated_at": "2026-08-31T02:22:40Z",
   "sources": [
     "api_export",
     "ca_customer_information_report",
@@ -41015,6 +41015,144 @@
         "Mini Pumpkin Pie",
         "Mini Apple Crumble Pie"
       ]
+    },
+    {
+      "observation_id": "api_export:history:1080153279179570230",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-30T17:26:06.2792867Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 13:26:06",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Midland & McNicoll",
+      "store_key": "midland and mcnicoll",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:8639485675914260371",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-30T19:12:38.3924860Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 15:12:38",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "1156 Kennedy Road",
+      "store_key": "1156 kennedy road",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Mango Strawberry Lemonade Refresher",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:8896683336942140591",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-30T22:29:39.9987742Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:29:39",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Upper level Scarborough Town C",
+      "store_key": "upper level scarborough town c",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Mango Strawberry Lemonade Refresher",
+        "Mini Pumpkin Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7303714158088331602",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-30T22:56:31.3534919Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:56:31",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Ellesmere & Midland D/T",
+      "store_key": "ellesmere and midland d/t",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cool Lime Lemonade Refresher",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7911689965581504546",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-30T22:57:35.3166841Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:57:35",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "43 Milner Avenue Building C",
+      "store_key": "43 milner avenue building c",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:5211009938460681269",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-30T22:58:40.0077140Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:58:40",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Victoria Park & Consumers Rd.",
+      "store_key": "victoria park and consumers rd.",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Peach Green Tea Lemonade",
+        "Hedgehog Cake Pop"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:5887150828313234070",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-31T00:38:56.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 20:38:56",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Victoria Park & Consumers Rd.",
+      "store_key": "victoria park and consumers rd.",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Hot Chocolate"
+      ]
     }
   ],
   "visits": [
@@ -73551,7 +73689,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": 5.48,
       "store": {
         "name_raw": "Vaughan Mills - Entry 2 Food C",
         "name_key": "vaughan mills - entry 2 food court",
@@ -73575,9 +73712,10 @@
         "api_export:history:5123914090978871504"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
-      }
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      },
+      "amount_order_total": 5.48
     },
     {
       "visit_id": "evt_26e08e980ded742d4c43",
@@ -78471,7 +78609,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": 6.5,
       "store": {
         "name_raw": "Loblaws High Tech Rd Rich Hill",
         "name_key": "loblaws high tech rd rich hill",
@@ -78495,9 +78632,10 @@
         "api_export:history:5328847464693320960"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
-      }
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      },
+      "amount_order_total": 6.5
     },
     {
       "visit_id": "evt_cae0d9e2322cfb7078af",
@@ -80698,7 +80836,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": 5.37,
       "store": {
         "name_raw": "Vaughan Mills - Entry 2 Food C",
         "name_key": "vaughan mills - entry 2 food court",
@@ -80722,9 +80859,10 @@
         "api_export:history:7035411739218719057"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
-      }
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      },
+      "amount_order_total": 5.37
     },
     {
       "visit_id": "evt_2675f71aac7106a764cc",
@@ -81249,7 +81387,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": 3.83,
       "store": {
         "name_raw": "Loblaws High Tech Rd Rich Hill",
         "name_key": "loblaws high tech rd rich hill",
@@ -81273,9 +81410,10 @@
         "api_export:history:3206847489700312907"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
-      }
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      },
+      "amount_order_total": 3.83
     },
     {
       "visit_id": "evt_ee8cf863828198a8399b",
@@ -82177,7 +82315,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": 15,
       "store": {
         "name_raw": "Spadina & Fort York",
         "name_key": "spadina and fort york",
@@ -82206,9 +82343,10 @@
         "api_export:history:1148612445193699650"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
-      }
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      },
+      "amount_order_total": 15
     },
     {
       "visit_id": "evt_73587897b2ddc10abd20",
@@ -82223,7 +82361,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": 5.8,
       "store": {
         "name_raw": "Union XP Go-West York Concours",
         "name_key": "union xp go-west york concours",
@@ -82247,9 +82384,10 @@
         "api_export:history:7830763637214717310"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
-      }
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      },
+      "amount_order_total": 5.8
     },
     {
       "visit_id": "evt_b7b93a5247b4fd969e27",
@@ -82264,7 +82402,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": null,
       "store": {
         "name_raw": "221 Queen Street West",
         "name_key": "221 queen street west",
@@ -82298,8 +82435,8 @@
         "api_export:history:7131718449935717902"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
       }
     },
     {
@@ -82315,7 +82452,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": null,
       "store": {
         "name_raw": "Bayview & Romfield",
         "name_key": "bayview and romfield",
@@ -82344,8 +82480,8 @@
         "api_export:history:4156156463032030651"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
       }
     },
     {
@@ -82361,7 +82497,6 @@
       ],
       "currency": "CAD",
       "amount_lines_sum": null,
-      "amount_order_total": null,
       "store": {
         "name_raw": "Bayview & Romfield",
         "name_key": "bayview and romfield",
@@ -82395,8 +82530,313 @@
         "api_export:history:3695706668002754348"
       ],
       "dedupe": {
-        "method": "api_identity",
-        "confidence": "exact"
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_4ee8deeee4a0ae40ace5",
+      "status": "active",
+      "occurred_at": "2026-08-30T17:26:06.2792867Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 13:26:06",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Midland & McNicoll",
+        "name_key": "midland and mcnicoll",
+        "catalog_store_number": "4874-115910",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1080153279179570230"
+      ],
+      "dedupe": {
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_d077c98b94b318798c82",
+      "status": "active",
+      "occurred_at": "2026-08-30T19:12:38.3924860Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 15:12:38",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "1156 Kennedy Road",
+        "name_key": "1156 kennedy road",
+        "catalog_store_number": "24209-236145",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Mango Strawberry Lemonade Refresher",
+          "name_key": "mango strawberry lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:8639485675914260371"
+      ],
+      "dedupe": {
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_55dee5f5f3e8a5f83b68",
+      "status": "active",
+      "occurred_at": "2026-08-30T22:29:39.9987742Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:29:39",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Upper level Scarborough Town C",
+        "name_key": "upper level scarborough town c",
+        "catalog_store_number": "54931-288675",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Mango Strawberry Lemonade Refresher",
+          "name_key": "mango strawberry lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:8896683336942140591"
+      ],
+      "dedupe": {
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_b870e65437e875e20ce9",
+      "status": "active",
+      "occurred_at": "2026-08-30T22:56:31.3534919Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:56:31",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Ellesmere & Midland D/T",
+        "name_key": "ellesmere and midland d/t",
+        "catalog_store_number": "47181-251744",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7303714158088331602"
+      ],
+      "dedupe": {
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_5786c85dcad487760c0b",
+      "status": "active",
+      "occurred_at": "2026-08-30T22:57:35.3166841Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:57:35",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "43 Milner Avenue Building C",
+        "name_key": "43 milner avenue building c",
+        "catalog_store_number": "4318-249544",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7911689965581504546"
+      ],
+      "dedupe": {
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_27ffe39168295662e39e",
+      "status": "active",
+      "occurred_at": "2026-08-30T22:58:40.0077140Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 18:58:40",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Victoria Park & Consumers Rd.",
+        "name_key": "victoria park and consumers rd.",
+        "catalog_store_number": "4804-106564",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Peach Green Tea Lemonade",
+          "name_key": "iced peach green tea lemonade",
+          "quantity": null
+        },
+        {
+          "name": "Hedgehog Cake Pop",
+          "name_key": "hedgehog cake pop",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:5211009938460681269"
+      ],
+      "dedupe": {
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
+      }
+    },
+    {
+      "visit_id": "evt_56d32ecd2803682c8e41",
+      "status": "active",
+      "occurred_at": "2026-08-31T00:38:56.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-30",
+      "local_second": "2026-08-30 20:38:56",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Victoria Park & Consumers Rd.",
+        "name_key": "victoria park and consumers rd.",
+        "catalog_store_number": "4804-106564",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Hot Chocolate",
+          "name_key": "hot chocolate",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:5887150828313234070"
+      ],
+      "dedupe": {
+        "method": "confirmed_local_second_store",
+        "confidence": "high"
       }
     }
   ],
@@ -105199,6 +105639,656 @@
       "point_type": "Promotion",
       "source_kind": "ca_customer_information_report",
       "source_observation_id": "ca_customer_information_report:line:4188",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_e6065618bf5a33a4ca8a",
+      "occurred_on": "2026-07-15",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1756672472918339793:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_34e112c83326fb612fd7",
+      "occurred_on": "2026-07-15",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6796744051716655313:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0511b745264e4defbed7",
+      "occurred_on": "2026-07-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:923115208610011065:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b48b8972c6f0776ea873",
+      "occurred_on": "2026-07-13",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6569416711975610719:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_cc048a6886706887cc8c",
+      "occurred_on": "2026-07-11",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7800848687720943560:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a9c8957b8920a24c66a1",
+      "occurred_on": "2026-07-10",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3230057148050029652:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b07db6f2ab17d6af37b8",
+      "occurred_on": "2026-07-03",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:988746969814915226:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2018cd0533668bb83919",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:790131799337322272:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_001356e8be1083a5c4a4",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7964973999595835368:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_bcf82a8518aa1cdf1a97",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7106986360521974668:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7ef544bb0fc102b1ee78",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8984501980026596353:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7c81edb83234bd6f6dd8",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2359489548940230855:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0e1cdec68eea4ff85e07",
+      "occurred_on": "2026-08-26",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2519918230034806500:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_4dc6f2bec00d4afb0c42",
+      "occurred_on": "2026-08-25",
+      "occurred_on_precision": "day",
+      "stars_delta": 80.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2476732925156728261:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_6001d7b2164a3af43f38",
+      "occurred_on": "2026-08-22",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2909321750672717559:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_14815fb88df87846a993",
+      "occurred_on": "2026-08-20",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6794204891498260180:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b65292fde5c891f27470",
+      "occurred_on": "2026-08-14",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8577836578167751652:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_f8fc9d83745a10dd80b9",
+      "occurred_on": "2026-05-19",
+      "occurred_on_precision": "day",
+      "stars_delta": 10.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5947255746721598835:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0dcc1e3e1a816d900ad5",
+      "occurred_on": "2026-05-19",
+      "occurred_on_precision": "day",
+      "stars_delta": 9.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6558848539898348096:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c5bc7c14f8c0ef88c7a8",
+      "occurred_on": "2026-05-19",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1813049372803130590:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_99c667c9d82d5f36658d",
+      "occurred_on": "2026-05-17",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8816030885400466284:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_e983a160340aa7c30942",
+      "occurred_on": "2026-05-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 10.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:753233391667027313:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_e74829edb5e43e738d0c",
+      "occurred_on": "2026-05-14",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2445608760332917601:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c4960b86f0184701b979",
+      "occurred_on": "2026-05-11",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6042865406623188702:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_13e51b65822bb4bb00d0",
+      "occurred_on": "2026-06-08",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7166596169675447663:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0563f5599cf2f539e5c7",
+      "occurred_on": "2026-06-01",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6630124868122834739:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_546e84d602a7328ecf24",
+      "occurred_on": "2026-05-30",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1221142631256819675:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_470124ada050ac1426cc",
+      "occurred_on": "2026-05-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6148187744491752814:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_e8607aa1e346f889c993",
+      "occurred_on": "2026-05-28",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6699582791471939438:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_01b38eca1570c04bc3d3",
+      "occurred_on": "2026-05-28",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1308534431116664934:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_73999d7d9a6f44434e29",
+      "occurred_on": "2026-06-23",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:638198521591366166:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2f9bbcbace9b4d2518e7",
+      "occurred_on": "2026-06-23",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3376328438008788419:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_99c843dbffad8d774e0c",
+      "occurred_on": "2026-06-21",
+      "occurred_on_precision": "day",
+      "stars_delta": -300.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6716082555340175081:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c9fee44c2cc674afe4fd",
+      "occurred_on": "2026-06-12",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6757932792853661290:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c6d6373e53a2e9cbde65",
+      "occurred_on": "2026-06-12",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1554441873469308787:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_01a716a630a197684cae",
+      "occurred_on": "2026-06-10",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:132258628509149646:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_ad4bc41d888ff75b6e33",
+      "occurred_on": "2026-06-09",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2474197453177658367:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7d4936885e564fa9f825",
+      "occurred_on": "2026-06-08",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:281515832174732975:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_ebc28ba28e655f77a03b",
+      "occurred_on": "2026-05-27",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1396868569450834632:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_aac06dc469f2fa8768c9",
+      "occurred_on": "2026-05-26",
+      "occurred_on_precision": "day",
+      "stars_delta": 75.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:676892741079095483:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d204d03077b3b6b0ca44",
+      "occurred_on": "2026-05-26",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4561137218897742078:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_14eb075a795ad11cf94f",
+      "occurred_on": "2026-05-24",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:613300511717726581:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_931e73b0bf7054825cbc",
+      "occurred_on": "2026-05-22",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1017808761901002662:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_25ae1883b00d4d64ec63",
+      "occurred_on": "2026-05-21",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:388953880174688283:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_8b27f6f3aba46f896923",
+      "occurred_on": "2026-05-20",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4019049572694804532:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_20397bd999bc9a3616d6",
+      "occurred_on": "2026-05-19",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3834772924356364390:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1d0c7b9acb1a7fa54b40",
+      "occurred_on": "2026-08-08",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6667642002493043554:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_979b50b6aff0c22388ca",
+      "occurred_on": "2026-08-07",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2279157403944207063:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_3a0813acf37fe404f1a2",
+      "occurred_on": "2026-08-05",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3725873494441783415:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_314bcbeb189bd7581e7a",
+      "occurred_on": "2026-08-01",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1236911003213886679:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2203ad19fe469d171733",
+      "occurred_on": "2026-07-27",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6054121775983241729:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_3204fa470629eb561bed",
+      "occurred_on": "2026-07-27",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4861987951688033269:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7f30c1aefb816f45f9c4",
+      "occurred_on": "2026-07-21",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8896405740699633037:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_abdd083b65e3123974bc",
+      "occurred_on": "2026-07-21",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:607722658174768673:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_01699e15adeeb34ef781",
+      "occurred_on": "2026-07-19",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4702722231570533016:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_cadace73d8c960ac5cac",
+      "occurred_on": "2026-07-18",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:368158089984540414:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d4e17a2571cf40f690aa",
+      "occurred_on": "2026-05-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2978830778381765877:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c92658d68ae89407c4a3",
+      "occurred_on": "2026-05-07",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5613551674103560182:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7e00bb8f7c55f5f0ec92",
+      "occurred_on": "2026-05-07",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:46400696182890709:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_00c42ea340af9255aaac",
+      "occurred_on": "2026-05-06",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1961582883585326576:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d0e141cb6f69c65d1e79",
+      "occurred_on": "2026-05-05",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4403190418913229979:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_20f4c321cd973058214a",
+      "occurred_on": "2026-05-05",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5387916328037049732:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_878a168669167554593c",
+      "occurred_on": "2026-05-05",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6143659206763350229:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_86097c972158ed6c1335",
+      "occurred_on": "2026-05-04",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4737448217645488983:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_34d78bdb4c8cca9659b5",
+      "occurred_on": "2026-05-04",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6684445453500926403:stars",
       "status": "active"
     }
   ]

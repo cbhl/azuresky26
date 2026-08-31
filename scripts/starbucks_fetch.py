@@ -309,7 +309,7 @@ def fetch_receipts(cookie: str, history_items: list[dict]) -> tuple[list[dict], 
     write_json(receipts_path, receipts)
     # Merge the raw receipt cache; the history module creates observations and
     # performs guarded cross-source reconciliation.
-    merge_history(DATA_DIR / "history.json", receipts)
+    merge_history(DATA_DIR / "history.json", receipts, history_items=history_items)
     write_json(errors_path, sorted(errors_by_id.values(), key=lambda e: e.get("historyId") or ""))
     print(f"wrote {receipts_path} ({len(receipts)} receipts, {new_count} new)")
     if errors_by_id:

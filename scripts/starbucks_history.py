@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import collections
 import hashlib
 import json
 import re
@@ -14,6 +15,7 @@ from zoneinfo import ZoneInfo
 
 TORONTO = ZoneInfo("America/Toronto")
 NON_PURCHASES = {"reload balance", "automatic reload", "lsus", "lsca"}
+API_STARS_RE = re.compile(r"^([0-9]+(?:\.[0-9]+)?)★ (earned|redeemed)$")
 
 
 def key(value: str | None) -> str:
@@ -181,16 +183,45 @@ def api_visits(receipts: list[dict]) -> tuple[list[dict], list[dict]]:
         # but cannot be a canonical visit under the history contract.
         if not items:
             continue
-        visits.append({"visit_id": stable_id("api", hid), "status": "active", "occurred_at": occurred,
+        visit = {"visit_id": stable_id("api", hid), "status": "active", "occurred_at": occurred,
                        "occurred_at_precision": "second", "time_basis": "utc", "local_date": day, "local_second": local_second,
                        "source_profile_countries": ["CA"], "currency": "CAD", "amount_lines_sum": None,
-                       "amount_order_total": receipt.get("total"), "store": {"name_raw": store, "name_key": key(store),
+                       "store": {"name_raw": store, "name_key": key(store),
                        "catalog_store_number": receipt.get("storeNumber"), "in_gta_catalog": False, "standalone": False,
                        "region": None, "match_method": "unresolved"},
-                        "items": items,
-                       "source_kinds": ["api_export"], "source_observation_ids": [oid],
-                       "dedupe": {"method": "api_identity", "confidence": "exact"}})
+                         "items": items,
+                         "source_kinds": ["api_export"], "source_observation_ids": [oid],
+                        "dedupe": {"method": "api_identity", "confidence": "exact"}}
+        if receipt.get("total") is not None:
+            visit["amount_order_total"] = receipt["total"]
+        visits.append(visit)
     return observations, visits
+
+
+def api_stars(history_items: list[dict]) -> list[dict]:
+    stars = []
+    for item in history_items:
+        if item.get("historyType") != "Point":
+            continue
+        description = ((item.get("historyOverview") or {}).get("description") or "")
+        match = API_STARS_RE.fullmatch(description)
+        if not match or not item.get("historyId") or not item.get("date"):
+            continue
+        _, day = api_time(item["date"])
+        amount = float(match.group(1))
+        delta = amount if match.group(2) == "earned" else -amount
+        history_id = str(item["historyId"])
+        stars.append({
+            "star_id": stable_id("api_star", history_id),
+            "occurred_on": day,
+            "occurred_on_precision": "day",
+            "stars_delta": delta,
+            "point_type": "Points",
+            "source_kind": "api_export",
+            "source_observation_id": f"api_export:history:{history_id}:stars",
+            "status": "active",
+        })
+    return stars
 
 
 def _merge(visits: list[dict]) -> list[dict]:
@@ -220,7 +251,18 @@ def _merge(visits: list[dict]) -> list[dict]:
         known = {i.get("name_key") for i in match.get("items", [])}
         match["items"] += [i for i in visit.get("items", []) if i.get("name_key") not in known]
         if visit.get("amount_order_total") is not None:
-            match["amount_order_total"] = visit["amount_order_total"]
+            if "amount_order_total" not in match:
+                # Keep the canonical field order used by API visits when a
+                # report visit gains its reconciled API total.
+                ordered = {}
+                for field, value in match.items():
+                    if field == "store":
+                        ordered["amount_order_total"] = visit["amount_order_total"]
+                    ordered[field] = value
+                match.clear()
+                match.update(ordered)
+            else:
+                match["amount_order_total"] = visit["amount_order_total"]
         match["dedupe"] = {"method": "confirmed_local_second_store", "confidence": "high"}
     return sorted(result, key=lambda v: (v.get("local_date", ""), v.get("occurred_at", ""), v["visit_id"]))
 
@@ -230,22 +272,42 @@ def _canonicalize_legacy(visit: dict) -> dict:
     source_kinds = visit.get("source_kinds") or ([visit.get("source_kind")] if visit.get("source_kind") else ["unknown"])
     source = source_kinds[0]
     ids = visit.get("source_observation_ids") or [stable_id(source, visit.get("visit_id"))]
-    store_name = visit.get("store") if isinstance(visit.get("store"), str) else None
-    return {
+    legacy_store = visit.get("store")
+    if isinstance(legacy_store, dict):
+        store = {
+            "name_raw": legacy_store.get("name_raw"),
+            "name_key": legacy_store.get("name_key") or key(legacy_store.get("name_raw")),
+            "catalog_store_number": legacy_store.get("catalog_store_number"),
+            "in_gta_catalog": legacy_store.get("in_gta_catalog", False),
+            "standalone": legacy_store.get("standalone", False),
+            "region": legacy_store.get("region"),
+            "match_method": legacy_store.get("match_method", "unresolved"),
+        }
+    else:
+        store_name = legacy_store if isinstance(legacy_store, str) else None
+        store = {"name_raw": store_name, "name_key": key(store_name), "catalog_store_number": None,
+                 "in_gta_catalog": False, "standalone": False, "region": None, "match_method": "unresolved"}
+    canonical = {
         "visit_id": visit.get("visit_id") or stable_id(source, ids), "status": "active",
         "occurred_at": visit.get("occurred_at"), "occurred_at_precision": "second",
-        "time_basis": "utc" if source == "api_export" else "local_wall",
+        # Preserve the basis already assigned to a canonical visit. Reconciled
+        # report/API visits can list api_export first in source_kinds even when
+        # their authoritative timestamp is the report's local wall time.
+        "time_basis": visit.get("time_basis") or ("utc" if source == "api_export" else "local_wall"),
         "local_date": visit.get("local_date") or (visit.get("occurred_at") or "")[:10],
         "local_second": visit.get("local_second") or visit.get("occurred_at"),
         "source_profile_countries": ["CA"] if source == "api_export" else (["US"] if source.startswith("us_") else ["CA"]),
         "currency": visit.get("currency"), "amount_lines_sum": visit.get("amount_lines_sum"),
-        "amount_order_total": visit.get("amount_order_total"),
-        "store": {"name_raw": store_name, "name_key": key(store_name), "catalog_store_number": None,
-                  "in_gta_catalog": False, "standalone": False, "region": None, "match_method": "unresolved"},
+    }
+    canonical.update({
+        "store": store,
         "items": [{k: item.get(k) for k in ("name", "name_key", "quantity")} for item in visit.get("items", [])],
         "source_kinds": sorted(set(source_kinds)),
         "source_observation_ids": ids, "dedupe": visit.get("dedupe", {"method": "source_identity", "confidence": "exact"}),
-    }
+    })
+    if visit.get("amount_order_total") is not None:
+        canonical["amount_order_total"] = visit["amount_order_total"]
+    return canonical
 
 
 def events_from_receipts(receipts: list[dict]) -> list[dict]:
@@ -267,7 +329,7 @@ def build_history(report_paths: list[tuple[Path, str, str]], receipts_path: Path
             "visits": _merge(visits), "stars": stars}
 
 
-def merge_history(path: Path, receipts: list[dict]) -> dict:
+def merge_history(path: Path, receipts: list[dict], history_items: list[dict] | None = None) -> dict:
     old = json.loads(path.read_text()) if path.exists() else build_history([], None)
     old["visits"] = [v for v in (_canonicalize_legacy(v) for v in old.get("visits", []))
                      if v.get("status", "active") == "active" and v.get("items")]
@@ -310,6 +372,26 @@ def merge_history(path: Path, receipts: list[dict]) -> dict:
             for field, value in observation.items():
                 current.setdefault(field, value)
     old["visits"] = _merge(old.get("visits", []) + incoming)
+    if history_items:
+        existing_api_ids = {
+            star.get("source_observation_id")
+            for star in old.get("stars", [])
+            if star.get("source_kind") == "api_export"
+        }
+        report_counts = collections.Counter(
+            (star.get("occurred_on"), float(star.get("stars_delta") or 0))
+            for star in old.get("stars", [])
+            if star.get("source_kind") != "api_export"
+        )
+        for star in api_stars(history_items):
+            if star["source_observation_id"] in existing_api_ids:
+                continue
+            signature = (star["occurred_on"], star["stars_delta"])
+            if report_counts[signature]:
+                report_counts[signature] -= 1
+                continue
+            old.setdefault("stars", []).append(star)
+            existing_api_ids.add(star["source_observation_id"])
     old["sources"] = sorted(set(old.get("sources", [])) | {o.get("source_kind") for o in old["observations"] if o.get("source_kind")})
     old["updated_at"] = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
     path.write_text(json.dumps(old, indent=2, ensure_ascii=False) + "\n")

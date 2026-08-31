@@ -1,3 +1,4 @@
+import json
 import sys
 import tempfile
 import unittest
@@ -5,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from starbucks_history import _merge, _report_groups, parse_report
+from starbucks_history import _merge, _report_groups, api_visits, merge_history, parse_report
 
 
 class StarbucksHistoryTests(unittest.TestCase):
@@ -54,6 +55,88 @@ Date/Time,Store Name,Order Total Charged,Item Name
         merged = _merge([first, second, api])
 
         self.assertEqual(len(merged), 3)
+
+    def test_merge_history_preserves_dictionary_store_metadata(self):
+        visit = self._visit("2026-01-01 10:00:00", "api_export", time_basis="utc")
+        visit["store"].update({
+            "catalog_store_number": "12345-67890",
+            "in_gta_catalog": True,
+            "standalone": True,
+            "region": "Toronto",
+            "match_method": "store_number",
+        })
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json") as source:
+            json.dump({"visits": [visit], "observations": [], "stars": []}, source)
+            source.flush()
+
+            merge_history(Path(source.name), [])
+            canonical = json.loads(Path(source.name).read_text())["visits"][0]
+
+        self.assertEqual(canonical["store"], visit["store"])
+        self.assertNotIn("amount_order_total", canonical)
+
+    def test_merge_history_preserves_existing_time_basis(self):
+        visit = self._visit("2026-01-01 10:00:00", "api_export", time_basis="local_wall")
+        visit["source_kinds"] = ["api_export", "ca_customer_information_report"]
+
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json") as source:
+            json.dump({"visits": [visit], "observations": [], "stars": []}, source)
+            source.flush()
+
+            merge_history(Path(source.name), [])
+            canonical = json.loads(Path(source.name).read_text())["visits"][0]
+
+        self.assertEqual(canonical["time_basis"], "local_wall")
+
+    def test_api_visits_omits_missing_order_total(self):
+        receipt = {
+            "historyId": "receipt-1",
+            "date": "2026-01-01T15:00:00Z",
+            "storeName": "Bayview & Romfield",
+            "purchasedItems": [{"name": "Coffee"}],
+        }
+
+        _, visits = api_visits([receipt])
+
+        self.assertNotIn("amount_order_total", visits[0])
+
+        receipt["total"] = "5.00"
+        _, visits = api_visits([receipt])
+        self.assertEqual(visits[0]["amount_order_total"], "5.00")
+
+    def test_merge_history_adds_unmatched_api_stars_once(self):
+        report_star = {
+            "star_id": "report-star",
+            "occurred_on": "2026-01-01",
+            "stars_delta": -60.0,
+            "source_kind": "ca_customer_information_report",
+        }
+        history_items = [
+            {
+                "historyId": "api-spend",
+                "historyType": "Point",
+                "date": "2026-01-01T15:00:00Z",
+                "historyOverview": {"description": "60★ redeemed"},
+            },
+            {
+                "historyId": "api-earn",
+                "historyType": "Point",
+                "date": "2026-01-02T15:00:00Z",
+                "historyOverview": {"description": "50★ earned"},
+            },
+        ]
+        with tempfile.NamedTemporaryFile(mode="w", suffix=".json") as source:
+            json.dump({"visits": [], "observations": [], "stars": [report_star]}, source)
+            source.flush()
+
+            merge_history(Path(source.name), [], history_items=history_items)
+            first = json.loads(Path(source.name).read_text())["stars"]
+            merge_history(Path(source.name), [], history_items=history_items)
+            second = json.loads(Path(source.name).read_text())["stars"]
+
+        self.assertEqual(len(first), 2)
+        self.assertEqual(len(second), 2)
+        self.assertEqual(second[-1]["stars_delta"], 50.0)
 
     @staticmethod
     def _visit(local_second, source, time_basis="local_wall"):
