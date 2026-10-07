@@ -41,6 +41,7 @@ When finishing any work in the repository, including work that is not being comm
 4. If opening or updating a PR, include screenshots in the PR description:
    - **Cursor Cloud agents:** save under `/opt/cursor/artifacts/screenshots/` and embed using absolute artifact paths (e.g. `<img alt="..." src="/opt/cursor/artifacts/screenshots/...">`); they are uploaded automatically.
    - **Other agents:** upload each screenshot via whatever your environment provides (GitHub web UI, `gh`, API, etc.) and embed with standard markdown (`![description](url)`) or HTML `<img>` tags pointing at the hosted image URLs.
+5. Screenshots and videos made for validation are temporary. Save them under `screenshots/` (gitignored) and never commit them; before committing, confirm `git status` shows no screenshot or video files. Upload them to the PR description instead.
 
 If nothing renderable changed, screenshot the home page (`/`) as a fallback so the work still includes a visual check.
 
