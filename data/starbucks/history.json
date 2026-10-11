@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "activity_timezone": "America/Toronto",
-  "updated_at": "2026-10-11T08:05:38Z",
+  "updated_at": "2026-10-11T08:38:12Z",
   "sources": [
     "api_export",
     "ca_customer_information_report",
@@ -110360,6 +110360,966 @@
       "point_type": "Points",
       "source_kind": "api_export",
       "source_observation_id": "api_export:history:5382465857055678014:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1774e11f43a09dfc7bb4",
+      "occurred_on": "2026-10-10",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5830778803170670217:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1c56681600ccc69abddb",
+      "occurred_on": "2026-10-10",
+      "occurred_on_precision": "day",
+      "stars_delta": 4.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3021671491515347899:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_5a535d3a36d3581411ab",
+      "occurred_on": "2026-10-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4961920015322838977:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a92afde596b869c666f8",
+      "occurred_on": "2026-10-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1924428848903112879:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7420795f46b2f6a9d4a0",
+      "occurred_on": "2026-10-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 3.6,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1488275281397351903:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_15c05ffbdf43faba5e32",
+      "occurred_on": "2026-10-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.9,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3598483921697229826:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_aa76d1725c8e16cb8ef9",
+      "occurred_on": "2026-10-06",
+      "occurred_on_precision": "day",
+      "stars_delta": 3.8,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8372481417108159835:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_ff0606142c96767c6be3",
+      "occurred_on": "2026-10-06",
+      "occurred_on_precision": "day",
+      "stars_delta": 17.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1993568684420313304:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_e30cc70121e7ac2842e1",
+      "occurred_on": "2026-10-05",
+      "occurred_on_precision": "day",
+      "stars_delta": 3.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:9137890633288592431:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0a62b7c8ed418d0a6097",
+      "occurred_on": "2026-10-05",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:833616255457269194:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_74028bdd1bae5f42fac2",
+      "occurred_on": "2026-10-02",
+      "occurred_on_precision": "day",
+      "stars_delta": 13.9,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3739978281715141403:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_cb0a2cf829022ead26d5",
+      "occurred_on": "2026-10-01",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6160815977543890320:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_39ed975b023edb8121c7",
+      "occurred_on": "2026-10-01",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3661070017623685486:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_6ef4aa1a7bde680260bb",
+      "occurred_on": "2026-10-01",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:990688812450455984:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_81d089e398ea26377821",
+      "occurred_on": "2026-09-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 22.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1773537087450177996:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b72ef8293e3781650b9b",
+      "occurred_on": "2026-09-29",
+      "occurred_on_precision": "day",
+      "stars_delta": 18.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8894814817298819227:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_9a1605fd97e28216c0ce",
+      "occurred_on": "2026-09-29",
+      "occurred_on_precision": "day",
+      "stars_delta": 15.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1523229544058648668:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_fff7275cb1e61872dcaa",
+      "occurred_on": "2026-09-29",
+      "occurred_on_precision": "day",
+      "stars_delta": 21.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1750510131340856877:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_5343ce24361495b631db",
+      "occurred_on": "2026-09-28",
+      "occurred_on_precision": "day",
+      "stars_delta": 25.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5831044151251288687:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_00575f6d02d5cb42b18f",
+      "occurred_on": "2026-09-27",
+      "occurred_on_precision": "day",
+      "stars_delta": 5.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7958784456002499879:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0313ce899daabf70f140",
+      "occurred_on": "2026-09-27",
+      "occurred_on_precision": "day",
+      "stars_delta": 20.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4128339179768376331:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_189efcbc389398c58b1c",
+      "occurred_on": "2026-09-26",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:573010091080966456:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_dc678523fa00ee7bd73f",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 10.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5211009938460681269:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_9799ab6efbe70baf95a9",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7911689965581504546:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_80b90a2a094585e36879",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7303714158088331602:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b45e4ec5712d14804926",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 12.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8896683336942140591:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2ba3ffb83bb0e00396ff",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 15.9,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8639485675914260371:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a9557864c7807d11aec7",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 5.8,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1080153279179570230:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2d42fb1b61f4c803696d",
+      "occurred_on": "2026-08-27",
+      "occurred_on_precision": "day",
+      "stars_delta": 18.8,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3695706668002754348:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2c072b50fe49f912a281",
+      "occurred_on": "2026-08-26",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4156156463032030651:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_47c4a220a1188bd9d722",
+      "occurred_on": "2026-08-25",
+      "occurred_on_precision": "day",
+      "stars_delta": 24.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7131718449935717902:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1027d3b69221f01694f0",
+      "occurred_on": "2026-08-23",
+      "occurred_on_precision": "day",
+      "stars_delta": 19.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1148612445193699650:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_137de810470bacfe332d",
+      "occurred_on": "2026-08-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1779282527741990189:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_fa839b3b08276018e739",
+      "occurred_on": "2026-08-14",
+      "occurred_on_precision": "day",
+      "stars_delta": 16.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6670595379197165884:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c891b9dc09dbf01e18c5",
+      "occurred_on": "2026-08-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 23.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1440633660100935678:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_13406643fd307046efaf",
+      "occurred_on": "2026-09-13",
+      "occurred_on_precision": "day",
+      "stars_delta": 27.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1077294655209854280:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_dbc040ff76b34bb63279",
+      "occurred_on": "2026-09-12",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.6,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:718288255327323226:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_56449a581a78a8703c21",
+      "occurred_on": "2026-09-12",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.6,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7419115736205557157:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_29b35553cbef7d17f04c",
+      "occurred_on": "2026-09-10",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4230983857724331384:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_f83d38eecc4914c78266",
+      "occurred_on": "2026-09-10",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1786965791239651082:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_39f2464d5a88bcb93f58",
+      "occurred_on": "2026-09-09",
+      "occurred_on_precision": "day",
+      "stars_delta": 18.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5374201589288795734:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_35c920f94b33ebda0f35",
+      "occurred_on": "2026-09-09",
+      "occurred_on_precision": "day",
+      "stars_delta": 16.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2900642280292051276:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a9bc6d4dfa3ee9a0b1d7",
+      "occurred_on": "2026-09-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 13.6,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8338708799190617508:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2e203a68345c5c07051d",
+      "occurred_on": "2026-09-06",
+      "occurred_on_precision": "day",
+      "stars_delta": 2.8,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:557107982068903831:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a27def846d0fca1a1b94",
+      "occurred_on": "2026-09-06",
+      "occurred_on_precision": "day",
+      "stars_delta": 17.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5427053651496738148:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_42951049103f700baa19",
+      "occurred_on": "2026-09-05",
+      "occurred_on_precision": "day",
+      "stars_delta": 5.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2862930631267942734:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_5e346d80ed875c2414b8",
+      "occurred_on": "2026-09-04",
+      "occurred_on_precision": "day",
+      "stars_delta": 13.6,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3497845743824442334:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_35fb6bb6d631ccaed947",
+      "occurred_on": "2026-09-03",
+      "occurred_on_precision": "day",
+      "stars_delta": 3.8,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1320520465446106726:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_66f5d0b0d313b572c82d",
+      "occurred_on": "2026-09-03",
+      "occurred_on_precision": "day",
+      "stars_delta": 31.8,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:123316820030013718:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_257bf580fc023b624e23",
+      "occurred_on": "2026-09-01",
+      "occurred_on_precision": "day",
+      "stars_delta": 20.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6651327508742161872:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_585b34215510bd979df8",
+      "occurred_on": "2026-09-01",
+      "occurred_on_precision": "day",
+      "stars_delta": 17.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8687705135407753452:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_eecc19b24f9de5e596bc",
+      "occurred_on": "2026-08-31",
+      "occurred_on_precision": "day",
+      "stars_delta": 5.6,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:514302410335985069:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_abe729787ba817ac4f2a",
+      "occurred_on": "2026-08-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5887150828313234070:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_836cc2f6a64cc16673f1",
+      "occurred_on": "2026-06-23",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5879419731605300940:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_bbc85203149c063aa98e",
+      "occurred_on": "2026-06-21",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8285070387310042694:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_dfbe8e3aea6d6feb694a",
+      "occurred_on": "2026-06-18",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5118579145126477904:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_6f9c12f2de3fd5e14b64",
+      "occurred_on": "2026-06-18",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6320077638325507618:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_f6835959ac0856a8635e",
+      "occurred_on": "2026-06-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6350252513840699160:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_48a2b9f1dc74c7dcd813",
+      "occurred_on": "2026-06-14",
+      "occurred_on_precision": "day",
+      "stars_delta": 9.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5328847464693320960:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_356831454f8f64844497",
+      "occurred_on": "2026-07-16",
+      "occurred_on_precision": "day",
+      "stars_delta": 2.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6544910489494516769:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_dc53c3c3fde7d40f35fe",
+      "occurred_on": "2026-07-16",
+      "occurred_on_precision": "day",
+      "stars_delta": 14.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8747074812566886320:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_ac29cc636636e06d820c",
+      "occurred_on": "2026-07-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 9.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6922233942000729690:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_81c1b421b83db6a2ce53",
+      "occurred_on": "2026-07-13",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6533475927000559966:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a9f4becb6802bfeaa6c4",
+      "occurred_on": "2026-07-11",
+      "occurred_on_precision": "day",
+      "stars_delta": 22.6,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2742424184517186598:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b9983613c8279f0364cc",
+      "occurred_on": "2026-07-10",
+      "occurred_on_precision": "day",
+      "stars_delta": 6.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6260054505028273360:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_3f9043f700a92cd2d945",
+      "occurred_on": "2026-07-09",
+      "occurred_on_precision": "day",
+      "stars_delta": 3.9,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7361793061825016804:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1bc42fa52f8a68cc2a60",
+      "occurred_on": "2026-07-09",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4891725658090349765:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_57c37d0b7e54895195e9",
+      "occurred_on": "2026-07-08",
+      "occurred_on_precision": "day",
+      "stars_delta": 6.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7840908204207860445:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_dbe291120b9f9188b2ed",
+      "occurred_on": "2026-06-27",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4220500253147337326:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_9b57fda92ddd229d7dc0",
+      "occurred_on": "2026-08-07",
+      "occurred_on_precision": "day",
+      "stars_delta": 22.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4240773222770296258:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_78b8b92989d92a542c7c",
+      "occurred_on": "2026-08-05",
+      "occurred_on_precision": "day",
+      "stars_delta": 22.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4461454760887824460:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_9db7c4397a7ae4ccaae1",
+      "occurred_on": "2026-08-05",
+      "occurred_on_precision": "day",
+      "stars_delta": 6.3,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6743062020814324509:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_729b6f51c0330e8d765e",
+      "occurred_on": "2026-08-02",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2993999727886431248:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_05cfced8ed19e4d969a4",
+      "occurred_on": "2026-07-31",
+      "occurred_on_precision": "day",
+      "stars_delta": 19.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1995019829463400925:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7d86240a52eaba02e086",
+      "occurred_on": "2026-07-27",
+      "occurred_on_precision": "day",
+      "stars_delta": 11.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1778188507204812016:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_6ae3e879ac5755a400a5",
+      "occurred_on": "2026-07-22",
+      "occurred_on_precision": "day",
+      "stars_delta": 19.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7066188561597640526:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_28eedcb7bce7bd48093f",
+      "occurred_on": "2026-07-21",
+      "occurred_on_precision": "day",
+      "stars_delta": 13.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7860574354361094500:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1fe759adbb539278be83",
+      "occurred_on": "2026-07-19",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7035411739218719057:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_681395fef84714fc07e2",
+      "occurred_on": "2026-07-18",
+      "occurred_on_precision": "day",
+      "stars_delta": 13.2,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3271322488111157743:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_becc3ad4a8075f27f397",
+      "occurred_on": "2026-07-17",
+      "occurred_on_precision": "day",
+      "stars_delta": 18.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6288079036092127868:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_74ceef912fc2b85d5168",
+      "occurred_on": "2026-09-26",
+      "occurred_on_precision": "day",
+      "stars_delta": 30.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4711950158651053629:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_6f45f97926e7b9733e64",
+      "occurred_on": "2026-09-25",
+      "occurred_on_precision": "day",
+      "stars_delta": 7.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6566587385216083238:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d25a36fbd12529061328",
+      "occurred_on": "2026-09-25",
+      "occurred_on_precision": "day",
+      "stars_delta": 26.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7689313371415123157:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_5c50e76242938bc7c2c4",
+      "occurred_on": "2026-09-24",
+      "occurred_on_precision": "day",
+      "stars_delta": 17.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2245592820000807366:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_33b143c07105f1df5b2e",
+      "occurred_on": "2026-09-23",
+      "occurred_on_precision": "day",
+      "stars_delta": 31.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8822881594723516316:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a9046ae2dd05c58e78d7",
+      "occurred_on": "2026-09-22",
+      "occurred_on_precision": "day",
+      "stars_delta": 17.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7690826026307721752:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_dda713d08e65d32ef1d7",
+      "occurred_on": "2026-09-21",
+      "occurred_on_precision": "day",
+      "stars_delta": 21.9,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3258107564133659459:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_622a9b95dcf0b9cd5396",
+      "occurred_on": "2026-09-19",
+      "occurred_on_precision": "day",
+      "stars_delta": 25.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5671689896721856108:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_50a9fc4be118ed06d2dd",
+      "occurred_on": "2026-09-18",
+      "occurred_on_precision": "day",
+      "stars_delta": 26.4,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7473308472225113575:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d975958e53fe08abf923",
+      "occurred_on": "2026-09-17",
+      "occurred_on_precision": "day",
+      "stars_delta": 18.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7685593644327795826:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_222d79566222d56ed928",
+      "occurred_on": "2026-09-17",
+      "occurred_on_precision": "day",
+      "stars_delta": 8.7,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:973316482368612471:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_fe02b1b4bba9841cfad2",
+      "occurred_on": "2026-09-16",
+      "occurred_on_precision": "day",
+      "stars_delta": 24.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4768953771644112423:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_7afb95e266b54b750171",
+      "occurred_on": "2026-09-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 21.9,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:835007802223742858:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0b4e2b4bbe37e3325d3e",
+      "occurred_on": "2026-09-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 18.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3674275166035734073:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2a7f4e121210248dfc28",
+      "occurred_on": "2026-09-14",
+      "occurred_on_precision": "day",
+      "stars_delta": 28.1,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:815459996401618933:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c2a434e0b52a566016a9",
+      "occurred_on": "2026-09-14",
+      "occurred_on_precision": "day",
+      "stars_delta": 18.5,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6392690316117824181:stars",
       "status": "active"
     }
   ]
