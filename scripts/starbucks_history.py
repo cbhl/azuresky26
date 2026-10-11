@@ -204,11 +204,22 @@ def api_visits(receipts: list[dict]) -> tuple[list[dict], list[dict]]:
 
 
 def api_stars(history_items: list[dict]) -> list[dict]:
+    """Stars entries from the API history.
+
+    Redemptions and bonus Stars arrive as standalone "Point" items. Stars
+    earned by a purchase are only reported on the transaction itself, in
+    historyOverview.starsEarnedDisplay, so read those too or earned totals
+    fall far behind redeemed ones.
+    """
     stars = []
     for item in history_items:
-        if item.get("historyType") != "Point":
+        overview = item.get("historyOverview") or {}
+        if item.get("historyType") == "Point":
+            description = overview.get("description") or ""
+        elif item.get("transactionType") != "Reload":
+            description = overview.get("starsEarnedDisplay") or ""
+        else:
             continue
-        description = ((item.get("historyOverview") or {}).get("description") or "")
         match = API_STARS_RE.fullmatch(description)
         if not match or not item.get("historyId") or not item.get("date"):
             continue

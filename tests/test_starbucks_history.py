@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from starbucks_history import _merge, _report_groups, api_time, api_visits, merge_history, parse_report
+from starbucks_history import _merge, _report_groups, api_stars, api_time, api_visits, merge_history, parse_report
 
 
 class StarbucksHistoryTests(unittest.TestCase):
@@ -143,6 +143,29 @@ Date/Time,Store Name,Order Total Charged,Item Name
         self.assertEqual(len(first), 2)
         self.assertEqual(len(second), 2)
         self.assertEqual(second[-1]["stars_delta"], 50.0)
+
+    def test_api_stars_include_stars_earned_by_purchases(self):
+        history_items = [
+            {
+                "historyId": "api-order",
+                "historyType": "TransactionWithPoints",
+                "transactionType": "Redemption",
+                "date": "2026-01-02T15:00:00Z",
+                "historyOverview": {"description": "Mobile order", "starsEarnedDisplay": "14.4\u2605 earned"},
+            },
+            {
+                "historyId": "api-no-stars",
+                "historyType": "Transaction",
+                "transactionType": "Reload",
+                "date": "2026-01-03T15:00:00Z",
+                "historyOverview": {"description": "Reload", "starsEarnedDisplay": None},
+            },
+        ]
+
+        stars = api_stars(history_items)
+
+        self.assertEqual([s["stars_delta"] for s in stars], [14.4])
+        self.assertEqual(stars[0]["occurred_on"], "2026-01-02")
 
     @staticmethod
     def _visit(local_second, source, time_basis="local_wall"):
