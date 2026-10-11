@@ -13,7 +13,7 @@
 
 Data flow for Starbucks: receipts + locator stores → `starbucks_import.py` → `starbucks.json` (+ `to_visit` list) → `render_starbucks_map.py` → SVG. Map shows all standalone stores plus visited non-standalone (blue). Remaining count links to `/starbucks/to-visit/`.
 
-`starbucks_import.py` does a full rebuild when the raw `receipts.json` is present. Without it (it is gitignored), the script refreshes only the ledger-derived `caffeine` block of the committed `starbucks.json` in place and leaves every other field as committed, so the caffeine estimate can be updated on a machine that lacks the full data.
+`starbucks_import.py` does a full rebuild when the raw `receipts.json` is present. Without it (it is gitignored), the script refreshes only the ledger-derived `caffeine` and `stars` blocks of the committed `starbucks.json` in place and leaves every other field as committed, so those can be updated on a machine that lacks the full data.
 
 ## Travel section
 

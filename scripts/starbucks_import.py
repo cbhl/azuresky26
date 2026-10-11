@@ -143,6 +143,24 @@ def match_store(
     return None
 
 
+def summarize_stars(history: list[dict] | None) -> dict:
+    history_events = [e for e in (history or []) if e.get("status", "active") == "active"]
+    report_star_dates = [e.get("occurred_on") for e in history_events
+                         if e.get("source_kind", "").endswith("customer_information_report")
+                         and e.get("occurred_on")]
+    report_star_end = max(report_star_dates) if report_star_dates else None
+    # CIR/report rows are authoritative through their coverage end. API Stars
+    # are only eligible after that date, preventing overlapping totals.
+    selected_stars = [e for e in history_events
+                      if not (e.get("source_kind") == "api_export" and report_star_end
+                              and (e.get("occurred_on") or "") <= report_star_end)]
+    stars_earned = sum(max(float(e.get("stars_delta") or 0), 0) for e in selected_stars)
+    stars_redeemed = sum(abs(min(float(e.get("stars_delta") or 0), 0)) for e in selected_stars)
+    return {"earned": round(stars_earned, 1), "redeemed": round(stars_redeemed, 1),
+            "policy": "reports-through-coverage-end-then-api-tail",
+            "report_coverage_end": report_star_end}
+
+
 def import_receipts(
     receipts: list[dict],
     catalog: list[dict],
@@ -261,18 +279,6 @@ def import_receipts(
         for key, count in item_counts.most_common(TOP_LIST_LIMIT)
     ]
 
-    history_events = [e for e in (history or []) if e.get("status", "active") == "active"]
-    report_star_dates = [e.get("occurred_on") for e in history_events
-                         if e.get("source_kind", "").endswith("customer_information_report")
-                         and e.get("occurred_on")]
-    report_star_end = max(report_star_dates) if report_star_dates else None
-    # CIR/report rows are authoritative through their coverage end. API Stars
-    # are only eligible after that date, preventing overlapping totals.
-    selected_stars = [e for e in history_events
-                      if not (e.get("source_kind") == "api_export" and report_star_end
-                              and (e.get("occurred_on") or "") <= report_star_end)]
-    stars_earned = sum(max(float(e.get("stars_delta") or 0), 0) for e in selected_stars)
-    stars_redeemed = sum(abs(min(float(e.get("stars_delta") or 0), 0)) for e in selected_stars)
     years = sorted({day[:4] for day in activity_counts if day[:4].isdigit()})
     activity = {
         "unit": "distinct_purchase_orders",
@@ -416,9 +422,7 @@ def import_receipts(
         "date_range": date_range,
         "history_count": history_count,
         "receipt_count": len(receipts),
-        "stars": {"earned": round(stars_earned, 1), "redeemed": round(stars_redeemed, 1),
-                  "policy": "reports-through-coverage-end-then-api-tail",
-                  "report_coverage_end": report_star_end},
+        "stars": summarize_stars(history),
         "visit_count": sum(activity_counts.values()),
         "activity": activity,
         "standalone": {
@@ -477,15 +481,16 @@ def main() -> int:
     history_ledger = json.loads(args.history.read_text()) if args.history.exists() else {}
     has_ledger_visits = isinstance(history_ledger, dict) and bool(history_ledger.get("visits"))
     # A full rebuild needs the raw (gitignored) receipts and locator data. On a
-    # machine without them, refresh only the ledger-derived `caffeine` block of
-    # the committed output in place and leave every other field untouched.
+    # machine without them, refresh only the ledger-derived `caffeine` and
+    # `stars` blocks of the committed output in place and leave every other field untouched.
     if not args.input.exists():
         if has_ledger_visits and args.output.exists():
             payload = json.loads(args.output.read_text())
             payload["caffeine"] = build_caffeine(history_ledger["visits"])
+            payload["stars"] = summarize_stars(history_ledger.get("stars"))
             args.output.write_text(json.dumps(payload, indent=2) + "\n")
             print(
-                f"receipts not found ({args.input}); updated caffeine in place in {args.output}"
+                f"receipts not found ({args.input}); updated caffeine and stars in place in {args.output}"
             )
             return 0
         print(f"error: receipts not found: {args.input}", file=sys.stderr)
