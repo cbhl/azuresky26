@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "activity_timezone": "America/Toronto",
-  "updated_at": "2026-08-31T02:22:40Z",
+  "updated_at": "2026-10-11T08:05:38Z",
   "sources": [
     "api_export",
     "ca_customer_information_report",
@@ -41152,6 +41152,1117 @@
       "status": "active",
       "raw_item_names": [
         "Hot Chocolate"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:5830778803170670217",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-10T21:05:32.6401968Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-10",
+      "local_second": "2026-10-10 17:05:32",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "INDIGO - Hillcrest",
+      "store_key": "indigo - hillcrest",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Green Tea",
+        "Cinnamon Coffee Cake"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3021671491515347899",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-10T19:06:58.6040521Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-10",
+      "local_second": "2026-10-10 15:06:58",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Caffè Americano"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:4961920015322838977",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-08T22:33:01.5155952Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 18:33:01",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Union XP Go-West York Concours",
+      "store_key": "union xp go-west york concours",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Caffè Americano"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1924428848903112879",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-08T13:51:41.1010098Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 09:51:41",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Chocolate Croissant"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1488275281397351903",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-08T13:37:22.5622015Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 09:37:22",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3598483921697229826",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-08T09:49:36.8570922Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 05:49:36",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Caffè Americano"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:8372481417108159835",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-06T16:07:26.8133661Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-06",
+      "local_second": "2026-10-06 12:07:26",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1993568684420313304",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-06T13:28:22.0313689Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-06",
+      "local_second": "2026-10-06 09:28:22",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & Finch",
+      "store_key": "yonge and finch",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea",
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:9137890633288592431",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-05T19:09:22.6751890Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-05",
+      "local_second": "2026-10-05 15:09:22",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:833616255457269194",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-05T17:41:38.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-05",
+      "local_second": "2026-10-05 13:41:38",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Caffè Americano"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3739978281715141403",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-02T20:57:53.7488570Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-02",
+      "local_second": "2026-10-02 16:57:53",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cinnamon Coffee Cake",
+        "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:6160815977543890320",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-01T21:31:13.7267930Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-01",
+      "local_second": "2026-10-01 17:31:13",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3661070017623685486",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-01T15:56:33.5499969Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-01",
+      "local_second": "2026-10-01 11:56:33",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:990688812450455984",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-10-01T13:22:40.3650717Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-01",
+      "local_second": "2026-10-01 09:22:40",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & Finch",
+      "store_key": "yonge and finch",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea",
+        "Sausage, Cheddar & Egg Sandwich"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1773537087450177996",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-30T19:03:47.6175886Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-30",
+      "local_second": "2026-09-30 15:03:47",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Green Tea",
+        "Iced Caffè Americano"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:8894814817298819227",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-29T23:11:34.0044799Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-29",
+      "local_second": "2026-09-29 19:11:34",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1523229544058648668",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-29T21:07:45.1336819Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-29",
+      "local_second": "2026-09-29 17:07:45",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea Lemonade",
+        "Cinnamon Coffee Cake"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1750510131340856877",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-29T13:00:26.7732821Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-29",
+      "local_second": "2026-09-29 09:00:26",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:5831044151251288687",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-28T21:02:54.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-28",
+      "local_second": "2026-09-28 17:02:54",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Caffè Americano",
+        "Cool Lime Lemonade Refresher",
+        "Cinnamon Coffee Cake"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7958784456002499879",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-27T22:57:49.9544901Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-27",
+      "local_second": "2026-09-27 18:57:49",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea Lemonade"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:4128339179768376331",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-27T15:27:51.4982305Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-27",
+      "local_second": "2026-09-27 11:27:51",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea Lemonade",
+        "Cinnamon Coffee Cake",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:573010091080966456",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-26T22:56:21.2785315Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-26",
+      "local_second": "2026-09-26 18:56:21",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bay & Charles",
+      "store_key": "bay and charles",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea Lemonade"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:4711950158651053629",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-26T16:47:09.9539066Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-26",
+      "local_second": "2026-09-26 12:47:09",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Green Tea",
+        "Crispy Grilled Cheese on Sourdough",
+        "Cinnamon Coffee Cake",
+        "Featured Medium Roast - Pike Place® Roast"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:6566587385216083238",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-25T21:47:12.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-25",
+      "local_second": "2026-09-25 17:47:12",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7689313371415123157",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-25T10:41:20.1081852Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-25",
+      "local_second": "2026-09-25 06:41:20",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Green Tea",
+        "8 Maple Mini Pancakes",
+        "Featured Medium Roast - Pike Place® Roast"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:2245592820000807366",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-24T13:07:26.3842234Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-24",
+      "local_second": "2026-09-24 09:07:26",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & Finch",
+      "store_key": "yonge and finch",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea",
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:8822881594723516316",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-23T19:02:05.3183213Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-23",
+      "local_second": "2026-09-23 15:02:05",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Green Tea",
+        "Starbucks® Iced Coffee Blend",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7690826026307721752",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-22T12:34:15.0108903Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-22",
+      "local_second": "2026-09-22 08:34:15",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & Finch",
+      "store_key": "yonge and finch",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea",
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3258107564133659459",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-21T19:26:04.8768914Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-21",
+      "local_second": "2026-09-21 15:26:04",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:5671689896721856108",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-19T18:46:47.1420881Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-19",
+      "local_second": "2026-09-19 14:46:47",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Ginger Molasses Cookie",
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7473308472225113575",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-18T12:05:01.3491457Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-18",
+      "local_second": "2026-09-18 08:05:01",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Rolled Steel-Cut Oatmeal",
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7685593644327795826",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-17T21:30:43.0992557Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-17",
+      "local_second": "2026-09-17 17:30:43",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:973316482368612471",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-17T13:04:27.3198765Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-17",
+      "local_second": "2026-09-17 09:04:27",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Green Tea Lemonade",
+        "Cinnamon Coffee Cake"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:4768953771644112423",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-16T20:26:54.7539740Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-16",
+      "local_second": "2026-09-16 16:26:54",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Crispy Grilled Cheese on Sourdough",
+        "Cinnamon Coffee Cake",
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:835007802223742858",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-15T22:18:25.7570179Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-15",
+      "local_second": "2026-09-15 18:18:25",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cool Lime Lemonade Refresher",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3674275166035734073",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-15T12:44:19.4808940Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-15",
+      "local_second": "2026-09-15 08:44:19",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cold Brew",
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:815459996401618933",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-14T22:08:44.6051199Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-14",
+      "local_second": "2026-09-14 18:08:44",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:6392690316117824181",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-14T14:44:42.3940361Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-14",
+      "local_second": "2026-09-14 10:44:42",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & Finch",
+      "store_key": "yonge and finch",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cinnamon Coffee Cake",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1077294655209854280",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-13T16:15:19.5124079Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-13",
+      "local_second": "2026-09-13 12:15:19",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Oak Ridges",
+      "store_key": "oak ridges",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:718288255327323226",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-13T00:17:28.6832533Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-12",
+      "local_second": "2026-09-12 20:17:28",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Dufferin & Major Mackenzie",
+      "store_key": "dufferin and major mackenzie",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:7419115736205557157",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-12T17:33:21.6619192Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-12",
+      "local_second": "2026-09-12 13:33:21",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:4230983857724331384",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-10T20:33:26.6689091Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-10",
+      "local_second": "2026-09-10 16:33:26",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Hyatt Regency Toronto",
+      "store_key": "hyatt regency toronto",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1786965791239651082",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-10T12:29:39.6056797Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-10",
+      "local_second": "2026-09-10 08:29:39",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+        "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:5374201589288795734",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-09T20:34:28.5229658Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-09",
+      "local_second": "2026-09-09 16:34:28",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Loblaws High Tech Rd Rich Hill",
+      "store_key": "loblaws high tech rd rich hill",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cool Lime Lemonade Refresher",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:2900642280292051276",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-09T20:13:15.1767969Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-09",
+      "local_second": "2026-09-09 16:13:15",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie",
+        "Iced Banana Bread Chai"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:8338708799190617508",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-08T12:40:05.7068583Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-08",
+      "local_second": "2026-09-08 08:40:05",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge & King",
+      "store_key": "yonge and king",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+        "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:557107982068903831",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-06T20:29:22.2999074Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-06",
+      "local_second": "2026-09-06 16:29:22",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:5427053651496738148",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-06T20:01:07.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-06",
+      "local_second": "2026-09-06 16:01:07",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Yonge St & Hwy 7",
+      "store_key": "yonge st and hwy 7",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Cool Lime Lemonade Refresher",
+        "Mini Pumpkin Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:2862930631267942734",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-05T23:12:54.4427998Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-05",
+      "local_second": "2026-09-05 19:12:54",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Peach Green Tea Lemonade"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:3497845743824442334",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-04T22:55:50.8955035Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-04",
+      "local_second": "2026-09-04 18:55:50",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Peach Green Tea Lemonade",
+        "Espresso"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:1320520465446106726",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-03T16:45:22.3268801Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-03",
+      "local_second": "2026-09-03 12:45:22",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:123316820030013718",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-03T16:19:08.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-03",
+      "local_second": "2026-09-03 12:19:08",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Strawberry Açaí Lemonade Refresher",
+        "Turkey, Provolone & Pesto on Ciabatta",
+        "Hedgehog Cake Pop"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:6651327508742161872",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-01T19:51:42.4173764Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-01",
+      "local_second": "2026-09-01 15:51:42",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Strawberry Açaí Refresher",
+        "Mini Pumpkin Pie",
+        "Mini Apple Crumble Pie"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:8687705135407753452",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-09-01T18:33:11.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-01",
+      "local_second": "2026-09-01 14:33:11",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Starbucks® Iced Coffee Blend",
+        "Everything Croissant & Roasted Ham Sandwich"
+      ]
+    },
+    {
+      "observation_id": "api_export:history:514302410335985069",
+      "record_type": "api_receipt",
+      "source_kind": "api_export",
+      "occurred_at": "2026-08-31T22:37:40.8273938Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-31",
+      "local_second": "2026-08-31 18:37:40",
+      "profile_country": "CA",
+      "currency": "CAD",
+      "store_name_raw": "Bayview & Romfield",
+      "store_key": "bayview and romfield",
+      "kind": "purchase_item",
+      "status": "active",
+      "raw_item_names": [
+        "Iced Peach Green Tea Lemonade"
       ]
     }
   ],
@@ -82838,6 +83949,2536 @@
         "method": "confirmed_local_second_store",
         "confidence": "high"
       }
+    },
+    {
+      "visit_id": "evt_8032a87bf8da3bb33280",
+      "status": "active",
+      "occurred_at": "2026-08-31T22:37:40.8273938Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-08-31",
+      "local_second": "2026-08-31 18:37:40",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Peach Green Tea Lemonade",
+          "name_key": "iced peach green tea lemonade",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:514302410335985069"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_999024f8d48b3431ce1c",
+      "status": "active",
+      "occurred_at": "2026-09-01T18:33:11.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-01",
+      "local_second": "2026-09-01 14:33:11",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Everything Croissant & Roasted Ham Sandwich",
+          "name_key": "everything croissant and roasted ham sandwich",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:8687705135407753452"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_eb9df25fc495a69072c2",
+      "status": "active",
+      "occurred_at": "2026-09-01T19:51:42.4173764Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-01",
+      "local_second": "2026-09-01 15:51:42",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Strawberry Açaí Refresher",
+          "name_key": "strawberry açaí refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:6651327508742161872"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_b43e0d4e28001b6f54ae",
+      "status": "active",
+      "occurred_at": "2026-09-03T16:19:08.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-03",
+      "local_second": "2026-09-03 12:19:08",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Strawberry Açaí Lemonade Refresher",
+          "name_key": "strawberry açaí lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Turkey, Provolone & Pesto on Ciabatta",
+          "name_key": "turkey, provolone and pesto on ciabatta",
+          "quantity": null
+        },
+        {
+          "name": "Hedgehog Cake Pop",
+          "name_key": "hedgehog cake pop",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:123316820030013718"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_3623c1f16d2a92fb7d34",
+      "status": "active",
+      "occurred_at": "2026-09-03T16:45:22.3268801Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-03",
+      "local_second": "2026-09-03 12:45:22",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1320520465446106726"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_9eafdefc0d9fac1115bc",
+      "status": "active",
+      "occurred_at": "2026-09-04T22:55:50.8955035Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-04",
+      "local_second": "2026-09-04 18:55:50",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Peach Green Tea Lemonade",
+          "name_key": "iced peach green tea lemonade",
+          "quantity": null
+        },
+        {
+          "name": "Espresso",
+          "name_key": "espresso",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3497845743824442334"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_b7eb46fba546b95f36e0",
+      "status": "active",
+      "occurred_at": "2026-09-05T23:12:54.4427998Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-05",
+      "local_second": "2026-09-05 19:12:54",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Peach Green Tea Lemonade",
+          "name_key": "iced peach green tea lemonade",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:2862930631267942734"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_e95fe82b8650c4789201",
+      "status": "active",
+      "occurred_at": "2026-09-06T20:01:07.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-06",
+      "local_second": "2026-09-06 16:01:07",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:5427053651496738148"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_f690a816f98972cdd993",
+      "status": "active",
+      "occurred_at": "2026-09-06T20:29:22.2999074Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-06",
+      "local_second": "2026-09-06 16:29:22",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:557107982068903831"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_349401e14d4dc41e53f2",
+      "status": "active",
+      "occurred_at": "2026-09-08T12:40:05.7068583Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-08",
+      "local_second": "2026-09-08 08:40:05",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "name_key": "double-smoked bacon, cheddar and egg sandwich",
+          "quantity": null
+        },
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:8338708799190617508"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_90d60e156e617b537a8c",
+      "status": "active",
+      "occurred_at": "2026-09-09T20:13:15.1767969Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-09",
+      "local_second": "2026-09-09 16:13:15",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        },
+        {
+          "name": "Iced Banana Bread Chai",
+          "name_key": "iced banana bread chai",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:2900642280292051276"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_28ea2a76279a55fa090b",
+      "status": "active",
+      "occurred_at": "2026-09-09T20:34:28.5229658Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-09",
+      "local_second": "2026-09-09 16:34:28",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Loblaws High Tech Rd Rich Hill",
+        "name_key": "loblaws high tech rd rich hill",
+        "catalog_store_number": "55389-286621",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:5374201589288795734"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_38d9b47553618df4da2d",
+      "status": "active",
+      "occurred_at": "2026-09-10T12:29:39.6056797Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-10",
+      "local_second": "2026-09-10 08:29:39",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "name_key": "double-smoked bacon, cheddar and egg sandwich",
+          "quantity": null
+        },
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1786965791239651082"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_de00ab420e784a091af8",
+      "status": "active",
+      "occurred_at": "2026-09-10T20:33:26.6689091Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-10",
+      "local_second": "2026-09-10 16:33:26",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Hyatt Regency Toronto",
+        "name_key": "hyatt regency toronto",
+        "catalog_store_number": "71136-304873",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:4230983857724331384"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_0dcd1e6bd70948456bf5",
+      "status": "active",
+      "occurred_at": "2026-09-12T17:33:21.6619192Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-12",
+      "local_second": "2026-09-12 13:33:21",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7419115736205557157"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_40ba1b413692dd608579",
+      "status": "active",
+      "occurred_at": "2026-09-13T00:17:28.6832533Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-12",
+      "local_second": "2026-09-12 20:17:28",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Dufferin & Major Mackenzie",
+        "name_key": "dufferin and major mackenzie",
+        "catalog_store_number": "4982-105180",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:718288255327323226"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_c02e29a6e18b361efc5a",
+      "status": "active",
+      "occurred_at": "2026-09-13T16:15:19.5124079Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-13",
+      "local_second": "2026-09-13 12:15:19",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Oak Ridges",
+        "name_key": "oak ridges",
+        "catalog_store_number": "58132-289531",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1077294655209854280"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_bdedf75974339ee2182b",
+      "status": "active",
+      "occurred_at": "2026-09-14T14:44:42.3940361Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-14",
+      "local_second": "2026-09-14 10:44:42",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & Finch",
+        "name_key": "yonge and finch",
+        "catalog_store_number": "4717-102447",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:6392690316117824181"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_6774f23bb739b52a2f53",
+      "status": "active",
+      "occurred_at": "2026-09-14T22:08:44.6051199Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-14",
+      "local_second": "2026-09-14 18:08:44",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:815459996401618933"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_9e7ce8ab6d2295161c60",
+      "status": "active",
+      "occurred_at": "2026-09-15T12:44:19.4808940Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-15",
+      "local_second": "2026-09-15 08:44:19",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cold Brew",
+          "name_key": "cold brew",
+          "quantity": null
+        },
+        {
+          "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "name_key": "double-smoked bacon, cheddar and egg sandwich",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3674275166035734073"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_0d696e4c19f78e630c99",
+      "status": "active",
+      "occurred_at": "2026-09-15T22:18:25.7570179Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-15",
+      "local_second": "2026-09-15 18:18:25",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:835007802223742858"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_bf56ea40c42b6d107ce7",
+      "status": "active",
+      "occurred_at": "2026-09-16T20:26:54.7539740Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-16",
+      "local_second": "2026-09-16 16:26:54",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Crispy Grilled Cheese on Sourdough",
+          "name_key": "crispy grilled cheese on sourdough",
+          "quantity": null
+        },
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        },
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:4768953771644112423"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_505ea7c21e5fd78ddd32",
+      "status": "active",
+      "occurred_at": "2026-09-17T13:04:27.3198765Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-17",
+      "local_second": "2026-09-17 09:04:27",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea Lemonade",
+          "name_key": "iced green tea lemonade",
+          "quantity": null
+        },
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:973316482368612471"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_7f80ead8b198549949cd",
+      "status": "active",
+      "occurred_at": "2026-09-17T21:30:43.0992557Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-17",
+      "local_second": "2026-09-17 17:30:43",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7685593644327795826"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_d74cd51134e2877d1f8f",
+      "status": "active",
+      "occurred_at": "2026-09-18T12:05:01.3491457Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-18",
+      "local_second": "2026-09-18 08:05:01",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Rolled Steel-Cut Oatmeal",
+          "name_key": "rolled steel-cut oatmeal",
+          "quantity": null
+        },
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7473308472225113575"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_fa644c8ebbf4ce62c970",
+      "status": "active",
+      "occurred_at": "2026-09-19T18:46:47.1420881Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-19",
+      "local_second": "2026-09-19 14:46:47",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Ginger Molasses Cookie",
+          "name_key": "ginger molasses cookie",
+          "quantity": null
+        },
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:5671689896721856108"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_a138794af7fa274cf539",
+      "status": "active",
+      "occurred_at": "2026-09-21T19:26:04.8768914Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-21",
+      "local_second": "2026-09-21 15:26:04",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3258107564133659459"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_e95d5365bb8fc54c1cff",
+      "status": "active",
+      "occurred_at": "2026-09-22T12:34:15.0108903Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-22",
+      "local_second": "2026-09-22 08:34:15",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & Finch",
+        "name_key": "yonge and finch",
+        "catalog_store_number": "4717-102447",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "name_key": "double-smoked bacon, cheddar and egg sandwich",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7690826026307721752"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_c0ba9ee5921026abac5a",
+      "status": "active",
+      "occurred_at": "2026-09-23T19:02:05.3183213Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-23",
+      "local_second": "2026-09-23 15:02:05",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Rolled Steel-Cut Oatmeal",
+          "name_key": "rolled steel-cut oatmeal",
+          "quantity": null
+        },
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Mini Pumpkin Pie",
+          "name_key": "mini pumpkin pie",
+          "quantity": null
+        },
+        {
+          "name": "Mini Apple Crumble Pie",
+          "name_key": "mini apple crumble pie",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:8822881594723516316"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_a0cf746ea214561a57a0",
+      "status": "active",
+      "occurred_at": "2026-09-24T13:07:26.3842234Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-24",
+      "local_second": "2026-09-24 09:07:26",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & Finch",
+        "name_key": "yonge and finch",
+        "catalog_store_number": "4717-102447",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "name_key": "double-smoked bacon, cheddar and egg sandwich",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:2245592820000807366"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_70c579e06a545a1c6562",
+      "status": "active",
+      "occurred_at": "2026-09-25T10:41:20.1081852Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-25",
+      "local_second": "2026-09-25 06:41:20",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Rolled Steel-Cut Oatmeal",
+          "name_key": "rolled steel-cut oatmeal",
+          "quantity": null
+        },
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "8 Maple Mini Pancakes",
+          "name_key": "8 maple mini pancakes",
+          "quantity": null
+        },
+        {
+          "name": "Featured Medium Roast - Pike Place® Roast",
+          "name_key": "featured medium roast - pike place® roast",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7689313371415123157"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_eb039baa159b2748e076",
+      "status": "active",
+      "occurred_at": "2026-09-25T21:47:12.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-25",
+      "local_second": "2026-09-25 17:47:12",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:6566587385216083238"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_b181fc52006d724e7ce8",
+      "status": "active",
+      "occurred_at": "2026-09-26T16:47:09.9539066Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-26",
+      "local_second": "2026-09-26 12:47:09",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Rolled Steel-Cut Oatmeal",
+          "name_key": "rolled steel-cut oatmeal",
+          "quantity": null
+        },
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Crispy Grilled Cheese on Sourdough",
+          "name_key": "crispy grilled cheese on sourdough",
+          "quantity": null
+        },
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        },
+        {
+          "name": "Featured Medium Roast - Pike Place® Roast",
+          "name_key": "featured medium roast - pike place® roast",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:4711950158651053629"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_7473c3ea0aca2638788b",
+      "status": "active",
+      "occurred_at": "2026-09-26T22:56:21.2785315Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-26",
+      "local_second": "2026-09-26 18:56:21",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bay & Charles",
+        "name_key": "bay and charles",
+        "catalog_store_number": "20991-207444",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea Lemonade",
+          "name_key": "iced green tea lemonade",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:573010091080966456"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_83bac5c450dc29937e70",
+      "status": "active",
+      "occurred_at": "2026-09-27T15:27:51.4982305Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-27",
+      "local_second": "2026-09-27 11:27:51",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea Lemonade",
+          "name_key": "iced green tea lemonade",
+          "quantity": null
+        },
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:4128339179768376331"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_fe3542efaf4ab8a019c5",
+      "status": "active",
+      "occurred_at": "2026-09-27T22:57:49.9544901Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-27",
+      "local_second": "2026-09-27 18:57:49",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea Lemonade",
+          "name_key": "iced green tea lemonade",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:7958784456002499879"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_9e28289ef5259f86a1ee",
+      "status": "active",
+      "occurred_at": "2026-09-28T21:02:54.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-28",
+      "local_second": "2026-09-28 17:02:54",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Caffè Americano",
+          "name_key": "iced caffè americano",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        },
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:5831044151251288687"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_79af718dfda4dadca39e",
+      "status": "active",
+      "occurred_at": "2026-09-29T13:00:26.7732821Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-29",
+      "local_second": "2026-09-29 09:00:26",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "name_key": "double-smoked bacon, cheddar and egg sandwich",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1750510131340856877"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_66f72e4080c514f70aa1",
+      "status": "active",
+      "occurred_at": "2026-09-29T21:07:45.1336819Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-29",
+      "local_second": "2026-09-29 17:07:45",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea Lemonade",
+          "name_key": "iced green tea lemonade",
+          "quantity": null
+        },
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1523229544058648668"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_369dc87005533ecf7828",
+      "status": "active",
+      "occurred_at": "2026-09-29T23:11:34.0044799Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-29",
+      "local_second": "2026-09-29 19:11:34",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge St & Hwy 7",
+        "name_key": "yonge st and hwy 7",
+        "catalog_store_number": "54228-286471",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        },
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:8894814817298819227"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_34509f9c3bc3b5fe3e7d",
+      "status": "active",
+      "occurred_at": "2026-09-30T19:03:47.6175886Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-09-30",
+      "local_second": "2026-09-30 15:03:47",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Rolled Steel-Cut Oatmeal",
+          "name_key": "rolled steel-cut oatmeal",
+          "quantity": null
+        },
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Iced Caffè Americano",
+          "name_key": "iced caffè americano",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1773537087450177996"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_527759bcbdc4e3019f23",
+      "status": "active",
+      "occurred_at": "2026-10-01T13:22:40.3650717Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-01",
+      "local_second": "2026-10-01 09:22:40",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & Finch",
+        "name_key": "yonge and finch",
+        "catalog_store_number": "4717-102447",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Sausage, Cheddar & Egg Sandwich",
+          "name_key": "sausage, cheddar and egg sandwich",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:990688812450455984"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_978f64b8abecac9ae550",
+      "status": "active",
+      "occurred_at": "2026-10-01T15:56:33.5499969Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-01",
+      "local_second": "2026-10-01 11:56:33",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cool Lime Lemonade Refresher",
+          "name_key": "cool lime lemonade refresher",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3661070017623685486"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_308c51c28b1967957f17",
+      "status": "active",
+      "occurred_at": "2026-10-01T21:31:13.7267930Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-01",
+      "local_second": "2026-10-01 17:31:13",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:6160815977543890320"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_abb92b86d630057046c3",
+      "status": "active",
+      "occurred_at": "2026-10-02T20:57:53.7488570Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-02",
+      "local_second": "2026-10-02 16:57:53",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        },
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3739978281715141403"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_d3685331f214b93acd77",
+      "status": "active",
+      "occurred_at": "2026-10-05T17:41:38.0000000Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-05",
+      "local_second": "2026-10-05 13:41:38",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Caffè Americano",
+          "name_key": "iced caffè americano",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:833616255457269194"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_97a81f037c1114d4c577",
+      "status": "active",
+      "occurred_at": "2026-10-05T19:09:22.6751890Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-05",
+      "local_second": "2026-10-05 15:09:22",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:9137890633288592431"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_947914699adbc84d0086",
+      "status": "active",
+      "occurred_at": "2026-10-06T13:28:22.0313689Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-06",
+      "local_second": "2026-10-06 09:28:22",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & Finch",
+        "name_key": "yonge and finch",
+        "catalog_store_number": "4717-102447",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+          "name_key": "double-smoked bacon, cheddar and egg sandwich",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1993568684420313304"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_8bd06a2dba0d1cadb72a",
+      "status": "active",
+      "occurred_at": "2026-10-06T16:07:26.8133661Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-06",
+      "local_second": "2026-10-06 12:07:26",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Starbucks® Iced Coffee Blend",
+          "name_key": "starbucks® iced coffee blend",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:8372481417108159835"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_257fd17870c9491dbac4",
+      "status": "active",
+      "occurred_at": "2026-10-08T09:49:36.8570922Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 05:49:36",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Rolled Steel-Cut Oatmeal",
+          "name_key": "rolled steel-cut oatmeal",
+          "quantity": null
+        },
+        {
+          "name": "Iced Caffè Americano",
+          "name_key": "iced caffè americano",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3598483921697229826"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_d79ee5d3bebc28e2dc64",
+      "status": "active",
+      "occurred_at": "2026-10-08T13:37:22.5622015Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 09:37:22",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1488275281397351903"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_87a58ba3723d0aeb79f7",
+      "status": "active",
+      "occurred_at": "2026-10-08T13:51:41.1010098Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 09:51:41",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Yonge & King",
+        "name_key": "yonge and king",
+        "catalog_store_number": "4300-884",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Chocolate Croissant",
+          "name_key": "chocolate croissant",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:1924428848903112879"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_78ea4c13a564709a781c",
+      "status": "active",
+      "occurred_at": "2026-10-08T22:33:01.5155952Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-08",
+      "local_second": "2026-10-08 18:33:01",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Union XP Go-West York Concours",
+        "name_key": "union xp go-west york concours",
+        "catalog_store_number": "23689-232644",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Caffè Americano",
+          "name_key": "iced caffè americano",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:4961920015322838977"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_932e43245a29aad36116",
+      "status": "active",
+      "occurred_at": "2026-10-10T19:06:58.6040521Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-10",
+      "local_second": "2026-10-10 15:06:58",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "Bayview & Romfield",
+        "name_key": "bayview and romfield",
+        "catalog_store_number": "23280-204964",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Iced Caffè Americano",
+          "name_key": "iced caffè americano",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:3021671491515347899"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
+    },
+    {
+      "visit_id": "evt_3c1f41929c7b2e0eb7e5",
+      "status": "active",
+      "occurred_at": "2026-10-10T21:05:32.6401968Z",
+      "occurred_at_precision": "second",
+      "time_basis": "utc",
+      "local_date": "2026-10-10",
+      "local_second": "2026-10-10 17:05:32",
+      "source_profile_countries": [
+        "CA"
+      ],
+      "currency": "CAD",
+      "amount_lines_sum": null,
+      "store": {
+        "name_raw": "INDIGO - Hillcrest",
+        "name_key": "indigo - hillcrest",
+        "catalog_store_number": "55463-289303",
+        "in_gta_catalog": false,
+        "standalone": false,
+        "region": null,
+        "match_method": "unresolved"
+      },
+      "items": [
+        {
+          "name": "Rolled Steel-Cut Oatmeal",
+          "name_key": "rolled steel-cut oatmeal",
+          "quantity": null
+        },
+        {
+          "name": "Iced Green Tea",
+          "name_key": "iced green tea",
+          "quantity": null
+        },
+        {
+          "name": "Cinnamon Coffee Cake",
+          "name_key": "cinnamon coffee cake",
+          "quantity": null
+        }
+      ],
+      "source_kinds": [
+        "api_export"
+      ],
+      "source_observation_ids": [
+        "api_export:history:5830778803170670217"
+      ],
+      "dedupe": {
+        "method": "api_identity",
+        "confidence": "exact"
+      }
     }
   ],
   "stars": [
@@ -106289,6 +109930,436 @@
       "point_type": "Points",
       "source_kind": "api_export",
       "source_observation_id": "api_export:history:6684445453500926403:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_bd8cc75246b6fd1ebcc5",
+      "occurred_on": "2026-10-10",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4604321949002284848:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_25a081bbc17bdf8738d6",
+      "occurred_on": "2026-10-10",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8588048513840591879:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c6cc865e437af876ebf1",
+      "occurred_on": "2026-10-09",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4174359530815395104:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_715e229b776b51d320fc",
+      "occurred_on": "2026-10-08",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7703577204362374162:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_68fc665409a8576384ea",
+      "occurred_on": "2026-10-06",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4529590812571336380:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c80faed1ae42edcea4c5",
+      "occurred_on": "2026-10-05",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:732559117096853822:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_ce6269af01856aec9711",
+      "occurred_on": "2026-10-02",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4223313393233007942:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_ca4de7ff53b2e83de1c1",
+      "occurred_on": "2026-10-01",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6541361366894388148:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_6c51b18e75ad575101cd",
+      "occurred_on": "2026-09-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:3457684202126549553:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_5fcba2cb46022ea5f873",
+      "occurred_on": "2026-09-30",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1073905582019043458:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_f82a3aaf43764d6a0332",
+      "occurred_on": "2026-09-29",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5350099636421781481:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_4c1e1160207f5e832f09",
+      "occurred_on": "2026-09-28",
+      "occurred_on_precision": "day",
+      "stars_delta": 25.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4498406373366427017:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_71d8f203af7dacc49bfc",
+      "occurred_on": "2026-09-27",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6133552370361574713:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b21d293ff36934a09f30",
+      "occurred_on": "2026-09-27",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6295547545227140943:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_72a1c8f02c557c6a9f9b",
+      "occurred_on": "2026-09-26",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:4465824259559338823:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_3c74beedd9aacf3be437",
+      "occurred_on": "2026-09-25",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:7298537353329529217:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d74f9bbe1ca85385bc92",
+      "occurred_on": "2026-09-25",
+      "occurred_on_precision": "day",
+      "stars_delta": 25.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6552454026648818401:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_85e50d053b4580837a8f",
+      "occurred_on": "2026-09-25",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:9203868724441577005:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_112f3a664eff48edd38b",
+      "occurred_on": "2026-09-24",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1769387909954677595:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d4044aa506043e285b7a",
+      "occurred_on": "2026-09-22",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1301146338273784407:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_47a64a8a88cbf0e8e779",
+      "occurred_on": "2026-09-21",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:156250668304342339:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_4ee389a06e6a67541c3f",
+      "occurred_on": "2026-09-18",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2109528717386674508:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2b3d88cd2852cb574c14",
+      "occurred_on": "2026-09-17",
+      "occurred_on_precision": "day",
+      "stars_delta": -100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5380112895319155411:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_ad431c7d7147819d80e2",
+      "occurred_on": "2026-09-16",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6491867229752316048:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_c4b35fd39016dc3db052",
+      "occurred_on": "2026-09-16",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:215071140384354819:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d9d9b887cadbd7c14779",
+      "occurred_on": "2026-09-15",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5858740664381453471:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1a3d02541fd02255f1eb",
+      "occurred_on": "2026-09-14",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5637828974404207556:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d74b829fd3fededb4a3d",
+      "occurred_on": "2026-09-13",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8370361776839082920:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_938fafcb97af02e65a20",
+      "occurred_on": "2026-09-12",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1398749432581493914:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_2f106c3f69740fc66f20",
+      "occurred_on": "2026-09-12",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5987974727697861017:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_229729a112b3779b7ae2",
+      "occurred_on": "2026-09-12",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2583265015309308408:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_bc888ba6c8a072cf6b34",
+      "occurred_on": "2026-09-10",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:9121521740643135147:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_0cb10cf6a873fdcd1415",
+      "occurred_on": "2026-09-10",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:639759700875029658:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_d0309bf311577e84f4a1",
+      "occurred_on": "2026-09-09",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6695313372835749210:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_bbef1973c0c9be50612e",
+      "occurred_on": "2026-09-09",
+      "occurred_on_precision": "day",
+      "stars_delta": -200.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:2832551533284254851:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_baef3cc1c0f0ca514d50",
+      "occurred_on": "2026-09-08",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1456289136855111877:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_469c9201b67599531071",
+      "occurred_on": "2026-09-06",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6117314575909874163:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_b0546bcbaec128ec4d64",
+      "occurred_on": "2026-09-05",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:8664730924278369756:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_4db614a7ecf13f951f86",
+      "occurred_on": "2026-09-04",
+      "occurred_on_precision": "day",
+      "stars_delta": 50.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:6752605790346071440:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_8ef9081b5c1322aff99a",
+      "occurred_on": "2026-09-04",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:1970502627608976541:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_71e8b2430c2e5048c39a",
+      "occurred_on": "2026-09-03",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:177631178735933112:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_1f9751955777cca37631",
+      "occurred_on": "2026-09-01",
+      "occurred_on_precision": "day",
+      "stars_delta": 100.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5973316724911315957:stars",
+      "status": "active"
+    },
+    {
+      "star_id": "evt_a13a2ceadf33592e8329",
+      "occurred_on": "2026-08-31",
+      "occurred_on_precision": "day",
+      "stars_delta": -60.0,
+      "point_type": "Points",
+      "source_kind": "api_export",
+      "source_observation_id": "api_export:history:5382465857055678014:stars",
       "status": "active"
     }
   ]

@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-08-30",
+  "generated_at": "2026-10-11",
   "date_range": {
     "min": "2022-01-04",
-    "max": "2026-08-30"
+    "max": "2026-10-10"
   },
-  "history_count": 456,
-  "receipt_count": 875,
+  "history_count": 511,
+  "receipt_count": 930,
   "stars": {
-    "earned": 23175.8,
-    "redeemed": 23245.6,
+    "earned": 24475.8,
+    "redeemed": 25205.6,
     "policy": "reports-through-coverage-end-then-api-tail",
     "report_coverage_end": "2026-08-23"
   },
-  "visit_count": 875,
+  "visit_count": 930,
   "activity": {
     "unit": "distinct_purchase_orders",
     "timezone": "America/Toronto",
@@ -682,21 +682,54 @@
       "2026-08-25": 1,
       "2026-08-26": 1,
       "2026-08-27": 1,
-      "2026-08-30": 7
+      "2026-08-30": 7,
+      "2026-08-31": 1,
+      "2026-09-01": 2,
+      "2026-09-03": 2,
+      "2026-09-04": 1,
+      "2026-09-05": 1,
+      "2026-09-06": 2,
+      "2026-09-08": 1,
+      "2026-09-09": 2,
+      "2026-09-10": 2,
+      "2026-09-12": 2,
+      "2026-09-13": 1,
+      "2026-09-14": 2,
+      "2026-09-15": 2,
+      "2026-09-16": 1,
+      "2026-09-17": 2,
+      "2026-09-18": 1,
+      "2026-09-19": 1,
+      "2026-09-21": 1,
+      "2026-09-22": 1,
+      "2026-09-23": 1,
+      "2026-09-24": 1,
+      "2026-09-25": 2,
+      "2026-09-26": 2,
+      "2026-09-27": 2,
+      "2026-09-28": 1,
+      "2026-09-29": 3,
+      "2026-09-30": 1,
+      "2026-10-01": 3,
+      "2026-10-02": 1,
+      "2026-10-05": 2,
+      "2026-10-06": 2,
+      "2026-10-08": 4,
+      "2026-10-10": 2
     },
-    "total_days_active": 652,
-    "total_events": 875
+    "total_days_active": 685,
+    "total_events": 930
   },
   "standalone": {
     "total": 195,
-    "visited": 43,
-    "remaining": 152
+    "visited": 46,
+    "remaining": 149
   },
   "by_region": [
     {
       "region": "Toronto",
       "total": 92,
-      "visited": 28
+      "visited": 30
     },
     {
       "region": "Peel",
@@ -706,7 +739,7 @@
     {
       "region": "York Region",
       "total": 31,
-      "visited": 14
+      "visited": 15
     },
     {
       "region": "Halton",
@@ -729,6 +762,14 @@
       "count": 78
     },
     {
+      "item": "Cool Lime Lemonade Refresher",
+      "count": 54
+    },
+    {
+      "item": "Starbucks\u00ae Iced Coffee Blend",
+      "count": 48
+    },
+    {
       "item": "Gr Strawberry Acai Juice",
       "count": 45
     },
@@ -737,19 +778,11 @@
       "count": 42
     },
     {
-      "item": "Cool Lime Lemonade Refresher",
-      "count": 35
-    },
-    {
       "item": "Sugar Plum Cheese Danish Us",
       "count": 32
     },
     {
       "item": "Apple Spice Caramel Grande",
-      "count": 31
-    },
-    {
-      "item": "Gr Iced Coffee",
       "count": 31
     }
   ],
@@ -757,7 +790,7 @@
     {
       "name": "Bayview & Romfield",
       "storeNumber": "23280-204964",
-      "count": 118,
+      "count": 142,
       "type": "standalone"
     },
     {
@@ -769,7 +802,7 @@
     {
       "name": "Yonge & Finch",
       "storeNumber": "4717-102447",
-      "count": 70,
+      "count": 75,
       "type": "standalone"
     },
     {
@@ -781,25 +814,25 @@
     {
       "name": "Oak Ridges",
       "storeNumber": "58132-289531",
-      "count": 41,
+      "count": 42,
       "type": "standalone"
     },
     {
       "name": "Yonge St & Hwy 7",
       "storeNumber": "54228-286471",
-      "count": 14,
+      "count": 23,
       "type": "standalone"
     },
     {
       "name": "INDIGO - Hillcrest",
       "storeNumber": "55463-289303",
-      "count": 12,
+      "count": 13,
       "type": "other"
     },
     {
-      "name": "Markville Mall - Upper Level",
-      "storeNumber": "19865-177964",
-      "count": 6,
+      "name": "Yonge & King",
+      "storeNumber": "4300-884",
+      "count": 10,
       "type": "standalone"
     }
   ],
@@ -817,10 +850,12 @@
     "5954 Hwy 7",
     "6355 Yonge St",
     "7333 Woodbine Ave",
+    "Bay & Charles",
     "Bayview & Romfield",
     "Bayview Village",
     "CF Shops at Don Mills",
     "Dufferin & Langstaff",
+    "Dufferin & Major Mackenzie",
     "Elgin Mills & Redstone",
     "Ellesmere & Midland D/T",
     "Finch & Chesswood",
@@ -843,6 +878,7 @@
     "Yonge & Brookside",
     "Yonge & Dundas",
     "Yonge & Finch",
+    "Yonge & King",
     "Yonge & Park Home",
     "Yonge St & Hwy 7",
     "York Mills and Lesmill",
@@ -857,7 +893,7 @@
       "region": "York Region",
       "lat": 43.83232,
       "lon": -79.40508,
-      "visits": 118
+      "visits": 142
     }
   ],
   "to_visit": [
@@ -870,7 +906,7 @@
       "address": "170 Evans Avenue, Etobicoke",
       "lat": 43.6185,
       "lon": -79.51259,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4803-97529",
@@ -892,7 +928,7 @@
       "address": "150 Park Lawn Rd, Toronto",
       "lat": 43.62766,
       "lon": -79.48919,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4227-271584",
@@ -1013,7 +1049,7 @@
       "address": "829 The Queensway, Toronto",
       "lat": 43.62468,
       "lon": -79.50825,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4718-288881",
@@ -1090,17 +1126,6 @@
       "address": "626 Sheppard Ave W, Toronto",
       "lat": 43.7556,
       "lon": -79.44039,
-      "drive_thru": false
-    },
-    {
-      "id": "20991-207444",
-      "name": "Bay & Charles",
-      "street": "47 Charles St W",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "47 Charles St W, Toronto",
-      "lat": 43.66805,
-      "lon": -79.3885,
       "drive_thru": false
     },
     {
@@ -1189,7 +1214,7 @@
       "address": "2387 Kingston Rd, Toronto",
       "lat": 43.70808,
       "lon": -79.24952,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "17181-170464",
@@ -1255,7 +1280,7 @@
       "address": "6620 Finch Ave W, Toronto",
       "lat": 43.73498,
       "lon": -79.60162,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "71733-306849",
@@ -1310,7 +1335,7 @@
       "address": "2575 St Clair Ave W, Toronto",
       "lat": 43.66741,
       "lon": -79.48925,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4636-255353",
@@ -1343,7 +1368,7 @@
       "address": "6714 Kingston Rd, Toronto",
       "lat": 43.79747,
       "lon": -79.1488,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "52762-280748",
@@ -1376,7 +1401,7 @@
       "address": "23 Leslie Street, Toronto",
       "lat": 43.65958,
       "lon": -79.3283,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "16896-163444",
@@ -1486,7 +1511,7 @@
       "address": "2295 Sheppard Avenue West, Toronto",
       "lat": 43.73455,
       "lon": -79.53369,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "17220-168432",
@@ -1544,17 +1569,6 @@
       "drive_thru": false
     },
     {
-      "id": "4300-884",
-      "name": "Yonge & King",
-      "street": "4 King St W",
-      "city": "Toronto",
-      "region": "Toronto",
-      "address": "4 King St W, Toronto",
-      "lat": 43.64924,
-      "lon": -79.37813,
-      "drive_thru": false
-    },
-    {
       "id": "17922-307536",
       "name": "Yorkdale Cafe",
       "street": "3401 Dufferin St",
@@ -1574,7 +1588,7 @@
       "address": "12550 Hwy 50, Bolton",
       "lat": 43.85868,
       "lon": -79.70996,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "55133-288878",
@@ -1585,7 +1599,7 @@
       "address": "10 Earlsbridge Blvd, Brampton",
       "lat": 43.70243,
       "lon": -79.8292,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "19572-200494",
@@ -1607,7 +1621,7 @@
       "address": "190 Queen Street East, Brampton",
       "lat": 43.69373,
       "lon": -79.75211,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "50289-273864",
@@ -1618,7 +1632,7 @@
       "address": "3995 Cottrelle Blvd, Brampton",
       "lat": 43.78432,
       "lon": -79.65881,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "23274-210524",
@@ -1629,7 +1643,7 @@
       "address": "65 Dusk Drive, Brampton",
       "lat": 43.6558,
       "lon": -79.76786,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "18196-186624",
@@ -1640,7 +1654,7 @@
       "address": "80 Resolution Dr, Brampton",
       "lat": 43.67726,
       "lon": -79.72143,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4344-1729",
@@ -1673,7 +1687,7 @@
       "address": "5 Beaumaris Drive, Brampton",
       "lat": 43.76475,
       "lon": -79.66037,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "74035-304249",
@@ -1684,7 +1698,7 @@
       "address": "15 Sandalwood Pky W, Brampton",
       "lat": 43.71631,
       "lon": -79.80383,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "23283-228465",
@@ -1695,7 +1709,7 @@
       "address": "1016 Eglinton Avenue East, Mississauga",
       "lat": 43.62751,
       "lon": -79.62932,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4387-23529",
@@ -1750,7 +1764,7 @@
       "address": "2963 Argentia Rd., Mississauga",
       "lat": 43.59828,
       "lon": -79.78361,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "23275-225064",
@@ -1761,7 +1775,7 @@
       "address": "30 World Drive, Mississauga",
       "lat": 43.63356,
       "lon": -79.68714,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "16201-140064",
@@ -1783,7 +1797,7 @@
       "address": "3235 Dundas Street West, Mississauga",
       "lat": 43.51829,
       "lon": -79.68719,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "61580-296055",
@@ -1794,7 +1808,7 @@
       "address": "334 Dundas St E, Mississauga",
       "lat": 43.5871,
       "lon": -79.60789,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "61699-296119",
@@ -1805,7 +1819,7 @@
       "address": "362 Lakeshore Rd E, Mississauga",
       "lat": 43.56322,
       "lon": -79.57279,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "20687-181584",
@@ -1827,7 +1841,7 @@
       "address": "5029 Hurontario St, Mississauga",
       "lat": 43.60757,
       "lon": -79.65318,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4657-100002",
@@ -1838,7 +1852,7 @@
       "address": "5067 Dixie Rd, Mississauga",
       "lat": 43.63689,
       "lon": -79.62106,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "69769-304659",
@@ -1849,7 +1863,7 @@
       "address": "6155 Erin Mills Parkway, Mississauga",
       "lat": 43.58133,
       "lon": -79.73654,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "16144-164684",
@@ -1904,7 +1918,7 @@
       "address": "129 Pedersen Drive, Aurora",
       "lat": 44.01841,
       "lon": -79.44743,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "64790-292813",
@@ -1915,7 +1929,7 @@
       "address": "10 Melvin Robson Ave, Aurora",
       "lat": 44.03068,
       "lon": -79.4226,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "60968-295300",
@@ -1926,7 +1940,7 @@
       "address": "14980 Yonge St, Aurora",
       "lat": 43.99298,
       "lon": -79.46636,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "54361-279904",
@@ -1937,7 +1951,7 @@
       "address": "10 Spring Hill Dr, King City",
       "lat": 43.93249,
       "lon": -79.51031,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4951-128928",
@@ -1948,7 +1962,7 @@
       "address": "70 Copper Creek Drive Building H,, Markham",
       "lat": 43.86633,
       "lon": -79.22908,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4580-96128",
@@ -1970,7 +1984,7 @@
       "address": "27 Harry Walker Pky S, Newmarket",
       "lat": 44.06689,
       "lon": -79.4258,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4916-124147",
@@ -1981,7 +1995,7 @@
       "address": "17130 Leslie Street Building A - Unit A, Newmarket",
       "lat": 44.05643,
       "lon": -79.43006,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "54658-288386",
@@ -1992,7 +2006,7 @@
       "address": "17285 Leslie Street, Newmarket",
       "lat": 44.06056,
       "lon": -79.43017,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4764-275526",
@@ -2014,7 +2028,7 @@
       "address": "5771 Main Street, Stouffville",
       "lat": 43.96652,
       "lon": -79.26445,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4938-124144",
@@ -2025,7 +2039,7 @@
       "address": "20 Innovation Drive, Vaughan",
       "lat": 43.7886,
       "lon": -79.62592,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4743-103298",
@@ -2039,17 +2053,6 @@
       "drive_thru": false
     },
     {
-      "id": "4982-105180",
-      "name": "Dufferin & Major Mackenzie",
-      "street": "1420 Major Mackenzie Dr",
-      "city": "Vaughan",
-      "region": "York Region",
-      "address": "1420 Major Mackenzie Dr, Vaughan",
-      "lat": 43.86219,
-      "lon": -79.48513,
-      "drive_thru": true
-    },
-    {
       "id": "4732-104193",
       "name": "Vaughan Mills Drive Thru",
       "street": "3175 Rutherford Road",
@@ -2058,7 +2061,7 @@
       "address": "3175 Rutherford Road, Vaughan",
       "lat": 43.82929,
       "lon": -79.53688,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4791-104690",
@@ -2091,7 +2094,7 @@
       "address": "1860 Appleby Line, Burlington",
       "lat": 43.39108,
       "lon": -79.78833,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4678-100978",
@@ -2102,7 +2105,7 @@
       "address": "2500 Appleby Line, Burlington",
       "lat": 43.40549,
       "lon": -79.80809,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "19770-183025",
@@ -2124,7 +2127,7 @@
       "address": "3497 Fairview Street, Burlington",
       "lat": 43.35884,
       "lon": -79.78134,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4709-103125",
@@ -2146,7 +2149,7 @@
       "address": "675 Appleby Line, Burlington",
       "lat": 43.37332,
       "lon": -79.76111,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4494-93178",
@@ -2168,7 +2171,7 @@
       "address": "901 Brant St, Burlington",
       "lat": 43.33687,
       "lon": -79.8132,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "52984-283789",
@@ -2190,7 +2193,7 @@
       "address": "20 Market Drive, Milton",
       "lat": 43.52315,
       "lon": -79.89937,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4912-108636",
@@ -2201,7 +2204,7 @@
       "address": "51 James Snow Parkway, Milton",
       "lat": 43.53915,
       "lon": -79.85667,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "58591-291969",
@@ -2212,7 +2215,7 @@
       "address": "6030 Main Street W, Milton",
       "lat": 43.49556,
       "lon": -79.89631,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4833-107475",
@@ -2223,7 +2226,7 @@
       "address": "870 Main St E, Milton",
       "lat": 43.52726,
       "lon": -79.86615,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "57459-290857",
@@ -2245,7 +2248,7 @@
       "address": "2027 Winston Park Dr, Oakville",
       "lat": 43.5112,
       "lon": -79.66829,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "62699-297195",
@@ -2256,7 +2259,7 @@
       "address": "2055 Cornwall Rd, Oakville",
       "lat": 43.48114,
       "lon": -79.6569,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4258-286587",
@@ -2267,7 +2270,7 @@
       "address": "215 North Service Road, Oakville",
       "lat": 43.45089,
       "lon": -79.70291,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4531-94623",
@@ -2289,7 +2292,7 @@
       "address": "2509 Prince Michael Dr., Oakville",
       "lat": 43.49761,
       "lon": -79.70751,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4757-104792",
@@ -2322,7 +2325,7 @@
       "address": "330 Dundas Street East, Oakville",
       "lat": 43.4874,
       "lon": -79.71824,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "17342-314580",
@@ -2344,7 +2347,7 @@
       "address": "5 Rossland Road East, Ajax",
       "lat": 43.88002,
       "lon": -79.02498,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4860-106552",
@@ -2355,7 +2358,7 @@
       "address": "15 Westney Road, Ajax",
       "lat": 43.85879,
       "lon": -79.03786,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "55535-286668",
@@ -2377,7 +2380,7 @@
       "address": "96 King St E, Bowmanville",
       "lat": 43.91173,
       "lon": -78.68618,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "57962-291993",
@@ -2399,7 +2402,7 @@
       "address": "1365 Wilson Rd N, Oshawa",
       "lat": 43.93829,
       "lon": -78.857,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4932-117888",
@@ -2443,7 +2446,7 @@
       "address": "2670 Simcoe Street North, Oshawa",
       "lat": 43.96447,
       "lon": -78.90523,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "57286-290788",
@@ -2454,7 +2457,7 @@
       "address": "1300 Bayly Street, Pickering",
       "lat": 43.82907,
       "lon": -79.08809,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4414-20599",
@@ -2476,7 +2479,7 @@
       "address": "2 Douglas Road, Uxbridge",
       "lat": 44.09141,
       "lon": -79.13238,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "4911-108286",
@@ -2498,7 +2501,7 @@
       "address": "25 Consumers Drive, Whitby",
       "lat": 43.87187,
       "lon": -78.90822,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "84958-314542",
@@ -2509,7 +2512,7 @@
       "address": "4140 Garden St, Whitby",
       "lat": 43.91936,
       "lon": -78.9488,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "16278-161004",
@@ -2520,7 +2523,7 @@
       "address": "80 Thickson Road South, Whitby",
       "lat": 43.88305,
       "lon": -78.91179,
-      "drive_thru": true
+      "drive_thru": false
     },
     {
       "id": "15720-156244",
@@ -2531,7 +2534,7 @@
       "address": "660 Taunton Rd E, Whitby",
       "lat": 43.92215,
       "lon": -78.92912,
-      "drive_thru": true
+      "drive_thru": false
     }
   ],
   "unmatched": [
@@ -2738,212 +2741,196 @@
   ],
   "recent": [
     {
-      "date": "2026-08-30",
-      "store": "Upper level Scarborough Town C",
-      "standalone": true,
-      "region": "Toronto",
+      "date": "2026-10-10",
+      "store": "INDIGO - Hillcrest",
+      "standalone": false,
+      "region": "York Region",
       "items": [
-        "Mango Strawberry Lemonade Refresher",
-        "Mini Pumpkin Pie"
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Green Tea",
+        "Cinnamon Coffee Cake"
       ]
     },
     {
-      "date": "2026-08-30",
-      "store": "1156 Kennedy Road",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Mango Strawberry Lemonade Refresher",
-        "Mini Apple Crumble Pie"
-      ]
-    },
-    {
-      "date": "2026-08-30",
-      "store": "Ellesmere & Midland D/T",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Cool Lime Lemonade Refresher",
-        "Mini Apple Crumble Pie"
-      ]
-    },
-    {
-      "date": "2026-08-30",
-      "store": "43 Milner Avenue Building C",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Mini Pumpkin Pie",
-        "Mini Apple Crumble Pie"
-      ]
-    },
-    {
-      "date": "2026-08-30",
-      "store": "Midland & McNicoll",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Starbucks\u00ae Iced Coffee Blend"
-      ]
-    },
-    {
-      "date": "2026-08-30",
-      "store": "Victoria Park & Consumers Rd.",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Iced Peach Green Tea Lemonade",
-        "Hedgehog Cake Pop"
-      ]
-    },
-    {
-      "date": "2026-08-30",
-      "store": "Victoria Park & Consumers Rd.",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Hot Chocolate"
-      ]
-    },
-    {
-      "date": "2026-08-27",
+      "date": "2026-10-10",
       "store": "Bayview & Romfield",
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Iced Peach Green Tea Lemonade",
-        "Mini Pumpkin Pie",
-        "Mini Apple Crumble Pie"
+        "Iced Caff\u00e8 Americano"
       ]
     },
     {
-      "date": "2026-08-26",
+      "date": "2026-10-08",
       "store": "Bayview & Romfield",
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Iced Peach Green Tea Lemonade",
-        "Hedgehog Cake Pop"
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Caff\u00e8 Americano"
       ]
     },
     {
-      "date": "2026-08-25",
-      "store": "221 Queen Street West",
+      "date": "2026-10-08",
+      "store": "Yonge & King",
       "standalone": true,
       "region": "Toronto",
       "items": [
-        "Iced Espresso",
-        "Banana Loaf",
-        "Cool Lime Lemonade Refresher"
+        "Iced Green Tea"
       ]
     },
     {
-      "date": "2026-08-23",
-      "store": "Spadina & Fort York",
-      "standalone": true,
-      "region": "Toronto",
-      "items": [
-        "Strawberry A\u00e7a\u00ed Lemonade Refresher",
-        "Jalape\u00f1o Chicken Pocket"
-      ]
-    },
-    {
-      "date": "2026-08-23",
+      "date": "2026-10-08",
       "store": "Union XP Go-West York Concours",
       "standalone": true,
       "region": "Toronto",
       "items": [
+        "Iced Caff\u00e8 Americano"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "store": "Yonge & King",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Chocolate Croissant"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "store": "Yonge & King",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
         "Starbucks\u00ae Iced Coffee Blend"
       ]
     },
     {
-      "date": "2026-08-22",
-      "store": "Bayview & Romfield",
+      "date": "2026-10-06",
+      "store": "Yonge & Finch",
       "standalone": true,
-      "region": "York Region",
+      "region": "Toronto",
       "items": [
-        "Tr Green Iced Tea Lemonade",
-        "Iced Green Tea Lemonade"
+        "Iced Green Tea",
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich"
       ]
     },
     {
-      "date": "2026-08-20",
+      "date": "2026-10-05",
       "store": "Bayview & Romfield",
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Tall Iced Coffee",
-        "Tr Lemonade Cool Lime",
+        "Iced Green Tea"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Iced Caff\u00e8 Americano"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Cinnamon Coffee Cake",
+        "Starbucks\u00ae Iced Coffee Blend"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "store": "Yonge & King",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Iced Green Tea"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "store": "Yonge & King",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "store": "Yonge & Finch",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Iced Green Tea",
+        "Sausage, Cheddar & Egg Sandwich"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "store": "Bayview & Romfield",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Rolled Steel-Cut Oatmeal",
+        "Iced Green Tea",
+        "Iced Caff\u00e8 Americano"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "store": "Yonge St & Hwy 7",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
+        "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+        "Cool Lime Lemonade Refresher"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "store": "Yonge & King",
+      "standalone": true,
+      "region": "Toronto",
+      "items": [
+        "Iced Green Tea Lemonade",
+        "Cinnamon Coffee Cake"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "store": "Yonge St & Hwy 7",
+      "standalone": true,
+      "region": "York Region",
+      "items": [
         "Starbucks\u00ae Iced Coffee Blend",
         "Cool Lime Lemonade Refresher"
       ]
     },
     {
-      "date": "2026-08-17",
+      "date": "2026-09-28",
       "store": "Bayview & Romfield",
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Tall Lemonade",
-        "Chicken Jalapeno Pocket Whole",
-        "Lemonade",
-        "Jalape\u00f1o Chicken Pocket"
+        "Iced Caff\u00e8 Americano",
+        "Cool Lime Lemonade Refresher",
+        "Cinnamon Coffee Cake"
       ]
     },
     {
-      "date": "2026-08-16",
+      "date": "2026-09-27",
       "store": "Bayview & Romfield",
       "standalone": true,
       "region": "York Region",
       "items": [
-        "Vt Mango Strbe Lemde",
-        "Croissant Chocolate Can",
-        "Chocolate Croissant",
-        "Mango Strawberry Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-15",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Tl Icd Peach Grn Tea Lemonade",
-        "Cheese Danish 30/cs",
-        "Iced Peach Green Tea Lemonade",
-        "Cheese Danish"
-      ]
-    },
-    {
-      "date": "2026-08-14",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Tall Iced Coffee",
-        "Starbucks\u00ae Iced Coffee Blend"
-      ]
-    },
-    {
-      "date": "2026-08-14",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Tr Lemonade Cool Lime",
-        "Tl Icd Peach Grn Tea Lemonade",
-        "Iced Peach Green Tea Lemonade",
-        "Cool Lime Lemonade Refresher"
-      ]
-    },
-    {
-      "date": "2026-08-10",
-      "store": "Bayview & Romfield",
-      "standalone": true,
-      "region": "York Region",
-      "items": [
-        "Gr Iced Coffee",
-        "Starbucks\u00ae Iced Coffee Blend"
+        "Iced Green Tea Lemonade"
       ]
     }
   ],
@@ -3905,8 +3892,8 @@
         "lat": 43.66805,
         "lon": -79.3885,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "Toronto"
       },
       {
@@ -4121,6 +4108,15 @@
         "lat": 43.67069,
         "lon": -79.38632,
         "standalone": true,
+        "visited": true,
+        "visits": 1,
+        "region": "Toronto"
+      },
+      {
+        "name": "Hyatt Regency Toronto",
+        "lat": 43.64625,
+        "lon": -79.39197,
+        "standalone": false,
         "visited": true,
         "visits": 1,
         "region": "Toronto"
@@ -4365,7 +4361,7 @@
         "lon": -79.38191,
         "standalone": true,
         "visited": true,
-        "visits": 2,
+        "visits": 3,
         "region": "Toronto"
       },
       {
@@ -4410,7 +4406,7 @@
         "lon": -79.41622,
         "standalone": true,
         "visited": true,
-        "visits": 70,
+        "visits": 75,
         "region": "Toronto"
       },
       {
@@ -4418,8 +4414,8 @@
         "lat": 43.64924,
         "lon": -79.37813,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 10,
         "region": "Toronto"
       },
       {
@@ -4545,7 +4541,7 @@
         "lon": -79.40508,
         "standalone": true,
         "visited": true,
-        "visits": 118,
+        "visits": 142,
         "region": "York Region"
       },
       {
@@ -4608,7 +4604,7 @@
         "lon": -79.43523,
         "standalone": false,
         "visited": true,
-        "visits": 12,
+        "visits": 13,
         "region": "York Region"
       },
       {
@@ -4617,7 +4613,7 @@
         "lon": -79.41131,
         "standalone": false,
         "visited": true,
-        "visits": 2,
+        "visits": 3,
         "region": "York Region"
       },
       {
@@ -4626,7 +4622,7 @@
         "lon": -79.45487,
         "standalone": true,
         "visited": true,
-        "visits": 41,
+        "visits": 42,
         "region": "York Region"
       },
       {
@@ -4644,7 +4640,7 @@
         "lon": -79.43027,
         "standalone": true,
         "visited": true,
-        "visits": 14,
+        "visits": 23,
         "region": "York Region"
       },
       {
@@ -4697,8 +4693,8 @@
         "lat": 43.86219,
         "lon": -79.48513,
         "standalone": true,
-        "visited": false,
-        "visits": 0,
+        "visited": true,
+        "visits": 1,
         "region": "York Region"
       },
       {
