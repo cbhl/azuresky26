@@ -24,8 +24,10 @@ To expose the dev server on all interfaces (useful in the cloud VM): `zola serve
 ### Non-obvious notes
 
 - The config file is named `zola.toml`, not the Zola default `config.toml`. **Zola >= 0.22 reads `zola.toml` natively**, so plain `zola serve` / `zola build` / `zola check` work. On older Zola versions you would need to pass `--config zola.toml`.
-- For production deployments, tell the human to run `./deploy.sh` rather than attempting deployment directly. The script builds the site and uses SFTP, which requires password-interactive authentication. Do not run it for local testing.
+- For production deployments, tell the human to run `./deploy.sh` rather than attempting deployment directly. The script runs `zola build` and then `rsync`s `public/` to NearlyFreeSpeech over SSH (`ssh.nyc1.nearlyfreespeech.net`), which authenticates with an SSH key authorized on NearlyFreeSpeech when the machine has one set up, and otherwise falls back to an interactive password prompt. The host key must also be accepted once interactively. Not every machine working in this repo has a key, so expect the password prompt. Do not run it for local testing.
 - `themes/` is intentionally empty (no external theme dependency).
+- Playwright is not a project dependency (there is no `package.json`); `npx playwright` fetches the latest release on demand. Each release needs its matching browser build, so on a fresh machine, or after `npx` picks up a new Playwright version, run `npx playwright install chromium` once (about 100 MB, cached outside the repo, e.g. `~/Library/Caches/ms-playwright` on macOS). Without it, `npx playwright screenshot` prints only a banner and writes no image.
+- `screenshots/` is gitignored; screenshots are local artifacts and are not committed.
 
 ### Styling
 
