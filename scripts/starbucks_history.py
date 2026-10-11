@@ -31,7 +31,12 @@ def stable_id(*values: object) -> str:
 
 
 def api_time(value: str) -> tuple[str, str]:
-    instant = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    # Python < 3.11 only parses 3- or 6-digit fractional seconds; the API
+    # emits 7 (.NET ticks), so normalise to microseconds.
+    text = re.sub(
+        r"\.(\d+)", lambda m: "." + m.group(1)[:6].ljust(6, "0"), value
+    ).replace("Z", "+00:00")
+    instant = datetime.fromisoformat(text)
     local = instant.astimezone(TORONTO)
     return local.replace(microsecond=0).strftime("%Y-%m-%d %H:%M:%S"), local.date().isoformat()
 

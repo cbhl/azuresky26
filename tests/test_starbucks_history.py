@@ -6,10 +6,16 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
 
-from starbucks_history import _merge, _report_groups, api_visits, merge_history, parse_report
+from starbucks_history import _merge, _report_groups, api_time, api_visits, merge_history, parse_report
 
 
 class StarbucksHistoryTests(unittest.TestCase):
+    def test_api_time_accepts_seven_digit_fractional_seconds(self):
+        self.assertEqual(
+            api_time("2026-10-10T21:05:32.6401968Z"),
+            ("2026-10-10 17:05:32", "2026-10-10"),
+        )
+
     def test_report_groups_flush_rows_at_boundaries(self):
         observations = [
             {"kind": "purchase_item", "occurred_at": "2026-01-01 10:00:00", "store_key": "one"},

@@ -5,6 +5,7 @@
 | [`flighty_import.py`](flighty_import.py) | Flighty CSV → `data/flights.json` + map SVG |
 | [`render_travel_map.py`](render_travel_map.py) | `data/flights.json` → `static/images/travel-map.svg` (also called by import) |
 | [`starbucks_fetch.py`](starbucks_fetch.py) | Live session → `data/starbucks/all-items.json` + `receipts.json` (incremental) |
+| [`starbucks_browser_fetch.py`](starbucks_browser_fetch.py) | Cookie-free alternative to `starbucks_fetch.py`: browser-use + Bitwarden drive starbucks.ca, record the page's own history/receipt responses, and merge only new activity into `history.json` |
 | [`starbucks_import.py`](starbucks_import.py) | `data/starbucks/receipts.json` + `all-items.json` + `stores-gta.json` → `starbucks.json` |
 | [`fetch_starbucks_basemap.py`](fetch_starbucks_basemap.py) | Overpass OSM → `data/starbucks/basemap.json` (roads, water, labels; rare refresh) |
 | [`render_starbucks_map.py`](render_starbucks_map.py) | `starbucks.json` + basemap → `static/images/starbucks-map.svg` |
@@ -64,6 +65,34 @@ rg -n 'source_observation_ids|historyId|visit_id' data/starbucks/starbucks.json 
 The verification command should produce no matches. Receipt fetches are
 incremental: already-saved `historyId`s in `receipts.json` are skipped on later
 runs.
+
+### Browser-driven refresh (no copied cookie)
+
+`scripts/starbucks_browser_fetch.py` replaces the cookie step above. It uses
+[browser-use](https://docs.browser-use.com) to open a Browser Use Cloud
+browser, signs in with the Bitwarden CLI (item `com.starbucks.mobilecard` by
+default, `--bw-item` to change), opens `/account/history`, clicks "Show more
+activity" and each "View receipt", and records the JSON responses the page
+itself requests. The session cookie never leaves the browser.
+
+One-time setup: `uv tool install browser-use`, `browser-use skill install
+--target claude` (and `--target opencode`), `browser-use auth login
+--api-key-stdin` with `BROWSER_USE_API_KEY`, and an unlocked Bitwarden vault
+(`BW_SESSION` exported).
+
+```bash
+python3 scripts/starbucks_browser_fetch.py --start-browser --stop-browser
+python3 scripts/starbucks_import.py
+python3 scripts/render_starbucks_map.py
+zola check
+zola build
+```
+
+It is incremental: only activity newer than the ledger's latest visit (one-day
+overlap) is paged and only those receipts are opened. Use `--full` to re-pull
+everything and `--name NAME` to reuse an already-running daemon. A cloud
+browser bills until stopped, so use `--stop-browser` (or stop it yourself).
+Sign-in stops with an error if Starbucks asks for MFA or a captcha.
 
 Basemap (roads/water/labels) is committed as `data/starbucks/basemap.json`.
 Refresh rarely:
