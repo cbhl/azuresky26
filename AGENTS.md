@@ -44,4 +44,10 @@ When finishing any work in the repository, including work that is not being comm
 
 If nothing renderable changed, screenshot the home page (`/`) as a fallback so the work still includes a visual check.
 
-For commit-specific guidance, see [`skills/commit-work.md`](skills/commit-work.md).
+## Commits
+
+When committing, follow all of these:
+
+- [`skills/commit-work.md`](skills/commit-work.md): staging, splitting, and Conventional Commits format.
+- [`skills/cl-descriptions.md`](skills/cl-descriptions.md): write the first line as a short imperative summary and use the body for what and why.
+- [`skills/small-cls.md`](skills/small-cls.md): keep each commit one self-contained change, and put refactors in separate commits from fixes or features.
