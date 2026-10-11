@@ -22,6 +22,7 @@ from datetime import date
 from difflib import SequenceMatcher
 from pathlib import Path
 
+from starbucks_caffeine import build_caffeine
 from starbucks_history import merge_history
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -473,7 +474,20 @@ def main() -> int:
     )
     args = parser.parse_args()
 
+    history_ledger = json.loads(args.history.read_text()) if args.history.exists() else {}
+    has_ledger_visits = isinstance(history_ledger, dict) and bool(history_ledger.get("visits"))
+    # A full rebuild needs the raw (gitignored) receipts and locator data. On a
+    # machine without them, refresh only the ledger-derived `caffeine` block of
+    # the committed output in place and leave every other field untouched.
     if not args.input.exists():
+        if has_ledger_visits and args.output.exists():
+            payload = json.loads(args.output.read_text())
+            payload["caffeine"] = build_caffeine(history_ledger["visits"])
+            args.output.write_text(json.dumps(payload, indent=2) + "\n")
+            print(
+                f"receipts not found ({args.input}); updated caffeine in place in {args.output}"
+            )
+            return 0
         print(f"error: receipts not found: {args.input}", file=sys.stderr)
         return 1
     if not args.catalog.exists():
@@ -503,9 +517,8 @@ def main() -> int:
         all_items = json.loads(args.all_items.read_text())
         history_count = len(all_items) if isinstance(all_items, list) else 0
 
-    history_ledger = json.loads(args.history.read_text()) if args.history.exists() else {}
     history = history_ledger.get("stars", []) if isinstance(history_ledger, dict) else []
-    if isinstance(history_ledger, dict) and history_ledger.get("visits"):
+    if has_ledger_visits:
         receipts = [
             {
                 # Canonical local_date is authoritative for calendar metrics;
@@ -536,6 +549,9 @@ def main() -> int:
     # receipt_count is the number of source-independent canonical visits, not
     # the number of API receipts or report lines.
     payload["receipt_count"] = payload["visit_count"]
+
+    if has_ledger_visits:
+        payload["caffeine"] = build_caffeine(history_ledger["visits"])
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2) + "\n")

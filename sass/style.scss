@@ -511,6 +511,7 @@ code .il {
 .travel-stats h2,
 .travel-map-section h2,
 .starbucks-activity h2,
+.starbucks-caffeine h2,
 .travel-recent h2,
 .travel-posts h2 {
   font-size: 1.25rem;
@@ -793,6 +794,54 @@ code .il {
 .starbucks-activity-legend i[data-level="2"] { background: var(--activity-2); }
 .starbucks-activity-legend i[data-level="3"] { background: var(--activity-3); }
 .starbucks-activity-legend i[data-level="4"] { background: var(--activity-4); }
+
+.starbucks-caffeine {
+  --caffeine-grid: rgba(255, 255, 255, 0.18);
+  --caffeine-bar: #b9783a;
+  --caffeine-line: #ffd08a;
+}
+
+@media (prefers-color-scheme: light) {
+  .starbucks-caffeine {
+    --caffeine-grid: rgba(0, 0, 0, 0.15);
+    --caffeine-bar: #d2a574;
+    --caffeine-line: #5a3410;
+  }
+}
+
+.starbucks-chart {
+  margin: 0 0 1.25em;
+}
+
+.starbucks-chart figcaption {
+  font-size: 0.9rem;
+  margin-bottom: 0.25em;
+}
+
+.starbucks-chart-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.starbucks-chart-grid {
+  stroke: var(--caffeine-grid);
+  stroke-width: 1;
+}
+
+.starbucks-chart-text {
+  fill: currentColor;
+  font-size: 11px;
+  opacity: 0.75;
+}
+
+.starbucks-chart-bar {
+  fill: var(--caffeine-bar);
+}
+
+.starbucks-chart-bar:hover {
+  fill: var(--caffeine-line);
+}
 
 .starbucks-map {
   max-width: 100%;

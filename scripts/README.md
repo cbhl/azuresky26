@@ -7,10 +7,13 @@
 | [`starbucks_fetch.py`](starbucks_fetch.py) | Live session → `data/starbucks/all-items.json` + `receipts.json` (incremental) |
 | [`starbucks_browser_fetch.py`](starbucks_browser_fetch.py) | Cookie-free alternative to `starbucks_fetch.py`: browser-use + Bitwarden drive starbucks.ca, record the page's own history/receipt responses, and merge only new activity into `history.json` |
 | [`starbucks_import.py`](starbucks_import.py) | `data/starbucks/receipts.json` + `all-items.json` + `stores-gta.json` → `starbucks.json` |
+| [`starbucks_caffeine.py`](starbucks_caffeine.py) | Ledger visits → daily and hour-of-day caffeine estimate (`caffeine` block in `starbucks.json`; called by import). Edit its `RULES`/`TABLES` to change the estimate |
 | [`fetch_starbucks_basemap.py`](fetch_starbucks_basemap.py) | Overpass OSM → `data/starbucks/basemap.json` (roads, water, labels; rare refresh) |
 | [`render_starbucks_map.py`](render_starbucks_map.py) | `starbucks.json` + basemap → `static/images/starbucks-map.svg` |
 
 Data flow for Starbucks: receipts + locator stores → `starbucks_import.py` → `starbucks.json` (+ `to_visit` list) → `render_starbucks_map.py` → SVG. Map shows all standalone stores plus visited non-standalone (blue). Remaining count links to `/starbucks/to-visit/`.
+
+`starbucks_import.py` does a full rebuild when the raw `receipts.json` is present. Without it (it is gitignored), the script refreshes only the ledger-derived `caffeine` block of the committed `starbucks.json` in place and leaves every other field as committed, so the caffeine estimate can be updated on a machine that lacks the full data.
 
 ## Travel section
 

@@ -13,6 +13,7 @@
     <div><dt>Visited</dt><dd>{{ stats.standalone.visited }} / {{ stats.standalone.total }}</dd></div>
     <div><dt>To visit</dt><dd>{% if stats.standalone.remaining > 0 %}<a href="/starbucks/to-visit/">{{ stats.standalone.remaining }}</a>{% else %}{{ stats.standalone.remaining }}{% endif %}</dd></div>
     {% if stats.stars %}<div><dt>Stars earned</dt><dd>{{ stats.stars.earned }}</dd></div><div><dt>Stars redeemed</dt><dd>{{ stats.stars.redeemed }}</dd></div>{% endif %}
+    {% if stats.caffeine and stats.caffeine.visit_days %}<div><dt>Avg caffeine per visit day</dt><dd>{{ stats.caffeine.avg_mg_per_visit_day }} mg</dd></div>{% endif %}
   </dl>
   {% if stats.top_items or stats.top_stores %}
   <div class="travel-tops starbucks-tops">
@@ -52,6 +53,21 @@
     <div class="starbucks-activity-months"><span></span><div class="starbucks-activity-month-labels"></div></div>
   </div>
   <div class="starbucks-activity-legend" aria-hidden="true"><span>Less</span><i data-level="0"></i><i data-level="1"></i><i data-level="2"></i><i data-level="3"></i><i data-level="4"></i><span>More</span></div>
+</section>
+{% endif %}
+
+{% if stats.caffeine and stats.caffeine.days %}
+<section class="starbucks-caffeine" aria-label="Estimated caffeine from Starbucks orders" data-caffeine='{{ stats.caffeine | json_encode() | safe }}'>
+  <h2>Estimated caffeine intake</h2>
+  <p class="travel-empty">Estimated from the coffees, teas, and refreshers I ordered, using the size when it's available. <span id="starbucks-caffeine-summary"></span></p>
+  <figure class="starbucks-chart">
+    <figcaption>Total caffeine per week</figcaption>
+    <svg class="starbucks-chart-svg" id="starbucks-caffeine-weekly" role="img" aria-label="Bar chart of total estimated caffeine in milligrams for each week from January 2022"></svg>
+  </figure>
+  <figure class="starbucks-chart">
+    <figcaption id="starbucks-caffeine-hourly-caption">Total caffeine by hour of day</figcaption>
+    <svg class="starbucks-chart-svg" id="starbucks-caffeine-hourly" role="img" aria-label="Bar chart of total estimated caffeine in milligrams by local hour of day over the past 365 days"></svg>
+  </figure>
 </section>
 {% endif %}
 
@@ -149,6 +165,165 @@
       });
       block.appendChild(rows);
       root.appendChild(block);
+    });
+  }());
+</script>
+{% endif %}
+{% if stats.caffeine and stats.caffeine.days %}
+<script>
+  (function () {
+    var root = document.querySelector(".starbucks-caffeine");
+    if (!root) return;
+    var data = JSON.parse(root.dataset.caffeine);
+    var NS = "http://www.w3.org/2000/svg";
+    var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var DAY_MS = 86400000;
+
+    function parseDay(day) {
+      return Date.UTC(Number(day.slice(0, 4)), Number(day.slice(5, 7)) - 1, Number(day.slice(8, 10)));
+    }
+    function formatDay(day) {
+      var d = new Date(parseDay(day));
+      return MONTHS[d.getUTCMonth()] + " " + d.getUTCDate() + ", " + d.getUTCFullYear();
+    }
+    function formatMg(mg) {
+      return Math.round(mg).toLocaleString("en-US") + " mg";
+    }
+    function formatHour(hour, short) {
+      var suffix = hour < 12 ? "a" : "p";
+      var h = hour % 12 === 0 ? 12 : hour % 12;
+      return short ? h + suffix : h + (hour < 12 ? " AM" : " PM");
+    }
+    function el(tag, attrs, parent) {
+      var node = document.createElementNS(NS, tag);
+      Object.keys(attrs || {}).forEach(function (key) { node.setAttribute(key, attrs[key]); });
+      if (parent) parent.appendChild(node);
+      return node;
+    }
+    function text(parent, x, y, anchor, content, cls) {
+      var node = el("text", { x: x, y: y, "text-anchor": anchor, class: cls || "starbucks-chart-text" }, parent);
+      node.textContent = content;
+      return node;
+    }
+    function niceStep(max, ticks) {
+      var raw = Math.max(max, 1) / ticks;
+      var magnitude = Math.pow(10, Math.floor(Math.log(raw) / Math.LN10));
+      var n = raw / magnitude;
+      return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 5 ? 5 : 10) * magnitude;
+    }
+    function prepare(svg, height, margin) {
+      while (svg.firstChild) svg.removeChild(svg.firstChild);
+      var width = Math.max(svg.parentNode.clientWidth, 260);
+      svg.setAttribute("viewBox", "0 0 " + width + " " + height);
+      return { width: width, height: height, plotW: width - margin.l - margin.r, plotH: height - margin.t - margin.b };
+    }
+    function yAxis(svg, margin, size, max) {
+      var step = niceStep(max, 4);
+      var top = Math.ceil(max / step) * step;
+      for (var v = 0; v <= top; v += step) {
+        var y = margin.t + size.plotH - (v / top) * size.plotH;
+        el("line", { x1: margin.l, x2: margin.l + size.plotW, y1: y, y2: y, class: "starbucks-chart-grid" }, svg);
+        text(svg, margin.l - 6, y + 4, "end", v.toLocaleString("en-US"));
+      }
+      var title = text(svg, 0, 0, "middle", "mg of caffeine");
+      title.setAttribute("transform", "translate(12 " + (margin.t + size.plotH / 2) + ") rotate(-90)");
+      return top;
+    }
+
+
+    var days = [];
+    var firstMs = parseDay(data.first_day);
+    var lastMs = parseDay(data.last_day);
+    for (var ms = firstMs; ms <= lastMs; ms += DAY_MS) {
+      var key = new Date(ms).toISOString().slice(0, 10);
+      days.push({ date: key, ms: ms, mg: data.days[key] || 0 });
+    }
+
+    // One bar per week (Sunday to Saturday, like the calendar above).
+    var weekStartMs = parseDay(data.weekly.start);
+    var weeks = data.weekly.mg.map(function (mg, i) {
+      return { ms: weekStartMs + i * 7 * DAY_MS, mg: mg };
+    });
+
+    function drawWeekly() {
+      var svg = document.getElementById("starbucks-caffeine-weekly");
+      var margin = { l: 52, r: 8, t: 8, b: 22 };
+      var size = prepare(svg, 220, margin);
+      var max = weeks.reduce(function (m, week) { return Math.max(m, week.mg); }, 0);
+      var top = yAxis(svg, margin, size, max);
+      var slot = size.plotW / weeks.length;
+      var baseline = margin.t + size.plotH;
+
+      var firstYear = new Date(firstMs).getUTCFullYear();
+      var lastYear = new Date(lastMs).getUTCFullYear();
+      for (var year = firstYear; year <= lastYear; year += 1) {
+        var x = margin.l + Math.max(0, (Date.UTC(year, 0, 1) - weekStartMs) / (7 * DAY_MS)) * slot;
+        if (year > firstYear) {
+          el("line", { x1: x, x2: x, y1: margin.t, y2: baseline + 4, class: "starbucks-chart-grid" }, svg);
+        }
+        text(svg, x + 3, baseline + 16, "start", String(year));
+      }
+
+      weeks.forEach(function (week, i) {
+        if (!week.mg) return;
+        var h = (week.mg / top) * size.plotH;
+        var bar = el("rect", {
+          x: (margin.l + i * slot + slot * 0.1).toFixed(2), y: (baseline - h).toFixed(2),
+          width: Math.max(slot * 0.8, 0.8).toFixed(2), height: h.toFixed(2), class: "starbucks-chart-bar"
+        }, svg);
+        el("title", {}, bar).textContent = "Week of " + formatDay(new Date(week.ms).toISOString().slice(0, 10)) + ": " +
+          formatMg(week.mg);
+      });
+    }
+
+    // Evenly spaced bars with a label under some of them.
+    function drawBars(id, values, barLabel, tickLabel, labelEvery) {
+      var svg = document.getElementById(id);
+      var margin = { l: 52, r: 8, t: 8, b: 22 };
+      var size = prepare(svg, 200, margin);
+      var top = yAxis(svg, margin, size, Math.max.apply(null, values));
+      var slot = size.plotW / values.length;
+      var baseline = margin.t + size.plotH;
+      values.forEach(function (mg, i) {
+        var h = (mg / top) * size.plotH;
+        var bar = el("rect", {
+          x: (margin.l + i * slot + slot * 0.1).toFixed(2), y: (baseline - h).toFixed(2),
+          width: (slot * 0.8).toFixed(2), height: h.toFixed(2), class: "starbucks-chart-bar"
+        }, svg);
+        el("title", {}, bar).textContent = barLabel(i) + ": " + formatMg(mg);
+        if (i % labelEvery === 0) {
+          text(svg, margin.l + i * slot + slot / 2, baseline + 16, "middle", tickLabel(i));
+        }
+      });
+    }
+
+    function drawHourly() {
+      drawBars("starbucks-caffeine-hourly", data.hourly.mg_by_hour,
+        function (hour) { return formatHour(hour) + " hour"; },
+        function (hour) { return formatHour(hour, true); }, 3);
+    }
+
+    function summarize() {
+      var summary = document.getElementById("starbucks-caffeine-summary");
+      var totals = days.filter(function (day) { return day.mg > 0; });
+      var sorted = totals.map(function (day) { return day.mg; }).sort(function (a, b) { return a - b; });
+      var median = sorted[Math.floor(sorted.length / 2)];
+      summary.textContent = "On days with an order I typically had around " + formatMg(median) + ".";
+      document.getElementById("starbucks-caffeine-hourly-caption").textContent =
+        "Total caffeine by hour of day, " + formatDay(data.hourly.start) + " to " + formatDay(data.hourly.end) +
+        " (local time of purchase)";
+    }
+
+    function draw() {
+      drawWeekly();
+      drawHourly();
+    }
+    summarize();
+    draw();
+    var pending = null;
+    window.addEventListener("resize", function () {
+      if (pending) cancelAnimationFrame(pending);
+      pending = requestAnimationFrame(draw);
     });
   }());
 </script>
