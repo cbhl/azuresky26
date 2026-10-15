@@ -1,5 +1,6 @@
 public/
-screenshots/
+/screenshots/*
+!/screenshots/.gitkeep
 .DS_Store
 Thumbs.db
 
