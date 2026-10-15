@@ -35,6 +35,26 @@ template = "resume.html"
 
 <div class="columns-3">
 <div class="text-left">
+<b>Senior Software Engineer</b>
+<br>
+<p>Content Platforms team</p>
+</div>
+<div class="text-center">
+<b><a href="https://tubitv.com/">Tubi</a></b>
+<br>
+<p>Toronto, ON, Canada</p>
+</div>
+<div class="text-right">
+<b>Sept 2026 &ndash; Present</b>
+</div>
+</div>
+
+* Details available upon request
+
+<br>
+
+<div class="columns-3">
+<div class="text-left">
 <b>Backend Lead</b>
 <br>
 <p>Backend team</p>
@@ -45,7 +65,7 @@ template = "resume.html"
 <p>Toronto, ON, Canada</p>
 </div>
 <div class="text-right">
-<b>Sept 2025 &ndash; Present</b>
+<b>Sept 2025 &ndash; Jun 2026</b>
 </div>
 </div>
 
