@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-07-13",
+  "generated_at": "2026-11-01",
   "stats": {
-    "flights": 189,
+    "flights": 191,
     "airports": 44,
     "countries": 8,
-    "miles": 304106,
+    "miles": 308614,
     "top_routes": [
       {
         "route": "YYZ-SFO",
-        "count": 27
+        "count": 28
       },
       {
         "route": "SFO-YYZ",
-        "count": 19
+        "count": 20
       },
       {
         "route": "SFO-LAX",
@@ -30,11 +30,11 @@
     "top_airports": [
       {
         "airport": "SFO",
-        "count": 139
+        "count": 141
       },
       {
         "airport": "YYZ",
-        "count": 67
+        "count": 69
       },
       {
         "airport": "LAX",
@@ -363,6 +363,22 @@
     ],
     "routes": [
       {
+        "from": "SFO",
+        "to": "YYZ",
+        "lat1": 37.6189994812,
+        "lon1": -122.375,
+        "lat2": 43.6772003174,
+        "lon2": -79.6305999756
+      },
+      {
+        "from": "YYZ",
+        "to": "SFO",
+        "lat1": 43.6772003174,
+        "lon1": -79.6305999756,
+        "lat2": 37.6189994812,
+        "lon2": -122.375
+      },
+      {
         "from": "SJC",
         "to": "ORD",
         "lat1": 37.3625984192,
@@ -393,22 +409,6 @@
         "lon1": -104.672996521,
         "lat2": 37.3625984192,
         "lon2": -121.9290008545
-      },
-      {
-        "from": "SFO",
-        "to": "YYZ",
-        "lat1": 37.6189994812,
-        "lon1": -122.375,
-        "lat2": 43.6772003174,
-        "lon2": -79.6305999756
-      },
-      {
-        "from": "YYZ",
-        "to": "SFO",
-        "lat1": 43.6772003174,
-        "lon1": -79.6305999756,
-        "lat2": 37.6189994812,
-        "lon2": -122.375
       },
       {
         "from": "SFO",
@@ -1102,6 +1102,22 @@
   },
   "recent": [
     {
+      "date": "2026-10-30",
+      "airline": "POE",
+      "flight": "672",
+      "from": "SFO",
+      "to": "YYZ",
+      "aircraft": "Embraer 195 E2"
+    },
+    {
+      "date": "2026-10-25",
+      "airline": "POE",
+      "flight": "671",
+      "from": "YYZ",
+      "to": "SFO",
+      "aircraft": "Embraer 195 E2"
+    },
+    {
       "date": "2026-04-05",
       "airline": "UAL",
       "flight": "1317",
@@ -1244,22 +1260,6 @@
       "from": "SFO",
       "to": "YYZ",
       "aircraft": "Embraer 195 E2"
-    },
-    {
-      "date": "2024-12-31",
-      "airline": "ACA",
-      "flight": "741",
-      "from": "YYZ",
-      "to": "SFO",
-      "aircraft": "Airbus A220-300"
-    },
-    {
-      "date": "2024-12-20",
-      "airline": "UAL",
-      "flight": "404",
-      "from": "SFO",
-      "to": "PSP",
-      "aircraft": "Airbus A319"
     }
   ]
 }
