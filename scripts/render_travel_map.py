@@ -37,6 +37,29 @@ AIRPORT_FILL = "#0070e0"
 AIRPORT_STROKE = "#004080"
 GRATICULE = "rgba(0,0,0,0.08)"
 
+# Dark palette, applied via an embedded <style> block (see the Styling note in
+# AGENTS.md: standalone SVGs must carry matching dark-mode styles). This block
+# was originally added to the generated SVG by hand in 471d439 and was lost
+# whenever the map was regenerated, so the renderer now emits it itself.
+DARK_OCEAN = "#111820"
+DARK_LAND_FILL = "#202b33"
+DARK_COAST_STROKE = "#61717e"
+DARK_GRATICULE = "rgba(255,255,255,0.12)"
+DARK_ROUTE_STROKE = "#55b8ff"
+DARK_AIRPORT_FILL = "#55b8ff"
+DARK_AIRPORT_STROKE = "#b9e3ff"
+
+DARK_STYLE = f"""  <style>
+    @media (prefers-color-scheme: dark) {{
+      rect[fill="{OCEAN}"] {{ fill: {DARK_OCEAN}; }}
+      g[fill="{LAND_FILL}"] {{ fill: {DARK_LAND_FILL}; }}
+      g[stroke="{COAST_STROKE}"] {{ stroke: {DARK_COAST_STROKE}; }}
+      g[stroke="{GRATICULE}"] {{ stroke: {DARK_GRATICULE}; }}
+      g[stroke="{ROUTE_STROKE}"] {{ stroke: {DARK_ROUTE_STROKE}; }}
+      circle[fill="{AIRPORT_FILL}"] {{ fill: {DARK_AIRPORT_FILL}; stroke: {DARK_AIRPORT_STROKE}; }}
+    }}
+  </style>"""
+
 
 def normalize_lon(lon: float) -> float:
     return ((lon + 180) % 360) - 180
@@ -305,6 +328,7 @@ def render_travel_map(map_data: dict, output_path: Path) -> bool:
         )
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" role="img" aria-label="Great-circle flight routes on a Web Mercator world map">
+{DARK_STYLE}
   <rect width="100%" height="100%" fill="{OCEAN}"/>
   {land_layer}
   {coast_layer}
