@@ -30,6 +30,10 @@ United States</pre>
 
 </div>
 
+<h2>Off the clock</h2>
+
+<p>If I’m not drinking coffee then I’m reading manga on my kindle or crafting with my cricut. My horoscope says I need more lighthearted fun in my life, to slow down and savor life.</p>
+
 <h2>The 9 games that shaped who I am</h2>
 
 <p>There's a trend going around: introduce yourself through nine games. Mine skew heavily toward the browser games and edutainment CD-ROMs of my childhood.</p>
