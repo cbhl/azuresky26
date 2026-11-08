@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ section.title }}</h1>
+<p class="travel-intro">Recipes I've made and want to be able to find again.</p>
+
+{% if section.pages %}
+<ul class="post-list">
+  {% for post in section.pages %}
+  <li>
+    <span class="post-list-item-date">{{ post.date | date(format="%Y-%m-%d") }}</span>
+    <a href="{{ post.permalink }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="travel-empty">No recipes yet.</p>
+{% endif %}
+{% endblock content %}
