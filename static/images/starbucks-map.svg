@@ -1,4 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Starbucks stores visited across the Greater Toronto Area">
+  <style>
+    @media (prefers-color-scheme: dark) {
+      rect[fill="#dce6ef"] { fill: #111820; }
+      rect[fill="#f3efe6"] { fill: #202b33; }
+      rect[stroke="#a8b2bc"] { stroke: #61717e; }
+      g[fill="#b9d0e4"] { fill: #1b3a52; }
+      g[stroke="#c4a574"] { stroke: #d9b078; }
+      g[stroke="#cbb892"] { stroke: #bfa87e; }
+      g[stroke="#b0b8c0"] { stroke: #8b98a3; }
+      g[stroke="#c5ccd4"] { stroke: #5b6873; }
+      .labels text { fill: #c3ced6; stroke: #202b33; }
+      .legend text { fill: #c3ced6; }
+      circle[fill="#1a7f4b"] { fill: #2fbf71; stroke: #8fe3b6; }
+      circle[fill="#c5ccd4"] { fill: #7d8894; stroke: #c3ced6; }
+      circle[fill="#2b6cb0"] { fill: #4a90d9; stroke: #bcd9f5; }
+    }
+  </style>
   <defs>
     <clipPath id="plot-clip">
       <rect x="14" y="14" width="692" height="392"/>

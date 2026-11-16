@@ -49,6 +49,46 @@ UNVISITED_STROKE = "#6b7280"
 NONSTAND_VISITED_FILL = "#2b6cb0"
 NONSTAND_VISITED_STROKE = "#1a365d"
 
+# Dark palette, applied via an embedded <style> block (see the Styling note in
+# AGENTS.md: standalone SVGs must carry matching dark-mode styles). Mirrors
+# render_travel_map.py: the renderer emits the block itself, keyed to the
+# light-palette constants above so the two stay in sync, so regeneration
+# can't drop it.
+DARK_BG = "#111820"
+DARK_LAND = "#202b33"
+DARK_WATER_FILL = "#1b3a52"
+DARK_BORDER = "#61717e"
+DARK_ROAD_MOTORWAY = "#d9b078"
+DARK_ROAD_TRUNK = "#bfa87e"
+DARK_ROAD_PRIMARY = "#8b98a3"
+DARK_ROAD_SECONDARY = "#5b6873"
+DARK_LABEL_FILL = "#c3ced6"
+DARK_LABEL_HALO = "#202b33"
+DARK_VISITED_FILL = "#2fbf71"
+DARK_VISITED_STROKE = "#8fe3b6"
+DARK_UNVISITED_FILL = "#7d8894"
+DARK_UNVISITED_STROKE = "#c3ced6"
+DARK_NONSTAND_VISITED_FILL = "#4a90d9"
+DARK_NONSTAND_VISITED_STROKE = "#bcd9f5"
+
+DARK_STYLE = f"""  <style>
+    @media (prefers-color-scheme: dark) {{
+      rect[fill="{BG}"] {{ fill: {DARK_BG}; }}
+      rect[fill="{LAND}"] {{ fill: {DARK_LAND}; }}
+      rect[stroke="{BORDER}"] {{ stroke: {DARK_BORDER}; }}
+      g[fill="{WATER_FILL}"] {{ fill: {DARK_WATER_FILL}; }}
+      g[stroke="{ROAD_MOTORWAY}"] {{ stroke: {DARK_ROAD_MOTORWAY}; }}
+      g[stroke="{ROAD_TRUNK}"] {{ stroke: {DARK_ROAD_TRUNK}; }}
+      g[stroke="{ROAD_PRIMARY}"] {{ stroke: {DARK_ROAD_PRIMARY}; }}
+      g[stroke="{ROAD_SECONDARY}"] {{ stroke: {DARK_ROAD_SECONDARY}; }}
+      .labels text {{ fill: {DARK_LABEL_FILL}; stroke: {DARK_LABEL_HALO}; }}
+      .legend text {{ fill: {DARK_LABEL_FILL}; }}
+      circle[fill="{VISITED_FILL}"] {{ fill: {DARK_VISITED_FILL}; stroke: {DARK_VISITED_STROKE}; }}
+      circle[fill="{UNVISITED_FILL}"] {{ fill: {DARK_UNVISITED_FILL}; stroke: {DARK_UNVISITED_STROKE}; }}
+      circle[fill="{NONSTAND_VISITED_FILL}"] {{ fill: {DARK_NONSTAND_VISITED_FILL}; stroke: {DARK_NONSTAND_VISITED_STROKE}; }}
+    }}
+  </style>"""
+
 DEFAULT_BBOX = {
     "lat_min": 43.30,
     "lat_max": 44.12,
@@ -327,6 +367,7 @@ def render_starbucks_map(map_data: dict, output_path: Path, basemap: dict | None
     legend = legend_svg(x0, y0, plot_w, plot_h)
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {WIDTH} {HEIGHT}" width="{WIDTH}" height="{HEIGHT}" role="img" aria-label="Starbucks stores visited across the Greater Toronto Area">
+{DARK_STYLE}
   <defs>
     <clipPath id="plot-clip">
       <rect x="{x0}" y="{y0}" width="{plot_w}" height="{plot_h}"/>
